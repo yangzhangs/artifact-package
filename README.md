@@ -51,9 +51,7 @@ artifact-package/
 │   └── contributor_survey.md             # Complete contributor survey (CQ1–CQ10 + demographics)
 └── figures/
     ├── overview.pdf                        # Methodology overview
-    ├── timewindow.pdf                      # Time series assembly method
     ├── ai-policy-example-1.pdf             # Example AIP from CONTRIBUTING.md
-    ├── fig_aip_distribution.pdf            # AIP format distribution
     ├── fig_stance_distribution.pdf         # Stance distribution (permissive vs. prohibited)
     ├── fig4_rdd_trend_left.pdf             # RQ2: Opened PRs + Closed PRs trends
     ├── fig4_rdd_trend_right.pdf            # RQ2: Review Comments + Close Latency trends
