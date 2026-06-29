@@ -1,12 +1,4 @@
-# Artifact: AI Policies in Open Source Contribution Guidelines
-
-## Overview
-
-This artifact package supports the replication of a mixed-methods empirical study investigating **AI Policies (AIPs)** in open source software (OSS) contribution guidelines. The study addresses three research questions:
-
-- **RQ1 (Design):** What are the stances, conditions, and rationales behind AIPs in OSS?
-- **RQ2 (Impact):** How does AIP introduction affect OSS contribution dynamics?
-- **RQ3 (Enforcement):** How do maintainers and contributors perceive AIP enforcement?
+# Artifact for AIP Study
 
 The study combines content analysis of 615 AIPs from GitHub repositories, Regression Discontinuity Design (RDD) analysis of 113 active repositories, and surveys of 68 maintainers and 59 contributors.
 
