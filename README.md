@@ -1,4 +1,12 @@
-# Artifact for AIP Study
+# Artifact: AI Policies in Open Source Contribution Guidelines
+
+## Overview
+
+This artifact package supports the replication of a mixed-methods empirical study investigating **AI Policies (AIPs)** in open source software (OSS) contribution guidelines. The study addresses three research questions:
+
+- **RQ1 (Design):** What are the stances, conditions, and rationales behind AIPs in OSS?
+- **RQ2 (Associations):** What changes in contribution dynamics are temporally associated with AIP introduction?
+- **RQ3 (Enforcement):** How do maintainers and contributors perceive AIP enforcement?
 
 The study combines content analysis of 615 AIPs from GitHub repositories, Regression Discontinuity Design (RDD) analysis of 113 active repositories, and surveys of 68 maintainers and 59 contributors.
 
@@ -24,19 +32,19 @@ artifact-package/
 │       ├── ai_pr_detection_per_repo.csv   # AI-PR detection results per repo
 │       └── ai_pr_detection_refined_matches.csv # Refined AI-PR matches
 ├── scripts/
-│   ├── rq1-design/
+│   ├── rq1-design/                        # RQ1: Design of AIPs
 │   │   ├── keyword_screening.py          # Two-layer keyword screening
 │   │   ├── extract_aip_content.py         # Extract AIP text from CONTRIBUTING.md
 │   │   ├── classify_aip.py               # Stance + condition classification
 │   │   └── plot_stance_distribution.py    # Stance distribution donut chart
-│   ├── rq2-impact/
+│   ├── rq2-impact/                       # RQ2: Associations with Contribution Dynamics
 │   │   ├── build_rdd_panel.py            # Build 113-repo RDD panel from PR data
 │   │   ├── rdd_grouped_lmer.R            # Grouped mixed-effects RDD models (Table V)
 │   │   └── plot_rdd_trends.py            # Fig 4/5: RDD trend plots
-│   ├── rq3-enforcement/
+│   ├── rq3-enforcement/                  # RQ3: Enforcement of AIP
 │   │   ├── plot_compliance.py            # Compliance perception chart
 │   │   └── plot_contributor_attitude.py   # Contributor attitude bar chart
-│   └── shared/
+│   └── shared/                           # Shared utilities
 │       └── detect_aip_first_date.py       # Detect AIP first appearance date
 ├── survey/
 │   ├── maintainer_survey.md               # Complete maintainer survey (MQ1–MQ11 + demographics)
@@ -158,7 +166,7 @@ Complete survey instrument for contributors, including:
    python scripts/rq1-design/plot_stance_distribution.py
    ```
 
-### RQ2: Impact on Contribution Dynamics
+### RQ2: Associations with Contribution Dynamics
 
 1. **AIP Date Detection** — Detect AIP first appearance dates from git history:
    ```bash
