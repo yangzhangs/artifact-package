@@ -36,23 +36,7 @@
 
 ## Part II: AI Tool Usage
 
-**CQ1.** How often do you use AI-assisted coding tools (e.g., GitHub Copilot, ChatGPT, Claude) when contributing to open-source?
-- ○ Never
-- ○ Rarely (less than 10% of my PRs)
-- ○ Sometimes (10–30%)
-- ○ Often (30–70%)
-- ○ Most of the time (more than 70%)
-
-**CQ2.** (If CQ1 ≠ Never) For what purposes do you use AI tools when contributing? (Select all that apply)
-- □ Generating code from scratch
-- □ Completing boilerplate / repetitive code
-- □ Writing tests
-- □ Debugging / understanding code
-- □ Writing documentation
-- □ Translating code between languages
-- □ Other: __________
-
-**CQ3.** (If CQ1 ≠ Never) When you use AI tools for open-source contributions, do you typically disclose this in the PR?
+**CQ1.** When you use AI tools for open-source contributions, do you typically disclose this in the PR?
 - ○ Always disclose
 - ○ Usually disclose
 - ○ Sometimes disclose
@@ -63,40 +47,40 @@
 
 ## Part III: AIP Awareness and Reactions
 
-**CQ4.** Are you aware that the projects you contribute to have AI contribution policies?
+**CQ2.** Are you aware that the projects you contribute to have AI contribution policies?
 - ○ Yes, in projects I contribute to (but don't maintain)
 - ○ Yes, in projects I maintain/own
 - ○ No, I'm not aware of any
 - ○ I'm not sure
 
-**CQ5.** (If CQ4 = Yes) What is the overall stance of the AI contribution policy of the project you contribute to?
+**CQ3.** (If CQ2 = Yes) What is the overall stance of the AI contribution policy of the project you contribute to?
 - ○ Completely prohibits AI-generated content
 - ○ Allows AI with conditions (e.g., must disclose, must be reviewed separately)
 - ○ Encourages AI use with guidelines
 - ○ Other: __________
 
-**CQ6.** (If CQ4 = Yes) What was your initial reaction to the policy?
+**CQ4.** (If CQ2 = Yes) What was your initial reaction to the policy?
 - ○ Strongly support
 - ○ Somewhat support
 - ○ Neutral
 - ○ Somewhat oppose
 - ○ Strongly oppose
 
-**CQ7.** (If CQ6 = Support) What are your reasons for supporting the AI policy in open-source projects you contribute to? (Select all that apply)
+**CQ5.** (If CQ4 = Support) What are your reasons for supporting the AI policy in open-source projects you contribute to? (Select all that apply)
 - □ AIP helps ensure code quality
 - □ AIP protects maintainers from excessive review burden
 - □ AIP provides clear expectations for contributors
 - □ AIP helps maintain trust in the open-source community
 - □ Other: __________
 
-**CQ8.** (If CQ6 = Oppose) What are your reasons for opposing the AI policy in open-source projects you contribute to? (Select all that apply)
+**CQ6.** (If CQ4 = Oppose) What are your reasons for opposing the AI policy in open-source projects you contribute to? (Select all that apply)
 - □ AIP creates unnecessary barriers to contribution
 - □ AIP is difficult to enforce fairly
 - □ AIP discourages legitimate AI-assisted contributions
 - □ AIP should be a community-level decision, not per-repo
 - □ Other: __________
 
-**CQ9.** (If CQ4 = Yes) After learning about the AI policy, did your contribution behavior change?
+**CQ7.** (If CQ2 = Yes) After learning about the AI policy, did your contribution behavior change?
 - ○ No change
 - ○ I now disclose AI use in my PRs
 - ○ I reduced my AI tool usage
@@ -104,6 +88,6 @@
 - ○ I stopped contributing to that project
 - ○ Other: __________
 
-**CQ10.** (Optional) Any additional comments on AI contribution policies?
+**CQ8.** (Optional) Any additional comments on AI contribution policies?
 
 _______________________________________________

@@ -1,14 +1,8 @@
-# Artifact: AI Policies in Open Source Contribution Guidelines
+# Artifact for AIP Study
 
 ## Overview
 
-This artifact package supports the replication of a mixed-methods empirical study investigating **AI Policies (AIPs)** in open source software (OSS) contribution guidelines. The study addresses three research questions:
-
-- **RQ1 (Design):** What are the stances, conditions, and rationales behind AIPs in OSS?
-- **RQ2 (Associations):** What changes in contribution dynamics are temporally associated with AIP introduction?
-- **RQ3 (Enforcement):** How do maintainers and contributors perceive AIP enforcement?
-
-The study combines content analysis of 615 AIPs from GitHub repositories, Regression Discontinuity Design (RDD) analysis of 113 active repositories, and surveys of 68 maintainers and 59 contributors.
+This artifact package supports the replication of a mixed-methods empirical study investigating **AI Policies (AIPs)** in open source software (OSS) contribution guidelines. The study combines content analysis of 615 AIPs from GitHub repositories, Regression Discontinuity Design (RDD) analysis of 113 active repositories, and surveys of 68 maintainers and 59 contributors.
 
 ---
 
@@ -25,8 +19,7 @@ artifact-package/
 │   │   ├── aip_first_date_final.csv       # AIP introduction dates per repo
 │   │   └── repo_created_dates.csv         # Repo creation dates
 │   ├── panel/
-│   │   ├── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins)
-│   │   └── rdd_panel_113_closed_in_bin.csv # Closed PRs by close-time bin
+│   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins)
 │   └── aip/
 │       ├── aip_keyword_patterns.txt       # Two-layer keyword patterns (40 + 48)
 │       ├── ai_pr_detection_per_repo.csv   # AI-PR detection results per repo
@@ -35,10 +28,8 @@ artifact-package/
 │   ├── rq1-design/                        # RQ1: Design of AIPs
 │   │   ├── keyword_screening.py          # Two-layer keyword screening
 │   │   ├── extract_aip_content.py         # Extract AIP text from CONTRIBUTING.md
-│   │   ├── classify_aip.py               # Stance + condition classification
 │   │   └── plot_stance_distribution.py    # Stance distribution donut chart
 │   ├── rq2-impact/                       # RQ2: Associations with Contribution Dynamics
-│   │   ├── build_rdd_panel.py            # Build 113-repo RDD panel from PR data
 │   │   ├── rdd_grouped_lmer.R            # Grouped mixed-effects RDD models (Table V)
 │   │   └── plot_rdd_trends.py            # Fig 4/5: RDD trend plots
 │   ├── rq3-enforcement/                  # RQ3: Enforcement of AIP
@@ -47,8 +38,8 @@ artifact-package/
 │   └── shared/                           # Shared utilities
 │       └── detect_aip_first_date.py       # Detect AIP first appearance date
 ├── survey/
-│   ├── maintainer_survey.md               # Complete maintainer survey (MQ1–MQ11 + demographics)
-│   └── contributor_survey.md             # Complete contributor survey (CQ1–CQ10 + demographics)
+│   ├── maintainer_survey.md               # Complete maintainer survey
+│   └── contributor_survey.md             # Complete contributor survey
 └── figures/
     ├── overview.pdf                        # Methodology overview
     ├── ai-policy-example-1.pdf             # Example AIP from CONTRIBUTING.md
@@ -82,13 +73,12 @@ Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited).
 
 **Key columns:**
 - `repo_name`, `bin` (−6 to +6, excluding 0)
-- `new_prs`, `merged_prs`, `total_closed`, `review_comments_mean`, `close_latency_h` — dependent variables
+- `new_prs` — opened PRs per bin (by creation time)
+- `prs_closed_in_bin` — closed PRs per bin (by close time)
+- `review_comments_mean`, `close_latency_h` — review engagement and processing efficiency
 - `prohibited` (0=permissive, 1=prohibited), `language`, `stars`, `contributors`, `commits`, `repo_age_days` — controls
 - `time`, `intervention`, `time_after` — RDD model variables
 - `log_*` — log-transformed versions of each variable
-
-### `data/panel/rdd_panel_113_closed_in_bin.csv`
-Supplementary panel where closed PRs are binned by PR close time (rather than creation time), used for the "Closed PRs" figure.
 
 ### `data/aip/aip_keyword_patterns.txt`
 The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate only when at least one pattern from each layer matches.
@@ -112,8 +102,8 @@ Complete survey instrument for maintainers, including:
 ### `survey/contributor_survey.md`
 Complete survey instrument for contributors, including:
 - **Demographics** (D1–D6): same as maintainer survey
-- **AI Tool Usage** (CQ1–CQ3): frequency, purposes, disclosure behavior
-- **AIP Awareness & Reactions** (CQ4–CQ10): awareness, perceived stance, initial reaction, support/opposition reasons, behavioral change, open-ended comments
+- **AI Tool Usage** (CQ1): disclosure behavior
+- **AIP Awareness & Reactions** (CQ2–CQ8): awareness, perceived stance, initial reaction, support/opposition reasons, behavioral change, open-ended comments
 
 ---
 
@@ -121,7 +111,6 @@ Complete survey instrument for contributors, including:
 
 - **Python 3.9+** with packages: `pandas`, `numpy`, `matplotlib`, `scipy`, `pymysql` (for database access)
 - **R 4.0+** with packages: `lmerTest`, `lme4`, `car`, `performance`
-- **LaTeX** (for compiling the paper; not required for artifact reproduction)
 
 ---
 
@@ -151,15 +140,7 @@ Complete survey instrument for contributors, including:
      --output aip_content_extracted.csv
    ```
 
-6. **Stance and Condition Classification**:
-   ```bash
-   python scripts/rq1-design/classify_aip.py \
-     --input aip_content_extracted.csv \
-     --output aip_classification.csv
-   ```
-   Note: The final classification in the paper was produced through manual annotation by two independent raters (Cohen's kappa = 0.91 for stance, 0.85 for conditions). This script provides an automated approximation.
-
-7. **Stance Distribution Figure**:
+6. **Stance Distribution Figure**:
    ```bash
    python scripts/rq1-design/plot_stance_distribution.py
    ```
@@ -172,23 +153,13 @@ Complete survey instrument for contributors, including:
    ```
    Results in `data/repos/aip_first_date_final.csv` (after manual verification).
 
-2. **Panel Construction** — Build the RDD panel from PR-level data:
-   ```bash
-   python scripts/rq2-impact/build_rdd_panel.py \
-     --pr-data <path_to_pr_data.csv> \
-     --repo-list data/repos/confirmed_repos_615.csv \
-     --aip-dates data/repos/aip_first_date_final.csv \
-     --output data/panel/rdd_panel_113.csv
-   ```
-   This produces 113 active repositories with 12 time bins each (6 pre + 6 post, excluding bin 0).
-
-3. **Regression Analysis** — Run grouped mixed-effects models:
+2. **Regression Analysis** — Run grouped mixed-effects models:
    ```R
    Rscript scripts/rq2-impact/rdd_grouped_lmer.R
    ```
-   This produces the results in Table V: separate models for permissive and prohibited groups across 4 DVs (Opened PRs, Review Comments, Closed PRs, Close Latency).
+   This produces the results in Table V: separate models for permissive and prohibited groups across 4 DVs (Opened PRs, Closed PRs, Review Comments, Close Latency). The panel data is in `data/panel/rdd_panel_113.csv`.
 
-4. **Trend Plots**:
+3. **Trend Plots**:
    ```bash
    python scripts/rq2-impact/plot_rdd_trends.py
    ```
@@ -211,5 +182,3 @@ Complete survey instrument for contributors, including:
 - All repository names in the datasets are public GitHub repository identifiers (format: `owner/repo`). No personally identifiable information (PII) is included.
 - Survey respondent data (emails, names, responses) are not included to protect participant privacy.
 - Database credentials have been removed from all scripts; set them via environment variables when running scripts that require database access.
-- The automated classification script (`classify_aip.py`) provides an approximation of the manual classification. The paper's results are based on manual annotation by two independent raters.
-- All scripts are in English without inline comments to maintain readability.
