@@ -95,15 +95,17 @@ Refined AI-PR detection matches after manual filtering of false positives.
 
 ### `survey/maintainer_survey.md`
 Complete survey instrument for maintainers, including:
-- **Demographics** (D1–D6): experience, role, project count, language, age, occupation
-- **AI Tool Usage** (B1–B5): frequency, purposes, quality perception, AI-PR trends
-- **AIP Status** (MQ1–MQ11): stance, rationale (allow/prohibit), conditions, observed changes, compliance, enforcement methods, enforcement difficulties, open-ended comments
+- **Background Information** (D1–D3): country, experience, project count
+- **Overall Stance** (MQ1–MQ4): stance, rationale (prohibit/allow), conditions
+- **Policy Experience** (MQ5–MQ12): policy existence, expectations, observed changes (quantity/quality, time costs, community engagement), compliance, enforcement methods, enforcement difficulties
+- **Open-Ended** (MQ13)
 
 ### `survey/contributor_survey.md`
 Complete survey instrument for contributors, including:
-- **Demographics** (D1–D6): same as maintainer survey
-- **AI Tool Usage** (CQ1): disclosure behavior
-- **AIP Awareness & Reactions** (CQ2–CQ8): awareness, perceived stance, initial reaction, support/opposition reasons, behavioral change, open-ended comments
+- **Background Information** (D1–D3): country, experience, project count
+- **AI Tool Usage** (CQ1–CQ3): frequency, purposes, disclosure behavior
+- **Awareness and Impact** (CQ4–CQ9): awareness, perceived stance, initial reaction, support/opposition reasons, behavioral change
+- **Open-Ended** (CQ10)
 
 ---
 

@@ -1,113 +1,65 @@
 # Maintainer Survey: AI Contribution Policies in Open Source
 
-## Part I: Demographics
+## Part I: Background Information
 
-**D1.** How long have you been contributing to open-source projects on GitHub?
-- ○ Less than 1 year
+**D1.** In which country do you currently work?
+- ○ (Dropdown of countries)
+
+**D2.** How many years of open-source experience do you have?
+- ○ < 1 year
 - ○ 1–3 years
-- ○ 3–5 years
-- ○ 5–10 years
-- ○ More than 10 years
+- ○ 4–10 years
+- ○ > 10 years
 
-**D2.** What role(s) do you typically play in open-source projects? (Select all that apply)
-- □ External contributor (occasional PRs)
-- □ Regular contributor (frequent commits)
-- □ Maintainer / code reviewer
-- □ Project owner / administrator
-- □ Other: __________
-
-**D3.** How many open-source projects have you contributed to (with at least one merged PR)?
-- ○ 1–3
-- ○ 4–10
-- ○ 11–25
-- ○ 26–50
-- ○ More than 50
-
-**D4.** What is your primary programming language?
-- ○ Python  ○ JavaScript/TypeScript  ○ Java  ○ Go  ○ Rust  ○ C/C++  ○ Other: __________
-
-**D5.** What is your age group?
-- ○ 18–24  ○ 25–34  ○ 35–44  ○ 45–54  ○ 55+
-
-**D6.** What is your professional status?
-- ○ Student  ○ Software engineer (industry)  ○ Researcher/academic  ○ Independent/freelance  ○ Other: __________
+**D3.** How many open-source projects do you currently maintain or own?
+- ○ Up to 5 projects
+- ○ 6–10 projects
+- ○ 11–15 projects
+- ○ > 15 projects
 
 ---
 
-## Part II: AI Tool Usage
-
-**B1.** How often do you use AI-assisted coding tools (e.g., GitHub Copilot, ChatGPT, Claude, Cursor) when contributing to open-source projects?
-- ○ Never
-- ○ Rarely (less than 10% of my PRs)
-- ○ Sometimes (10–30%)
-- ○ Often (30–70%)
-- ○ Most of the time (more than 70%)
-
-**B2.** For what purposes do you use AI tools in your open-source contributions? (Select all that apply)
-- □ Generating code from scratch
-- □ Completing boilerplate / repetitive code
-- □ Writing tests
-- □ Debugging / understanding code
-- □ Writing documentation
-- □ Translating code between languages
-- □ I do not use AI tools
-- □ Other: __________
-
-**B3.** In your experience, how does AI-assisted code typically compare to human-written code in terms of overall quality?
-- ○ Much higher quality
-- ○ Somewhat higher quality
-- ○ About the same
-- ○ Somewhat lower quality
-- ○ Much lower quality
-- ○ It varies too much to generalize
-
-**B4.** Have you noticed an increase in AI-generated pull requests in projects you contribute to?
-- ○ Yes, a noticeable increase
-- ○ Yes, a slight increase
-- ○ No change
-- ○ A decrease in AI-generated PRs
-- ○ I cannot tell
-
-**B5.** (If B4 = noticeable or slight increase) How would you characterize the quality of these AI-generated PRs compared to human-written ones?
-- ○ Generally higher quality
-- ○ About the same
-- ○ Generally lower quality but still useful
-- ○ Generally low quality (e.g., superficial fixes, incorrect code, spam)
-- ○ Highly variable — some are good, many are poor
-
----
-
-## Part III: AIP Awareness and Status
+## Part II: Overall Stance of AI Contributions
 
 **MQ1.** What is your overall stance on AI contributions?
-- ○ Permitted (with or without conditions)
-- ○ Prohibited
+- ○ Prohibit — AI-generated content is not allowed
+- ○ Permissive — AI-generated content is allowed (with or without conditions)
 
-**MQ2.** (If MQ1 = Prohibited) Why did you choose to prohibit AI contribution? (Select all that apply)
-- □ AI-generated code is often low-quality
-- □ Difficult to verify AI-generated code correctness
-- □ Intellectual property and licensing concerns
-- □ Maintainer bandwidth is limited to review adequately
-- □ Lack of clear accountability for AI-generated code
+**MQ2.** (If MQ1 = Prohibit) Why did you choose to prohibit AI-generated contribution? (Select all that apply)
+- □ AI-generated code is often low-quality or contains errors
 - □ Security risks from AI-generated vulnerabilities
+- □ Intellectual property and licensing concerns
+- □ Concerns about security vulnerabilities introduced via AI-generated code
+- □ Difficult to verify AI-generated code quality
+- □ Maintainer bandwidth is too limited to review AI-generated PRs adequately
+- □ Community consensus to prohibit
 - □ Other: __________
 
-**MQ3.** (If MQ1 = Permitted) Why did you choose to allow AI contribution? (Select all that apply)
+**MQ3.** (If MQ1 = Permissive) Why did you choose to allow AI-generated contribution? (Select all that apply)
 - □ AI tools can improve contributor productivity
-- □ Prohibiting AI use is impractical to enforce
-- □ Properly reviewed AI code can be high quality
+- □ AI-generated code can be high quality when properly reviewed
 - □ We trust contributors to use AI responsibly
-- □ AI tools help lower the barrier for new contributors
 - □ Allowing AI attracts more contributors
+- □ Prohibiting AI use is impractical to enforce
+- □ AI tools help lower the barrier for new contributors
+- □ Community consensus to allow
 - □ Other: __________
 
-**MQ4.** (If MQ1 = Permitted) What conditions do you consider important when allowing AI-generated contributions? (Select all that apply)
-- □ Human review of AI-generated code
-- □ Explicit disclosure of AI use
-- □ Follow AI-specific rules (e.g., scope limits, quantitative caps)
-- □ Meet quality standards (same as human-written code)
-- □ Supplement evidence (e.g., include prompts, add tests)
+**MQ4.** (If MQ1 = Permissive) What conditions do you consider important when allowing AI-generated contributions to your project? (Select all that apply)
+- □ AI-generated contributions must undergo manual review
+- □ Contributors must explicitly disclose that AI tools were used
+- □ AI-generated contributions must meet quality standards
+- □ AI should only be used for specific types of work (e.g., documentation, tests, but not core logic)
+- □ Only certain AI tools are permitted (e.g., coding assistants yes, autonomous agents no)
+- □ AI-generated content must follow project rules/guides on how AI tools may be used (e.g., allowed use cases, prohibited outputs)
+- □ AI-generated content must be supplemented with prompts/tests
+- □ AI-generated content must adhere to the project's existing coding style
+- □ No conditions needed
 - □ Other: __________
+
+---
+
+## Part III: AI Contribution Policy Experience
 
 **MQ5.** Does your project have an AI contribution policy statement (in the contributing guidelines or as a separate document)?
 - ○ Yes
@@ -115,47 +67,73 @@
 
 *(The following questions only apply if MQ5 = Yes)*
 
-**MQ6.** After the policy was established, what changes have you observed in terms of the PR quantity & quality?
-
-| | Decreased a lot | Decreased somewhat | No change | Increased somewhat | Increased a lot | Not sure |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Total number of PRs submitted | ○ | ○ | ○ | ○ | ○ | ○ |
-| Number of new contributors | ○ | ○ | ○ | ○ | ○ | ○ |
-| Proportion of low-quality PRs | ○ | ○ | ○ | ○ | ○ | ○ |
-| Review workload | ○ | ○ | ○ | ○ | ○ | ○ |
-| Time to merge a PR | ○ | ○ | ○ | ○ | ○ | ○ |
-| Overall code quality of merged PRs | ○ | ○ | ○ | ○ | ○ | ○ |
-
-**MQ7.** After the policy was established, what changes have you observed in terms of the processing time costs?
-
-| | Decreased | No change | Increased | Not sure |
-|---|:---:|:---:|:---:|:---:|
-| Review comments per PR | ○ | ○ | ○ | ○ |
-| Close latency (time to close a PR) | ○ | ○ | ○ | ○ |
-
-**MQ8.** To what extent do you feel contributors have followed your AI contribution policy?
-- ○ Not followed at all
-- ○ Rarely followed
-- ○ Somewhat followed
-- ○ Mostly followed
-- ○ Fully followed
-
-**MQ9.** What methods does your project currently have in place to enforce your AI contribution policy? (Select all that apply)
-- □ Reviewers check for AI use during code review
-- □ Compliance relies on self-reporting and good faith
-- □ Policy specifies consequences for violations (e.g., PR rejection, temporary ban)
-- □ Contributors must sign policy before submitting (e.g., CLA, PR checklist)
-- □ Community members can flag suspected violations
+**MQ6.** What do you expect or believe the AI policy can achieve? (Select all that apply)
+- □ Improve overall code quality
+- □ Reduce review burden by filtering out low-quality PRs
+- □ Ensure contributors understand and take responsibility for submitted code
+- □ Protect the project from legal or IP risks
+- □ Maintain community trust and transparency
+- □ Block spam or low-effort AI-generated contributions
+- □ Encourage more thoughtful and meaningful contributions
+- □ Set expectations for new contributors
 - □ Other: __________
 
-**MQ10.** What are the main difficulties you have encountered in enforcing your AI contribution policy? (Select all that apply)
+**MQ7.** After the policy was established, what changes have you observed in terms of the quantity and quality of PRs?
+
+| | Decreased a lot | Decreased somewhat | No change | Increased somewhat | Increased a lot |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Total number of PRs submitted | ○ | ○ | ○ | ○ | ○ |
+| Total number of AI-generated PRs submitted | ○ | ○ | ○ | ○ | ○ |
+| Total number of low-quality PRs submitted | ○ | ○ | ○ | ○ | ○ |
+| Overall code quality of merged PRs | ○ | ○ | ○ | ○ | ○ |
+
+**MQ8.** After the policy was established, what changes have you observed in terms of the processing time costs?
+
+| | Decreased a lot | Decreased somewhat | No change | Increased somewhat | Increased a lot |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Review workload (time spent reviewing) | ○ | ○ | ○ | ○ | ○ |
+| Time to merge a PR (merge latency) | ○ | ○ | ○ | ○ | ○ |
+| Time to first comment on a new PR (response latency) | ○ | ○ | ○ | ○ | ○ |
+| Time to close a non-merged PR (closure latency) | ○ | ○ | ○ | ○ | ○ |
+
+**MQ9.** After the policy was established, what changes did you observe in terms of the community engagement?
+
+| | Decreased a lot | Decreased somewhat | No change | Increased somewhat | Increased a lot |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Number of new contributors (first-time PR authors) | ○ | ○ | ○ | ○ | ○ |
+| Community engagement (discussion, issues) | ○ | ○ | ○ | ○ | ○ |
+
+**MQ10.** To what extent do you feel contributors have followed your AI contribution policy?
+- ○ Fully followed
+- ○ Mostly followed
+- ○ Somewhat followed
+- ○ Rarely followed
+- ○ Not followed at all
+
+**MQ11.** What methods does your project currently have in place to enforce your AI contribution policy? (Select all that apply)
+- □ Reviewers check for AI use during code review
+- □ Compliance relies on contributors' self-reporting and good faith
+- □ Contributors must sign/acknowledge the policy before submitting (e.g., CLA, PR checklist)
+- □ Automated pipeline/tool checks that flag potential AI-generated code
+- □ The policy specifies consequences for violations (e.g., PR rejection, temporary ban)
+- □ Community members can flag suspected policy violations
+- □ The policy exists but is not actively enforced
+- □ Other: __________
+
+**MQ12.** What are the main difficulties you have encountered in enforcing your AI contribution policy? (Select all that apply)
 - □ Hard to detect whether a contribution is AI-generated
 - □ Contributors unwilling to disclose AI use
+- □ Policy too vague or difficult to interpret
 - □ Lack of tools or processes to verify compliance
 - □ Insufficient maintainer bandwidth to enforce
-- □ Policy too vague or difficult to interpret
+- □ Community pushback or disagreement with the policy
+- □ Policy does not cover all AI use scenarios
 - □ Other: __________
 
-**MQ11.** (Optional) Any additional comments on AI contribution policies?
+---
+
+## Part IV: Open-Ended
+
+**MQ13.** Please note any comments you have regarding the AI contribution policy.
 
 _______________________________________________
