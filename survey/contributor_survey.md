@@ -36,7 +36,7 @@
 - ○ Yes
 - ○ No
 
-*(The following questions only apply if CQ4 = Yes)*
+*(The following questions only apply if CQ2 = Yes)*
 
 **CQ3.** What is the overall stance of the AI contribution policy of the project you contribute to?
 - ○ Prohibit — AI-generated content is not allowed
