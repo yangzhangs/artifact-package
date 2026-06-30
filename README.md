@@ -97,15 +97,15 @@ Refined AI-PR detection matches after manual filtering of false positives.
 Complete survey instrument for maintainers, including:
 - **Background Information** (D1–D3): country, experience, project count
 - **Overall Stance** (MQ1–MQ4): stance, rationale (prohibit/allow), conditions
-- **Policy Experience** (MQ5–MQ12): policy existence, expectations, observed changes (quantity/quality, time costs, community engagement), compliance, enforcement methods, enforcement difficulties
-- **Open-Ended** (MQ13)
+- **Policy Experience** (MQ5–MQ10): policy existence, observed changes (PR quantity, processing costs), compliance, enforcement methods, enforcement difficulties
+- **Open-Ended** (MQ11)
 
 ### `survey/contributor_survey.md`
 Complete survey instrument for contributors, including:
 - **Background Information** (D1–D3): country, experience, project count
-- **AI Tool Usage** (CQ1–CQ3): frequency, purposes, disclosure behavior
-- **Awareness and Impact** (CQ4–CQ9): awareness, perceived stance, initial reaction, support/opposition reasons, behavioral change
-- **Open-Ended** (CQ10)
+- **AI Tool Usage** (CQ1): disclosure behavior
+- **Awareness and Impact** (CQ2–CQ5): awareness, perceived stance, initial reaction, behavioral change
+- **Open-Ended** (CQ6)
 
 ---
 
