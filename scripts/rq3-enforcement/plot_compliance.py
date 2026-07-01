@@ -12,7 +12,7 @@ plt.rcParams.update({
 })
 
 categories = ['Not followed at all', 'Rarely followed', 'Somewhat followed', 'Mostly followed', 'Fully followed']
-percentages = [9.5, 4.8, 33.3, 42.9, 9.5]
+percentages = [8.7, 4.3, 30.4, 43.5, 13.0]  # N=23 maintainers with AIPs
 
 colors = ['#D94F5C', '#F4A582', '#CCCCCC', '#8FBEEA', '#5B9BD5']
 

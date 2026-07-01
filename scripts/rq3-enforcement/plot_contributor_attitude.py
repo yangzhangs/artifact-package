@@ -13,7 +13,7 @@ plt.rcParams.update({
 
 # Reversed: Strongly oppose at top, Strongly support at bottom
 categories = ['Strongly oppose', 'Somewhat oppose', 'Neutral', 'Somewhat support', 'Strongly support']
-percentages = [2.5, 10.0, 17.5, 30.0, 40.0]
+percentages = [2.0, 8.2, 16.3, 32.7, 40.8]  # N=49 contributors aware of AIPs
 
 colors = ['#D94F5C', '#F4A582', '#CCCCCC', '#8FBEEA', '#5B9BD5']
 

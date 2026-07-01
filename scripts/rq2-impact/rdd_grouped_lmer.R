@@ -2,7 +2,7 @@ library(lmerTest)
 library(car)
 
 full <- read.csv("data/panel/rdd_panel_113.csv")
-controls <- "log_stars + log_contributors + log_commits + log_repo_age_days + log_aip_latency_days"
+controls <- "log_stars + log_contributors + log_commits + log_repo_age_days"
 
 DVs <- list(
   "Opened PRs"      = "log_new_prs",

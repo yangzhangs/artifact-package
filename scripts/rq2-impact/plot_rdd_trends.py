@@ -23,20 +23,16 @@ plt.rcParams.update({
 })
 
 # Load data
-# Opened PRs, Review Comments, Close Latency: from rdd_panel_113_first_comment.csv
+# All DVs are in the main panel file
 df_main = pd.read_csv('data/panel/rdd_panel_113.csv')
 df_main = df_main[df_main['bin'] != 0]
-
-# Closed PRs (closed-in-bin): from rdd_panel_113_closed_in_bin.csv
-df_closed = pd.read_csv('data/panel/rdd_panel_113_closed_in_bin.csv')
-df_closed = df_closed[df_closed['bin'] != 0]
 
 perm_color = '#2166AC'
 prob_color = '#B2182B'
 
 DVs_left = [
     (df_main, 'log_new_prs', 'log(Opened PRs + 1)'),
-    (df_closed, 'log_prs_closed_in_bin', 'log(Closed PRs + 1)'),
+    (df_main, 'log_prs_closed_in_bin', 'log(Closed PRs + 1)'),
 ]
 DVs_right = [
     (df_main, 'log_review_comments_mean', 'log(Review Comments + 1)'),
