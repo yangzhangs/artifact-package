@@ -22,7 +22,7 @@ artifact-package/
 │   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins)
 │   └── aip/
 │       ├── aip_keyword_patterns.txt       # Two-layer keyword patterns (40 + 48)
-│       ├── ai_pr_detection_per_repo.csv   # AI-PR detection per-repo stats (114 repos, 32 with AI-PRs)
+│       ├── ai_pr_detection_per_repo.csv   # AI-PR detection per-repo stats (113 repos, 32 with AI-PRs)
 │       └── ai_pr_detection_refined_matches.csv # Individual AI-PR matches (158 PRs)
 ├── scripts/
 │   ├── rq1-design/                        # RQ1: Design of AIPs
@@ -84,7 +84,7 @@ Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited).
 The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate only when at least one pattern from each layer matches.
 
 ### `data/aip/ai_pr_detection_per_repo.csv`
-Results of AI-PR detection across 114 repositories (113 RDD panel repos plus one additional repo with AI-PR activity) using keyword matching on PR titles and GitHub labels, used for robustness analysis. 32 repositories contain at least one identifiable AI-related PR, totaling 158 AI-related PRs.
+Results of AI-PR detection across 113 repositories using keyword matching on PR titles and GitHub labels, used for robustness analysis. 32 repositories contain at least one identifiable AI-related PR, totaling 158 AI-related PRs.
 
 ### `data/aip/ai_pr_detection_refined_matches.csv`
 Individual AI-related PR matches (158 PRs across 32 repositories) with detection method annotations.
