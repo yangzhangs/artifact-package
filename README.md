@@ -20,6 +20,8 @@ artifact-package/
 │   │   └── repo_created_dates.csv         # Repo creation dates
 │   ├── panel/
 │   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins)
+│   ├── rq1_conditions.md                # RQ1 conditions table (C1–C5)
+│   ├── rq2_rdd_robustness.md             # RQ2 RDD 4-month vs 6-month robustness results
 │   └── aip/
 │       ├── aip_keyword_patterns.txt       # Two-layer keyword patterns (40 + 48)
 │       ├── ai_pr_detection_per_repo.csv   # AI-PR detection per-repo stats (113 repos, 32 with AI-PRs)
