@@ -16,12 +16,14 @@ artifact-package/
 │   │   ├── repos_sampled_57331.csv        # Initial SEART-GHS sample (57,331 repos)
 │   │   ├── repos_with_contributing_18902.csv # Repos with CONTRIBUTING.md (18,902 repos)
 │   │   ├── confirmed_repos_615.csv        # Confirmed AIP repos (615 repos)
-│   │   ├── aip_first_date_final.csv       # AIP introduction dates per repo
+│   │   ├── aip_first_date_final.csv       # AIP adoption dates per repo
 │   │   └── repo_created_dates.csv         # Repo creation dates
-│   ├── panel/
-│   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins)
-│   ├── rq1_conditions.md                # RQ1 conditions table (C1–C5)
+│   ├── rq1_conditions.md                # RQ1 conditions summary (C1–C5)
+│   ├── rq1_aip_labels.csv                # RQ1 per-repo AIP labels (615 repos)
 │   ├── rq2_rdd_robustness.md             # RQ2 RDD 4-month vs 6-month robustness results
+│   ├── panel/
+│   │   ├── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins, 6-month)
+│   │   └── rdd_panel_113_4month.csv       # 4-month window panel (113 repos × 8 bins)
 │   └── aip/
 │       ├── aip_keyword_patterns.txt       # Two-layer keyword patterns (40 + 48)
 │       ├── ai_pr_detection_per_repo.csv   # AI-PR detection per-repo stats (113 repos, 32 with AI-PRs)
@@ -67,10 +69,10 @@ Repositories confirmed through two-layer keyword screening and manual verificati
 **Key columns:** `repo_name`, `cat1` (permissive/prohibited), `stance`, `policy_first_date`, `language`, `total_prs_db`, `group`
 
 ### `data/repos/aip_first_date_final.csv`
-Verified AIP introduction dates for each confirmed repository, determined by scanning the git history of CONTRIBUTING.md files with keyword matching and manual verification.
+Verified AIP adoption dates for each confirmed repository, determined by scanning the git history of CONTRIBUTING.md files with keyword matching and manual verification.
 
 ### `data/panel/rdd_panel_113.csv`
-Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited). Each row represents a 30-day time window (bin) relative to the AIP introduction date, spanning 6 bins before and 6 bins after (excluding the transition window, bin 0).
+Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited). Each row represents a 30-day time window (bin) relative to the AIP adoption date, spanning 6 bins before and 6 bins after (excluding the transition window, bin 0).
 
 **Key columns:**
 - `repo_name`, `bin` (−6 to +6, excluding 0)
@@ -80,6 +82,18 @@ Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited).
 - `prohibited` (0=permissive, 1=prohibited), `language`, `stars`, `contributors`, `commits`, `repo_age_days` — controls
 - `time`, `intervention`, `time_after` — RDD model variables
 - `log_*` — log-transformed versions of each variable
+
+### `data/panel/rdd_panel_113_4month.csv`
+4-month window panel data for the same 113 repositories, using 4 bins before and 4 bins after AIP adoption (excluding bin 0). Same column structure as the 6-month panel. Used for robustness analysis.
+
+### `data/rq1_conditions.md`
+Summary of the five condition categories (C1–C5) identified through manual labeling of 540 conditional permissive AIPs, matching Table in the paper.
+
+### `data/rq1_aip_labels.csv`
+Per-repo AIP labels for all 615 confirmed repos, including stance (permissive/prohibited), conditions (human_review, explicit_declaration, follow_ai_rules, limited_scope, meet_quality, supplement_prompts_tests, etc.), disclosure type, scope, authorship, consequence, and format. One AIP may contain multiple conditions.
+
+### `data/rq2_rdd_robustness.md`
+Side-by-side comparison of 4-month and 6-month window RDD model results across all 4 DVs and both groups, demonstrating consistent effect directions.
 
 ### `data/aip/aip_keyword_patterns.txt`
 The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate only when at least one pattern from each layer matches.

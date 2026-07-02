@@ -8,9 +8,9 @@ This document reports the grouped mixed-effects RDD model results for both the p
 DV ~ time + intervention + time_after + log_stars + log_contributors + log_commits + log_repo_age_days + (1|repo_name)
 ```
 
-- **6-month window:** 12 bins (−6 to +6, excluding 0), 113 repos, 1356 rows
-- **4-month window:** 8 bins (−4 to +4, excluding 0), 113 repos, 904 rows
-- Separate models for permissive (101 repos) and prohibited (12 repos) groups
+- **6-month window:** 12 bins (−6 to +6, excluding 0), 113 repos (101 permissive, 12 prohibited), 1356 rows
+- **4-month window:** 8 bins (−4 to +4, excluding 0), 113 repos (101 permissive, 12 prohibited), 904 rows
+- Separate models for permissive and prohibited groups
 - REML estimation; significance: ·p<0.1, *p<0.05, **p<0.01, ***p<0.001
 
 ---
@@ -87,9 +87,15 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 
 The 4-month window results are consistent with the 6-month results in direction:
 
-1. **Opened PRs:** time_after is negative for both groups in both windows (Permissive: -0.037 → -0.013; Prohibited: -0.145 → -0.056), though significance decreases with fewer data points.
-2. **Closed PRs:** time_after remains negative for both groups (Permissive: -0.139*** → -0.050; Prohibited: -0.156* → -0.089).
-3. **Review Comments:** time_after remains negative for both groups (Permissive: -0.025* → -0.014; Prohibited: -0.042 → -0.068).
-4. **Close Latency:** time_after for Prohibited remains negative (-0.400*** → -0.147), though significance is lost with the reduced sample. Permissive remains non-significant in both.
+| DV | Group | 6-month time_after | 4-month time_after | Direction |
+|----|-------|--------------------|--------------------|-----------|
+| Opened PRs | Permissive | -0.037* | -0.013 | ↓ ✓ |
+| Opened PRs | Prohibited | -0.145· | -0.056 | ↓ ✓ |
+| Closed PRs | Permissive | -0.139*** | -0.050 | ↓ ✓ |
+| Closed PRs | Prohibited | -0.156* | -0.089 | ↓ ✓ |
+| Review Comments | Permissive | -0.025* | -0.014 | ↓ ✓ |
+| Review Comments | Prohibited | -0.042 | -0.068 | ↓ ✓ |
+| Close Latency | Permissive | -0.044 | 0.024 | ≈0 ✓ |
+| Close Latency | Prohibited | -0.400*** | -0.147 | ↓ ✓ |
 
-The reduced significance in the 4-month window is expected given the smaller number of observations (904 vs. 1356 rows). The consistent direction of effects supports the robustness of the findings reported in the paper.
+All time_after coefficients retain the same sign (negative) across both window specifications, except for Close Latency in the permissive group, which is near-zero and non-significant in both cases (-0.044 vs. 0.024). The reduced significance in the 4-month window is expected given the smaller number of observations (904 vs. 1356 rows). The consistent direction of effects supports the robustness of the findings reported in the paper.
