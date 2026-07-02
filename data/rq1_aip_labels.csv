@@ -1,541 +1,541 @@
-repo_name,conditions,conditions_other,disclosure_type,scope,authorship,consequence,format
-0x2E/fusion,"human_review,meet_quality",,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-0xPlaygrounds/rig,"human_review,explicit_declaration,meet_quality,follow_project_style",,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-0xs34n/starknet.js,"meet_quality,human_review",No blindly generated AI code and docs,no_disclosure,"pr,code_gen,docs",human,direct_rejection,embedded_paragraph
-143mailliw/hummingbird,"human_review,explicit_declaration,meet_quality,limited_scope",No AI-generated images/icons/SVGs,"commit_msg_statement,pr_issue_statement","pr,code_gen,docs",ai_must_attribute,"direct_rejection,ban",standalone_section
-143mailliw/muzak,"human_review,explicit_declaration,meet_quality,limited_scope",No AI-generated images/icons/SVGs,"commit_msg_statement,pr_issue_statement","pr,code_gen,docs",ai_must_attribute,"direct_rejection,ban",standalone_section
-567-labs/instructor,,No AI policy content found in contributing guide,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-abhigyanpatwari/GitNexus,,No AI policy content found,no_disclosure,,human,unspecified,standalone_section
-aboutcode-org/dejacode,"human_review,explicit_declaration,meet_quality",All written content must be human-authored,pr_issue_statement,"pr,docs,code_gen",human,direct_rejection,embedded_paragraph
-abstractqqq/polars_ds_extension,"human_review,explicit_declaration",,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-ace-step/ACE-Step-1.5,"human_review,supplement_prompts_tests,meet_quality",Use different agent to review AI-generated work,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-adil192/saber,"no_declaration,limited_scope",Autocomplete OK but no AI chatbot/agent code generation,no_disclosure,"code_gen,code_completion",human,unspecified,standalone_section
-adityachandelgit/BookLore,"human_review,meet_quality,follow_project_style","Must run code, review every line, scrutinize AI tests",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-adobe/helix-website,explicit_declaration,Must apply ai-generated label to PR,specific_tag,"pr,code_gen",human,unspecified,standalone_section
-Agent-Field/agentfield,"human_review,meet_quality,explicit_declaration",Co-author attribution optional but helps transparency,commit_msg_statement,"pr,code_gen",ai_must_attribute,unspecified,standalone_section
-agno-agi/agno,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests",Must disclose in PR template; low-effort AI PRs closed,pr_issue_statement,"pr,code_gen",human,direct_rejection,embedded_paragraph
-AI-SDC/ACRO,follow_ai_rules,References separate AI_POLICY.md,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-Aidoku-Community/sources,"human_review,no_declaration",AI for reference OK but not acceptable without human thought,no_disclosure,code_gen,human,unspecified,standalone_section
-alan-turing-institute/autoemulate,"human_review,meet_quality",Disclosure optional but may be useful for reviewers,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-Alaydriem/bedrock-voice-chat,"human_review,explicit_declaration,limited_scope,supplement_prompts_tests,meet_quality,follow_project_style",Autonomous end-to-end AI PRs not acceptable,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-alexanderwanyoike/the0,"human_review,meet_quality",Prefer context engineering over vibe coding; disclosure optional,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-alfaArghya/alfa-leetcode-api,"explicit_declaration,human_review,meet_quality",Must own and maintain AI-generated code,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-alibaba/page-agent,"limited_scope,human_review,follow_project_style",No vibe coding for core lib/extension; AI must reference AGENTS.md,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-alipay/fury,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules",Substantial AI needs self-review + two-reviewer loop; ASF licensing compliance,pr_issue_statement,"pr,code_gen,docs",human,unspecified,extra_file
-alpenlabs/alpen,"explicit_declaration,human_review",Trivial tab-completion exempt from disclosure,pr_issue_statement,"pr,code_gen,docs",human,unspecified,standalone_section
-amachino/qubex,"human_review,meet_quality",AI agents welcome only with responsible human involvement,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Amansingh0807/GenForm,explicit_declaration,Transparency about AI tool usage in PR checklist,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-AndyMik90/Aperant,"explicit_declaration,human_review,supplement_prompts_tests","Flag AI assistance, state testing level, share context",pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-AndyMik90/Auto-Claude,"explicit_declaration,human_review,supplement_prompts_tests","Flag AI assistance, state testing level, share context; same as Aperant",pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-ansible-collections/community.clickhouse,"explicit_declaration,human_review,follow_ai_rules",No AI agent submissions; grammar corrections exempt from disclosure,pr_issue_statement,"pr,code_gen,docs",human,direct_rejection,standalone_section
-ansible/terraform-provider-aap,"human_review,explicit_declaration,meet_quality,follow_ai_rules",Use Assisted-by: attribution; aiattribution.github.io for statements,"commit_msg_statement,pr_issue_statement","pr,code_gen",ai_must_attribute,unspecified,standalone_section
-antiwork/gumroad,"explicit_declaration,human_review,supplement_prompts_tests",Must name specific model and list prompts given; self-review required,pr_issue_statement,"pr,code_gen,docs",human,unspecified,standalone_section
-antoniorodr/Cronboard,"human_review,meet_quality,no_declaration","No vibe coding/autonomous AI agents; first warning, second close, repeated spam report",no_disclosure,"pr,code_gen,code_completion,docs",human,"warn_and_fix,direct_rejection,ban",standalone_section
-anza-xyz/kit,"human_review,meet_quality,no_declaration",No vibe coding; don't use AI to write PR description,no_disclosure,"pr,code_gen,docs",human,direct_rejection,standalone_section
-anza-xyz/solana-web3.js,"human_review,meet_quality,no_declaration",No vibe coding; don't use AI to write PR description; same as kit,no_disclosure,"pr,code_gen,docs",human,direct_rejection,standalone_section
-apache/fory,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules",Substantial AI needs self-review + two-reviewer loop; ASF compliance,pr_issue_statement,"pr,code_gen,docs",human,unspecified,extra_file
-apache/fury,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules",Substantial AI needs self-review + two-reviewer loop; same as fory,pr_issue_statement,"pr,code_gen,docs",human,unspecified,extra_file
-apache/incubator-fury,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules",Same as apache/fury,pr_issue_statement,"pr,code_gen,docs",human,unspecified,extra_file
-apache/polaris,"human_review,explicit_declaration,follow_ai_rules",Encouraged to disclose significant AI; ASF Generative Tooling Guidance compliance,pr_issue_statement,"pr,code_gen,docs",human,unspecified,standalone_section
-apollographql/apollo-mcp-server,"human_review,meet_quality","Must explain changes, debug failures, respond to review",no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-apple/containerization,"human_review,meet_quality,limited_scope",AI to augment not replace; low-effort submissions deprioritized,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-arabcoders/watchstate,"human_review,meet_quality,explicit_declaration",AI is a tool not substitute for understanding,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-arabcoders/ytptube,"human_review,meet_quality,explicit_declaration",AI code must be indistinguishable from hand-written,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-aristocratos/btop,"explicit_declaration,human_review",Autocomplete exempt; vibe-coded PRs dismissed,specific_tag,"pr,code_gen",ai_must_attribute,"direct_rejection,ban",standalone_section
-arpanghosh8453/garmin-grafana,"human_review,meet_quality",AI tools welcome for convenience but must fully understand changes,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-ashwin-nat/pits-n-giggles,human_review,Must understand and explain submitted code,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-astral-sh/ruff,"human_review,explicit_declaration,follow_ai_rules",No autonomous agents; AI comments must be in quote blocks with disclosure,no_disclosure,"pr,code_gen,docs",human,direct_rejection,extra_file
-astral-sh/uv,"human_review,explicit_declaration,follow_ai_rules",No autonomous agents; AI comments must be in quote blocks with disclosure,no_disclosure,"pr,code_gen,docs",human,direct_rejection,extra_file
-autobrr/netronome,"human_review,meet_quality",Keep diffs tight; verify behavior,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-avateam-it-systemhaus/mkdocs-kroki-plugin,"explicit_declaration,human_review",Co-Authored-By attribution or PR description disclosure required,"commit_msg_statement,pr_issue_statement","pr,code_gen",ai_must_attribute,direct_rejection,standalone_section
-awslabs/aws-sdk-rust,"explicit_declaration,human_review","AI-sourced items must include 'generated by AI tools, reviewed by <person>'",pr_issue_statement,"pr,code_gen,docs",human,"direct_rejection,ban",embedded_paragraph
-axllent/mailpit,human_review,,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-Azure-Samples/azure-search-openai-demo,explicit_declaration,Indicate which language strings were AI-generated in PR description,pr_issue_statement,"pr,code_gen,docs",human,unspecified,embedded_paragraph
-backstage/community-plugins,"human_review,explicit_declaration",AI Use Policy referenced but excerpt truncated,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-bbilly1/tubearchivist,"human_review,meet_quality","If AI code indistinguishable from experienced dev, fine; otherwise rejected",no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-BeechatNetworkSystemsLtd/Reticulum-rs,"limited_scope,human_review",No vibe coding even if tests pass; autocomplete and boilerplate OK,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-bettergovph/bettergov,"explicit_declaration,human_review",,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-beyond-all-reason/bar-lobby,"explicit_declaration,human_review,supplement_prompts_tests",Non-direct AI use (advisory/educational) exempt from disclosure,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-beyond-all-reason/tachyon,"explicit_declaration,human_review,supplement_prompts_tests",Non-direct AI use exempt from disclosure; attach test artifacts,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-biomejs/biome,human_review,AI assistance notice referenced but excerpt truncated,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-bknd-io/bknd,"human_review,explicit_declaration,meet_quality",Must include prompts used in PR description,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-block-open-source/goose,"human_review,meet_quality,limited_scope",Start small; no easy way to distinguish thoughtful vs AI-slop,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-block/elasticgraph,"human_review,meet_quality,follow_ai_rules",Encouraged to use AI memory bank and AGENTS.md,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-block/goose,"human_review,meet_quality,limited_scope",Start small to establish trust,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-BlockstreamResearch/simfony,"explicit_declaration,human_review,follow_ai_rules",LLM agents must identify themselves; no LLM-written comments/PR descriptions,"commit_msg_statement,pr_issue_statement","pr,code_gen,docs",ai_must_attribute,"direct_rejection,ban",extra_file
-BlockstreamResearch/SimplicityHL,"explicit_declaration,human_review,follow_ai_rules",LLM agents must identify; no LLM-written comments,"commit_msg_statement,pr_issue_statement","pr,code_gen,docs",ai_must_attribute,"direct_rejection,ban",extra_file
-blueshift-gg/sbpf,"human_review,meet_quality,limited_scope",No purely/excessively AI-generated PRs,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-BlueSquare23/web-lgsm,"human_review,meet_quality,follow_project_style",All AI code must be fully vetted and comply with existing style,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-bmad-code-org/BMAD-METHOD,"human_review,meet_quality",Heavy human curation required; reject raw LLM output,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-bmadcode/BMAD-METHOD,"human_review,meet_quality",Heavy human curation required; reject raw LLM output,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-booklore-app/BookLore,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests","Must run code, review every line, scrutinize AI tests",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-boshen/oxc,"explicit_declaration,human_review,meet_quality",Disclose AI usage; repeated low-quality PRs = ban,pr_issue_statement,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-boxyhq/jackson,"explicit_declaration,human_review,meet_quality,supplement_prompts_tests",Mention tools used; address existing accepted issue first,pr_issue_statement,"pr,code_gen,docs",human,unspecified,standalone_section
-bpg/terraform-provider-proxmox,"human_review,meet_quality,follow_ai_rules",DCO sign-off required; contributor responsible for AI output,no_disclosure,"pr,code_gen,docs,code_completion",human,unspecified,standalone_section
-bscript/rep,"human_review,meet_quality,limited_scope",Keep diffs small; check security/privacy; validate logic,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-burn-rs/burn,"human_review,meet_quality,supplement_prompts_tests","Must understand, justify, explain every change; test locally",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-c2siorg/b0bot,"explicit_declaration,human_review,follow_ai_rules",Assist-By vs Generated-By labels; substantial AI portions need Generated-By tag,commit_msg_statement,"pr,code_gen,code_completion",ai_must_attribute,unspecified,standalone_section
-cachebag/nmrs,"explicit_declaration,human_review",Disclose how AI was used or PR will be closed,pr_issue_statement,"pr,code_gen",human,direct_rejection,embedded_paragraph
-camel-ai/camel,"human_review,meet_quality",Pursue quality over quantity; welcome genuine CAMEL users,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-canonical/concierge,"human_review,meet_quality",PRs co-authored by tools closed unless human claims responsibility,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-CAREamics/careamics,explicit_declaration,AI agents must identify themselves and use specific terms,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-carlos-algms/agentic.nvim,"human_review,supplement_prompts_tests",No entirely AI-generated PRs; follow TDD even for AI-written fixes,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-cel-rust/cel-rust,"explicit_declaration,human_review,meet_quality",Must disclose AI usage extent; trivial autocomplete exempt,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-cerbos/cerbos,"human_review,meet_quality",AI assistance policy referenced but content not in excerpt,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-charliermarsh/ruff,"human_review,explicit_declaration,follow_ai_rules",No autonomous agents; AI comments must be in quote blocks with disclosure,no_disclosure,"pr,code_gen,docs",human,direct_rejection,extra_file
-checkpoint-restore/checkpointctl,,No AI policy content found in excerpt,no_disclosure,,human,unspecified,embedded_paragraph
-ChrisTitusTech/linutil,"human_review,meet_quality",Don't submit AI code without reviewing and testing,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-cjpais/Handy,explicit_declaration,"Disclose whether AI used, which tools, how extensively",pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-clarkmcc/cel-rust,"explicit_declaration,human_review,meet_quality",Must disclose AI usage extent; trivial autocomplete exempt,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-ClassicOldSong/Apollo,"human_review,meet_quality",Don't trust AI-generated tests; test modifications manually,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-ClickHouse/spark-clickhouse-connector,human_review,AI can draft but final text must be reviewed and personalized,no_disclosure,"pr,docs",human,unspecified,embedded_paragraph
-clidey/whodb,"human_review,meet_quality",PR description must be in own words; no AI-generated summaries,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-cloudshipai/station,"explicit_declaration,human_review,supplement_prompts_tests",Encourage agentic PRs; small focused changes required,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-cmackenzie1/torii-rs,"explicit_declaration,human_review,meet_quality",AI slop not acceptable; attribute AI in commit messages,commit_msg_statement,"pr,code_gen,docs",ai_must_attribute,unspecified,standalone_section
-cmintey/wishlist,"explicit_declaration,human_review",Disclose in PR template what AI helped with,pr_issue_statement,"pr,code_gen,docs",human,unspecified,standalone_section
-comet-ml/comet-llm,"explicit_declaration,human_review,supplement_prompts_tests",Include PR template AI watermark/disclosure block; never submit unreviewed AI output,specific_tag,"pr,code_gen",human,unspecified,standalone_section
-comet-ml/opik,"supplement_prompts_tests,human_review",Never include secrets tokens private prompts internal system instructions or customer-sensitive data in generated/public content,pr_issue_statement,"pr,issue",,,standalone_section
-commetchat/commet,"human_review,meet_quality",No LLM output as comments; reserve right to reject low-value AI contributions,no_disclosure,"pr,code_gen,docs",human,direct_rejection,standalone_section
-compio-rs/compio,human_review,No LLM-generated PR descriptions or communications,no_disclosure,"pr,code_gen,docs",human,direct_rejection,standalone_section
-connorgallopo/Tracearr,"explicit_declaration,human_review,supplement_prompts_tests",Checkbox in PR template for significant AI usage; tests matter,pr_template_checkbox,"pr,code_gen",human,unspecified,standalone_section
-containerbuildsystem/cachi2,follow_ai_rules,References AI_CONTRIBUTION_POLICY.md; excerpt truncated,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-containers/container-libs,follow_ai_rules,Follows Podman LLM Policy,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-containers/ramalama,"human_review,explicit_declaration",No autonomous AI agents; respond to reviews without AI,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-controlplaneio-fluxcd/flux-operator,"explicit_declaration,human_review,follow_ai_rules",Assisted-by tag in commits; DCO sign-off required; point AI to AGENTS.md,"commit_msg_statement,pr_issue_statement","pr,code_gen",ai_must_attribute,unspecified,standalone_section
-coollabsio/coolify,human_review,Avoid AI-generated fluff in PR descriptions,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-cosmic-utils/clipboard-manager,"human_review,meet_quality",No generating entire files with AI; no AI for full PR/issue content,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-cpacker/MemGPT,"explicit_declaration,human_review",All AI usage must be disclosed with tool and extent,pr_issue_statement,"pr,code_gen,docs",human,direct_rejection,extra_file
-crewAIInc/crewAI,explicit_declaration,LLM-generated label required on AI-authored PRs and issues,specific_tag,"pr,code_gen,docs",ai_must_attribute,direct_rejection,standalone_section
-crmne/ruby_llm,,No specific AI policy in excerpt,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-CrociDB/bulletty,"explicit_declaration,human_review",Must make it clear if using AI; own and maintain the code,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-crowddotdev/crowd.dev,"human_review,follow_ai_rules",Follow LFX guidelines for AI tools,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-cryspen/hax,"explicit_declaration,human_review",Must state which parts AI was used for and how result was tested,pr_issue_statement,"pr,code_gen,docs",human,unspecified,standalone_section
-cue-lang/cue,human_review,OpenSpec optional tooling for AI-assisted development,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-d-eniz/jupymd,"human_review,meet_quality",No vibe-coded PRs without Obsidian API experience,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-dahlia/fedify,"explicit_declaration,human_review,follow_ai_rules",Assisted-by trailer in commits; drive-by PRs without accepted issue closed,"pr_issue_statement,commit_msg_statement","pr,code_gen",ai_must_attribute,direct_rejection,extra_file
-dalance/veryl,human_review,Do not list AI as co-author in commit metadata,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-damontecres/Wholphin,"explicit_declaration,human_review",PR description must be written without AI assistance,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-damus-io/damus,human_review,AI-assisted submissions treated same standards; must own contributions,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Dark-Alex-17/managarr,"explicit_declaration,human_review",AI-generated code not permitted unless disclosed and approved; contributor must understand and maintain code,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-databuddy-analytics/Databuddy,"explicit_declaration,human_review,supplement_prompts_tests",Drive-by PRs without accepted issue closed; must verify with human use,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-davidcole1340/ext-php-rs,"human_review,limited_scope",AI for short code snippets OK as completion tool only,no_disclosure,"issue,pr,code_gen",human,direct_rejection,standalone_section
-davidlattimore/wild,"explicit_declaration,human_review",No AI agent communication; must understand changes or disclose uncertainty,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-DayuanJiang/next-ai-draw-io,human_review,Review AI output before opening PR; clean up artifacts,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-dbt-labs/dbt-mcp,"human_review,supplement_prompts_tests",Include evidence of testing in PR description,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-deadlock-mod-manager/deadlock-mod-manager,"explicit_declaration,human_review",Quality matters regardless of how code was written; no drive-by AI refactors,pr_issue_statement,"pr,code_gen",human,unspecified,extra_file
-deborahgu/soundcork,"explicit_declaration,human_review",Disclose how AI was used and how much code was tool-written,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-delta-incubator/delta-kernel-rs,"explicit_declaration,human_review",Disclose AI usage; drive-by PRs without issue closed; be respectful of reviewers,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-delta-io/delta-kernel-rs,"explicit_declaration,human_review",Disclose AI usage; drive-by PRs without issue closed,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-developmentseed/eoapi-k8s,"explicit_declaration,human_review,meet_quality",Pure AI submissions unacceptable; write PR descriptions in own words,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-diggerhq/digger,"explicit_declaration,human_review",Trivial tab-completion exempt from disclosure,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-Dispatcharr/Dispatcharr,"human_review,meet_quality","Must understand every line submitted; duplicates logic, ignores patterns",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-dloebl/cgif,"explicit_declaration,human_review","Specify model used and whether used for code, tests, or docs",pr_issue_statement,"pr,code_gen",ai_must_attribute,unspecified,embedded_paragraph
-dlvhdr/diffnav,"human_review,follow_ai_rules",Critical rule: must understand your code; read AI_POLICY.md,no_disclosure,"pr,code_gen",human,direct_rejection,extra_file
-dlvhdr/gh-dash,"human_review,follow_ai_rules",Critical rule: must understand your code; same as diffnav,no_disclosure,"pr,code_gen",human,direct_rejection,extra_file
-dmf-mxl/mxl,human_review,Contributor must understand every line and be able to justify,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-documenso/documenso,human_review,AI code must be thoroughly reviewed; unreviewed AI submissions will be blocked,no_disclosure,"pr,code_gen",human,ban,standalone_section
-dongdongbh/Mindwtr,"human_review,meet_quality,limited_scope",Use coding agents in IDE not web chat; start with clear goal; avoid over-engineering,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-dotimplement/HealthChain,human_review,Low-context unexplained AI PRs may be closed without review,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-dstackai/dstack,"explicit_declaration,human_review",Tab-completions and trivial PRs exempt from disclosure,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-duriantaco/skylos,"explicit_declaration,human_review",AI-generated content as own work not accepted; assistive use for spelling/grammar OK,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-dvankley/firefly-plaid-connector-2,human_review,Must understand every line; I don't know AI did that = PR closed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-earendil-works/absurd,"explicit_declaration,human_review",Template provided for disclosure; disclose AI in PR descriptions too,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-EFForg/rayhunter,"explicit_declaration,human_review","Descriptions and comments should be made by you, not AI",pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-eigent-ai/eigent,"human_review,explicit_declaration,supplement_prompts_tests",PRs must reference prior discussion; no unreviewed LLM submissions,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-electrikmilk/cherri,human_review,AI model must read contributing doc; treat like copy-paste code gen,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-elgatosf/streamdeck,"human_review,meet_quality",Automated or low-quality AI PRs rejected,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-embrace-io/embrace-android-sdk,"explicit_declaration,human_review","Categorize AI use: none, autocomplete/research-led, or mostly AI-generated",pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-emilyploszaj/emi,"human_review,meet_quality",You must be able to explain and justify choices; onus on submitter,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-emlearn/emlearn-micropython,"human_review,meet_quality",Same quality standards regardless of origin; code must be minimal and readable,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-enuno/unifi-mcp-server,"explicit_declaration,human_review,supplement_prompts_tests",Tag AI assistance in PR description; comprehensive tests required,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-envoyproxy/ai-gateway,"explicit_declaration,human_review",Must be transparent about AI usage; respond to reviewer comments yourself,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-ephemeraHQ/converse-app,"human_review,explicit_declaration",No entirely/primarily AI-generated PRs; mass automated updates rejected,no_disclosure,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-ethersync/ethersync,"explicit_declaration,human_review",Follows Zulip AI use policy; take responsibility for contribution quality,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-eventual-inc/daft,"explicit_declaration,human_review,supplement_prompts_tests",Disclose material AI usage and what you verified,pr_issue_statement,"pr,code_gen",human,direct_rejection,embedded_paragraph
-extphprs/ext-php-rs,"human_review,limited_scope",AI for short snippets OK as completion; no AI issues or entire PRs,no_disclosure,"issue,pr,code_gen",human,direct_rejection,standalone_section
-ExtremeFLOW/neko,human_review,"Acceptable: assist with code, grammar, code review. Unacceptable: fully automated submissions",no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-eyaltoledano/claude-task-master,"human_review,supplement_prompts_tests",Don't submit AI slop; review and test thoroughly,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-ezyang/codemcp,human_review,Accept small hand-reviewable patches OR provide prompt with manual test evidence; don't trust LLM tests,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-facebook/pyrefly,"explicit_declaration,human_review",AI agents must disclose status; low-quality spam PRs may result in block,pr_issue_statement,"pr,code_gen",ai_must_attribute,direct_rejection,standalone_section
-fallenbagel/jellyseerr,"human_review,meet_quality",AI-assisted not AI-driven; no autonomous agent submissions; repeated violations may result in ban,no_disclosure,"pr,code_gen",human,ban,standalone_section
-farion1231/cc-switch,"human_review,explicit_declaration,meet_quality,limited_scope",Must understand and test every line; open issue first,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-fastplotlib/fastplotlib,"explicit_declaration,human_review","Must disclose tool, how used, specify which code is AI-generated",pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-fedify-dev/fedify,"explicit_declaration,human_review,follow_ai_rules",Assisted-by trailer in commits; drive-by PRs without accepted issue closed,"pr_issue_statement,commit_msg_statement","pr,code_gen",ai_must_attribute,direct_rejection,extra_file
-finops-open-cost-and-usage-spec/focus_spec,"human_review,follow_ai_rules",Approved AI agents may create PRs on behalf of human,pr_issue_statement,"pr,code_gen",human,unspecified,extra_file
-flipcomputing/flock,"supplement_prompts_tests,human_review,explicit_declaration",,pr_issue_statement,code_gen,ai_must_attribute,,extra_file
-floatpane/matcha,"human_review,meet_quality",No AI-generated issues/reviews/comments; no meaningless AI tests,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-floppy/van_dam,"explicit_declaration,human_review","Must include prompt provenance: model, dates, full prompts, unedited output",pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-fohrloop/wakepy,,No specific AI policy content found in excerpt,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-foss42/api-dash,"human_review,meet_quality","Must understand, maintain, debug submitted code; same review bar",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-foss42/apidash,"human_review,meet_quality",Same as foss42/api-dash,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-fossbilling/fossbilling,"human_review,meet_quality",Same quality requirements as human-written content,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-foundry-rs/foundry,"explicit_declaration,human_review",Trivial tab-completion exempt; undisclosed AI suspected = likely rejection,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-freenet/freenet-core,"human_review,meet_quality,supplement_prompts_tests",Use published agent skills or equivalent; self-review before submission,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-freenet/locutus,"human_review,meet_quality,supplement_prompts_tests",Use published agent skills or equivalent,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-freenet/river,"human_review,meet_quality,supplement_prompts_tests",Use published agent skills or equivalent,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-gabrieldrn/carbon-compose,human_review,Automated/AI-generated PRs without human validation closed,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-getarcaneapp/arcane,"explicit_declaration,follow_ai_rules",References AI_POLICY.md; full policy in separate file,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-getfloresta/Floresta,,No AI policy content found in excerpt,no_disclosure,,human,unspecified,embedded_paragraph
-gethomepage/homepage,explicit_declaration,"Generally does not accept AI-generated PRs; if used, must state explicitly",pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-getkyo/kyo,human_review,LLM Use Guide referenced but excerpt truncated,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-getmaxun/maxun,"human_review,meet_quality",Low-quality unverified AI patches will not be merged,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-ggerganov/llama.cpp,"explicit_declaration,human_review,follow_ai_rules",AI only assistive; must disclose manner of AI use; majority must be human-authored,pr_issue_statement,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-ggml-org/llama.cpp,"explicit_declaration,human_review,follow_ai_rules",No fully/predominantly AI-generated PRs; must disclose AI use,pr_issue_statement,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-ghostty-org/ghostty,"explicit_declaration,human_review,follow_ai_rules",All AI must be disclosed; must explain changes in own words; no autonomous agents,"pr_issue_statement,commit_msg_statement","pr,code_gen",human,direct_rejection,extra_file
-github/spec-kit,,No specific AI policy content in excerpt; references AI agent integration,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-gittuf/gittuf,"human_review,meet_quality",All content manually reviewed; no copyright infringement,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-gnolang/gno,"explicit_declaration,human_review",AI PRs must include ADR documenting context; autonomous agents must disclose human owner,pr_issue_statement,"pr,code_gen",ai_must_attribute,unspecified,standalone_section
-go-skynet/LocalAI,,No AI policy content in excerpt,no_disclosure,,human,unspecified,standalone_section
-GoBetterAuth/go-better-auth,human_review,AI agents welcome but code must be reviewed and tested by human,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-gobley/gobley,"human_review,limited_scope",No AI without human review; share LLM conversation helpful; specific tasks OK,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-goharbor/harbor-cli,human_review,No purely AI-generated PRs without understanding; use AI to assist OK,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-google-deepmind/alphafold3,"explicit_declaration,human_review",Must label AI usage in PR; no hallucinated test results,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-google/adk-java,human_review,OK to generate first draft with AI but needs human refinement,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-google/adk-js,human_review,Same as adk-java; AI first draft OK but needs human refinement,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-google/heir,"human_review,follow_ai_rules",No AI solutions from new contributors on good first issues,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-greenpau/caddy-security,human_review,AI content NOT ALLOWED unless rewritten by human who checked every line,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-greptimeteam/greptimedb,human_review,Must understand core ideas end-to-end; call out unknowns/assumptions,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-gungraun/gungraun,"explicit_declaration,human_review",rust-analyzer policy; may still reject if quality unsatisfactory,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-h3ravel/framework,"explicit_declaration,human_review,meet_quality",AI content max 35% of PR; must declare origin,pr_issue_statement,"pr,code_gen",ai_must_attribute,unspecified,standalone_section
-hacspec/hax,"explicit_declaration,human_review",State which parts AI used; explain methodology and testing,pr_issue_statement,"pr,code_gen,docs",human,unspecified,standalone_section
-hamza417/inure,"human_review,limited_scope",Do not submit AI-generated code; minimal AI assistance OK with clear indication,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-happier-dev/happier,"explicit_declaration,human_review",Say which tool; explain reasoning and instructions given to AI; confirm what was tested,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-harrison314/BouncyHsm,,No AI policy content found in excerpt,no_disclosure,,human,unspecified,embedded_paragraph
-HelpChat/DeluxeMenus,human_review,Review and verify any AI-generated code,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-hermetoproject/cachi2,follow_ai_rules,References AI_CONTRIBUTION_POLICY.md,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-hermetoproject/hermeto,follow_ai_rules,References AI_CONTRIBUTION_POLICY.md,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-HexmosTech/FreeDevTools,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-hhat-lang/hhat_lang,"human_review,meet_quality",Must evaluate intent of existing issue/code; no automated AI content without critical thinking,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-HiEventsDev/hi.events,"explicit_declaration,human_review",Add robot emoji to PR title and commit messages,specific_tag,"pr,code_gen",ai_must_attribute,unspecified,standalone_section
-hirotomoyamada/yamada-ui,"explicit_declaration,human_review,follow_ai_rules",Must clearly disclose AI use; detailed policy in AI_POLICY.md,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-huacnlee/gpui-component,"human_review,meet_quality,follow_project_style",Point out which parts are AI-generated; must follow existing coding style,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-huggingface/lerobot,follow_ai_rules,References AI_POLICY.md; be mindful of code of conduct and AI policy,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-huggingface/safetensors,"explicit_declaration,human_review",Fill out AI model-related fields in PR description,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-hummingbird-player/hummingbird,"human_review,explicit_declaration,meet_quality",Co-authored tag or other disclosure; must verify no UX degradation,"commit_msg_statement,specific_tag","pr,code_gen",ai_must_attribute,unspecified,standalone_section
-hummingbird-project/hummingbird,"explicit_declaration,human_review,meet_quality",Assisted-by tag for considerable AI usage; same quality bar regardless,commit_msg_statement,"pr,code_gen",human,unspecified,extra_file
-hummingbird-project/hummingbird-websocket,"explicit_declaration,human_review,meet_quality",Assisted-by tag for considerable AI usage; same quality bar,commit_msg_statement,"pr,code_gen",human,unspecified,extra_file
-hydraide/hydraide,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-hynek/stamina,"human_review,follow_ai_rules",References LLM Policy; Van Halen test for PRs,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-hynek/svcs,"human_review,follow_ai_rules",Same LLM Policy as hynek/stamina,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-hyzyla/pdfium,"human_review,supplement_prompts_tests",AI-assisted commits welcome as long as tests are included,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-iai-callgrind/iai-callgrind,"explicit_declaration,human_review",rust-analyzer policy; may reject if quality unsatisfactory,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-iam-py-test/my_filters_001,,References general AI policy but content truncated,no_disclosure,,human,unspecified,standalone_section
-idiap/sdialog,human_review,Provides llm.txt for AI coding assistants,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-ieedan/jsrepo,"explicit_declaration,human_review",Trivial tab-completion exempt; must understand code produced,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-inclusionAI/AReaL,human_review,Tips for AI-assisted coding provided but no explicit policy,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Inferara/inference,"explicit_declaration,human_review",State which parts are AI-generated; prefer small focused snippets,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-instructor-ai/instructor,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-IntegerAlex/hasty-server,limited_scope,May consult LLMs for ideas but no LLM-generated code,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-intel/compile-time-init-build,no_declaration,Policy declines any AI-generated content; research/debugging use OK,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-intel/cpp-baremetal-senders-and-receivers,no_declaration,Policy declines any AI-generated content,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-intel/safe-arithmetic,no_declaration,Policy declines any AI-generated content,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-InterceptSuite/ProxyBridge,"human_review,meet_quality",AI code must be well-optimized; question verbosity; benchmark when needed,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-isbeorn/nina,human_review,Maintainers may request additional explanation or validation for AI-assisted submissions,pr_issue_statement,code_gen,,,standalone_section
-jakestanger/ironbar,human_review,AI permitted but discouraged; same scrutiny regardless of origin,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-jaysmito101/cgl,limited_scope,AI tools for help OK but work must be result of own serious effort,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-jerryjliu/llama_index,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-jlowin/fastmcp,"human_review,follow_ai_rules",LLMs must follow repo conventions; great issues more valuable than PRs,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-joaomdmoura/crewAI,explicit_declaration,Must apply llm-generated label to AI-authored PRs/issues,specific_tag,"pr,code_gen,docs",ai_must_attribute,direct_rejection,standalone_section
-jokob-sk/NetAlertX,"human_review,meet_quality",Prefer clarity over cleverness; must pass full test suite,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-jorenn92/maintainerr,human_review,Prefer GPT-5.4+ or Claude Opus 4.6 for best results,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-jovian-experiments/jovian-nixos,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,embedded_paragraph
-jozu-ai/kitops,"human_review,supplement_prompts_tests",AI-assisted contributions section referenced but content truncated,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-jsrepojs/jsrepo,"explicit_declaration,human_review",Same policy as ieedan/jsrepo; trivial tab-completion exempt,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-jxnl/instructor,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-jxnl/openai_function_call,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-kaito-project/kubeairunway,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-kcenon/claude_code_agent,no_declaration,Do NOT include AI-generated signatures or co-author tags in commits,no_disclosure,"pr,code_gen",no_ai_attribution,unspecified,embedded_paragraph
-KempnerInstitute/kempner-computing-handbook,human_review,Must review and verify AI-assisted content; all contributions traceable via Git,no_disclosure,"pr,docs",human,unspecified,standalone_section
-kesslerio/attio-mcp-server,"explicit_declaration,human_review,supplement_prompts_tests",Mark AI assistance in PR; state testing level; include prompt/session notes when feasible,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-kgateway-dev/community,follow_ai_rules,References generative AI policy in code of conduct,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-Kieirra/murmure,"human_review,meet_quality",Use AI as a tool not as a technical substitute,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-kite-org/kite,human_review,Remove AI-generated noise; keep comments minimal and useful,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-kitops-ml/kitops,"human_review,supplement_prompts_tests",Same as jozu-ai/kitops; AI-assisted contributions section,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-kmesh-net/kmesh,"explicit_declaration,human_review",Disclose AI use in reviewer notes; large AI-generated PRs discouraged,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-konflux-ci/build-definitions,"explicit_declaration,human_review",Assisted-by: <ai-tool> trailer in commits; DCO sign-off required,commit_msg_statement,"pr,code_gen",ai_must_attribute,unspecified,embedded_paragraph
-kornia/kornia-rs,"explicit_declaration,human_review,supplement_prompts_tests",Must include local test logs; discuss in Discord first; explain-it standard,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-Kotlin/kotlinx-rpc,"explicit_declaration,human_review,supplement_prompts_tests",Minor AI-assisted actions like NES or autocomplete exempt from disclosure,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-kubernetes-sigs/agent-sandbox,human_review,Do NOT use Commit suggestion button (adds Copilot co-author violating CLA),no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-kubeshop/testkube,"human_review,follow_ai_rules",Use AGENTS.md with AI agents to ensure code follows guidelines,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-kubestellar/docs,"human_review,meet_quality",Do NOT blindly copy-paste AI code; double-check architecture alignment,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-kubestellar/ui,"human_review,meet_quality",Same as kubestellar/docs; do NOT blindly copy-paste AI code,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-kubetail-org/kubetail,"human_review,follow_ai_rules",AI tools like classic tools; use AGENTS.md for context; understand what you submit,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-kyu08/fzf-make,human_review,"Must understand code; don't respond 'I don't know, AI generated it'",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-LadybirdBrowser/ladybird,"human_review,meet_quality",No AI-generated PR descriptions; same quality standards,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-LadybirdWebBrowser/ladybird,"human_review,meet_quality",No AI-generated PR descriptions; same quality standards,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-LeeMangold/OpenGRC,human_review,Recommends Laravel Boost for AI-assisted development,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-letta-ai/letta,"explicit_declaration,human_review,follow_ai_rules",All AI must be disclosed; must explain changes without AI aid; issues also require human-in-the-loop,"pr_issue_statement,commit_msg_statement","pr,code_gen",human,direct_rejection,extra_file
-Letterbook/Letterbook,"human_review,meet_quality",No slop; low-effort AI-generated issues/PRs/comments not acceptable,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-lightningdevkit/ldk-server,"explicit_declaration,human_review",Disclose AI tools in commit messages and PR descriptions,"commit_msg_statement,pr_issue_statement","pr,code_gen",human,unspecified,embedded_paragraph
-lightspeed-core/lightspeed-stack,"explicit_declaration,human_review",Mark code with substantial AI-generated portions; copyright and license notices required,specific_tag,"pr,code_gen",ai_must_attribute,unspecified,standalone_section
-lingarr-translate/lingarr,"human_review,meet_quality",Must understand and explain all code; no Co-authored-by AI tags in commits,no_disclosure,"pr,code_gen",no_ai_attribution,direct_rejection,embedded_paragraph
-linkml/linkml,follow_ai_rules,References AI Covenant for responsible AI use norms,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-linuxfoundation/crowd.dev,"human_review,follow_ai_rules",Follow LFX guidelines; AI-generated code must meet quality standards,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-llama-farm/llamafarm,human_review,Must author 100% of content; AI use permitted,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-longbridge/gpui-component,"human_review,meet_quality,follow_project_style",Point out AI-generated parts; code without refactoring rejected,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-longbridgeapp/gpui-component,"human_review,meet_quality,follow_project_style",Point out AI-generated parts; code without refactoring rejected,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-Lramseyer/vaporview,human_review,No AI slop; must explain how massive PRs work; start small,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-lrstanley/bubblezone,human_review,AI agents MUST NOT add Signed-off-by tags; human responsible for DCO and review,dco,"pr,code_gen",human,unspecified,standalone_section
-lrstanley/go-ytdlp,human_review,AI agents must NOT add Signed-off-by tags; human must certify DCO,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-m3sserstudi0s/swiparr,human_review,No AI-generated code without human review,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-Maintainerr/Maintainerr,human_review,Prefer GPT-5.4+ or Claude Opus 4.6; unreviewed low-effort PRs may be closed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-manyfold3d/manyfold,"explicit_declaration,human_review",Must include prompt provenance; NLNet generative AI policy applies,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-markbeep/AudioBookRequest,human_review,References AI use section but content truncated,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-matter-labs/foundry-zksync,"explicit_declaration,human_review",Same as foundry-rs/foundry; trivial tab-completion exempt,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-mayocream/koharu,human_review,Human must review and understand changes,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-mcmonkeyprojects/SwarmUI,human_review,Don't PR code you don't understand; discuss before large PRs,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-meilisearch/firestore-meilisearch,"explicit_declaration,human_review",Simple disclosure note sufficient; specify scope of AI assistance,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-meilisearch/meilisearch-rails,"explicit_declaration,human_review",Disclose AI usage; specify scope; review AI-generated content,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-meilisearch/mini-dashboard,"explicit_declaration,human_review",Disclose AI usage; specify scope; review AI-generated content,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-meilisearch/strapi-plugin-meilisearch,"explicit_declaration,human_review",Disclose AI usage; specify scope; review AI-generated content,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-meltano/meltano,follow_ai_rules,References Agentic Coding guide with disclosure requirements,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-memorysafety/ntpd-rs,"limited_scope,human_review",Tool assistance OK but vibe-coded whole subroutines dismissed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-memorysafety/sudo-rs,"limited_scope,human_review",Tool assistance OK but vibe-coded whole subroutines dismissed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-microsoft/simplechat,follow_ai_rules,References CLAUDE.md and copilot-instructions.md for AI guidance,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-MillenniumDawn/Millennium-Dawn,"human_review,limited_scope",No AI-generated art; AI code must be personally reviewed and meet standards; AI localization with human review OK,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-mitsuhiko/minijinja,"explicit_declaration,human_review",Must disclose AI use and extent in PR; AI in PR descriptions must also be disclosed,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-modelcontextprotocol/modelcontextprotocol,"explicit_declaration,human_review",Trivial typo fixes exempt from disclosure,pr_issue_statement,"pr,code_gen,docs",human,direct_rejection,standalone_section
-modelcontextprotocol/specification,"explicit_declaration,human_review",Trivial typo fixes exempt from disclosure,pr_issue_statement,"pr,code_gen,docs",human,direct_rejection,standalone_section
-modular/max,follow_ai_rules,References AI_TOOL_POLICY.md,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-modularml/mojo,follow_ai_rules,References AI_TOOL_POLICY.md,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-moff-station/moff-station-14,"no_declaration,limited_scope","No AI-generated code, art, sound, or auto-generated docs; ML autocomplete OK",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-motion-canvas/motion-canvas,human_review,Discouraged AI-generated commit descriptions; use AI to enhance work not replace,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-MrJoiny/Idleon-Injector,"human_review,meet_quality","Must match existing code style, quality, readability",no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-mrkai77/loop,"explicit_declaration,human_review,follow_ai_rules",All AI must be disclosed; may verify human contributor; unreviewed AI not acceptable,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-Mrmayman/quantumlauncher,human_review,Avoid large unreviewed AI code dumps; AI as helper not replacement,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-mudler/LocalAI,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-mustbeperfect/definitive-opensource,human_review,AI as tool OK but vibe-coded projects rejected; AGENTS.md and Claude in contributors is telling,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-MystenLabs/walrus,"human_review,supplement_prompts_tests",AI can create PRs and leave comments but must NOT approve; humans approve and merge,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-n00bcodr/Jellyfin-Enhanced,human_review,Must understand changes; AI policy section referenced but content truncated,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-Nagi-ovo/gemini-voyager,"human_review,supplement_prompts_tests",No unreviewed AI PRs; must understand every line; maintain clean Git history,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-NeptuneHub/AudioMuse-AI,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,embedded_paragraph
-netalertx/NetAlertX,"human_review,meet_quality",Same quality/security/performance standards; prefer clarity over cleverness,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-new-frontiers-14/frontier-station-14,"human_review,limited_scope",AI code must be tested and audited; AI art strictly not allowed,no_disclosure,"pr,code_gen",human,ban,standalone_section
-nhost/nhost,"human_review,explicit_declaration",AI issues closed immediately; PR descriptions in own words; remove AI comments,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-nightscout/Trio,"human_review,limited_scope",AI for small well-understood tasks only; contributions must be author-driven,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-Nimble-Co/FoundryVTT-Nimble,human_review,"No AI-generated bulk changes; if using AI, review and understand all changes",no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-niri-wm/niri,human_review,Must clean up LLM output; mostly LLM-generated PRs not welcome,no_disclosure,"pr,code_gen,issue",human,unspecified,standalone_section
-nix-community/nh,human_review,AI policy section referenced but content truncated in excerpt,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-noble-lab/casanovo,human_review,All PRs auto-reviewed by CodeRabbit; must address feedback,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-nook-browser/Nook,"explicit_declaration,human_review",Trivial tab-completion exempt; must understand code produced,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-obi1kenobi/cargo-semver-check,"human_review,meet_quality",Low-quality AI rejected; repeated violations = ban,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-obi1kenobi/cargo-semver-checks,"human_review,meet_quality",Same zero-tolerance policy for low-quality AI,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-ofkm/arcane,follow_ai_rules,References AI_POLICY.md,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-olimorris/codecompanion.nvim,"human_review,supplement_prompts_tests","Use LLM for feature OR test, never both; must explain every line",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-onthegomap/flatmap,"explicit_declaration,human_review",State AI tools used in PR description; no unrelated changes,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-onthegomap/planetiler,"explicit_declaration,human_review",State AI tools used in PR description; no unrelated changes,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-Open-Superintelligence-Lab/blueberry-llm,human_review,Don't submit unreviewed AI; first sentences of PR must show value,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-open-telemetry/opentelemetry-ebpf-instrumentation,human_review,Must be able to walk through changes; same quality standards,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-open-telemetry/opentelemetry-go-compile-instrumentation,"human_review,follow_ai_rules",Follows OpenTelemetry Generative AI Contribution Policy,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-openbao/openbao,no_declaration,Disable all generative AI agents; AI for search/discussion OK only,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-openbao/openbao-helm,no_declaration,Disable all generative AI agents; same policy,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-openclaw/openclaw,"explicit_declaration,human_review,supplement_prompts_tests",Mark AI-assisted in PR; include prompts if possible; confirm understanding,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-OpenDevicePartnership/patina,"human_review,meet_quality",Must have legal right; understand and test changes; firmware tested on QEMU and hardware,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-OpenDevicePartnership/patina-qemu,"human_review,meet_quality","Same as patina; must understand, test, and have legal rights",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-openvinotoolkit/openvino.genai,follow_ai_rules,Must comply with OpenVINO AI Usage Policy,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-OpenZeppelin/stellar-contracts,"human_review,meet_quality",Treat AI as first draft; review thoroughly; match library patterns,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-ory/elements,"explicit_declaration,human_review",Mention AI tools used; address existing accepted issue first,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-ory/kratos-selfservice-ui-react-nextjs,"explicit_declaration,human_review",Mention AI tools used; address existing accepted issue first,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-ory/polis,"explicit_declaration,human_review",Mention AI tools used; address existing accepted issue first,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-oss-apps/split-pro,"explicit_declaration,human_review",Each PR must state AI usage and extent; may close without comment,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-OWASP/OpenCRE,human_review,Ensure you understand change; test locally; confirm it actually improves project,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-oxc-project/oxc,"explicit_declaration,human_review",Disclose AI usage; repeated low-quality = ban; bans may be lifted,pr_issue_statement,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-ozontech/seq-db,"explicit_declaration,human_review",Trivial tab-completion exempt; adapted from ghostty policy,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-p2plabsxyz/peersky-browser,human_review,"Must clearly explain, modify, defend code without AI; evaluate for correctness",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Papela/Nitrox-Cracked-Mod,human_review,No AI for issues/PR descriptions; AI code OK but must review; no uploading copyrighted source to AI,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-paperless-ngx/paperless-ngx,"explicit_declaration,human_review",AI code must be attributed; entirely/mostly AI-derived PRs not accepted,specific_tag,"pr,code_gen",human,direct_rejection,standalone_section
-patrickchugh/terravision,"explicit_declaration,human_review","Must disclose AI tools, model, and scope of use",pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-payjoin/rust-payjoin,"explicit_declaration,human_review",Trivial tab-completion exempt; adapted from ghostty,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-pelican-dev/plugins,"explicit_declaration,human_review","Entirely/mostly AI PRs not accepted; if used, clearly indicate in PR",no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-pendulum-project/ntpd-rs,"limited_scope,human_review",Same as memorysafety/ntpd-rs; tool assistance OK but vibe-coded whole subroutines dismissed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-pgexporter/pgexporter,follow_ai_rules,References AI policy and guidelines section,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-pgmoneta/pgmoneta,follow_ai_rules,References AI policy and guidelines section,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-phalt/clientele,human_review,Must confidently explain and demonstrate understanding of changes,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-pierrecomputer/pierre,"explicit_declaration,human_review",Disclose extent of AI use; significant human accountability required; no AI-generated media,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-pixeltable/pixeltable,human_review,Must read and understand every change; same high bar for quality,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-pkgforge/soar,human_review,No AI-generated commit messages; no AI-generated comments,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-platformatic/kafka,human_review,Both human and AI contributors must be signed off via DCO,dco,"pr,code_gen",human,unspecified,embedded_paragraph
-platformatic/massimo,human_review,Both human and AI contributors must be signed off via DCO,dco,"pr,code_gen",human,unspecified,embedded_paragraph
-platformatic/platformatic,human_review,Both human and AI contributors must be signed off via DCO,dco,"pr,code_gen",human,unspecified,embedded_paragraph
-polaris-catalog/polaris,"explicit_declaration,human_review,follow_ai_rules",Encouraged to disclose significant AI assistance; follow ASF Generative Tooling Guidance,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-polarsource/polar,"human_review,supplement_prompts_tests",Must test locally; vibe-coded PRs without testing closed immediately,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-pollen-robotics/reachy_mini_conversation_app,"human_review,explicit_declaration,meet_quality",AI PRs labeled machine-generated; closed after 1-2 exchanges if no human oversight,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-pragma-org/amaru,human_review,LLM-generated CHANGELOG suggestions OK but humans must verify wording,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-PrefectHQ/fastmcp,"human_review,follow_ai_rules",LLMs must follow repo conventions and contributing guidelines,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-presenton/presenton,"explicit_declaration,human_review","Mention AI-assisted, level of testing, confirm you reviewed code",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Priivacy-ai/spec-kitty,,No specific AI policy content; references agent directories for configuration,no_disclosure,,human,unspecified,standalone_section
-prismlauncher/prismlauncher,"human_review,dco",AI agents MUST NOT add Signed-off-by; adapted from matplotlib and Linux Kernel policies,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-project-fika/Fika-Plugin,limited_scope,No AI-generated code; exception only for AI-generated comments/docs on your own code,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-Project-HAMi/HAMi,"explicit_declaration,human_review",Trivial tab-completion exempt; must fully understand AI-generated responses,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-project-tirtha/tirtha-public,"explicit_declaration,human_review",Must review and validate all AI output; DCO sign-off required,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-PumasAI/QuartoNotebookRunner.jl,"human_review,meet_quality",Must follow project style/conventions; verify AI suggestions,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-pygame-community/pygame-ce,"explicit_declaration,human_review",Must state exactly how much AI wrote and how verified; new functionality needs new tests,pr_issue_statement,"pr,code_gen",human,direct_rejection,embedded_paragraph
-pygfx/rendercanvas,"explicit_declaration,human_review","Must document which tools used, how used, what code is AI-generated; copyright concerns",pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-python-wheel-build/fromager,follow_ai_rules,References AGENTS.md for AI-optimized guidance; AI-generated code attribution required,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Qiskit/qiskit-code-assistant-jupyterlab,follow_ai_rules,References AGENTS.md for AI assistants; verify AI suggestions and test,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-quarkiverse/quarkus-flow,human_review,"Acceptable: assist development, validate, write better; unacceptable: copy-paste without oversight",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-Quozul/PicoLimbo,"explicit_declaration,human_review",Do not submit LLM-generated PRs; disclose AI usage in PR description,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-qvr/nonraid,human_review,Personally understand all AI-generated code; don't use AI for PR/issue descriptions,no_disclosure,"pr,code_gen,docs",human,unspecified,standalone_section
-RackulaLives/Rackula,"explicit_declaration,human_review",AI attribution for substantial code; human contributors equally welcome,specific_tag,"pr,code_gen",ai_must_attribute,unspecified,standalone_section
-ratatui-org/ratatui,"human_review,explicit_declaration",Disclose AI use; review every line; avoid large AI content dumps; ensure license compatibility,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-ratatui/ratatui,"human_review,explicit_declaration",Same policy as ratatui-org/ratatui,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-redwoodjs/sdk,"human_review,supplement_prompts_tests",Bot account PRs subject to prejudicial closure; all code must have test coverage,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-reflex-dev/reflex,"human_review,supplement_prompts_tests",Review patch adversarially; resolve bot feedback; all code must have real test coverage,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Regyl/yagfi-back,human_review,Must understand and own the code you submit,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-repplus/rep,human_review,Understand every change; keep diffs small; check security and licenses,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-repplus/rep-chrome,human_review,Understand every change; keep diffs small; check security and licenses,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-reubeno/brush,"explicit_declaration,human_review",Assisted-by trailer for significant AI use; must understand and explain all code,commit_msg_statement,"pr,code_gen",human,unspecified,standalone_section
-rommapp/romm,"explicit_declaration,human_review",Trivial tab-completion exempt; most AI output is slop currently,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-rpm-rs/rpm,"explicit_declaration,human_review,follow_ai_rules",Assisted-by trailer for significant AI use; follow Fedora AI contribution policy,commit_msg_statement,"pr,code_gen",human,unspecified,standalone_section
-rpm-software-management/dnf5,"explicit_declaration,human_review,follow_ai_rules",Assisted-by trailer for significant AI use; follow Fedora AI policy,commit_msg_statement,"pr,code_gen",human,unspecified,standalone_section
-run-llama/llama_index,,No specific AI policy content found in excerpt; only setup instructions,no_disclosure,,human,unspecified,standalone_section
-rustcoreutils/posixutils-rs,human_review,Uses AI-assisted development; prefers issues over PRs for context preservation,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-S4tvara/Sietch,"explicit_declaration,human_review",Check AI assistance box in PR template; describe what was AI-assisted and how validated,pr_template_checkbox,"pr,code_gen",human,unspecified,embedded_paragraph
-saber-notes/saber,no_declaration,No AI chatbot/agent code; autocomplete OK but all code must be fully designed/written by you,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-SakanaAI/ShinkaEvolve,human_review,No AI slop; every submission must be human-verified and minimal,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-samtupy/nvgt,"human_review,limited_scope",No wholly AI-authored PRs; 2 warnings then permanent ban; AI review assistance allowed,no_disclosure,"pr,code_gen",human,ban,standalone_section
-samui-build/samui-wallet,human_review,No vibe-coded contributions; you are the developer not the prompt engineer,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-sanders41/meilisearch-python-sdk,"no_declaration,human_review",No AI as co-author; must manually review 100% of changes,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-sanity-io/locales,,Maintainers review AI PRs; no specific AI policy content,no_disclosure,,human,unspecified,standalone_section
-santanu-atta03/Intervyo,human_review,Don't dump AI-generated code without understanding it,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-SAP-samples/ui5-typescript-walkthrough,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sap/abap-cleaner,follow_ai_rules,Follows SAP guideline for generative AI contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/ai-sdk-java,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/ai-sdk-js,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/app-studio-toolkit,follow_ai_rules,Follows SAP guideline for generative AI contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/architecture-center,follow_ai_rules,Follows SAP guideline for generative AI contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sap/btp-environment-variable-access,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/btp-solution-diagrams,follow_ai_rules,Follows SAP guideline for generative AI contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/cloud-active-defense,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/cloud-sdk-java,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/crossplane-provider-btp,follow_ai_rules,Follows SAP guideline for generative AI contributions; DCO required,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/e-mobility-charging-stations-simulator,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-SAP/gigya-react-native-plugin-for-sap-customer-data-cloud,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sap/neonbee,follow_ai_rules,Follows SAP guideline; DCO required via CLA assistant,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sap/open-ux-odata,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sap/open-ux-tools,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sap/terraform-provider-btp,follow_ai_rules,Follows SAP guideline; DCO required,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sarensw/MacPacker,limited_scope,AI-generated features/fixes not allowed; AI as coding buddy OK,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-schell/renderling,"explicit_declaration,human_review",Disclose substantive AI use; maintain prompt provenance log; FLOS license compliance,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-SchoolyB/EZ,human_review,AI-assisted contributions welcome but you must understand and explain the code,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-Scottcjn/Rustchain,human_review,No AI-generated bulk PRs without testing evidence,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-scribe-org/scribe-android,human_review,AI-generated contributions not demonstrating skill growth are not helpful,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-scribe-org/Scribe-Data,human_review,AI should be tool not contributor itself,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-scribe-org/Scribe-Desktop,human_review,AI should be tool not contributor itself,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-scribe-org/scribe-ios,human_review,AI should be tool not contributor itself,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-seanjameshan/starknet.js,"human_review,meet_quality",Thoroughly tested and documented; single typo PRs auto-closed,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-seanmorley15/AdventureLog,"human_review,meet_quality","AI-generated code must be correct, understood, follow standards, no unnecessary complexity",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-seerr-team/seerr,"human_review,explicit_declaration",AI-assisted not AI-driven; repeated unreviewed submissions may result in ban,no_disclosure,"pr,code_gen",human,ban,standalone_section
-serial-ata/lofty-rs,human_review,AI as aid OK but non-trivial fully AI-generated contributions not reviewable,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-serverpod/serverpod,human_review,"Must understand code, respond to reviews yourself, validate behavior; no proxy for agent",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-ShadowBlip/InputPlumber,"explicit_declaration,human_review",Disclose tool use in commit messages; using AI to respond to reviewers prohibited,commit_msg_statement,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-Sharkord/sharkord,"explicit_declaration,human_review",AI agents must add robot emoji to PR title and description,specific_tag,"pr,code_gen",ai_must_attribute,ban,standalone_section
-SharonIV0x86/CinderPeak,"human_review,meet_quality",No untested/rushed/AI-without-review code; must explain every decision,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-shcherbak-ai/contextgem,"human_review,follow_ai_rules",Review AI code; don't let AI handle git operations; follow AGENTS.md,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-SillyTavern/SillyTavern,human_review,Same quality bar regardless of origin; avoid common AI mistakes,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-simdutf/simdutf,follow_ai_rules,References AI_USAGE_POLICY.md for full policy,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-skodaconnect/homeassistant-myskoda,human_review,AI PRs flagged and closed; no copy-pasted LLM descriptions; adapted from FastAPI,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-skodaconnect/myskoda,human_review,AI PRs flagged and closed; adapted from FastAPI,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-slatedb/slatedb,"explicit_declaration,human_review",Disclose AI generation; specify tool and model; understand changes; keep descriptions human,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-slimevr/slimevr-server,"no_declaration,limited_scope","Do NOT accept AI-generated contributions; if AI used reasonably, must disclose how",no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-smlab-niser/tirtha-public,"explicit_declaration,human_review",Must review and validate all AI output; DCO sign-off required,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-SnapXL/SnapX,"human_review,limited_scope",No AI-generated issues; no vibe coding; AI-assisted coding acceptable,no_disclosure,"issue,pr,code_gen",human,direct_rejection,standalone_section
-sonofmagic/tailwindcss-mangle,human_review,"AI-generated code must pass all same checks (TypeScript, ESLint, etc.)",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-sozercan/kaset,"explicit_declaration,human_review",Share AI prompts in PR; prompt requests welcome,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-spdx/ntia-conformance-checker,human_review,AI for boilerplate and code review OK; human must do final review; GSoC has stricter rules,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-spegel-org/spegel,"human_review,explicit_declaration",,pr_issue_statement,pr,,direct_rejection,extra_file
-spiraldb/vortex,"explicit_declaration,human_review",Disclose conversational/agentic AI use in PR description; full policy in contributing guide,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-stack-auth/stack,human_review,Review every line before submitting; don't waste maintainer time with AI-generated PRs,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-stack-auth/stack-auth,human_review,Review every line before submitting; don't waste maintainer time,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-stacklok/toolhive,human_review,Keep PRs small and focused; review all code regardless of origin,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-StacklokLabs/toolhive,human_review,Keep PRs small and focused; review all code regardless of origin,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-stan-smith/FossFLOW,human_review,Must understand every line; generic AI comments will be closed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-stanfrbd/cyberbro,"human_review,meet_quality",AI code must meet same quality bar; contributor fully responsible,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-starknet-io/starknet.js,"human_review,meet_quality",Same as seanjameshan/starknet.js policy,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-steipete/clawdis,"explicit_declaration,human_review",Mark AI-assisted in PR; note testing level; include prompts if possible; confirm understanding,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-Story-Of-Alicia/alicia-server,human_review,AI assistants permitted but vibe coding without understanding not OK,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-streamyfin/streamyfin,explicit_declaration,Must disclose AI tool usage and extent in PR; minor autocomplete exempt,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-StrikerX3/Ymir,"explicit_declaration,human_review",Must disclose AI assistance; AI-generated descriptions fine but code scrutinized,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-SubstantialCattle5/Sietch,"explicit_declaration,human_review",Check AI assistance box in PR template; describe what was AI-assisted and how validated,pr_template_checkbox,"pr,code_gen",human,unspecified,embedded_paragraph
-suitenumerique/docs,,No specific AI policy content found in excerpt; mostly coding guidelines,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-supabase-community/supabase-kt,human_review,Don't exclusively rely on AI; double check code; not recommended for logic code,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-sustainable-computing-io/kepler,follow_ai_rules,Follows Linux Foundation Generative AI Policy,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-sylabs/singularity,"explicit_declaration,human_review",Disclose AI tools in commit messages and PR descriptions; block/identify public code matches,"commit_msg_statement,pr_issue_statement","pr,code_gen",human,unspecified,standalone_section
-synthetic-lab/octofriend,human_review,Run AI code-review agent before submitting; keep PRs focused,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-tamboui/tamboui,human_review,AI-assisted OK but must understand and validate; no direct LLM copy without oversight,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-tauri-apps/plugins-workspace,follow_ai_rules,References AI Tool Policy; must follow Tauri guidelines,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-teamtype/teamtype,"explicit_declaration,human_review",Follows Zulip AI use policy; must disclose LLM usage,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-telemt/telemt,human_review,No AI as author/committer; unverified AI dumps will be closed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-tempoxyz/tempo-foundry,"explicit_declaration,human_review",Trivial tab-completion exempt; disclose extent of AI use,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-tenstorrent-metal/tt-metal,human_review,AI for development OK if human reviews; AI agents posting to issues prohibited; translation OK,no_disclosure,"issue,pr,code_gen",human,ban,standalone_section
-tenstorrent/tt-metal,human_review,Same policy; AI agents posting issues prohibited; human-reviewed AI development OK,no_disclosure,"issue,pr,code_gen",human,ban,standalone_section
-teorth/equational_theories,human_review,"Human, computer, and AI contributions all welcome; project goal is combining diverse contributions",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-teorth/erdosproblems,,No specific AI policy content found in excerpt,no_disclosure,,human,unspecified,standalone_section
-the-ora/browser,"explicit_declaration,human_review",Disclose AI use and describe extent of assistance,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-TheDanniCraft/activity-log,"explicit_declaration,human_review",Disclose AI in PR description; AI for security reports not allowed,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-TheNickOfTime/handbrake-web,limited_scope,AI-generated contributions not welcome; AI as coding tool fine if majority is human-made,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-theresnotime/as-a-treat,no_declaration,Obviously and entirely AI-generated contributions likely rejected,no_disclosure,"pr,code_gen",human,direct_rejection,extra_file
-tiann/hapi,follow_ai_rules,Only code generated by GPT-5.4 model accepted; other AI models rejected,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-TibixDev/winboat,"explicit_declaration,human_review",Indicate if heavy AI use in PR; avoid vibe-coded large features,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-timelinize/timelinize,"explicit_declaration,human_review",Disclose LLM/AI use; prefer hand-crafted contributions,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-timo-reymann/bash-tui-toolkit,"explicit_declaration,human_review",Co-Authored-By attribution or explicit PR disclosure; human owns IP not AI,"commit_msg_statement,pr_issue_statement","pr,code_gen",ai_must_attribute,direct_rejection,standalone_section
-timo-reymann/intellij-mjml-support,"explicit_declaration,human_review",Co-Authored-By attribution or explicit PR disclosure; human owns IP,"commit_msg_statement,pr_issue_statement","pr,code_gen",ai_must_attribute,direct_rejection,standalone_section
-tokio-rs/toasty,human_review,AI welcome but PR whose author cannot discuss changes gets closed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-tootsdk/tootsdk,human_review,AI tools OK for assistance but all contributions must be human-written/reviewed/understood,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-topgrade-rs/topgrade,limited_scope,AI OK for inspiration and small snippets; no vibe-coded entire PRs or AI-generated descriptions,no_disclosure,"pr,code_gen,issue",human,unspecified,standalone_section
-tphakala/birdnet-go,human_review,Use AI responsibly; review and validate all AI output,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-tracel-ai/burn,"human_review,meet_quality","Must understand, justify, and explain every change; same as burn-rs/burn",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-trifectatechfoundation/sudo-rs,"limited_scope,human_review",Same as memorysafety/sudo-rs; tool assistance OK but vibe-coded subroutines dismissed,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-trip-zip/somewm,"explicit_declaration,human_review",Disclose tool used and extent of assistance; must understand changes,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-tubearchivist/tubearchivist,human_review,If quality indistinguishable from experienced dev then fine; otherwise likely rejected,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-tui-rs-revival/ratatui,"human_review,explicit_declaration",Same as ratatui-org/ratatui; disclose AI use; review every line; ensure license compatibility,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-tupui/soroban-versioning,follow_ai_rules,Follows LLVM AI Tool Policy; human must be in the loop,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-turbowarp/extensions,"explicit_declaration,human_review,limited_scope",No AI-generated images ever; be transparent about tools; don't submit entirely LLM-generated code,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-tuyuritio/astro-theme-thought-lite,"explicit_declaration,human_review",Must disclose AI tools in PR description; manually review and test all code,pr_issue_statement,"pr,code_gen",human,direct_rejection,embedded_paragraph
-UI5/linter,follow_ai_rules,Follows SAP guideline for AI-generated code contributions,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-UKGovernmentBEIS/inspect_evals,,No specific AI policy content found in excerpt; evaluation criteria focused,no_disclosure,,human,unspecified,standalone_section
-unchihugo/FluentFlyout,human_review,AI tools OK but must design solution yourself and review generated code; heavy AI without understanding won't be merged,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-unmojang/FjordLauncher,"human_review,explicit_declaration",AI agents MUST NOT add Signed-off-by; DCO sign-off by humans only; authentic engagement expected,dco,"pr,code_gen",human,unspecified,standalone_section
-unsecretised/rustcast,human_review,No AI slop; AI OK but human must write descriptions and ~75% of code,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-uscensusbureau/us-census-bureau-data-api-mcp,"explicit_declaration,human_review",Indicate AI use in PR; verify and understand before submitting; don't shift review burden,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-UZDoom/UZDoom,"no_declaration,limited_scope",No AI-generated art; no LLM-generated code; undisclosed AI use = organization-wide ban,no_disclosure,"pr,code_gen",human,ban,standalone_section
-valentinfrlch/ha-llmvision,,No specific AI policy content found in excerpt,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-valkey-io/valkey-admin,human_review,Understand and explain all AI-generated changes; call out unknowns/assumptions,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-vancluever/z2d,human_review,No public pull requests; do not use AI to open issues; explain in own words,no_disclosure,issue,human,unspecified,embedded_paragraph
-verl-project/verl,follow_ai_rules,References AGENTS.md for AI coding agent rules,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-veryl-lang/veryl,human_review,AI-assisted contributions permitted; do not list AI as co-author in commits,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-vicinaehq/vicinae,"human_review,explicit_declaration",Good practice to indicate what model/tool was used; lazy AI PRs rejected,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-vinteumorg/Floresta,"human_review,follow_ai_rules",AI usage policy referenced but content truncated in excerpt,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-viperml/nh,human_review,AI policy section referenced but content truncated in excerpt,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-vitest-dev/vitest,"explicit_declaration,human_review",Disclose AI tool used; fully AI-generated PRs/issues labeled and auto-closed after 3 days,pr_issue_statement,"pr,code_gen,issue",human,direct_rejection,standalone_section
-volcano-sh/kthena,"explicit_declaration,human_review",Disclose AI tools in reviewer notes; respond without AI; large AI PRs discouraged,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-volcengine/verl,follow_ai_rules,Same as verl-project/verl; references AGENTS.md,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-vortex-data/vortex,"explicit_declaration,human_review",Disclose conversational/agentic AI use in PR description,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-Voyz/ibind,human_review,Review and edit AI-generated code before submitting; no unedited code dumps,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-wakepy/wakepy,,No specific AI policy content found in excerpt; devcontainer setup referenced,no_disclosure,,human,unspecified,standalone_section
-wasted-audio/hvcc,human_review,LLM for private research and autocomplete OK; PRs must be fully understood with suitable tests,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-wavetermdev/waveterm,human_review,AI-assisted contributions welcome but must reflect clear understanding; low-effort closed,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-web-infra-dev/oxc,"explicit_declaration,human_review",Disclose AI usage; repeated low-quality = ban; bans may be lifted,pr_issue_statement,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-wild-linker/wild,human_review,Human in the loop; don't use AI for communication; disclose uncertain understanding,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-winapps-org/winapps,"explicit_declaration,human_review",Must disclose AI assistance; another person can easily tell if AI-generated needs more work,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-woodruffw/zizmor,follow_ai_rules,Must follow zizmorcore AI Policy,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-wordpress/performance,"explicit_declaration,human_review",Disclose AI tool and extent; follow WordPress AI Guidelines,pr_issue_statement,"pr,code_gen",human,unspecified,standalone_section
-worldcoin/world-id-protocol,explicit_declaration,Please disclose AI use in contributions,pr_issue_statement,"pr,code_gen",human,unspecified,embedded_paragraph
-Wouter0100/homeassistant-nanokvm,human_review,AI-assisted coding welcome but contributor responsible for understanding and validating,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-xenitab/spegel,"explicit_declaration,human_review",Inspired by Ghostty policy; disclose model and extent; no changes without human in loop,pr_issue_statement,"pr,code_gen",human,direct_rejection,extra_file
-xmtp/libxmtp,"human_review,explicit_declaration",No automated typo fixes or mass updates; repeated AI-generated PRs = restricted access,no_disclosure,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-xmtp/xmtp-android,"human_review,explicit_declaration",Same as xmtp/libxmtp; no entirely/primarily AI-generated PRs,no_disclosure,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-xmtp/xmtp-ios,"human_review,explicit_declaration",Same as xmtp/libxmtp policy,no_disclosure,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-xmtp/xmtp-js,"human_review,explicit_declaration",Same as xmtp/libxmtp policy,no_disclosure,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-xmtp/xmtp-react-native,"human_review,explicit_declaration",Same as xmtp/libxmtp policy,no_disclosure,"pr,code_gen",human,"direct_rejection,ban",standalone_section
-xpzouying/xiaohongshu-mcp,human_review,AI-generated code must be locally verified; unverified PRs closed,no_disclosure,"pr,code_gen",human,direct_rejection,embedded_paragraph
-YaLTeR/niri,human_review,Mostly LLM-generated PRs not interesting; clean up LLM output for issues/comments,no_disclosure,"pr,code_gen,issue",human,unspecified,standalone_section
-yamada-ui/yamada-ui,"explicit_declaration,human_review",Must disclose AI use in submissions; repeated violations may result in block,pr_issue_statement,"pr,code_gen,issue",human,direct_rejection,extra_file
-zama-ai/tfhe-rs,"explicit_declaration,human_review",Clearly disclose AI assistance; must explain and justify every part; no lengthy AI-generated texts,pr_issue_statement,"pr,code_gen",human,direct_rejection,standalone_section
-zauberzeug/nicegui,human_review,Review with AI assistant before committing; AI co-authorship attribution accepted,no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-zed-industries/zed,human_review,Same quality bar regardless of how code was written; include tests and screenshots,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
-zentinelproxy/zentinel,human_review,"Same standards whether AI-assisted or not; code must be correct, bounded, observable",no_disclosure,"pr,code_gen",human,unspecified,standalone_section
-zizmorcore/zizmor,follow_ai_rules,Must follow zizmorcore AI Policy,no_disclosure,"pr,code_gen",human,unspecified,extra_file
-zjs81/meshcore-open,human_review,Clearly AI-generated changes may be rejected; discuss before PR,no_disclosure,"pr,code_gen",human,direct_rejection,standalone_section
-zokugun/vscode-sync-settings,"explicit_declaration,human_review",Disclose AI use; be concise; unvetted AI-only outputs may be closed,no_disclosure,"pr,code_gen,issue",human,unspecified,standalone_section
-zxh326/kite,human_review,AI-assisted coding welcome; review AI-generated changes before submitting; keep code clean,no_disclosure,"pr,code_gen",human,unspecified,embedded_paragraph
+repo_name,conditions
+0x2E/fusion,"human_review,meet_quality"
+0xPlaygrounds/rig,"human_review,explicit_declaration,meet_quality,follow_project_style"
+0xs34n/starknet.js,"meet_quality,human_review"
+143mailliw/hummingbird,"human_review,explicit_declaration,meet_quality,limited_scope"
+143mailliw/muzak,"human_review,explicit_declaration,meet_quality,limited_scope"
+567-labs/instructor,
+abhigyanpatwari/GitNexus,
+aboutcode-org/dejacode,"human_review,explicit_declaration,meet_quality"
+abstractqqq/polars_ds_extension,"human_review,explicit_declaration"
+ace-step/ACE-Step-1.5,"human_review,supplement_prompts_tests,meet_quality"
+adil192/saber,"no_declaration,limited_scope"
+adityachandelgit/BookLore,"human_review,meet_quality,follow_project_style"
+adobe/helix-website,explicit_declaration
+Agent-Field/agentfield,"human_review,meet_quality,explicit_declaration"
+agno-agi/agno,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests"
+AI-SDC/ACRO,follow_ai_rules
+Aidoku-Community/sources,"human_review,no_declaration"
+alan-turing-institute/autoemulate,"human_review,meet_quality"
+Alaydriem/bedrock-voice-chat,"human_review,explicit_declaration,limited_scope,supplement_prompts_tests,meet_quality,follow_project_style"
+alexanderwanyoike/the0,"human_review,meet_quality"
+alfaArghya/alfa-leetcode-api,"explicit_declaration,human_review,meet_quality"
+alibaba/page-agent,"limited_scope,human_review,follow_project_style"
+alipay/fury,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules"
+alpenlabs/alpen,"explicit_declaration,human_review"
+amachino/qubex,"human_review,meet_quality"
+Amansingh0807/GenForm,explicit_declaration
+AndyMik90/Aperant,"explicit_declaration,human_review,supplement_prompts_tests"
+AndyMik90/Auto-Claude,"explicit_declaration,human_review,supplement_prompts_tests"
+ansible-collections/community.clickhouse,"explicit_declaration,human_review,follow_ai_rules"
+ansible/terraform-provider-aap,"human_review,explicit_declaration,meet_quality,follow_ai_rules"
+antiwork/gumroad,"explicit_declaration,human_review,supplement_prompts_tests"
+antoniorodr/Cronboard,"human_review,meet_quality,no_declaration"
+anza-xyz/kit,"human_review,meet_quality,no_declaration"
+anza-xyz/solana-web3.js,"human_review,meet_quality,no_declaration"
+apache/fory,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules"
+apache/fury,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules"
+apache/incubator-fury,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests,follow_ai_rules"
+apache/polaris,"human_review,explicit_declaration,follow_ai_rules"
+apollographql/apollo-mcp-server,"human_review,meet_quality"
+apple/containerization,"human_review,meet_quality,limited_scope"
+arabcoders/watchstate,"human_review,meet_quality,explicit_declaration"
+arabcoders/ytptube,"human_review,meet_quality,explicit_declaration"
+aristocratos/btop,"explicit_declaration,human_review"
+arpanghosh8453/garmin-grafana,"human_review,meet_quality"
+ashwin-nat/pits-n-giggles,human_review
+astral-sh/ruff,"human_review,explicit_declaration,follow_ai_rules"
+astral-sh/uv,"human_review,explicit_declaration,follow_ai_rules"
+autobrr/netronome,"human_review,meet_quality"
+avateam-it-systemhaus/mkdocs-kroki-plugin,"explicit_declaration,human_review"
+awslabs/aws-sdk-rust,"explicit_declaration,human_review"
+axllent/mailpit,human_review
+Azure-Samples/azure-search-openai-demo,explicit_declaration
+backstage/community-plugins,"human_review,explicit_declaration"
+bbilly1/tubearchivist,"human_review,meet_quality"
+BeechatNetworkSystemsLtd/Reticulum-rs,"limited_scope,human_review"
+bettergovph/bettergov,"explicit_declaration,human_review"
+beyond-all-reason/bar-lobby,"explicit_declaration,human_review,supplement_prompts_tests"
+beyond-all-reason/tachyon,"explicit_declaration,human_review,supplement_prompts_tests"
+biomejs/biome,human_review
+bknd-io/bknd,"human_review,explicit_declaration,meet_quality"
+block-open-source/goose,"human_review,meet_quality,limited_scope"
+block/elasticgraph,"human_review,meet_quality,follow_ai_rules"
+block/goose,"human_review,meet_quality,limited_scope"
+BlockstreamResearch/simfony,"explicit_declaration,human_review,follow_ai_rules"
+BlockstreamResearch/SimplicityHL,"explicit_declaration,human_review,follow_ai_rules"
+blueshift-gg/sbpf,"human_review,meet_quality,limited_scope"
+BlueSquare23/web-lgsm,"human_review,meet_quality,follow_project_style"
+bmad-code-org/BMAD-METHOD,"human_review,meet_quality"
+bmadcode/BMAD-METHOD,"human_review,meet_quality"
+booklore-app/BookLore,"human_review,explicit_declaration,meet_quality,supplement_prompts_tests"
+boshen/oxc,"explicit_declaration,human_review,meet_quality"
+boxyhq/jackson,"explicit_declaration,human_review,meet_quality,supplement_prompts_tests"
+bpg/terraform-provider-proxmox,"human_review,meet_quality,follow_ai_rules"
+bscript/rep,"human_review,meet_quality,limited_scope"
+burn-rs/burn,"human_review,meet_quality,supplement_prompts_tests"
+c2siorg/b0bot,"explicit_declaration,human_review,follow_ai_rules"
+cachebag/nmrs,"explicit_declaration,human_review"
+camel-ai/camel,"human_review,meet_quality"
+canonical/concierge,"human_review,meet_quality"
+CAREamics/careamics,explicit_declaration
+carlos-algms/agentic.nvim,"human_review,supplement_prompts_tests"
+cel-rust/cel-rust,"explicit_declaration,human_review,meet_quality"
+cerbos/cerbos,"human_review,meet_quality"
+charliermarsh/ruff,"human_review,explicit_declaration,follow_ai_rules"
+checkpoint-restore/checkpointctl,
+ChrisTitusTech/linutil,"human_review,meet_quality"
+cjpais/Handy,explicit_declaration
+clarkmcc/cel-rust,"explicit_declaration,human_review,meet_quality"
+ClassicOldSong/Apollo,"human_review,meet_quality"
+ClickHouse/spark-clickhouse-connector,human_review
+clidey/whodb,"human_review,meet_quality"
+cloudshipai/station,"explicit_declaration,human_review,supplement_prompts_tests"
+cmackenzie1/torii-rs,"explicit_declaration,human_review,meet_quality"
+cmintey/wishlist,"explicit_declaration,human_review"
+comet-ml/comet-llm,"explicit_declaration,human_review,supplement_prompts_tests"
+comet-ml/opik,"supplement_prompts_tests,human_review"
+commetchat/commet,"human_review,meet_quality"
+compio-rs/compio,human_review
+connorgallopo/Tracearr,"explicit_declaration,human_review,supplement_prompts_tests"
+containerbuildsystem/cachi2,follow_ai_rules
+containers/container-libs,follow_ai_rules
+containers/ramalama,"human_review,explicit_declaration"
+controlplaneio-fluxcd/flux-operator,"explicit_declaration,human_review,follow_ai_rules"
+coollabsio/coolify,human_review
+cosmic-utils/clipboard-manager,"human_review,meet_quality"
+cpacker/MemGPT,"explicit_declaration,human_review"
+crewAIInc/crewAI,explicit_declaration
+crmne/ruby_llm,
+CrociDB/bulletty,"explicit_declaration,human_review"
+crowddotdev/crowd.dev,"human_review,follow_ai_rules"
+cryspen/hax,"explicit_declaration,human_review"
+cue-lang/cue,human_review
+d-eniz/jupymd,"human_review,meet_quality"
+dahlia/fedify,"explicit_declaration,human_review,follow_ai_rules"
+dalance/veryl,human_review
+damontecres/Wholphin,"explicit_declaration,human_review"
+damus-io/damus,human_review
+Dark-Alex-17/managarr,"explicit_declaration,human_review"
+databuddy-analytics/Databuddy,"explicit_declaration,human_review,supplement_prompts_tests"
+davidcole1340/ext-php-rs,"human_review,limited_scope"
+davidlattimore/wild,"explicit_declaration,human_review"
+DayuanJiang/next-ai-draw-io,human_review
+dbt-labs/dbt-mcp,"human_review,supplement_prompts_tests"
+deadlock-mod-manager/deadlock-mod-manager,"explicit_declaration,human_review"
+deborahgu/soundcork,"explicit_declaration,human_review"
+delta-incubator/delta-kernel-rs,"explicit_declaration,human_review"
+delta-io/delta-kernel-rs,"explicit_declaration,human_review"
+developmentseed/eoapi-k8s,"explicit_declaration,human_review,meet_quality"
+diggerhq/digger,"explicit_declaration,human_review"
+Dispatcharr/Dispatcharr,"human_review,meet_quality"
+dloebl/cgif,"explicit_declaration,human_review"
+dlvhdr/diffnav,"human_review,follow_ai_rules"
+dlvhdr/gh-dash,"human_review,follow_ai_rules"
+dmf-mxl/mxl,human_review
+documenso/documenso,human_review
+dongdongbh/Mindwtr,"human_review,meet_quality,limited_scope"
+dotimplement/HealthChain,human_review
+dstackai/dstack,"explicit_declaration,human_review"
+duriantaco/skylos,"explicit_declaration,human_review"
+dvankley/firefly-plaid-connector-2,human_review
+earendil-works/absurd,"explicit_declaration,human_review"
+EFForg/rayhunter,"explicit_declaration,human_review"
+eigent-ai/eigent,"human_review,explicit_declaration,supplement_prompts_tests"
+electrikmilk/cherri,human_review
+elgatosf/streamdeck,"human_review,meet_quality"
+embrace-io/embrace-android-sdk,"explicit_declaration,human_review"
+emilyploszaj/emi,"human_review,meet_quality"
+emlearn/emlearn-micropython,"human_review,meet_quality"
+enuno/unifi-mcp-server,"explicit_declaration,human_review,supplement_prompts_tests"
+envoyproxy/ai-gateway,"explicit_declaration,human_review"
+ephemeraHQ/converse-app,"human_review,explicit_declaration"
+ethersync/ethersync,"explicit_declaration,human_review"
+eventual-inc/daft,"explicit_declaration,human_review,supplement_prompts_tests"
+extphprs/ext-php-rs,"human_review,limited_scope"
+ExtremeFLOW/neko,human_review
+eyaltoledano/claude-task-master,"human_review,supplement_prompts_tests"
+ezyang/codemcp,human_review
+facebook/pyrefly,"explicit_declaration,human_review"
+fallenbagel/jellyseerr,"human_review,meet_quality"
+farion1231/cc-switch,"human_review,explicit_declaration,meet_quality,limited_scope"
+fastplotlib/fastplotlib,"explicit_declaration,human_review"
+fedify-dev/fedify,"explicit_declaration,human_review,follow_ai_rules"
+finops-open-cost-and-usage-spec/focus_spec,"human_review,follow_ai_rules"
+flipcomputing/flock,"supplement_prompts_tests,human_review,explicit_declaration"
+floatpane/matcha,"human_review,meet_quality"
+floppy/van_dam,"explicit_declaration,human_review"
+fohrloop/wakepy,
+foss42/api-dash,"human_review,meet_quality"
+foss42/apidash,"human_review,meet_quality"
+fossbilling/fossbilling,"human_review,meet_quality"
+foundry-rs/foundry,"explicit_declaration,human_review"
+freenet/freenet-core,"human_review,meet_quality,supplement_prompts_tests"
+freenet/locutus,"human_review,meet_quality,supplement_prompts_tests"
+freenet/river,"human_review,meet_quality,supplement_prompts_tests"
+gabrieldrn/carbon-compose,human_review
+getarcaneapp/arcane,"explicit_declaration,follow_ai_rules"
+getfloresta/Floresta,
+gethomepage/homepage,explicit_declaration
+getkyo/kyo,human_review
+getmaxun/maxun,"human_review,meet_quality"
+ggerganov/llama.cpp,"explicit_declaration,human_review,follow_ai_rules"
+ggml-org/llama.cpp,"explicit_declaration,human_review,follow_ai_rules"
+ghostty-org/ghostty,"explicit_declaration,human_review,follow_ai_rules"
+github/spec-kit,
+gittuf/gittuf,"human_review,meet_quality"
+gnolang/gno,"explicit_declaration,human_review"
+go-skynet/LocalAI,
+GoBetterAuth/go-better-auth,human_review
+gobley/gobley,"human_review,limited_scope"
+goharbor/harbor-cli,human_review
+google-deepmind/alphafold3,"explicit_declaration,human_review"
+google/adk-java,human_review
+google/adk-js,human_review
+google/heir,"human_review,follow_ai_rules"
+greenpau/caddy-security,human_review
+greptimeteam/greptimedb,human_review
+gungraun/gungraun,"explicit_declaration,human_review"
+h3ravel/framework,"explicit_declaration,human_review,meet_quality"
+hacspec/hax,"explicit_declaration,human_review"
+hamza417/inure,"human_review,limited_scope"
+happier-dev/happier,"explicit_declaration,human_review"
+harrison314/BouncyHsm,
+HelpChat/DeluxeMenus,human_review
+hermetoproject/cachi2,follow_ai_rules
+hermetoproject/hermeto,follow_ai_rules
+HexmosTech/FreeDevTools,
+hhat-lang/hhat_lang,"human_review,meet_quality"
+HiEventsDev/hi.events,"explicit_declaration,human_review"
+hirotomoyamada/yamada-ui,"explicit_declaration,human_review,follow_ai_rules"
+huacnlee/gpui-component,"human_review,meet_quality,follow_project_style"
+huggingface/lerobot,follow_ai_rules
+huggingface/safetensors,"explicit_declaration,human_review"
+hummingbird-player/hummingbird,"human_review,explicit_declaration,meet_quality"
+hummingbird-project/hummingbird,"explicit_declaration,human_review,meet_quality"
+hummingbird-project/hummingbird-websocket,"explicit_declaration,human_review,meet_quality"
+hydraide/hydraide,
+hynek/stamina,"human_review,follow_ai_rules"
+hynek/svcs,"human_review,follow_ai_rules"
+hyzyla/pdfium,"human_review,supplement_prompts_tests"
+iai-callgrind/iai-callgrind,"explicit_declaration,human_review"
+iam-py-test/my_filters_001,
+idiap/sdialog,human_review
+ieedan/jsrepo,"explicit_declaration,human_review"
+inclusionAI/AReaL,human_review
+Inferara/inference,"explicit_declaration,human_review"
+instructor-ai/instructor,
+IntegerAlex/hasty-server,limited_scope
+intel/compile-time-init-build,no_declaration
+intel/cpp-baremetal-senders-and-receivers,no_declaration
+intel/safe-arithmetic,no_declaration
+InterceptSuite/ProxyBridge,"human_review,meet_quality"
+isbeorn/nina,human_review
+jakestanger/ironbar,human_review
+jaysmito101/cgl,limited_scope
+jerryjliu/llama_index,
+jlowin/fastmcp,"human_review,follow_ai_rules"
+joaomdmoura/crewAI,explicit_declaration
+jokob-sk/NetAlertX,"human_review,meet_quality"
+jorenn92/maintainerr,human_review
+jovian-experiments/jovian-nixos,
+jozu-ai/kitops,"human_review,supplement_prompts_tests"
+jsrepojs/jsrepo,"explicit_declaration,human_review"
+jxnl/instructor,
+jxnl/openai_function_call,
+kaito-project/kubeairunway,
+kcenon/claude_code_agent,no_declaration
+KempnerInstitute/kempner-computing-handbook,human_review
+kesslerio/attio-mcp-server,"explicit_declaration,human_review,supplement_prompts_tests"
+kgateway-dev/community,follow_ai_rules
+Kieirra/murmure,"human_review,meet_quality"
+kite-org/kite,human_review
+kitops-ml/kitops,"human_review,supplement_prompts_tests"
+kmesh-net/kmesh,"explicit_declaration,human_review"
+konflux-ci/build-definitions,"explicit_declaration,human_review"
+kornia/kornia-rs,"explicit_declaration,human_review,supplement_prompts_tests"
+Kotlin/kotlinx-rpc,"explicit_declaration,human_review,supplement_prompts_tests"
+kubernetes-sigs/agent-sandbox,human_review
+kubeshop/testkube,"human_review,follow_ai_rules"
+kubestellar/docs,"human_review,meet_quality"
+kubestellar/ui,"human_review,meet_quality"
+kubetail-org/kubetail,"human_review,follow_ai_rules"
+kyu08/fzf-make,human_review
+LadybirdBrowser/ladybird,"human_review,meet_quality"
+LadybirdWebBrowser/ladybird,"human_review,meet_quality"
+LeeMangold/OpenGRC,human_review
+letta-ai/letta,"explicit_declaration,human_review,follow_ai_rules"
+Letterbook/Letterbook,"human_review,meet_quality"
+lightningdevkit/ldk-server,"explicit_declaration,human_review"
+lightspeed-core/lightspeed-stack,"explicit_declaration,human_review"
+lingarr-translate/lingarr,"human_review,meet_quality"
+linkml/linkml,follow_ai_rules
+linuxfoundation/crowd.dev,"human_review,follow_ai_rules"
+llama-farm/llamafarm,human_review
+longbridge/gpui-component,"human_review,meet_quality,follow_project_style"
+longbridgeapp/gpui-component,"human_review,meet_quality,follow_project_style"
+Lramseyer/vaporview,human_review
+lrstanley/bubblezone,human_review
+lrstanley/go-ytdlp,human_review
+m3sserstudi0s/swiparr,human_review
+Maintainerr/Maintainerr,human_review
+manyfold3d/manyfold,"explicit_declaration,human_review"
+markbeep/AudioBookRequest,human_review
+matter-labs/foundry-zksync,"explicit_declaration,human_review"
+mayocream/koharu,human_review
+mcmonkeyprojects/SwarmUI,human_review
+meilisearch/firestore-meilisearch,"explicit_declaration,human_review"
+meilisearch/meilisearch-rails,"explicit_declaration,human_review"
+meilisearch/mini-dashboard,"explicit_declaration,human_review"
+meilisearch/strapi-plugin-meilisearch,"explicit_declaration,human_review"
+meltano/meltano,follow_ai_rules
+memorysafety/ntpd-rs,"limited_scope,human_review"
+memorysafety/sudo-rs,"limited_scope,human_review"
+microsoft/simplechat,follow_ai_rules
+MillenniumDawn/Millennium-Dawn,"human_review,limited_scope"
+mitsuhiko/minijinja,"explicit_declaration,human_review"
+modelcontextprotocol/modelcontextprotocol,"explicit_declaration,human_review"
+modelcontextprotocol/specification,"explicit_declaration,human_review"
+modular/max,follow_ai_rules
+modularml/mojo,follow_ai_rules
+moff-station/moff-station-14,"no_declaration,limited_scope"
+motion-canvas/motion-canvas,human_review
+MrJoiny/Idleon-Injector,"human_review,meet_quality"
+mrkai77/loop,"explicit_declaration,human_review,follow_ai_rules"
+Mrmayman/quantumlauncher,human_review
+mudler/LocalAI,
+mustbeperfect/definitive-opensource,human_review
+MystenLabs/walrus,"human_review,supplement_prompts_tests"
+n00bcodr/Jellyfin-Enhanced,human_review
+Nagi-ovo/gemini-voyager,"human_review,supplement_prompts_tests"
+NeptuneHub/AudioMuse-AI,
+netalertx/NetAlertX,"human_review,meet_quality"
+new-frontiers-14/frontier-station-14,"human_review,limited_scope"
+nhost/nhost,"human_review,explicit_declaration"
+nightscout/Trio,"human_review,limited_scope"
+Nimble-Co/FoundryVTT-Nimble,human_review
+niri-wm/niri,human_review
+nix-community/nh,human_review
+noble-lab/casanovo,human_review
+nook-browser/Nook,"explicit_declaration,human_review"
+obi1kenobi/cargo-semver-check,"human_review,meet_quality"
+obi1kenobi/cargo-semver-checks,"human_review,meet_quality"
+ofkm/arcane,follow_ai_rules
+olimorris/codecompanion.nvim,"human_review,supplement_prompts_tests"
+onthegomap/flatmap,"explicit_declaration,human_review"
+onthegomap/planetiler,"explicit_declaration,human_review"
+Open-Superintelligence-Lab/blueberry-llm,human_review
+open-telemetry/opentelemetry-ebpf-instrumentation,human_review
+open-telemetry/opentelemetry-go-compile-instrumentation,"human_review,follow_ai_rules"
+openbao/openbao,no_declaration
+openbao/openbao-helm,no_declaration
+openclaw/openclaw,"explicit_declaration,human_review,supplement_prompts_tests"
+OpenDevicePartnership/patina,"human_review,meet_quality"
+OpenDevicePartnership/patina-qemu,"human_review,meet_quality"
+openvinotoolkit/openvino.genai,follow_ai_rules
+OpenZeppelin/stellar-contracts,"human_review,meet_quality"
+ory/elements,"explicit_declaration,human_review"
+ory/kratos-selfservice-ui-react-nextjs,"explicit_declaration,human_review"
+ory/polis,"explicit_declaration,human_review"
+oss-apps/split-pro,"explicit_declaration,human_review"
+OWASP/OpenCRE,human_review
+oxc-project/oxc,"explicit_declaration,human_review"
+ozontech/seq-db,"explicit_declaration,human_review"
+p2plabsxyz/peersky-browser,human_review
+Papela/Nitrox-Cracked-Mod,human_review
+paperless-ngx/paperless-ngx,"explicit_declaration,human_review"
+patrickchugh/terravision,"explicit_declaration,human_review"
+payjoin/rust-payjoin,"explicit_declaration,human_review"
+pelican-dev/plugins,"explicit_declaration,human_review"
+pendulum-project/ntpd-rs,"limited_scope,human_review"
+pgexporter/pgexporter,follow_ai_rules
+pgmoneta/pgmoneta,follow_ai_rules
+phalt/clientele,human_review
+pierrecomputer/pierre,"explicit_declaration,human_review"
+pixeltable/pixeltable,human_review
+pkgforge/soar,human_review
+platformatic/kafka,human_review
+platformatic/massimo,human_review
+platformatic/platformatic,human_review
+polaris-catalog/polaris,"explicit_declaration,human_review,follow_ai_rules"
+polarsource/polar,"human_review,supplement_prompts_tests"
+pollen-robotics/reachy_mini_conversation_app,"human_review,explicit_declaration,meet_quality"
+pragma-org/amaru,human_review
+PrefectHQ/fastmcp,"human_review,follow_ai_rules"
+presenton/presenton,"explicit_declaration,human_review"
+Priivacy-ai/spec-kitty,
+prismlauncher/prismlauncher,"human_review,dco"
+project-fika/Fika-Plugin,limited_scope
+Project-HAMi/HAMi,"explicit_declaration,human_review"
+project-tirtha/tirtha-public,"explicit_declaration,human_review"
+PumasAI/QuartoNotebookRunner.jl,"human_review,meet_quality"
+pygame-community/pygame-ce,"explicit_declaration,human_review"
+pygfx/rendercanvas,"explicit_declaration,human_review"
+python-wheel-build/fromager,follow_ai_rules
+Qiskit/qiskit-code-assistant-jupyterlab,follow_ai_rules
+quarkiverse/quarkus-flow,human_review
+Quozul/PicoLimbo,"explicit_declaration,human_review"
+qvr/nonraid,human_review
+RackulaLives/Rackula,"explicit_declaration,human_review"
+ratatui-org/ratatui,"human_review,explicit_declaration"
+ratatui/ratatui,"human_review,explicit_declaration"
+redwoodjs/sdk,"human_review,supplement_prompts_tests"
+reflex-dev/reflex,"human_review,supplement_prompts_tests"
+Regyl/yagfi-back,human_review
+repplus/rep,human_review
+repplus/rep-chrome,human_review
+reubeno/brush,"explicit_declaration,human_review"
+rommapp/romm,"explicit_declaration,human_review"
+rpm-rs/rpm,"explicit_declaration,human_review,follow_ai_rules"
+rpm-software-management/dnf5,"explicit_declaration,human_review,follow_ai_rules"
+run-llama/llama_index,
+rustcoreutils/posixutils-rs,human_review
+S4tvara/Sietch,"explicit_declaration,human_review"
+saber-notes/saber,no_declaration
+SakanaAI/ShinkaEvolve,human_review
+samtupy/nvgt,"human_review,limited_scope"
+samui-build/samui-wallet,human_review
+sanders41/meilisearch-python-sdk,"no_declaration,human_review"
+sanity-io/locales,
+santanu-atta03/Intervyo,human_review
+SAP-samples/ui5-typescript-walkthrough,follow_ai_rules
+sap/abap-cleaner,follow_ai_rules
+SAP/ai-sdk-java,follow_ai_rules
+SAP/ai-sdk-js,follow_ai_rules
+SAP/app-studio-toolkit,follow_ai_rules
+SAP/architecture-center,follow_ai_rules
+sap/btp-environment-variable-access,follow_ai_rules
+SAP/btp-solution-diagrams,follow_ai_rules
+SAP/cloud-active-defense,follow_ai_rules
+SAP/cloud-sdk-java,follow_ai_rules
+SAP/crossplane-provider-btp,follow_ai_rules
+SAP/e-mobility-charging-stations-simulator,follow_ai_rules
+SAP/gigya-react-native-plugin-for-sap-customer-data-cloud,follow_ai_rules
+sap/neonbee,follow_ai_rules
+sap/open-ux-odata,follow_ai_rules
+sap/open-ux-tools,follow_ai_rules
+sap/terraform-provider-btp,follow_ai_rules
+sarensw/MacPacker,limited_scope
+schell/renderling,"explicit_declaration,human_review"
+SchoolyB/EZ,human_review
+Scottcjn/Rustchain,human_review
+scribe-org/scribe-android,human_review
+scribe-org/Scribe-Data,human_review
+scribe-org/Scribe-Desktop,human_review
+scribe-org/scribe-ios,human_review
+seanjameshan/starknet.js,"human_review,meet_quality"
+seanmorley15/AdventureLog,"human_review,meet_quality"
+seerr-team/seerr,"human_review,explicit_declaration"
+serial-ata/lofty-rs,human_review
+serverpod/serverpod,human_review
+ShadowBlip/InputPlumber,"explicit_declaration,human_review"
+Sharkord/sharkord,"explicit_declaration,human_review"
+SharonIV0x86/CinderPeak,"human_review,meet_quality"
+shcherbak-ai/contextgem,"human_review,follow_ai_rules"
+SillyTavern/SillyTavern,human_review
+simdutf/simdutf,follow_ai_rules
+skodaconnect/homeassistant-myskoda,human_review
+skodaconnect/myskoda,human_review
+slatedb/slatedb,"explicit_declaration,human_review"
+slimevr/slimevr-server,"no_declaration,limited_scope"
+smlab-niser/tirtha-public,"explicit_declaration,human_review"
+SnapXL/SnapX,"human_review,limited_scope"
+sonofmagic/tailwindcss-mangle,human_review
+sozercan/kaset,"explicit_declaration,human_review"
+spdx/ntia-conformance-checker,human_review
+spegel-org/spegel,"human_review,explicit_declaration"
+spiraldb/vortex,"explicit_declaration,human_review"
+stack-auth/stack,human_review
+stack-auth/stack-auth,human_review
+stacklok/toolhive,human_review
+StacklokLabs/toolhive,human_review
+stan-smith/FossFLOW,human_review
+stanfrbd/cyberbro,"human_review,meet_quality"
+starknet-io/starknet.js,"human_review,meet_quality"
+steipete/clawdis,"explicit_declaration,human_review"
+Story-Of-Alicia/alicia-server,human_review
+streamyfin/streamyfin,explicit_declaration
+StrikerX3/Ymir,"explicit_declaration,human_review"
+SubstantialCattle5/Sietch,"explicit_declaration,human_review"
+suitenumerique/docs,
+supabase-community/supabase-kt,human_review
+sustainable-computing-io/kepler,follow_ai_rules
+sylabs/singularity,"explicit_declaration,human_review"
+synthetic-lab/octofriend,human_review
+tamboui/tamboui,human_review
+tauri-apps/plugins-workspace,follow_ai_rules
+teamtype/teamtype,"explicit_declaration,human_review"
+telemt/telemt,human_review
+tempoxyz/tempo-foundry,"explicit_declaration,human_review"
+tenstorrent-metal/tt-metal,human_review
+tenstorrent/tt-metal,human_review
+teorth/equational_theories,human_review
+teorth/erdosproblems,
+the-ora/browser,"explicit_declaration,human_review"
+TheDanniCraft/activity-log,"explicit_declaration,human_review"
+TheNickOfTime/handbrake-web,limited_scope
+theresnotime/as-a-treat,no_declaration
+tiann/hapi,follow_ai_rules
+TibixDev/winboat,"explicit_declaration,human_review"
+timelinize/timelinize,"explicit_declaration,human_review"
+timo-reymann/bash-tui-toolkit,"explicit_declaration,human_review"
+timo-reymann/intellij-mjml-support,"explicit_declaration,human_review"
+tokio-rs/toasty,human_review
+tootsdk/tootsdk,human_review
+topgrade-rs/topgrade,limited_scope
+tphakala/birdnet-go,human_review
+tracel-ai/burn,"human_review,meet_quality"
+trifectatechfoundation/sudo-rs,"limited_scope,human_review"
+trip-zip/somewm,"explicit_declaration,human_review"
+tubearchivist/tubearchivist,human_review
+tui-rs-revival/ratatui,"human_review,explicit_declaration"
+tupui/soroban-versioning,follow_ai_rules
+turbowarp/extensions,"explicit_declaration,human_review,limited_scope"
+tuyuritio/astro-theme-thought-lite,"explicit_declaration,human_review"
+UI5/linter,follow_ai_rules
+UKGovernmentBEIS/inspect_evals,
+unchihugo/FluentFlyout,human_review
+unmojang/FjordLauncher,"human_review,explicit_declaration"
+unsecretised/rustcast,human_review
+uscensusbureau/us-census-bureau-data-api-mcp,"explicit_declaration,human_review"
+UZDoom/UZDoom,"no_declaration,limited_scope"
+valentinfrlch/ha-llmvision,
+valkey-io/valkey-admin,human_review
+vancluever/z2d,human_review
+verl-project/verl,follow_ai_rules
+veryl-lang/veryl,human_review
+vicinaehq/vicinae,"human_review,explicit_declaration"
+vinteumorg/Floresta,"human_review,follow_ai_rules"
+viperml/nh,human_review
+vitest-dev/vitest,"explicit_declaration,human_review"
+volcano-sh/kthena,"explicit_declaration,human_review"
+volcengine/verl,follow_ai_rules
+vortex-data/vortex,"explicit_declaration,human_review"
+Voyz/ibind,human_review
+wakepy/wakepy,
+wasted-audio/hvcc,human_review
+wavetermdev/waveterm,human_review
+web-infra-dev/oxc,"explicit_declaration,human_review"
+wild-linker/wild,human_review
+winapps-org/winapps,"explicit_declaration,human_review"
+woodruffw/zizmor,follow_ai_rules
+wordpress/performance,"explicit_declaration,human_review"
+worldcoin/world-id-protocol,explicit_declaration
+Wouter0100/homeassistant-nanokvm,human_review
+xenitab/spegel,"explicit_declaration,human_review"
+xmtp/libxmtp,"human_review,explicit_declaration"
+xmtp/xmtp-android,"human_review,explicit_declaration"
+xmtp/xmtp-ios,"human_review,explicit_declaration"
+xmtp/xmtp-js,"human_review,explicit_declaration"
+xmtp/xmtp-react-native,"human_review,explicit_declaration"
+xpzouying/xiaohongshu-mcp,human_review
+YaLTeR/niri,human_review
+yamada-ui/yamada-ui,"explicit_declaration,human_review"
+zama-ai/tfhe-rs,"explicit_declaration,human_review"
+zauberzeug/nicegui,human_review
+zed-industries/zed,human_review
+zentinelproxy/zentinel,human_review
+zizmorcore/zizmor,follow_ai_rules
+zjs81/meshcore-open,human_review
+zokugun/vscode-sync-settings,"explicit_declaration,human_review"
+zxh326/kite,human_review
