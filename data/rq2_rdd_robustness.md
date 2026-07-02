@@ -57,21 +57,21 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
-| Permissive | 0.067*** | -0.092 | -0.078** | 0.272 | 0.819 |
+| Permissive | 0.067* | -0.092 | -0.078* | 0.272 | 0.819 |
 | Prohibited | 0.085· | 0.198 | -0.092· | 0.455 | 0.909 |
 
 ### Closed PRs (log_prs_closed_in_bin)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
-| Permissive | 0.094*** | -0.204* | -0.100*** | 0.275 | 0.807 |
+| Permissive | 0.094** | -0.204 | -0.100*** | 0.275 | 0.807 |
 | Prohibited | 0.076· | 0.187 | -0.087· | 0.417 | 0.889 |
 
 ### Review Comments (log_review_comments_mean)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
-| Permissive | 0.002 | 0.077· | -0.014· | 0.050 | 0.743 |
+| Permissive | 0.002 | 0.077* | -0.014· | 0.050 | 0.743 |
 | Prohibited | -0.012 | 0.193 | -0.068 | 0.321 | 0.804 |
 
 ### Close Latency (log_close_latency_h)
@@ -79,7 +79,7 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
 | Permissive | -0.003 | -0.080 | 0.034 | 0.145 | 0.665 |
-| Prohibited | 0.142· | -0.038 | -0.187* | 0.143 | 0.818 |
+| Prohibited | 0.269*** | -0.038 | -0.187* | 0.143 | 0.818 |
 
 ---
 
@@ -89,7 +89,7 @@ The 4-month window results are consistent with the 6-month results in direction 
 
 | DV | Group | 6-month time_after | 4-month time_after | Direction |
 |----|-------|--------------------|--------------------|-----------|
-| Opened PRs | Permissive | -0.037* | -0.078** | ↓ ✓ |
+| Opened PRs | Permissive | -0.037* | -0.078* | ↓ ✓ |
 | Opened PRs | Prohibited | -0.145· | -0.092· | ↓ ✓ |
 | Closed PRs | Permissive | -0.139*** | -0.100*** | ↓ ✓ |
 | Closed PRs | Prohibited | -0.156* | -0.087· | ↓ ✓ |
