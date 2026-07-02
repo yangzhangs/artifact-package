@@ -35,7 +35,7 @@ DVs_left = [
     (df_main, 'log_prs_closed', 'log(Closed PRs + 1)'),
 ]
 DVs_right = [
-    (df_main, 'log_review_comments_mean', 'log(Review Comments + 1)'),
+    (df_main, 'log_review_comments', 'log(Review Comments + 1)'),
     (df_main, 'log_close_latency_h', 'log(Close Latency + 1)'),
 ]
 

@@ -33,7 +33,7 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 | Permissive | 0.051** | 0.023 | -0.139*** | 0.204 | 0.678 |
 | Prohibited | 0.098· | 0.207 | -0.156* | 0.540 | 0.730 |
 
-### Review Comments (log_review_comments_mean)
+### Review Comments (log_review_comments)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
@@ -67,7 +67,7 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 | Permissive | 0.094** | -0.204 | -0.100*** | 0.275 | 0.807 |
 | Prohibited | 0.076· | 0.187 | -0.087· | 0.417 | 0.889 |
 
-### Review Comments (log_review_comments_mean)
+### Review Comments (log_review_comments)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|

@@ -77,7 +77,7 @@ Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited).
 - `repo_name`, `bin` (−6 to +6, excluding 0)
 - `new_prs` — opened PRs per bin (by creation time)
 - `prs_closed` — closed PRs per bin (by close time)
-- `review_comments_mean`, `close_latency_h` — review engagement and processing efficiency
+- `review_comments`, `close_latency_h` — review engagement and processing efficiency
 - `prohibited` (0=permissive, 1=prohibited), `language`, `stars`, `contributors`, `commits`, `repo_age_days` — controls
 - `time`, `intervention`, `time_after` — RDD model variables
 - `log_*` — log-transformed versions of each variable
