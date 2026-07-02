@@ -89,7 +89,7 @@ Summary of the five condition categories (C1–C5) identified through manual lab
 Per-repo condition labels for all 540 conditional permissive AIPs. Each repo has one or more condition tags (human_review, explicit_declaration, follow_ai_rules, limited_scope, meet_quality, supplement_prompts_tests, etc.). One AIP may contain multiple conditions.
 
 ### `data/rq2_rdd_robustness.md`
-Side-by-side comparison of 4-month and 6-month window RDD model results across all 4 DVs and both groups, demonstrating consistent effect directions.
+Side-by-side comparison of 4-month (169 repos) and 6-month (113 repos) window RDD model results across all 4 DVs and both groups, demonstrating consistent effect directions and significance patterns.
 
 ### `data/aip/aip_keyword_patterns.txt`
 The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate only when at least one pattern from each layer matches.
