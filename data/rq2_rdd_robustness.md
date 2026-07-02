@@ -26,7 +26,7 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 | Permissive | 0.030* | -0.047 | -0.037* | 0.245 | 0.790 |
 | Prohibited | 0.122· | 0.172 | -0.145· | 0.483 | 0.654 |
 
-### Closed PRs (log_prs_closed_in_bin)
+### Closed PRs (log_prs_closed)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
@@ -60,7 +60,7 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 | Permissive | 0.067* | -0.092 | -0.078* | 0.272 | 0.819 |
 | Prohibited | 0.085· | 0.198 | -0.092· | 0.455 | 0.909 |
 
-### Closed PRs (log_prs_closed_in_bin)
+### Closed PRs (log_prs_closed)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|

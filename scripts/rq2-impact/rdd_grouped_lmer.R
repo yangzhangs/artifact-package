@@ -6,7 +6,7 @@ controls <- "log_stars + log_contributors + log_commits + log_repo_age_days"
 
 DVs <- list(
   "Opened PRs"      = "log_new_prs",
-  "Closed PRs"      = "log_prs_closed_in_bin",
+  "Closed PRs"      = "log_prs_closed",
   "Review Comments" = "log_review_comments_mean",
   "Close Latency"   = "log_close_latency_h"
 )

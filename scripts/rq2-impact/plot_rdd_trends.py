@@ -32,7 +32,7 @@ prob_color = '#B2182B'
 
 DVs_left = [
     (df_main, 'log_new_prs', 'log(Opened PRs + 1)'),
-    (df_main, 'log_prs_closed_in_bin', 'log(Closed PRs + 1)'),
+    (df_main, 'log_prs_closed', 'log(Closed PRs + 1)'),
 ]
 DVs_right = [
     (df_main, 'log_review_comments_mean', 'log(Review Comments + 1)'),
