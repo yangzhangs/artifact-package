@@ -19,11 +19,10 @@ artifact-package/
 │   │   ├── aip_first_date_final.csv       # AIP adoption dates per repo
 │   │   └── repo_created_dates.csv         # Repo creation dates
 │   ├── rq1_conditions.md                # RQ1 conditions summary (C1–C5)
-│   ├── rq1_aip_labels.csv                # RQ1 per-repo AIP labels (615 repos)
+│   ├── rq1_aip_labels.csv                # RQ1 per-repo condition labels (540 conditional repos)
 │   ├── rq2_rdd_robustness.md             # RQ2 RDD 4-month vs 6-month robustness results
 │   ├── panel/
-│   │   ├── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins, 6-month)
-│   │   └── rdd_panel_113_4month.csv       # 4-month window panel (113 repos × 8 bins)
+│   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins, 6-month)
 │   └── aip/
 │       ├── aip_keyword_patterns.txt       # Two-layer keyword patterns (40 + 48)
 │       ├── ai_pr_detection_per_repo.csv   # AI-PR detection per-repo stats (113 repos, 32 with AI-PRs)
@@ -83,14 +82,11 @@ Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited).
 - `time`, `intervention`, `time_after` — RDD model variables
 - `log_*` — log-transformed versions of each variable
 
-### `data/panel/rdd_panel_113_4month.csv`
-4-month window panel data for the same 113 repositories, using 4 bins before and 4 bins after AIP adoption (excluding bin 0). Same column structure as the 6-month panel. Used for robustness analysis.
-
 ### `data/rq1_conditions.md`
 Summary of the five condition categories (C1–C5) identified through manual labeling of 540 conditional permissive AIPs, matching Table in the paper.
 
 ### `data/rq1_aip_labels.csv`
-Per-repo AIP labels for all 615 confirmed repos, including stance (permissive/prohibited), conditions (human_review, explicit_declaration, follow_ai_rules, limited_scope, meet_quality, supplement_prompts_tests, etc.), disclosure type, scope, authorship, consequence, and format. One AIP may contain multiple conditions.
+Per-repo condition labels for all 540 conditional permissive AIPs, including conditions (human_review, explicit_declaration, follow_ai_rules, limited_scope, meet_quality, supplement_prompts_tests, etc.), disclosure type, scope, authorship, consequence, and format. One AIP may contain multiple conditions.
 
 ### `data/rq2_rdd_robustness.md`
 Side-by-side comparison of 4-month and 6-month window RDD model results across all 4 DVs and both groups, demonstrating consistent effect directions.
