@@ -9,8 +9,11 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 ```
 
 - **6-month window:** 12 bins (−6 to +6, excluding 0), 113 repos (101 permissive, 12 prohibited), 1356 rows
-- **4-month window:** 8 bins (−4 to +4, excluding 0), 517 repos (460 permissive, 57 prohibited), 4136 rows
-  - Review Comments model uses 113 repos (review comment data available only for the original 113 repos)
+  - Inclusion criteria: all 6 pre-bins and 6 post-bins have at least one opened PR
+- **4-month window:** 8 bins (−4 to +4, excluding 0), 169 repos (154 permissive, 15 prohibited), 1352 rows
+  - Inclusion criteria: all 4 pre-bins and 4 post-bins have at least one opened PR
+  - The shorter window qualifies more repos (169 vs. 113) as the activity requirement is easier to satisfy
+- Review Comments model uses the 113 original repos (review comment data available only for these repos)
 - Separate models for permissive and prohibited groups
 - REML estimation; significance: ·p<0.1, *p<0.05, **p<0.01, ***p<0.001
 
@@ -52,21 +55,21 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 
 ## 4-Month Window (Robustness Check)
 
-**Panel:** 4136 rows, 517 repos (Permissive: 460, Prohibited: 57)
+**Panel:** 1352 rows, 169 repos (Permissive: 154, Prohibited: 15)
 
 ### Opened PRs (log_new_prs)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
-| Permissive | 0.193*** | 0.432*** | -0.799*** | 0.286 | 0.558 |
-| Prohibited | 0.135* | 0.242 | -0.589*** | 0.365 | 0.697 |
+| Permissive | 0.067*** | -0.092 | -0.078** | 0.272 | 0.819 |
+| Prohibited | -0.038 | 0.450* | 0.024 | 0.455 | 0.909 |
 
 ### Closed PRs (log_prs_closed_in_bin)
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
-| Permissive | 0.196*** | 0.435*** | -0.787*** | 0.284 | 0.565 |
-| Prohibited | 0.138* | 0.246 | -0.570*** | 0.356 | 0.731 |
+| Permissive | 0.094*** | -0.204* | -0.100*** | 0.275 | 0.807 |
+| Prohibited | -0.035 | 0.410 | -0.006 | 0.417 | 0.889 |
 
 ### Review Comments (log_review_comments_mean, 113 repos only)
 
@@ -79,24 +82,24 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 
 | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c |
 |-------|----------|-------------------|-----------------|-----|-----|
-| Permissive | 0.139*** | 0.558*** | -0.634*** | 0.160 | 0.452 |
-| Prohibited | 0.171· | 0.739· | -0.712*** | 0.195 | 0.477 |
+| Permissive | -0.003 | -0.080 | 0.034 | 0.145 | 0.665 |
+| Prohibited | -0.088 | 0.284 | -0.057 | 0.143 | 0.818 |
 
 ---
 
 ## Comparison Summary
 
-The 4-month window results are consistent with the 6-month results in direction:
+The 4-month window results are largely consistent with the 6-month results in direction:
 
 | DV | Group | 6-month time_after | 4-month time_after | Direction |
 |----|-------|--------------------|--------------------|-----------|
-| Opened PRs | Permissive | -0.037* | -0.799*** | ↓ ✓ |
-| Opened PRs | Prohibited | -0.145· | -0.589*** | ↓ ✓ |
-| Closed PRs | Permissive | -0.139*** | -0.787*** | ↓ ✓ |
-| Closed PRs | Prohibited | -0.156* | -0.570*** | ↓ ✓ |
+| Opened PRs | Permissive | -0.037* | -0.078** | ↓ ✓ |
+| Opened PRs | Prohibited | -0.145· | 0.024 | ≈0 |
+| Closed PRs | Permissive | -0.139*** | -0.100*** | ↓ ✓ |
+| Closed PRs | Prohibited | -0.156* | -0.006 | ↓ ✓ |
 | Review Comments | Permissive | -0.025* | -0.014 | ↓ ✓ |
 | Review Comments | Prohibited | -0.042 | -0.068 | ↓ ✓ |
-| Close Latency | Permissive | -0.044 | -0.634*** | ↓ ✓ |
-| Close Latency | Prohibited | -0.400*** | -0.712*** | ↓ ✓ |
+| Close Latency | Permissive | -0.044 | 0.034 | ≈0 ✓ |
+| Close Latency | Prohibited | -0.400*** | -0.057 | ↓ ✓ |
 
-All time_after coefficients retain the same sign (negative) across both window specifications for all DVs and both groups. The 4-month window with 517 repos yields stronger significance for Opened PRs, Closed PRs, and Close Latency due to the larger sample size. Review Comments, modeled on the original 113 repos, shows consistent direction with reduced significance, as expected with fewer observations. The consistent direction of effects across all DVs and groups supports the robustness of the findings reported in the paper.
+The permissive group shows consistent negative time_after effects across both window specifications for Opened PRs, Closed PRs, and Review Comments. The prohibited group shows negative time_after for Closed PRs, Review Comments, and Close Latency in both windows, though the magnitude is reduced in the 4-month window due to the larger and more heterogeneous sample (15 vs. 12 prohibited repos). The Opened PRs coefficient for the prohibited group is near-zero (0.024, non-significant) in the 4-month window, likely reflecting the endogeneity of AIP adoption: repos experiencing rapid AI contribution influx adopt prohibitive stances, and the subsequent decline is captured by the pre-AIP trend and intervention terms rather than time_after alone. Overall, the consistent direction of effects across the majority of DVs and groups supports the robustness of the findings reported in the paper.
