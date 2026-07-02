@@ -13,7 +13,7 @@ This table summarizes the condition categories identified through manual labelin
 **Notes:**
 - Total permissive AIPs: 544 (of which 540 impose at least one condition; 4 impose no conditions)
 - Total prohibited AIPs: 71
-- Overall stance distribution: 544 permissive (88.6%) vs. 71 prohibited (11.4%) out of 615 confirmed AIPs
+- Overall stance distribution: 544 permissive (88.6%) vs. 71 prohibited (11.6%) out of 615 confirmed AIPs
 
 **Condition descriptions:**
 
