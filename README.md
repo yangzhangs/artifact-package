@@ -27,7 +27,6 @@ artifact-package/
 ├── scripts/
 │   ├── rq1-design/                        # RQ1: Design of AIPs
 │   │   ├── keyword_screening.py          # Two-layer keyword screening
-│   │   ├── extract_aip_content.py         # Extract AIP text from CONTRIBUTING.md
 │   │   └── plot_stance_distribution.py    # Stance distribution donut chart
 │   ├── rq2-impact/                       # RQ2: Associations with Contribution Dynamics
 │   │   ├── rdd_grouped_lmer.R            # Grouped mixed-effects RDD models (Table V)
@@ -134,15 +133,7 @@ Complete survey instrument for contributors, including:
 
 4. **Manual Verification** — Manually review each candidate's CONTRIBUTING.md to confirm genuine AIPs, yielding 615 confirmed repositories. Results in `data/repos/confirmed_repos_615.csv`.
 
-5. **AIP Content Extraction**:
-   ```bash
-   python scripts/rq1-design/extract_aip_content.py \
-     --repo-list data/repos/confirmed_repos_615.csv \
-     --contributing-dir <path_to_downloaded_files> \
-     --output aip_content_extracted.csv
-   ```
-
-6. **Stance Distribution Figure**:
+5. **Stance Distribution Figure**:
    ```bash
    python scripts/rq1-design/plot_stance_distribution.py
    ```
