@@ -63,9 +63,9 @@ Initial repository sample from SEART-GHS with inclusion criteria: ≥10 stars/fo
 Subset of the initial sample that contain a CONTRIBUTING.md file (searched at root, `.github/`, and `docs/` paths). Contains 18,902 repositories with contributing guideline file paths and SHA hashes.
 
 ### `data/repos/confirmed_repos_615.csv`
-Repositories confirmed through two-layer keyword screening and manual verification to contain genuine AIPs. Contains 615 repositories with stance labels (permissive/prohibited), policy first dates, language, and other metadata.
+Repositories confirmed through two-layer keyword screening and manual verification to contain genuine AIPs. Contains 615 repositories with stance labels (permissive/prohibited), policy first dates, language, and total PR count.
 
-**Key columns:** `repo_name`, `cat1` (permissive/prohibited), `stance`, `policy_first_date`, `language`, `total_prs_db`, `group`
+**Key columns:** `repo_name`, `cat1` (permissive/prohibited), `policy_first_date`, `language`, `total_prs_db`
 
 ### `data/repos/aip_first_date_final.csv`
 Verified AIP adoption dates for each confirmed repository, determined by scanning the git history of CONTRIBUTING.md files with keyword matching and manual verification.
