@@ -23,9 +23,11 @@ artifact-package/
 │   ├── rq1_conditions.md                # RQ1 conditions summary (C1–C5)
 │   ├── rq1_aip_labels.csv                # RQ1 per-repo condition labels (540 conditional repos)
 │   ├── rq2_rdd_robustness.md             # RQ2 RDD 4-month vs 6-month robustness results
+│   ├── rq2_merged_rejected_split.md      # RQ2 merged vs rejected PR split analysis
 │   ├── aip_contents/                     # Extracted AIP contents, AI-related lines highlighted (615 files)
 │   ├── panel/
-│   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins, 6-month)
+│   │   ├── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins, 6-month)
+│   │   └── split_merged_rejected_panel.csv # Merged/rejected split panel (same bins)
 │   └── aip/
 │       ├── aip_keyword_patterns.txt       # Two-layer keyword patterns (40 + 48)
 │       ├── ai_pr_detection_per_repo.csv   # AI-PR detection per-repo stats (113 repos, 32 with AI-PRs)
@@ -36,6 +38,7 @@ artifact-package/
 │   │   └── plot_stance_distribution.py    # Stance distribution donut chart
 │   ├── rq2-impact/                       # RQ2: Associations with Contribution Dynamics
 │   │   ├── rdd_grouped_lmer.R            # Grouped mixed-effects RDD models (Tables IV and V)
+│   │   ├── rdd_split_merged_rejected.R   # Merged vs rejected split models
 │   │   └── plot_rdd_trends.py            # Fig 4/5: RDD trend plots
 │   ├── rq3-enforcement/                  # RQ3: Enforcement of AIP
 │   │   ├── plot_compliance.py            # Compliance perception chart
@@ -99,6 +102,9 @@ Per-repo condition labels for all 540 conditional permissive AIPs. Each repo has
 
 ### `data/rq2_rdd_robustness.md`
 Side-by-side comparison of 4-month (169 repos) and 6-month (113 repos) window RDD model results across all 4 DVs and both groups, demonstrating consistent effect directions and significance patterns.
+
+### `data/rq2_merged_rejected_split.md`
+Split of closed PRs into merged and closed-without-merge (rejected) PRs, with the grouped mixed-effects models re-run on each subset (counts and close latencies). The closed-PR decline is driven by fewer merged PRs, with no significant change in rejected PRs; panel data in `data/panel/split_merged_rejected_panel.csv`, script in `scripts/rq2-impact/rdd_split_merged_rejected.R`.
 
 ### `data/aip/aip_keyword_patterns.txt`
 The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate when at least one pattern from either layer matches any of its guideline files.
