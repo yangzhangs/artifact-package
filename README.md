@@ -104,7 +104,7 @@ Side-by-side comparison of 4-month (169 repos) and 6-month (113 repos) window RD
 The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate when at least one pattern from either layer matches any of its guideline files.
 
 ### `data/repos/screening_candidates_1114.csv`
-The 1,114 candidate repositories flagged by the two-layer keyword screening over the downloaded guideline files (all CONTRIBUTING.md path variants) of the 18,902 repositories. Columns: `repo_name`, `L1_hit`, `L2_hit`.
+The 1,114 candidate repositories flagged by the two-layer keyword screening over the downloaded guideline files (all CONTRIBUTING.md path variants) of the 18,902 repositories. Column: `repo_name`.
 
 ### `data/aip/ai_pr_detection_per_repo.csv`
 Results of AI-PR detection across 113 repositories using keyword matching on PR titles and GitHub labels, used for robustness analysis. 32 repositories contain at least one identifiable AI-related PR, totaling 158 AI-related PRs.

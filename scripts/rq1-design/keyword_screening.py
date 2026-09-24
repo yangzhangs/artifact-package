@@ -168,12 +168,12 @@ def print_stats(files, file_l1, file_l2, repo_l1, repo_l2, candidates, total_rep
     print(f"Candidate repositories (L1 or L2): {len(candidates)}")
 
 
-def export_candidates(repo_l1, repo_l2, candidates, output_path):
+def export_candidates(candidates, output_path):
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['repo_name', 'L1_hit', 'L2_hit'])
+        writer.writerow(['repo_name'])
         for repo in sorted(candidates):
-            writer.writerow([repo, bool(repo_l1.get(repo)), bool(repo_l2.get(repo))])
+            writer.writerow([repo])
     print(f"Exported candidate repositories: {output_path} ({len(candidates)} records)")
 
 
@@ -187,4 +187,4 @@ if __name__ == '__main__':
     files, file_l1, file_l2, repo_l1, repo_l2, candidates, total_repos = scan_files(args.dl_dir)
     print_stats(files, file_l1, file_l2, repo_l1, repo_l2, candidates, total_repos)
     if args.export:
-        export_candidates(repo_l1, repo_l2, candidates, args.output)
+        export_candidates(candidates, args.output)
