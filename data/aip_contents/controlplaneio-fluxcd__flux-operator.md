@@ -1,7 +1,7 @@
-## AI Contribution Policy
+## <mark>AI Contribution Policy</mark>
 
-Using AI Agents to help write your PR is acceptable, but as the author, you are responsible
-for understanding the code and the documentation you submit. Please review all the AI-generated
+<mark>Using AI Agents to help write your PR is acceptable, but as the author, you are responsible</mark>
+<mark>for understanding the code and the documentation you submit. Please review all the AI-generated</mark>
 content and make sure it follows the guidelines in this document before submitting your PR.
 
 The Flux Operator repository contain an `AGENTS.md` file. You must point your AI Agent to
@@ -10,7 +10,7 @@ The Flux Operator repository contain an `AGENTS.md` file. You must point your AI
 The `Signed-off-by` and `Co-authored-by` tags must identify the human who can
 legally certify the [DCO](https://developercertificate.org/), please don’t fill these will AI product names.
 
-You should disclose the use of AI Agents in the description of your PR and
+<mark>You should disclose the use of AI Agents in the description of your PR and</mark>
 in the commit message using the `Assisted-by: AGENT_NAME/LLM_VERSION` tag.
 
 Adding the `Assisted-by` tag to the commit message can be done with:

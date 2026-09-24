@@ -7,4 +7,4 @@ A good PR includes:
 - Evidence that you tested your changes (screenshots, terminal output, etc.)
 - Well-structured, readable commits
 
-> **A note on AI-generated contributions:** We appreciate the intent, but please don't submit PRs that are purely AI-generated without your own understanding and review. Drive-by PRs — especially bulk or low-effort ones produced by AI tools — add review burden for maintainers and will be closed. If you use AI to assist your work, that's fine — just make sure you understand every line you're submitting and can speak to the changes in review.
+> <mark>**A note on AI-generated contributions:** We appreciate the intent, but please don't submit PRs that are purely AI-generated without your own understanding and review. Drive-by PRs — especially bulk or low-effort ones produced by AI tools — add review burden for maintainers and will be closed. If you use AI to assist your work, that's fine — just make sure you understand every line you're submitting and can speak to the changes in review.</mark>

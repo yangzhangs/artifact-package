@@ -3,7 +3,7 @@
 Thank you for considering contributing to **Garmin-Grafana**! Your support helps enhance this open-source project.
 
 > [!IMPORTANT]
-This project is carefully built and maintained by humans, including the primary author, [@arpanghosh8453](https://github.com/arpanghosh8453). While you are welcome to use AI tools for convenience, please ensure you fully understand change and its impact before you submit. Because all pull requests are manually vetted, we kindly ask that you thoroughly test your build before opening a PR. Reviewing broken or poorly understood AI-generated code takes significant time, so your effort in providing high-quality, tested contributions is deeply appreciated!
+<mark>This project is carefully built and maintained by humans, including the primary author, [@arpanghosh8453](https://github.com/arpanghosh8453). While you are welcome to use AI tools for convenience, please ensure you fully understand change and its impact before you submit. Because all pull requests are manually vetted, we kindly ask that you thoroughly test your build before opening a PR. Reviewing broken or poorly understood AI-generated code takes significant time, so your effort in providing high-quality, tested contributions is deeply appreciated!</mark>
 
 ---
 

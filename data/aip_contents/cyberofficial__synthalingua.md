@@ -1,5 +1,5 @@
 ### Code Contributions
-**IMPORTANT**: I do not accept AI-generated code. All contributions must be human-written code.
+<mark>**IMPORTANT**: I do not accept AI-generated code. All contributions must be human-written code.</mark>
 
 1. Ensure your code:
    - Meets our minimum Python version requirements

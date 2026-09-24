@@ -35,6 +35,6 @@ Every workflow under `.github/workflows/` MUST declare a top-level `concurrency:
 
 ---
 
-## AI-assisted contributions
+## <mark>AI-assisted contributions</mark>
 
-If you use coding agents, follow project context files (e.g. `AGENTS.md`, `CLAUDE.md`) and avoid drive-by refactors unrelated to the issue. Prefer incremental, test-backed changes.
+<mark>If you use coding agents, follow project context files (e.g. `AGENTS.md`, `CLAUDE.md`) and avoid drive-by refactors unrelated to the issue. Prefer incremental, test-backed changes.</mark>

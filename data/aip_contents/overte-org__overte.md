@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 
 The project embraces distributed development and if you'd like to help, it would be greatly appreciated. Just open a pull request with the revisions.
 
-LLM-generated contributions
+<mark>LLM-generated contributions</mark>
 ===
 
 Contributions, issues and code reviews generated using Large Language Models are not allowed.

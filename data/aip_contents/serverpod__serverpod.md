@@ -1,8 +1,8 @@
-### About AI-assisted contributions
+### <mark>About AI-assisted contributions</mark>
 
-We understand that many contributors use AI tools to brainstorm, summarize, or speed up implementation work. That is fine, but please treat those tools as assistants, not as substitutes for your own judgment.
+<mark>We understand that many contributors use AI tools to brainstorm, summarize, or speed up implementation work. That is fine, but please treat those tools as assistants, not as substitutes for your own judgment.</mark>
 
-If you submit an AI-assisted pull request, please make sure that you:
+<mark>If you submit an AI-assisted pull request, please make sure that you:</mark>
 
 - Understand the code you changed and can explain why the implementation is correct.
 - Respond to reviewer questions and comments yourself. Code review is a conversation between humans, and you should be able to explain and defend the design and behavior of your changes.

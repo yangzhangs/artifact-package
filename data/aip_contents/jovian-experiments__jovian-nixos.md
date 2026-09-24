@@ -40,7 +40,7 @@ There are no strict guidelines.
 > [!NOTE]
 > Using pre-existing **boilerplate**, **snippets**, or **syntax suggestions** from your IDE are not considered as “AI”-assisted changes.
 
-Contributions written largely with help of LLMs (*Large Language Models*), other “AI” (or non-“AI”), or similar systems are not welcome.
+<mark>Contributions written largely with help of LLMs (*Large Language Models*), other “AI” (or non-“AI”), or similar systems are not welcome.</mark>
 Such systems of concern are generally using statistical models built on “knowledge” acquired for the purpose without express consent, and with disregard of the authorship and attribution.
 
 This includes, but is not limited to:

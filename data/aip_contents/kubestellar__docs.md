@@ -1,7 +1,7 @@
-### Caution With AI-Generated Code
+### <mark>Caution With AI-Generated Code</mark>
 
-> AI tools (like GitHub Copilot or ChatGPT) are helpful but **not always context-aware**.  
-> **Please DO NOT blindly copy-paste AI-generated code.**
+> <mark>AI tools (like GitHub Copilot or ChatGPT) are helpful but **not always context-aware**.  </mark>
+> <mark>**Please DO NOT blindly copy-paste AI-generated code.**</mark>
 
 Before committing:
 

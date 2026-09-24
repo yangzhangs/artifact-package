@@ -1,12 +1,12 @@
-## AI Assistance
+## <mark>AI Assistance</mark>
 
 > [!IMPORTANT]
-> The Vortex project permits and embraces AI-assisted contributions. Contributors
-> should disclose usage of conversational or agentic AI tools in the PR description.
+> <mark>The Vortex project permits and embraces AI-assisted contributions. Contributors</mark>
+> <mark>should disclose usage of conversational or agentic AI tools in the PR description.</mark>
 >
-> For the full AI policy — including disclosure requirements, review standards for
-> AI-generated PRs, and rules for autonomous agents — see the
-> [contributing guide](https://vortex.dev/project/contributing.html#ai-assistance).
+> <mark>For the full AI policy — including disclosure requirements, review standards for</mark>
+> <mark>AI-generated PRs, and rules for autonomous agents — see the</mark>
+> <mark>[contributing guide](https://vortex.dev/project/contributing.html#ai-assistance).</mark>
 
 ---
 
@@ -27,5 +27,5 @@ The contribution process is outlined below:
 
 3. Open a PR to indicate that the change is ready for review.
    - Ensure that you sign your work via DCO (see below).
-   - Disclose LLM usage as described in [AI Assistance](#ai-assistance).
+   - <mark>Disclose LLM usage as described in [AI Assistance](#ai-assistance).</mark>
    - CI requires approval from external committers.

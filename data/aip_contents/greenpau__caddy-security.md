@@ -1,4 +1,4 @@
-## AI Generated Content
+## <mark>AI Generated Content</mark>
 
-> AI generated content is **NOT ALLOWED**, unless it was rewritten by a human who
+> <mark>AI generated content is **NOT ALLOWED**, unless it was rewritten by a human who</mark>
 > checked every line!

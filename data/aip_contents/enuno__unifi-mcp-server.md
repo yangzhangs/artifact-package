@@ -7,13 +7,13 @@
 - [Code Style Guidelines](#code-style-guidelines)
 - [Commit Message Conventions](#commit-message-conventions)
 - [Pull Request Process](#pull-request-process)
-- [AI-Assisted Contributions](#ai-assisted-contributions)
+- <mark>[AI-Assisted Contributions](#ai-assisted-contributions)</mark>
 - [Testing Requirements](#testing-requirements)
 - [Documentation](#documentation)
 
 ---
 
-## AI-Assisted Contributions
+## <mark>AI-Assisted Contributions</mark>
 
 ---
 
@@ -21,7 +21,7 @@
 
 When AI coding assistants contribute to this project:
 
-1. **Tag Contributions:** Add a note in the PR description indicating AI assistance:
+1. <mark>**Tag Contributions:** Add a note in the PR description indicating AI assistance:</mark>
 
 ```markdown
 
@@ -32,9 +32,9 @@ When AI coding assistants contribute to this project:
 This PR was created with assistance from [AI Tool Name].
 ```
 
-2. **Human Review:** All AI-generated code must be reviewed by a human developer
-3. **Testing:** AI-generated code must include comprehensive tests
-4. **Documentation:** AI-generated code must be well-documented
+2. <mark>**Human Review:** All AI-generated code must be reviewed by a human developer</mark>
+3. <mark>**Testing:** AI-generated code must include comprehensive tests</mark>
+4. <mark>**Documentation:** AI-generated code must be well-documented</mark>
 
 ---
 
@@ -57,7 +57,7 @@ The repository includes an automated bug report handler that activates when issu
 **How It Works:**
 
 1. **Automatic Trigger:** The workflow activates when a new issue is opened with `[Bug]` in the title
-2. **Intelligent Analysis:** Claude AI analyzes the bug report to determine if it's:
+2. <mark>**Intelligent Analysis:** Claude AI analyzes the bug report to determine if it's:</mark>
    - A real bug that needs fixing
    - A usage misunderstanding that needs clarification
    - A duplicate of an existing issue

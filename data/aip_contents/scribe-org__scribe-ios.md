@@ -6,7 +6,7 @@ We need contributors who are onboarded to gain new skills and take on greater ro
 
 We also have expectations about the behavior of those who want to grow with us. Mentorship is earned, not given.
 
-To be blunt, those who are mainly sending AI generated contributions are not demonstrating an interest in growing their skills and are not helping to develop the project. This is not to say that all uses of AI for contributions are bad, but **AI should be a tool, not the contributor itself**.
+<mark>To be blunt, those who are mainly sending AI generated contributions are not demonstrating an interest in growing their skills and are not helping to develop the project. This is not to say that all uses of AI for contributions are bad, but **AI should be a tool, not the contributor itself**.</mark>
 
 Continued constructive contributions, new open issues, and clear communication helps the project. We would be happy to help community members who can make these contributions to expand their skills and take on further responsibilities.
 

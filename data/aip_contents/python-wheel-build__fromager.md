@@ -2,7 +2,7 @@
 
 Fromager thrives on practical, well-tested contributions. This guide summarizes how to set up a workspace, follow our standards, and submit polished changes. Skim it once, keep it handy, and refer back whenever you are unsure.
 
-> **Note**: If you're using AI coding assistants, also see [AGENTS.md](AGENTS.md) for AI-optimized quick reference.
+> <mark>**Note**: If you're using AI coding assistants, also see [AGENTS.md](AGENTS.md) for AI-optimized quick reference.</mark>
 
 ---
 
@@ -55,7 +55,7 @@ feat(resolver): add exponential backoff for HTTP retries
 
 Improves resilience when PyPI is under load by adding jittered backoff.
 
-Co-Authored-By: Claude <claude@anthropic.com>
+<mark>Co-Authored-By: Claude <claude@anthropic.com></mark>
 Closes: #456
 ```
 

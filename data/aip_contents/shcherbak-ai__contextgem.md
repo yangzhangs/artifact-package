@@ -1,14 +1,14 @@
-## 🤖 Using AI Coding Assistants
+## <mark>🤖 Using AI Coding Assistants</mark>
 
 This repository is **AI agent-friendly** and includes configuration files to help AI coding assistants understand the codebase:
 
-- **[AGENTS.md](AGENTS.md)** - Project overview, architecture patterns, coding conventions, and workflow guidelines for AI assistants ([agents.md standard](https://agents.md))
-- **[CLAUDE.md](CLAUDE.md)** - Configuration for [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)
+- <mark>**[AGENTS.md](AGENTS.md)** - Project overview, architecture patterns, coding conventions, and workflow guidelines for AI assistants ([agents.md standard](https://agents.md))</mark>
+- <mark>**[CLAUDE.md](CLAUDE.md)** - Configuration for [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview)</mark>
 
-When using AI assistants (Claude Code, Cursor, etc.) to contribute:
+<mark>When using AI assistants (Claude Code, Cursor, etc.) to contribute:</mark>
 
-1. **Review AI-generated code** - Always verify changes follow project patterns and pass tests
-2. **Handle VCR cassettes yourself** - AI assistants should not run tests that call LLM APIs without existing cassettes
+1. <mark>**Review AI-generated code** - Always verify changes follow project patterns and pass tests</mark>
+2. <mark>**Handle VCR cassettes yourself** - AI assistants should not run tests that call LLM APIs without existing cassettes</mark>
 3. **Manage git operations yourself** - Review and commit changes manually rather than letting AI handle git
 
 > **💡 Tip:** AI assistants work best when given specific, focused tasks. Break large contributions into smaller pieces for better results.
@@ -87,7 +87,7 @@ contextgem/
 
     When creating a branch, use one of the following prefixes that matches your change type:
 
-    - `bugfix/` - For bug fixes (e.g., `bugfix/fix-llm-timeout`)
+    - <mark>`bugfix/` - For bug fixes (e.g., `bugfix/fix-llm-timeout`)</mark>
     - `feature/` - For new features (e.g., `feature/add-new-concept-type`)
     - `breaking/` - For breaking changes (e.g., `breaking/concepts-api-v2`)
     - `docs/` - For documentation updates (e.g., `docs/update-aspects-guide`)
@@ -129,7 +129,7 @@ contextgem/
    uv run pytest
    ```
 
-   > **Note:** We use [pytest-recording](https://github.com/kiwicom/pytest-recording) to record and replay LLM API interactions. Your changes may require re-recording VCR cassettes for the tests. See [VCR Cassette Management](#vcr-cassette-management) section below for details.
+   > <mark>**Note:** We use [pytest-recording](https://github.com/kiwicom/pytest-recording) to record and replay LLM API interactions. Your changes may require re-recording VCR cassettes for the tests. See [VCR Cassette Management](#vcr-cassette-management) section below for details.</mark>
 
 4. **💾 Commit your changes** using Conventional Commits format:
    
@@ -159,9 +159,9 @@ contextgem/
 
 ### 📼 VCR Cassette Management
 
-We use [pytest-recording](https://github.com/kiwicom/pytest-recording) to record and replay HTTP interactions with LLM APIs (both cloud-based and local). This allows tests that call LLM APIs to run without making actual API calls after the initial recording.
+<mark>We use [pytest-recording](https://github.com/kiwicom/pytest-recording) to record and replay HTTP interactions with LLM APIs (both cloud-based and local). This allows tests that call LLM APIs to run without making actual API calls after the initial recording.</mark>
 
-> **Note:** Tests that do not call LLM APIs do not require or use VCR cassettes. The cassette system only applies to tests that interact with LLM APIs.
+> <mark>**Note:** Tests that do not call LLM APIs do not require or use VCR cassettes. The cassette system only applies to tests that interact with LLM APIs.</mark>
 
 ---
 
@@ -169,26 +169,26 @@ We use [pytest-recording](https://github.com/kiwicom/pytest-recording) to record
 
 VCR cassettes provide the most reliable testing approach for ContextGem because:
 
-- **Real API Testing**: Testing with actual LLM APIs ensures our functionality works as expected with real responses, edge cases, and API behaviors
-- **Scalability**: With a significant number of LLM API tests, hardcoding requests/responses would be impractical and unmaintainable
-- **Reproducibility**: Once recorded, tests run consistently without variability in LLM responses
-- **No Setup Friction**: Contributors can run tests without API keys or local LLM installations
+- <mark>**Real API Testing**: Testing with actual LLM APIs ensures our functionality works as expected with real responses, edge cases, and API behaviors</mark>
+- <mark>**Scalability**: With a significant number of LLM API tests, hardcoding requests/responses would be impractical and unmaintainable</mark>
+- <mark>**Reproducibility**: Once recorded, tests run consistently without variability in LLM responses</mark>
+- <mark>**No Setup Friction**: Contributors can run tests without API keys or local LLM installations</mark>
 
-Local LLMs (Ollama, LM Studio, etc.) also use HTTP APIs (typically on localhost) and their interactions are recorded in cassettes too.
+<mark>Local LLMs (Ollama, LM Studio, etc.) also use HTTP APIs (typically on localhost) and their interactions are recorded in cassettes too.</mark>
 
-The test suite automatically uses dummy environment variables with pre-recorded cassettes when no `.env` file is present, so most contributors won't need to set up real API keys or local LLM servers.
+<mark>The test suite automatically uses dummy environment variables with pre-recorded cassettes when no `.env` file is present, so most contributors won't need to set up real API keys or local LLM servers.</mark>
 
 ---
 
 #### ✅ Scenario 1: No Cassette Recording Required
 
 **When this applies:**
-- New tests that **do not** call LLM APIs
-- Code changes that don't modify internal prompts or LLM parameters
+- <mark>New tests that **do not** call LLM APIs</mark>
+- <mark>Code changes that don't modify internal prompts or LLM parameters</mark>
 - Changes are compatible with existing pre-recorded API calls (confirmed by passing tests)
 
 **What to do:**
-- Nothing! Tests that call LLM APIs should pass by replaying from existing cassettes with automatically-set dummy environment variables
+- <mark>Nothing! Tests that call LLM APIs should pass by replaying from existing cassettes with automatically-set dummy environment variables</mark>
 - No need to create a `.env` file or set up API keys
 
 ---
@@ -198,12 +198,12 @@ The test suite automatically uses dummy environment variables with pre-recorded 
 #### 🆕 Scenario 2: New Cassettes Need Recording
 
 **When this applies:**
-- New test methods that call LLM APIs (cloud-based or local)
-- Adding tests for new functionality that requires LLM interaction
+- <mark>New test methods that call LLM APIs (cloud-based or local)</mark>
+- <mark>Adding tests for new functionality that requires LLM interaction</mark>
 
 **What to do:**
 
-1. **Create a `.env` file** locally (ignored by git) with the API keys for the LLM services your new tests will use:
+1. <mark>**Create a `.env` file** locally (ignored by git) with the API keys for the LLM services your new tests will use:</mark>
    ```
    # Only include the variables for LLM APIs your tests actually call
    
@@ -219,14 +219,14 @@ The test suite automatically uses dummy environment variables with pre-recorded 
    CONTEXTGEM_LOGGER_LEVEL=DEBUG
    ```
 
-2. **For new LLM providers**, create environment variables prefixed with `CONTEXTGEM_`:
+2. <mark>**For new LLM providers**, create environment variables prefixed with `CONTEXTGEM_`:</mark>
    ```
    CONTEXTGEM_GOOGLE_AI_STUDIO_API_KEY=your_google_api_key
    ```
 
 3. **Update dummy variables** in `tests/utils.py` by adding your new environment variables to the `default_env_vars` dictionary in `set_dummy_env_variables_for_testing_from_cassettes()`, mapped to a dummy value (e.g. "DUMMY")
 
-4. **Add the VCR decorator** to your new test methods that call LLM APIs (cloud or local):
+4. <mark>**Add the VCR decorator** to your new test methods that call LLM APIs (cloud or local):</mark>
    ```python
    @pytest.mark.vcr
    def test_your_new_llm_feature(self):
@@ -238,7 +238,7 @@ The test suite automatically uses dummy environment variables with pre-recorded 
 
 6. **Verify redaction** - check that sensitive data is properly redacted in the new cassette files
 
-7. **Test with dummy variables** - delete your `.env` file and run tests again to confirm LLM API tests pass by replaying from cassettes with dummy variables
+7. <mark>**Test with dummy variables** - delete your `.env` file and run tests again to confirm LLM API tests pass by replaying from cassettes with dummy variables</mark>
 
 ---
 
@@ -248,8 +248,8 @@ The test suite automatically uses dummy environment variables with pre-recorded 
 
 **When this applies:**
 - You modified internal prompts (direct changes or code that renders prompts differently)
-- You changed default LLM API parameters
-- Multiple LLM-related tests fail due to your changes
+- <mark>You changed default LLM API parameters</mark>
+- <mark>Multiple LLM-related tests fail due to your changes</mark>
 
 **What to do:**
 
@@ -275,22 +275,22 @@ The test suite automatically uses dummy environment variables with pre-recorded 
 
 ---
 
-#### Local LLM Testing
+#### <mark>Local LLM Testing</mark>
 
-For local LLM testing, install the following tools and download the relevant models identified under `ollama` and `lm_studio` prefixes in `tests/test_all.py`:
+<mark>For local LLM testing, install the following tools and download the relevant models identified under `ollama` and `lm_studio` prefixes in `tests/test_all.py`:</mark>
 - [Ollama](https://ollama.ai/) 
 - [LM Studio](https://lmstudio.ai/)
-> ⚠️ **Important:** Your system needs to have an appropriate GPU capacity to run such local LLMs.
+> <mark>⚠️ **Important:** Your system needs to have an appropriate GPU capacity to run such local LLMs.</mark>
 
 ---
 
 #### Important Notes
 
-> **💰 Cost Warning:** Recording cassettes for test methods that use live LLM API (non-local LLMs) uses your API keys and **will incur charges**. Scenario 4 (re-recording all cassettes) can be particularly expensive.
+> <mark>**💰 Cost Warning:** Recording cassettes for test methods that use live LLM API (non-local LLMs) uses your API keys and **will incur charges**. Scenario 4 (re-recording all cassettes) can be particularly expensive.</mark>
 
 > **🔒 Security:** Environment variables such as API keys are automatically stripped from cassettes, but always verify new cassette content.
 
-> **🧪 Testing:** After recording, delete your `.env` file and run tests again to ensure LLM API tests pass by replaying from cassettes with dummy variables.
+> <mark>**🧪 Testing:** After recording, delete your `.env` file and run tests again to ensure LLM API tests pass by replaying from cassettes with dummy variables.</mark>
 
 ---
 
@@ -299,7 +299,7 @@ For local LLM testing, install the following tools and download the relevant mod
 The test suite uses [tethered](https://github.com/shcherbak-ai/tethered) to enforce network egress control at the socket level during VCR-marked tests:
 
 - **Replay mode** (cassette exists): blocks all outbound connections except HuggingFace (for SaT model downloads not captured by VCR)
-- **Recording mode** (no cassette): allows only approved endpoints (LLM APIs, HuggingFace for model downloads, genai-prices for cost data) and localhost for local LLMs
+- <mark>**Recording mode** (no cassette): allows only approved endpoints (LLM APIs, HuggingFace for model downloads, genai-prices for cost data) and localhost for local LLMs</mark>
 
 If you add tests that connect to new endpoints, update the `_TETHERED_RECORDING_ALLOW` list in `tests/conftest.py`.
 
@@ -312,8 +312,8 @@ If you add tests that connect to new endpoints, update the `_TETHERED_RECORDING_
 
 Warnings generated during tests are often expected and by design. Many warnings are intentionally triggered to test error handling, edge cases, and warning systems. Common expected warnings include:
 
-- LLM extraction errors and retries (testing error handling)
-- Missing LLM roles (testing validation logic)
+- <mark>LLM extraction errors and retries (testing error handling)</mark>
+- <mark>Missing LLM roles (testing validation logic)</mark>
 - Concurrency optimization warnings (testing performance comparisons)
 - Deprecation warnings from dependencies
 

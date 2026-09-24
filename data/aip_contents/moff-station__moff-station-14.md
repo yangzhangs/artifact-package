@@ -1,7 +1,7 @@
-## AI-generated content
-The Moffstation project does not accept any low-effort or wholesale AI-generated contributions.
+## <mark>AI-generated content</mark>
+<mark>The Moffstation project does not accept any low-effort or wholesale AI-generated contributions.</mark>
 This includes the following, but is not limited to:
-- Any code (C#, YAML, XML, etc.) generated from tools like ChatGPT, Github Copilot, Cursor, and whatever ChatGPT wrapper that's currently the hottest thing on the block.
+- <mark>Any code (C#, YAML, XML, etc.) generated from tools like ChatGPT, Github Copilot, Cursor, and whatever ChatGPT wrapper that's currently the hottest thing on the block.</mark>
 - Any artwork, sound files, or other assets.
 - Auto-generated documentation, GitHub's issue/PR changes summarization tools, among other tools.
 

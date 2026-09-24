@@ -1,6 +1,6 @@
-## 🤖 AI/LLM Usage Policy
+## <mark>🤖 AI/LLM Usage Policy</mark>
 
-We welcome the use of AI tools and Large Language Models to assist with development. However, **all code must be tested and executed in your local environment** before submission.
+<mark>We welcome the use of AI tools and Large Language Models to assist with development. However, **all code must be tested and executed in your local environment** before submission.</mark>
 
 ---
 
@@ -10,7 +10,7 @@ We welcome the use of AI tools and Large Language Models to assist with developm
 - ✅ Run existing tests to ensure nothing breaks
 - ✅ Add new tests for new functionality
 - ✅ Verify the application runs correctly with your changes
-- ❌ **Do not submit "vibe-coded" contributions** that haven't been executed
+- <mark>❌ **Do not submit "vibe-coded" contributions** that haven't been executed</mark>
 
 > [!WARNING]
-> Pull requests that show evidence of being AI-generated without proper local testing will be immediately closed.
+> <mark>Pull requests that show evidence of being AI-generated without proper local testing will be immediately closed.</mark>

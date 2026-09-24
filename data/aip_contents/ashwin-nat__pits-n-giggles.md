@@ -1,6 +1,6 @@
-## Use of AI Tools
+## <mark>Use of AI Tools</mark>
 
-AI-assisted tools (e.g. ChatGPT, Copilot) are allowed.
+<mark>AI-assisted tools (e.g. ChatGPT, Copilot) are allowed.</mark>
 
 However:
 - You must fully understand any code you submit and be able to explain it

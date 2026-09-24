@@ -1,6 +1,6 @@
-## AI Code Assistant Usage
+## <mark>AI Code Assistant Usage</mark>
 
-If you use AI code assistants, please follow these guidelines:
+<mark>If you use AI code assistants, please follow these guidelines:</mark>
 
 | Guideline | Details |
 |-----------|---------|
@@ -10,7 +10,7 @@ If you use AI code assistants, please follow these guidelines:
 | **Code quality** | AI-generated code must meet the same standards (tests, coverage, linting) |
 | **License compliance** | Ensure AI suggestions don't introduce incompatible licenses |
 
-**Create attribution statements:** Use <https://aiattribution.github.io/> to generate detailed AI attribution.
+<mark>**Create attribution statements:** Use <https://aiattribution.github.io/> to generate detailed AI attribution.</mark>
 
 **Example commit message:**
 

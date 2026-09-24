@@ -1,10 +1,10 @@
-## AI-Assisted Development with OpenCode
+## <mark>AI-Assisted Development with OpenCode</mark>
 
-We use [OpenCode](https://opencode.ai) for AI-assisted development. OpenCode provides custom commands and skills to help maintain consistency and streamline common workflows.
+<mark>We use [OpenCode](https://opencode.ai) for AI-assisted development. OpenCode provides custom commands and skills to help maintain consistency and streamline common workflows.</mark>
 
-OpenCode works with most major AI providers (Anthropic, OpenAI, Google, etc.) or you can use [Zen](https://opencode.ai/zen) for optimized coding models. Configure your preferred provider in the OpenCode settings.
+<mark>OpenCode works with most major AI providers (Anthropic, OpenAI, Google, etc.) or you can use [Zen](https://opencode.ai/zen) for optimized coding models. Configure your preferred provider in the OpenCode settings.</mark>
 
-> **Important**: All AI-generated code must be thoroughly reviewed by the contributor before submitting a PR. You are responsible for understanding and validating every line of code you submit. If we detect that contributors are simply throwing AI-generated code over the wall without proper review, they will be blocked from the repository.
+> <mark>**Important**: All AI-generated code must be thoroughly reviewed by the contributor before submitting a PR. You are responsible for understanding and validating every line of code you submit. If we detect that contributors are simply throwing AI-generated code over the wall without proper review, they will be blocked from the repository.</mark>
 
 ---
 
@@ -48,7 +48,7 @@ Use these commands in OpenCode by typing the command name:
 
 ### Agent Files
 
-The `.agents/` directory stores AI-generated artifacts:
+<mark>The `.agents/` directory stores AI-generated artifacts:</mark>
 
 - **`.agents/plans/`** - Feature specs and implementation plans
 - **`.agents/scratches/`** - Temporary notes and explorations

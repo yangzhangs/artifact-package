@@ -57,13 +57,13 @@ airunway/
 6. Commit your changes (`git commit -m 'Add amazing feature'`)
 7. Push to the branch (`git push origin feature/amazing-feature`)
 8. Open a Pull Request
-9. **Share AI Prompts** — If you used AI assistance, include the prompt in your PR (see below)
+9. <mark>**Share AI Prompts** — If you used AI assistance, include the prompt in your PR (see below)</mark>
 
 ---
 
-## AI-Assisted Contributions & Prompt Requests
+## <mark>AI-Assisted Contributions & Prompt Requests</mark>
 
-We embrace AI-assisted development! Whether you use GitHub Copilot, Claude, Cursor, or other AI tools, we welcome contributions that leverage these capabilities.
+<mark>We embrace AI-assisted development! Whether you use GitHub Copilot, Claude, Cursor, or other AI tools, we welcome contributions that leverage these capabilities.</mark>
 
 ---
 
@@ -78,7 +78,7 @@ A **prompt request** is a contribution where you share the AI prompt that genera
 
 ---
 
-### Contributing with AI Assistance
+### <mark>Contributing with AI Assistance</mark>
 
 ---
 

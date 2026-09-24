@@ -1,11 +1,11 @@
-### LLM/AI guidelines
+### <mark>LLM/AI guidelines</mark>
 
-You may use LLMs (AI tools) for:
+<mark>You may use LLMs (AI tools) for:</mark>
 
 * Inspiration, problem solving, help with Rust, translation, etc.
 * Generating small and self-contained snippets of code (e.g., shell scripts or utility functions)
 
-Do **not** use LLMs to:
+<mark>Do **not** use LLMs to:</mark>
 
-* Generate ("vibe code") entire pull requests
+* <mark>Generate ("vibe code") entire pull requests</mark>
 * Write or generate issue or pull request descriptions

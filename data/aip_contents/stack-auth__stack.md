@@ -1,8 +1,8 @@
 ## Vibecoding setup
 
-NOTE: Every line of code should be reviewed by a human BEFORE you submit a PR. DO NOT waste our time by creating and submitting an AI-generated PR.
+<mark>NOTE: Every line of code should be reviewed by a human BEFORE you submit a PR. DO NOT waste our time by creating and submitting an AI-generated PR.</mark>
 
-For vibecoding, it can help to have multiple parallel copies of the codebase open in different windows. For this, you can set the environment variable `NEXT_PUBLIC_STACK_PORT_PREFIX` to a different value (default 81). To do this consistently across all coding agents (Claude Code/Cursor Agent/Codex),we recommend you use `direnv` with a `.envrc` file:
+<mark>For vibecoding, it can help to have multiple parallel copies of the codebase open in different windows. For this, you can set the environment variable `NEXT_PUBLIC_STACK_PORT_PREFIX` to a different value (default 81). To do this consistently across all coding agents (Claude Code/Cursor Agent/Codex),we recommend you use `direnv` with a `.envrc` file:</mark>
 
 1. Install `direnv` if you haven't already. On Mac, the easiest way is to install it with Homebrew: `brew install direnv`.
 2. Update ALL your shell configs to append the following lines. On most Mac setups, this is `~/.bash_profile`, `~/.bashrc`, `~/.zprofile`, `~/.zshrc`, and `~/.zshenv`.

@@ -11,8 +11,8 @@ There are only a few rules:
   - Just try to follow the code style of the rest of the code and ensure that there is:
     - no trailing whitespace on any lines
     - a single space between operators
-- No AI slop allowed
-  - AI readme/docs slop = instant block
+- <mark>No AI slop allowed</mark>
+  - <mark>AI readme/docs slop = instant block</mark>
 - PLEASE TEST YOUR PRS
   - I can't believe I have to put this here, but please test your PRs before submitting them
   - Your PR must not break anything currently existing, or specify in the description if it does

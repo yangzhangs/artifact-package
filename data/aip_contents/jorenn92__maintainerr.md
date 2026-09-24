@@ -1,11 +1,11 @@
-## Use of AI Tools
+## <mark>Use of AI Tools</mark>
 
-We allow the use of AI tools as development aids, but not as a substitute for understanding. If using AI assistance, prefer **GPT-5.4+ (High)** or **Claude Opus 4.6 (High)** for best results.
+<mark>We allow the use of AI tools as development aids, but not as a substitute for understanding. If using AI assistance, prefer **GPT-5.4+ (High)** or **Claude Opus 4.6 (High)** for best results.</mark>
 
 By submitting a pull request, you confirm that:
 
 - You understand the code you are submitting and can explain how it works
-- You have reviewed any AI-assisted output for correctness, security, performance, and maintainability
+- <mark>You have reviewed any AI-assisted output for correctness, security, performance, and maintainability</mark>
 - You have tested the change appropriately in the context of Maintainerr
 - You take full responsibility for the contribution, regardless of how it was produced
 

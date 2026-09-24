@@ -6,7 +6,7 @@
   - [Reporting Bugs](#reporting-bugs)
   - [Suggesting Enhancements](#suggesting-enhancements)
   - [Your First Code Contribution](#your-first-code-contribution)
-  - [AI-Assisted Development](#ai-assisted-development)
+  - <mark>[AI-Assisted Development](#ai-assisted-development)</mark>
   - [Improving The Documentation](#improving-the-documentation)
 - [Styleguides](#styleguides)
   - [Code Formatting](#code-formatting)
@@ -20,13 +20,13 @@
 
 ---
 
-### AI-Assisted Development
+### <mark>AI-Assisted Development</mark>
 
-We welcome and expect contributors to use AI and AI-assisted tools in their workflow. These tools can be a tremendous force for good, accelerating development and helping produce higher-quality contributions.
+<mark>We welcome and expect contributors to use AI and AI-assisted tools in their workflow. These tools can be a tremendous force for good, accelerating development and helping produce higher-quality contributions.</mark>
 
-We recommend using [Laravel Boost](https://laravel.com/ai/boost) for AI-assisted Laravel development. It provides version-specific documentation, database schema access, and other tools that help AI assistants write correct, idiomatic code for this project.
+<mark>We recommend using [Laravel Boost](https://laravel.com/ai/boost) for AI-assisted Laravel development. It provides version-specific documentation, database schema access, and other tools that help AI assistants write correct, idiomatic code for this project.</mark>
 
-However, AI-generated content requires human oversight. Before committing any AI-assisted work:
+<mark>However, AI-generated content requires human oversight. Before committing any AI-assisted work:</mark>
 
 - **Proofread thoroughly** - AI can produce plausible-sounding but incorrect content
 - **Validate all code** - Test that it actually works as intended

@@ -1,3 +1,3 @@
-# AI Policy
+# <mark>AI Policy</mark>
 
-Contributions that use AI (ChatGPT, Gemini, Copilot, etc) will not be accepted.
+<mark>Contributions that use AI (ChatGPT, Gemini, Copilot, etc) will not be accepted.</mark>

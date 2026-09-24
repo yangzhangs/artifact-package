@@ -13,7 +13,7 @@
 
 * **Keep PRs focused and reasonably sized.** Large features should be discussed in the issue and potentially broken into smaller, reviewable PRs. Dropping thousands of lines of code without prior discussion is not helpful.
 
-* **If you use AI tools**, you must understand every single line of code you submit. AI-generated code often requires more review time from maintainers, which may delay your PR.
+* <mark>**If you use AI tools**, you must understand every single line of code you submit. AI-generated code often requires more review time from maintainers, which may delay your PR.</mark>
 
 ---
 
@@ -25,7 +25,7 @@
 ---
 
 # Re-recording VCR cassettes (requires API keys):
-rake vcr:record[openai,anthropic]  # Specific providers
+<mark>rake vcr:record[openai,anthropic]  # Specific providers</mark>
 rake vcr:record[all]               # Everything
 ```
 

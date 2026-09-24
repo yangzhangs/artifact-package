@@ -6,22 +6,22 @@ The following are likely to be closed or declined:
 * Large refactors, migration changes, or broad UI rewrites without prior discussion
 * Changes that do not align with WatchState's goals
 * Preference-only visual or stylistic churn without functional benefit
-* Fully AI-generated submissions with minimal human review
+* <mark>Fully AI-generated submissions with minimal human review</mark>
 * Changes the contributor cannot explain or justify
 
 ---
 
 ---
 
-## AI-Assisted Development
+## <mark>AI-Assisted Development</mark>
 
-AI tools are permitted as development aids, but you remain fully responsible for the submitted code.
+<mark>AI tools are permitted as development aids, but you remain fully responsible for the submitted code.</mark>
 
 ---
 
 ### Acceptable Use
 
-AI-assisted code is acceptable when:
+<mark>AI-assisted code is acceptable when:</mark>
 
 * You fully understand every line being submitted
 * The result matches the existing project conventions
@@ -37,15 +37,15 @@ AI is a tool, not a substitute for understanding.
 
 The following will be rejected:
 
-* Prompt-dump code with little or no human review
+* <mark>Prompt-dump code with little or no human review</mark>
 * Code that introduces new patterns or abstractions without justification or prior discussion
-* AI-generated tests that do not validate real behavior
+* <mark>AI-generated tests that do not validate real behavior</mark>
 * Changes the contributor cannot explain or maintain
 
 ---
 
 ### Disclosure
 
-You are not required to disclose AI usage. Regardless of how the code was produced, you are accountable for correctness, maintainability, and alignment with the project.
+<mark>You are not required to disclose AI usage. Regardless of how the code was produced, you are accountable for correctness, maintainability, and alignment with the project.</mark>
 
 ---

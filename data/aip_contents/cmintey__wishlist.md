@@ -1,6 +1,6 @@
-## AI Disclosure
+## <mark>AI Disclosure</mark>
 
-If you used AI tools (e.g., GitHub Copilot, ChatGPT, Claude) to assist with code, documentation, or design:
+<mark>If you used AI tools (e.g., GitHub Copilot, ChatGPT, Claude) to assist with code, documentation, or design:</mark>
 
 - Disclose this in the PR template.
 - Describe what the AI helped with.

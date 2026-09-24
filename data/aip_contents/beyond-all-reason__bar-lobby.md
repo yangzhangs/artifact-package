@@ -1,6 +1,6 @@
-## AI-Assisted Contributions
+## <mark>AI-Assisted Contributions</mark>
 
-If you use AI tools to assist with code or text contributions, you must follow our [AI Usage Policy](AI_POLICY.md). This includes clear disclosure of AI involvement in pull requests, human verification of all AI-generated code, and other important requirements. Please review the policy before submitting AI-assisted work.
+<mark>If you use AI tools to assist with code or text contributions, you must follow our [AI Usage Policy](AI_POLICY.md). This includes clear disclosure of AI involvement in pull requests, human verification of all AI-generated code, and other important requirements. Please review the policy before submitting AI-assisted work.</mark>
 
 [=== 独立AI政策文件: AI_POLICY.md ===]
 
@@ -10,29 +10,29 @@ SPDX-FileCopyrightText: 2024 Mitchell Hashimoto, Ghostty contributors
 SPDX-License-Identifier: CC0-1.0 AND MIT
 -->
 
-# AI Usage Policy
+# <mark>AI Usage Policy</mark>
 
 ## Disclosure requirements
 
-**AI usage in generating code must be explicitly disclosed in the associated Pull Request.**
+<mark>**AI usage in generating code must be explicitly disclosed in the associated Pull Request.**</mark>
 
 Contributors must clearly state:
 
-- which AI tool(s) were used (for example: Claude Code, Cursor, Copilot)
-- the extent to which the contribution was AI-assisted
+- <mark>which AI tool(s) were used (for example: Claude Code, Cursor, Copilot)</mark>
+- <mark>the extent to which the contribution was AI-assisted</mark>
 
-**Undisclosed AI usage will result in closure.**
+<mark>**Undisclosed AI usage will result in closure.**</mark>
 
-If maintainers reasonably suspect undisclosed AI use, the pull request will be closed.
+<mark>If maintainers reasonably suspect undisclosed AI use, the pull request will be closed.</mark>
 
-**Non-direct AI usage does not require disclosure.**
+<mark>**Non-direct AI usage does not require disclosure.**</mark>
 
 The above requirements apply to cases where AI is used to write production code.
 If AI is used solely as an advisory or educational tool, disclosure is not required.
 
 ## Verification and testing
 
-**All AI-assisted code must be fully verified by a human contributor.**
+<mark>**All AI-assisted code must be fully verified by a human contributor.**</mark>
 
 Contributors are responsible for ensuring that:
 
@@ -43,9 +43,9 @@ It is recommended to attach test artifacts, such as screenshots or recordings, t
 
 ## Issues and discussions
 
-**AI assistance is permitted in issues and discussions, with a strict human-in-the-loop requirement:**
+<mark>**AI assistance is permitted in issues and discussions, with a strict human-in-the-loop requirement:**</mark>
 
-- AI-generated content must be reviewed and edited by a human before submission.
+- <mark>AI-generated content must be reviewed and edited by a human before submission.</mark>
 - Verbosity, noise, and speculative content must be removed.
 - Contributors remain responsible for research, accuracy, and clarity.
 
@@ -53,14 +53,14 @@ AI may assist with explanations, summaries, or drafting, but must not replace un
 
 ## Prohibited content
 
-**AI-generated media is not permitted.**
+<mark>**AI-generated media is not permitted.**</mark>
 
 This includes, but is not limited to: art, images, videos, and audio.
-Only text and code are eligible for AI assistance, subject to the rules above.
+<mark>Only text and code are eligible for AI assistance, subject to the rules above.</mark>
 
 ## Enforcement
 
-**Repeated or intentional misuse of AI tools may result in contributor bans.**
+<mark>**Repeated or intentional misuse of AI tools may result in contributor bans.**</mark>
 
 Maintainers may enforce this policy at their discretion.
 
@@ -70,22 +70,22 @@ This repository is maintained by humans.
 
 Every issue, discussion, and pull request is read and reviewed by maintainers who volunteer their time and expertise. Submitting low-effort, unverified, or poorly understood work shifts the burden of validation onto maintainers and is considered disrespectful of that effort.
 
-The primary behavior this policy seeks to prevent is **Vibe Coding**, defined as the uncritical generation and submission of AI-produced code without sufficient understanding, verification, or accountability by the contributor. This policy exists to prevent wasted maintainer time and to ensure high standards of code quality and maintainability.
+<mark>The primary behavior this policy seeks to prevent is **Vibe Coding**, defined as the uncritical generation and submission of AI-produced code without sufficient understanding, verification, or accountability by the contributor. This policy exists to prevent wasted maintainer time and to ensure high standards of code quality and maintainability.</mark>
 
 This policy exists to protect maintainers, preserve code quality, and ensure that collaboration remains productive and sustainable.
 
-## Responsible AI usage is welcome
+## <mark>Responsible AI usage is welcome</mark>
 
-Maintainers actively use AI tools as part of their workflow.
-This policy does not represent an anti-AI position.
+<mark>Maintainers actively use AI tools as part of their workflow.</mark>
+<mark>This policy does not represent an anti-AI position.</mark>
 
 The restrictions outlined above exist due to repeated misuse of AI by contributors who submit unverified, low-quality, or poorly understood work. The issue is not the tools themselves, but how they are applied.
 
-When used responsibly, transparently, and with proper human oversight, AI can be a valuable productivity aid.
+<mark>When used responsibly, transparently, and with proper human oversight, AI can be a valuable productivity aid.</mark>
 
 ## Attribution
 
-This policy is adapted from the original AI usage policy published by the [Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md) organization.
+<mark>This policy is adapted from the original AI usage policy published by the [Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md) organization.</mark>
 The maintainers acknowledge and appreciate the clarity and intent of the original text.
 
 ---
@@ -98,29 +98,29 @@ SPDX-FileCopyrightText: 2024 Mitchell Hashimoto, Ghostty contributors
 SPDX-License-Identifier: CC0-1.0 AND MIT
 -->
 
-# AI Usage Policy
+# <mark>AI Usage Policy</mark>
 
 ## Disclosure requirements
 
-**AI usage in generating code must be explicitly disclosed in the associated Pull Request.**
+<mark>**AI usage in generating code must be explicitly disclosed in the associated Pull Request.**</mark>
 
 Contributors must clearly state:
 
-- which AI tool(s) were used (for example: Claude Code, Cursor, Copilot)
-- the extent to which the contribution was AI-assisted
+- <mark>which AI tool(s) were used (for example: Claude Code, Cursor, Copilot)</mark>
+- <mark>the extent to which the contribution was AI-assisted</mark>
 
-**Undisclosed AI usage will result in closure.**
+<mark>**Undisclosed AI usage will result in closure.**</mark>
 
-If maintainers reasonably suspect undisclosed AI use, the pull request will be closed.
+<mark>If maintainers reasonably suspect undisclosed AI use, the pull request will be closed.</mark>
 
-**Non-direct AI usage does not require disclosure.**
+<mark>**Non-direct AI usage does not require disclosure.**</mark>
 
 The above requirements apply to cases where AI is used to write production code.
 If AI is used solely as an advisory or educational tool, disclosure is not required.
 
 ## Verification and testing
 
-**All AI-assisted code must be fully verified by a human contributor.**
+<mark>**All AI-assisted code must be fully verified by a human contributor.**</mark>
 
 Contributors are responsible for ensuring that:
 
@@ -131,9 +131,9 @@ It is recommended to attach test artifacts, such as screenshots or recordings, t
 
 ## Issues and discussions
 
-**AI assistance is permitted in issues and discussions, with a strict human-in-the-loop requirement:**
+<mark>**AI assistance is permitted in issues and discussions, with a strict human-in-the-loop requirement:**</mark>
 
-- AI-generated content must be reviewed and edited by a human before submission.
+- <mark>AI-generated content must be reviewed and edited by a human before submission.</mark>
 - Verbosity, noise, and speculative content must be removed.
 - Contributors remain responsible for research, accuracy, and clarity.
 
@@ -141,14 +141,14 @@ AI may assist with explanations, summaries, or drafting, but must not replace un
 
 ## Prohibited content
 
-**AI-generated media is not permitted.**
+<mark>**AI-generated media is not permitted.**</mark>
 
 This includes, but is not limited to: art, images, videos, and audio.
-Only text and code are eligible for AI assistance, subject to the rules above.
+<mark>Only text and code are eligible for AI assistance, subject to the rules above.</mark>
 
 ## Enforcement
 
-**Repeated or intentional misuse of AI tools may result in contributor bans.**
+<mark>**Repeated or intentional misuse of AI tools may result in contributor bans.**</mark>
 
 Maintainers may enforce this policy at their discretion.
 
@@ -158,20 +158,20 @@ This repository is maintained by humans.
 
 Every issue, discussion, and pull request is read and reviewed by maintainers who volunteer their time and expertise. Submitting low-effort, unverified, or poorly understood work shifts the burden of validation onto maintainers and is considered disrespectful of that effort.
 
-The primary behavior this policy seeks to prevent is **Vibe Coding**, defined as the uncritical generation and submission of AI-produced code without sufficient understanding, verification, or accountability by the contributor. This policy exists to prevent wasted maintainer time and to ensure high standards of code quality and maintainability.
+<mark>The primary behavior this policy seeks to prevent is **Vibe Coding**, defined as the uncritical generation and submission of AI-produced code without sufficient understanding, verification, or accountability by the contributor. This policy exists to prevent wasted maintainer time and to ensure high standards of code quality and maintainability.</mark>
 
 This policy exists to protect maintainers, preserve code quality, and ensure that collaboration remains productive and sustainable.
 
-## Responsible AI usage is welcome
+## <mark>Responsible AI usage is welcome</mark>
 
-Maintainers actively use AI tools as part of their workflow.
-This policy does not represent an anti-AI position.
+<mark>Maintainers actively use AI tools as part of their workflow.</mark>
+<mark>This policy does not represent an anti-AI position.</mark>
 
 The restrictions outlined above exist due to repeated misuse of AI by contributors who submit unverified, low-quality, or poorly understood work. The issue is not the tools themselves, but how they are applied.
 
-When used responsibly, transparently, and with proper human oversight, AI can be a valuable productivity aid.
+<mark>When used responsibly, transparently, and with proper human oversight, AI can be a valuable productivity aid.</mark>
 
 ## Attribution
 
-This policy is adapted from the original AI usage policy published by the [Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md) organization.
+<mark>This policy is adapted from the original AI usage policy published by the [Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md) organization.</mark>
 The maintainers acknowledge and appreciate the clarity and intent of the original text.

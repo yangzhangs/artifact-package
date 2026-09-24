@@ -5,7 +5,7 @@ While every raised pull request will be reviewed by the Emmy team, in general we
 * contain more than 10 commits
 * Change core system files such as `Gemfile`, `.ruby-version` and `.nvmrc`
 * Are untested / don’t pass our test suite / don’t pass our linters / don’t follow established style
-* Are entirely AI generated
+* <mark>Are entirely AI generated</mark>
 
 ---
 

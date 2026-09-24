@@ -1,5 +1,5 @@
 ### Low-effort Contributions
-We understand that some users rely on AI tools to assist with coding. That's fine - we do too - but please review and edit any AI generated code before submitting it in an issue or pull request. Submissions that include large, unedited _'code dumps'_ or show little effort on the side of the author, such as ignoring method signatures, documentation, or clear stack traces may be considered low-effort.
+<mark>We understand that some users rely on AI tools to assist with coding. That's fine - we do too - but please review and edit any AI generated code before submitting it in an issue or pull request. Submissions that include large, unedited _'code dumps'_ or show little effort on the side of the author, such as ignoring method signatures, documentation, or clear stack traces may be considered low-effort.</mark>
 
 When reporting bugs or proposing changes:
 - Focus on the minimal relevant code, not full scripts.

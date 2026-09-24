@@ -4,8 +4,8 @@ Before you start your first pull request, please complete this checklist:
 
 - Read this entire contributor guide.
 - Read the [Code of Conduct](./CODE_OF_CONDUCT.md).
-- If you are using AI to assist with coding, read our
-  [AI Tool Use Policy](./AI_TOOL_POLICY.md).
+- <mark>If you are using AI to assist with coding, read our</mark>
+<mark>[AI Tool Use Policy](./AI_TOOL_POLICY.md).</mark>
 
 ---
 
@@ -90,4 +90,4 @@ Before submitting, make sure your changes are correct and complete:
   clear? Are edge cases handled? Is the change well-scoped?
 
 Contributors are responsible for the correctness and quality of their
-submissions regardless of whether AI tools were used to produce them.
+<mark>submissions regardless of whether AI tools were used to produce them.</mark>

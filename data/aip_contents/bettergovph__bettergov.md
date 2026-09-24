@@ -7,7 +7,7 @@ We use Pull Requests (PRs) to review and merge changes. Follow these steps when 
 - Target the main branch (or the branch specified by maintainers).
 - Provide a clear title and detailed description of your changes.
 - Reference any related issues (e.g., Closes #12).
-- **AI-Assisted Work Disclosure:** If you used AI tools to help generate or significantly modify code in your PR, please disclose this in the PR description. This helps maintainers conduct a more thorough review.
+- <mark>**AI-Assisted Work Disclosure:** If you used AI tools to help generate or significantly modify code in your PR, please disclose this in the PR description. This helps maintainers conduct a more thorough review.</mark>
 
 **Wait for review:**
 

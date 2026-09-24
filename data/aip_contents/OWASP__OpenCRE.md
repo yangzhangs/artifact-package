@@ -1,6 +1,6 @@
-#### LLM-generated Contributions
+#### <mark>LLM-generated Contributions</mark>
 
-While AI tools such as Cursor, Claude, or ChatGPT can help contributors, pull requests generated entirely by LLMs without proper validation are discouraged.
+<mark>While AI tools such as Cursor, Claude, or ChatGPT can help contributors, pull requests generated entirely by LLMs without proper validation are discouraged.</mark>
 We will be closing low effort-low value PRs.
 
 Before submitting a PR:

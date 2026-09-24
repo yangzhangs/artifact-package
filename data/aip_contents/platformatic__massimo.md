@@ -6,7 +6,7 @@ All contributions must include a Developer Certificate of Origin (DCO) sign-off.
 git commit -s -m "Your commit message"
 ```
 
-This automatically adds your `Signed-off-by` line to the commit message. If working with AI assistance, ensure both contributors are signed off.
+<mark>This automatically adds your `Signed-off-by` line to the commit message. If working with AI assistance, ensure both contributors are signed off.</mark>
 
 ```
 Developer Certificate of Origin

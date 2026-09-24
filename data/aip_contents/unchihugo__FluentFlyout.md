@@ -4,4 +4,4 @@ Make sure to create a new [fork](https://github.com/unchihugo/FluentFlyout/fork)
 
 Once you're ready with the updates, submit a [pull request](https://github.com/unchihugo/FluentFlyout/compare) describing what's changed, and be sure to tag any issues (if applicable) your pull request is taking care of!
 
-AI usage: AI tools may be used to assist with programming, provided that you design the solution yourself and carefully review the generated code for issues and redundancy. Heavy reliance on AI without clear knowledge of what's going on with your changes will not be merged, but having a strong understanding of it will.
+<mark>AI usage: AI tools may be used to assist with programming, provided that you design the solution yourself and carefully review the generated code for issues and redundancy. Heavy reliance on AI without clear knowledge of what's going on with your changes will not be merged, but having a strong understanding of it will.</mark>

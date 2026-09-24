@@ -9,7 +9,7 @@
 3. Update the code.
 4. Commit your changes using a **descriptive commit message** that follows the
    [Angular Commit Message Conventions][commit-format]. We strongly discourage
-   using AI to generate commit descriptions. If you believe the description is
+<mark>using AI to generate commit descriptions. If you believe the description is</mark>
    not worth writing then it's probably not necessary.
    ```shell
    git commit --all
@@ -27,9 +27,9 @@
 
 
 
-## Using generative AI
+## <mark>Using generative AI</mark>
 
 
-Using generative AI to help you write code and documentation is allowed, but use
+<mark>Using generative AI to help you write code and documentation is allowed, but use</mark>
 it to enhance your work, not replace it. Pull requests that are a mindless copy
 of the output of an AI model will be rejected.

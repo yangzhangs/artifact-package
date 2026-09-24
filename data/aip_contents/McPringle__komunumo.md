@@ -7,7 +7,7 @@
     - [Good first issues](#good-first-issues)
     - [Commit Messages](#commit-messages)
     - [Sign-off your commits](#sign-off-your-commits)
-    - [AI generated code](#ai-generated-code)
+    - <mark>[AI generated code](#ai-generated-code)</mark>
     - [Testing](#testing)
     - [Pull Request Scope](#pull-request-scope)
 - [Quickstart for Local Development](#quickstart-for-local-development)
@@ -130,6 +130,6 @@ You can find more information about why this is important and how to do it easil
 
 ---
 
-### AI generated code
+### <mark>AI generated code</mark>
 
-AI generated source code is based on real existing source code, which is copied in whole or in part into the generated code. The license of the original source code with which the AI was trained is not taken into account. It is not clear which license conditions apply and how these can be complied with. For legal reasons, we therefore do not allow AI-generated source code at all.
+<mark>AI generated source code is based on real existing source code, which is copied in whole or in part into the generated code. The license of the original source code with which the AI was trained is not taken into account. It is not clear which license conditions apply and how these can be complied with. For legal reasons, we therefore do not allow AI-generated source code at all.</mark>

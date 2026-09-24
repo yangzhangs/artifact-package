@@ -1,4 +1,4 @@
-## AI disclosure
+## <mark>AI disclosure</mark>
 
 Within Clientele we use coding agents to prototype and test out ideas, and then take the idea to fruition using human-crafted code.
 

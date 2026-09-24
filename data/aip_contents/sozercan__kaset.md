@@ -5,13 +5,13 @@
 3. **Tests Must Pass** — Run `swift test`
 4. **Linting** — Run `swiftlint --strict && swiftformat .` before submitting
 5. **Small PRs** — Keep changes focused and reviewable
-6. **Share AI Prompts** — If you used AI assistance, include the prompt in your PR (see below)
+6. <mark>**Share AI Prompts** — If you used AI assistance, include the prompt in your PR (see below)</mark>
 
 ---
 
-## AI-Assisted Contributions & Prompt Requests
+## <mark>AI-Assisted Contributions & Prompt Requests</mark>
 
-We embrace AI-assisted development! Whether you use GitHub Copilot, Claude, Cursor, or other AI tools, we welcome contributions that leverage these capabilities.
+<mark>We embrace AI-assisted development! Whether you use GitHub Copilot, Claude, Cursor, or other AI tools, we welcome contributions that leverage these capabilities.</mark>
 
 ---
 
@@ -26,7 +26,7 @@ A **prompt request** is a contribution where you share the AI prompt that genera
 
 ---
 
-### Contributing with AI Assistance
+### <mark>Contributing with AI Assistance</mark>
 
 ---
 

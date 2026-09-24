@@ -7,4 +7,4 @@ You'll need:
 - A fork of the GitHub repo.
 - An understanding of the project's development workflow.
 
-A contribution to the project must be reviewed and understood in its entirety by the contributor. AI assisted contributions are allowed but the rule remains the same: the contributor must understand every line of the contribution and should be able to justify all of them.
+<mark>A contribution to the project must be reviewed and understood in its entirety by the contributor. AI assisted contributions are allowed but the rule remains the same: the contributor must understand every line of the contribution and should be able to justify all of them.</mark>

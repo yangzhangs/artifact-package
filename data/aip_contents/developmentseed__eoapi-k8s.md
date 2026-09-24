@@ -1,12 +1,12 @@
-## AI Use Policy
+## <mark>AI Use Policy</mark>
 
-AI tools are part of modern development workflows and contributors may use them. However, all contributions must meet eoapi-k8s quality standards regardless of how they were created.
+<mark>AI tools are part of modern development workflows and contributors may use them. However, all contributions must meet eoapi-k8s quality standards regardless of how they were created.</mark>
 
 ---
 
 ### Guidelines
 
-AI-assisted development is acceptable when used responsibly. Contributors must:
+<mark>AI-assisted development is acceptable when used responsibly. Contributors must:</mark>
 
 - **Test all code thoroughly.** Submit only code you have verified works correctly on a real cluster.
 - **Understand your contributions.** You must be able to explain Helm templates, Kubernetes resources, and bash scripts you submit.
@@ -18,7 +18,7 @@ AI-assisted development is acceptable when used responsibly. Contributors must:
 
 ### Disclosure
 
-Disclose AI assistance when substantial template logic or bash scripts were AI-generated, or when uncertain about licensing or copyright implications. Be honest if a reviewer asks about code origins.
+<mark>Disclose AI assistance when substantial template logic or bash scripts were AI-generated, or when uncertain about licensing or copyright implications. Be honest if a reviewer asks about code origins.</mark>
 
 ---
 
@@ -27,10 +27,10 @@ Disclose AI assistance when substantial template logic or bash scripts were AI-g
 Pull requests may be closed without review if they contain:
 
 - Untested code
-- Verbose AI-generated descriptions
+- <mark>Verbose AI-generated descriptions</mark>
 - Evidence the contributor doesn't understand the submission
 - Broken deployments or failing tests
 
-Using AI to assist learning and development is encouraged. Using it to bypass understanding or submit work you cannot explain is not.
+<mark>Using AI to assist learning and development is encouraged. Using it to bypass understanding or submit work you cannot explain is not.</mark>
 
 *This policy is adapted from the [GRASS GIS contribution guidelines](https://github.com/OSGeo/grass/blob/main/CONTRIBUTING.md).*

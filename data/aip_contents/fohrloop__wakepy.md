@@ -1,6 +1,6 @@
 ### Option 2: Developing Inside a Devcontainer
 
-[Devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) provide a pre-configured development environment with all necessary tools installed and ready to use. They are supported by many editors, including [VS Code](https://code.visualstudio.com/docs/devcontainers/containers), [PyCharm](https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html), [Zed](https://zed.dev/docs/dev-containers), [Cursor](https://www.vcluster.com/blog/cursor-with-devpod) and [Windsurf](https://docs.windsurf.com/windsurf/advanced#dev-containers).
+<mark>[Devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) provide a pre-configured development environment with all necessary tools installed and ready to use. They are supported by many editors, including [VS Code](https://code.visualstudio.com/docs/devcontainers/containers), [PyCharm](https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html), [Zed](https://zed.dev/docs/dev-containers), [Cursor](https://www.vcluster.com/blog/cursor-with-devpod) and [Windsurf](https://docs.windsurf.com/windsurf/advanced#dev-containers).</mark>
 
 **Why use a devcontainer?**
 - **Consistent environment** across different machines and contributors - no "works on my machine" issues
@@ -13,7 +13,7 @@
 3. Wait for the container to build and start
 4. Run `just test` to verify
 
-**Want to add custom tools like AI agents?**: You could add for example these features to add claude-code, codex and custom firewall rules (Edit [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) in VS Code):
+<mark>**Want to add custom tools like AI agents?**: You could add for example these features to add claude-code, codex and custom firewall rules (Edit [settings.json](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson) in VS Code):</mark>
 
 ```
 {
@@ -37,6 +37,6 @@ For more details on adding extensions, dotfiles, and features, see [.devcontaine
 ---
 
 ## 13. AI Agents
-- If you want to use AI Agents for coding, there is AGENTS.md for guiding the agents, as well as more specific instructions in `.planning/`. The planning older was generated and can be updated using [GSD](https://github.com/gsd-build/get-shit-done) `/gsd:map-codebase`. These files should (in theory) make the AI to produce better suited code.
-- Each contributor is expected to review their AI generated code themselves. Only provide code you have read, understood and reviewed yourself first.
+- <mark>If you want to use AI Agents for coding, there is AGENTS.md for guiding the agents, as well as more specific instructions in `.planning/`. The planning older was generated and can be updated using [GSD](https://github.com/gsd-build/get-shit-done) `/gsd:map-codebase`. These files should (in theory) make the AI to produce better suited code.</mark>
+- <mark>Each contributor is expected to review their AI generated code themselves. Only provide code you have read, understood and reviewed yourself first.</mark>
 - Since the ".planning" was generated using GSD, GSD might be the best suited tool for this project currently. Also other SDD tools/frameworks can be suggested. Related discussion: [#602](https://github.com/wakepy/wakepy/discussions/602)

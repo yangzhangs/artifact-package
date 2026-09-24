@@ -33,7 +33,7 @@ freedevtools/
 
 ---
 
-### AI Rules (Cursor, Copilot, etc.)
+### <mark>AI Rules (Cursor, Copilot, etc.)</mark>
 
 - AI can be used, but always take suggestions from Admins(discord link below), we prefer quality over quantitiy.
 - Ensure generated code follows project conventions

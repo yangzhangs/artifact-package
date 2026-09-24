@@ -1,6 +1,6 @@
-## AI policy
+## <mark>AI policy</mark>
 
-The responsible use of AI tools is recognised, but it is subject to the
+<mark>The responsible use of AI tools is recognised, but it is subject to the</mark>
 following policy on acceptable and unacceptable usage.
 
 ---
@@ -16,7 +16,7 @@ following policy on acceptable and unacceptable usage.
 ---
 
 ### Unacceptable usage
-- Using AI tools whose terms and conditions restrict the use of output in a way
+- <mark>Using AI tools whose terms and conditions restrict the use of output in a way</mark>
   that conflicts with open source standards.
 - Fully-automated submissions without a human-in-the-loop: PRs, issues,
   discussions.

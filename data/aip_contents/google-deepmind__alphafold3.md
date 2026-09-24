@@ -1,6 +1,6 @@
-## AI Generated Code
+## <mark>AI Generated Code</mark>
 
-We welcome the use of AI tools for the generation of code, documentation and/or
+<mark>We welcome the use of AI tools for the generation of code, documentation and/or</mark>
 Pull Request (PR) description as long as:
 
 1.  It has been transparently labelled as such. Make sure to declare it in the
@@ -9,4 +9,4 @@ Pull Request (PR) description as long as:
 3.  The change has been manually tested. We might ask you to fold a certain
     input to check correctness of the PR.
 
-Please do not submit AI generated PRs where test results have been hallucinated.
+<mark>Please do not submit AI generated PRs where test results have been hallucinated.</mark>

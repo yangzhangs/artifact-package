@@ -7,7 +7,7 @@ requests, please consider:
    Put unrelated changes in separate commits.
  * Basic checks (formatting, `rustfmt` and `black`, and typechecks,
    `cargo check` and `mypy --strict`) should pass at every commit.
- * Contributions must be authored by a human, LLM-generated code is not allowed.
+ * <mark>Contributions must be authored by a human, LLM-generated code is not allowed.</mark>
  * You agree to license your contribution under the Apache 2.0 license.
 
 ---
@@ -17,6 +17,6 @@ requests, please consider:
  * Be nice.
  * Please do not discuss politics in the issue tracker,
    the issue tracker is for technical issues.
- * Do not post LLM-generated content.
+ * <mark>Do not post LLM-generated content.</mark>
 
 [proper-commit]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html

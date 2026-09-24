@@ -5,7 +5,7 @@ Swiftide is in a very early stage and we are aware that we do lack features for 
 
 Indexing and querying are performance sensitive tasks. Please make sure to consider allocations and performance when contributing.
 
-AI Generated code is welcome and not frowned upon. Please be genuine and think critically about what you add.
+<mark>AI Generated code is welcome and not frowned upon. Please be genuine and think critically about what you add.</mark>
 
 For AI agents read the [AGENTS.md](AGENTS.md) for workspace layout, commands, and expectations tailored to agents.
 

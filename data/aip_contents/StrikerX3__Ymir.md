@@ -2,8 +2,8 @@
 
 Pull requests must explain what they're proposing and the rationale behind changes. Provide links to existing bugs they fix or features they implement if applicable.
 
-You must disclose if the code was generated with AI assistance, from simple code completions to full code generation.
-AI-generated PR descriptions are fine. AI-generated code will be thoroughly scrutizined or outright rejected if it impacts too much code for no good reason.
+<mark>You must disclose if the code was generated with AI assistance, from simple code completions to full code generation.</mark>
+<mark>AI-generated PR descriptions are fine. AI-generated code will be thoroughly scrutizined or outright rejected if it impacts too much code for no good reason.</mark>
 Ymir's code is entirely human-written; AI has only been used to acquire knowledge.
 
 Code contributions must follow the code standards and formatting guidelines described below.
@@ -12,7 +12,7 @@ Code contributions must follow the code standards and formatting guidelines desc
 
 ### Coding guidelines
 
-Avoid static initializers and global objects. These should only be used for process-wide features, usually dealing directly with operating system functionality such as controlling the mouse cursor or managing virtual memory.
+<mark>Avoid static initializers and global objects. These should only be used for process-wide features, usually dealing directly with operating system functionality such as controlling the mouse cursor or managing virtual memory.</mark>
 Ymir puts everything into objects for a good reason - you can run multiple emulator cores in a single process for advanced features like parallel frame search or reuse components to create a VDP debugger with an independent VDP renderer, for example.
 
 Do use classes and light OOP. Prefer composition over inheritance and avoid `virtual` functions if possible, especially in hot paths.

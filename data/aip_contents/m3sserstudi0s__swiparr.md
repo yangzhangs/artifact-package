@@ -1,6 +1,6 @@
 ## 🚫 What We Don't Accept
 
-- ❌ AI-generated code without human review
+- <mark>❌ AI-generated code without human review</mark>
 - ❌ Breaking changes without discussion
 - ❌ Code that compromises security
 - ❌ Features that bloat the core experience

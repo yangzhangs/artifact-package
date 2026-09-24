@@ -1,6 +1,6 @@
 ## AI / Bot Contributors
 
-If you are an AI agent, bot, or using AI tools to generate your contribution:
+<mark>If you are an AI agent, bot, or using AI tools to generate your contribution:</mark>
 
 - **Add 🤖 to the PR title** (e.g., `🤖 Fix typo in README`)
 - **Add 🤖 to the end of each commit message**

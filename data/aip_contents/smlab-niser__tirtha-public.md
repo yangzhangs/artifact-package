@@ -1,6 +1,6 @@
 ### Table of Contents
 - [Ways to Contribute](#ways-to-contribute)
-- [LLM / AI Tool Usage Policy](#llm--ai-tool-usage-policy)
+- <mark>[LLM / AI Tool Usage Policy](#llm--ai-tool-usage-policy)</mark>
 - [Communication Guidelines](#communication-guidelines)
 - [Contributing as a Coder](#contributing-as-a-coder)
   - [Before You Start](#before-you-start)
@@ -26,15 +26,15 @@ You can help Project Tirtha in many ways:
 
 No contribution is too small.
 
-Before you start, please read the relevant sections below, specifically the [LLM / AI Tool Usage Policy](#llm--ai-tool-usage-policy) and [Communication](#communication) guidelines.
+<mark>Before you start, please read the relevant sections below, specifically the [LLM / AI Tool Usage Policy](#llm--ai-tool-usage-policy) and [Communication](#communication) guidelines.</mark>
 
 ---
 
 ---
 
-## LLM / AI Tool Usage Policy
+## <mark>LLM / AI Tool Usage Policy</mark>
 
-We allow and encourage the use of LLMs and AI tools as assistive aids for:
+<mark>We allow and encourage the use of LLMs and AI tools as assistive aids for:</mark>
 
 - Drafting code and prototypes
 - Writing issues, PR descriptions, and comments
@@ -45,17 +45,17 @@ We allow and encourage the use of LLMs and AI tools as assistive aids for:
 However:
 
 - You are fully responsible for the correctness, safety, and licensing of anything you submit.
-- Do not paste proprietary, confidential, or non-redistributable material into LLMs.
-- Ensure you understand and can explain any AI-generated code you contribute.
-- For substantial AI-assisted content, note this briefly but explicitly in your PR or proposal.
-- GSoC proposals must reflect your technical understanding and design thinking. LLMs may help with phrasing, but cannot replace ownership.
+- <mark>Do not paste proprietary, confidential, or non-redistributable material into LLMs.</mark>
+- <mark>Ensure you understand and can explain any AI-generated code you contribute.</mark>
+- <mark>For substantial AI-assisted content, note this briefly but explicitly in your PR or proposal.</mark>
+- <mark>GSoC proposals must reflect your technical understanding and design thinking. LLMs may help with phrasing, but cannot replace ownership.</mark>
 
 ---
 
 ## Google Summer of Code (GSoC) 2026
 
 > [!important]
-> Make sure to read the [LLM / AI Tool Usage](#llm--ai-tool-usage-policy) and [Communication Guidelines](#communication-guidelines) sections. Then, read the project ideas document linked in the [README](./README.md) before engaging.
+> <mark>Make sure to read the [LLM / AI Tool Usage](#llm--ai-tool-usage-policy) and [Communication Guidelines](#communication-guidelines) sections. Then, read the project ideas document linked in the [README](./README.md) before engaging.</mark>
 
 We actively welcome GSoC 2026 contributors.
 
@@ -88,7 +88,7 @@ For RFCs, describe:
   - Your proposal
   - Alternatives considered
 
-The same [LLM / AI Tool Usage Policy](#llm--ai-tool-usage-policy) applies.
+<mark>The same [LLM / AI Tool Usage Policy](#llm--ai-tool-usage-policy) applies.</mark>
 
 Open a [GitHub issue](https://github.com/project-tirtha/tirtha-public/issues/new/choose) or come chat with us on [Matrix](https://matrix.to/#/#tirtha:matrix.org) if you run into problems.
 

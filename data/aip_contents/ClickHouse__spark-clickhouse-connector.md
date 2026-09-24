@@ -8,7 +8,7 @@
 2. Create a pull request from your forked repository to the main repository
 
 3. In your PR description, include:
-   * A clear, human-readable description written with care. You may use AI tools for drafting, but please ensure the final text is reviewed, personalized, and accurately represents the change.
+   * <mark>A clear, human-readable description written with care. You may use AI tools for drafting, but please ensure the final text is reviewed, personalized, and accurately represents the change.</mark>
    * Link to related issues (e.g., "Closes #123")
    * Any breaking changes or migration notes
    * Screenshots or examples if applicable

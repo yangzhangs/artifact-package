@@ -1,6 +1,6 @@
-### AI usage
+### <mark>AI usage</mark>
 
-If you use AI tools (such as GitHub Copilot, Claude, Cursor, etc.) while
+<mark>If you use AI tools (such as GitHub Copilot, Claude, Cursor, etc.) while</mark>
 contributing, you must disclose this in your pull request description and/or
 commit messages.  See *[AI_POLICY.md]* for the complete policy.
 
@@ -10,16 +10,16 @@ commit messages.  See *[AI_POLICY.md]* for the complete policy.
 
 <!-- deno-fmt-ignore-file -->
 
-AI usage policy
+<mark>AI usage policy</mark>
 ===============
 
-This policy is inspired by [Ghostty's AI policy][1].
+<mark>This policy is inspired by [Ghostty's AI policy][1].</mark>
 
-The Fedify project has the following rules for AI usage:
+<mark>The Fedify project has the following rules for AI usage:</mark>
 
- -  *All AI usage in any form must be disclosed.*  You must state the tool you
-    used (e.g., Claude, Cursor, GitHub Copilot) along with the extent that
-    the work was AI-assisted in both your pull request description and commit
+ -  <mark>*All AI usage in any form must be disclosed.*  You must state the tool you</mark>
+<mark>used (e.g., Claude, Cursor, GitHub Copilot) along with the extent that</mark>
+<mark>the work was AI-assisted in both your pull request description and commit</mark>
     messages.  For commit messages, use the `Assisted-by` trailer (see below
     for the required format).
 
@@ -31,20 +31,20 @@ The Fedify project has the following rules for AI usage:
 
  -  *Pull requests created by AI must have been fully verified with human use.*
     AI must not create hypothetically correct code that hasn't been tested.
-    Importantly, you must not allow AI to write code for platforms or
+<mark>Importantly, you must not allow AI to write code for platforms or</mark>
     environments you don't have access to manually test on.
 
- -  *Issues and discussions can use AI assistance but must have a full
+ -  <mark>*Issues and discussions can use AI assistance but must have a full</mark>
     human-in-the-loop.*  This means that any content generated with AI must
     have been reviewed and edited by a human before submission.  AI is very
     good at being overly verbose and including noise that distracts from
     the main point.  Humans must do their research and trim this down.
 
- -  *AI-generated media (images, diagrams, etc.) is allowed only in
-    documentation, and must be clearly labeled as AI-generated.*  Text and
-    code are acceptable AI-generated content per the other rules in this
+ -  <mark>*AI-generated media (images, diagrams, etc.) is allowed only in</mark>
+<mark>documentation, and must be clearly labeled as AI-generated.*  Text and</mark>
+<mark>code are acceptable AI-generated content per the other rules in this</mark>
     policy.  For documentation visuals like diagrams or illustrations,
-    AI-generated content is permitted but must include clear attribution
+<mark>AI-generated content is permitted but must include clear attribution</mark>
     (e.g., “Diagram generated with DALL-E” or “Created using Midjourney”).
 
  -  *Violations of this policy may result in being banned from contributing.*
@@ -52,16 +52,16 @@ The Fedify project has the following rules for AI usage:
     violations of this policy undermine trust and burden maintainers.
 
 These rules apply only to outside contributions to Fedify.  Maintainers are
-exempt from these rules and may use AI tools at their discretion; they've
+<mark>exempt from these rules and may use AI tools at their discretion; they've</mark>
 proven themselves trustworthy to apply good judgment.
 
 [1]: https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md
 
 
-Disclosing AI assistance in commit messages
+<mark>Disclosing AI assistance in commit messages</mark>
 -------------------------------------------
 
-When AI tools assist with a commit, add an `Assisted-by` trailer to the commit
+<mark>When AI tools assist with a commit, add an `Assisted-by` trailer to the commit</mark>
 message.  Do *not* use `Co-authored-by` for AI assistants; that trailer is
 reserved for human co-authors.
 
@@ -75,12 +75,12 @@ For example:
 
 ~~~~
 Assisted-by: OpenCode:qwen3.6-plus
-Assisted-by: Claude Code:claude-sonnet-4-6
-Assisted-by: Gemini CLI:gemini-3.1-pro-preview
+<mark>Assisted-by: Claude Code:claude-sonnet-4-6</mark>
+<mark>Assisted-by: Gemini CLI:gemini-3.1-pro-preview</mark>
 Assisted-by: Codex:gpt-5.4
 ~~~~
 
-If multiple AI tools were used, include one `Assisted-by` line per tool.
+<mark>If multiple AI tools were used, include one `Assisted-by` line per tool.</mark>
 
 
 There are humans here
@@ -101,20 +101,20 @@ better, the AI gets better, or both, we have to have rules to protect
 maintainers.
 
 
-AI is welcome here
+<mark>AI is welcome here</mark>
 ------------------
 
-Fedify is written with plenty of AI assistance, and many maintainers embrace
-AI tools as a productive tool in their workflow.  As a project, we welcome
+<mark>Fedify is written with plenty of AI assistance, and many maintainers embrace</mark>
+<mark>AI tools as a productive tool in their workflow.  As a project, we welcome</mark>
 AI as a tool!
 
-*Our reason for this policy is not due to an anti-AI stance*, but instead due
-to the number of highly unqualified people using AI.  It's the people, not
+<mark>*Our reason for this policy is not due to an anti-AI stance*, but instead due</mark>
+<mark>to the number of highly unqualified people using AI.  It's the people, not</mark>
 the tools, that are the problem.
 
 We include this section to be transparent about the project's usage of AI for
 people who may disagree with it, and to address the misconception that this
-policy is anti-AI in nature.
+<mark>policy is anti-AI in nature.</mark>
 
 ---
 
@@ -122,16 +122,16 @@ policy is anti-AI in nature.
 
 <!-- deno-fmt-ignore-file -->
 
-AI usage policy
+<mark>AI usage policy</mark>
 ===============
 
-This policy is inspired by [Ghostty's AI policy][1].
+<mark>This policy is inspired by [Ghostty's AI policy][1].</mark>
 
-The Fedify project has the following rules for AI usage:
+<mark>The Fedify project has the following rules for AI usage:</mark>
 
- -  *All AI usage in any form must be disclosed.*  You must state the tool you
-    used (e.g., Claude, Cursor, GitHub Copilot) along with the extent that
-    the work was AI-assisted in both your pull request description and commit
+ -  <mark>*All AI usage in any form must be disclosed.*  You must state the tool you</mark>
+<mark>used (e.g., Claude, Cursor, GitHub Copilot) along with the extent that</mark>
+<mark>the work was AI-assisted in both your pull request description and commit</mark>
     messages.  For commit messages, use the `Assisted-by` trailer (see below
     for the required format).
 
@@ -143,20 +143,20 @@ The Fedify project has the following rules for AI usage:
 
  -  *Pull requests created by AI must have been fully verified with human use.*
     AI must not create hypothetically correct code that hasn't been tested.
-    Importantly, you must not allow AI to write code for platforms or
+<mark>Importantly, you must not allow AI to write code for platforms or</mark>
     environments you don't have access to manually test on.
 
- -  *Issues and discussions can use AI assistance but must have a full
+ -  <mark>*Issues and discussions can use AI assistance but must have a full</mark>
     human-in-the-loop.*  This means that any content generated with AI must
     have been reviewed and edited by a human before submission.  AI is very
     good at being overly verbose and including noise that distracts from
     the main point.  Humans must do their research and trim this down.
 
- -  *AI-generated media (images, diagrams, etc.) is allowed only in
-    documentation, and must be clearly labeled as AI-generated.*  Text and
-    code are acceptable AI-generated content per the other rules in this
+ -  <mark>*AI-generated media (images, diagrams, etc.) is allowed only in</mark>
+<mark>documentation, and must be clearly labeled as AI-generated.*  Text and</mark>
+<mark>code are acceptable AI-generated content per the other rules in this</mark>
     policy.  For documentation visuals like diagrams or illustrations,
-    AI-generated content is permitted but must include clear attribution
+<mark>AI-generated content is permitted but must include clear attribution</mark>
     (e.g., “Diagram generated with DALL-E” or “Created using Midjourney”).
 
  -  *Violations of this policy may result in being banned from contributing.*
@@ -164,16 +164,16 @@ The Fedify project has the following rules for AI usage:
     violations of this policy undermine trust and burden maintainers.
 
 These rules apply only to outside contributions to Fedify.  Maintainers are
-exempt from these rules and may use AI tools at their discretion; they've
+<mark>exempt from these rules and may use AI tools at their discretion; they've</mark>
 proven themselves trustworthy to apply good judgment.
 
 [1]: https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md
 
 
-Disclosing AI assistance in commit messages
+<mark>Disclosing AI assistance in commit messages</mark>
 -------------------------------------------
 
-When AI tools assist with a commit, add an `Assisted-by` trailer to the commit
+<mark>When AI tools assist with a commit, add an `Assisted-by` trailer to the commit</mark>
 message.  Do *not* use `Co-authored-by` for AI assistants; that trailer is
 reserved for human co-authors.
 
@@ -187,12 +187,12 @@ For example:
 
 ~~~~
 Assisted-by: OpenCode:qwen3.6-plus
-Assisted-by: Claude Code:claude-sonnet-4-6
-Assisted-by: Gemini CLI:gemini-3.1-pro-preview
+<mark>Assisted-by: Claude Code:claude-sonnet-4-6</mark>
+<mark>Assisted-by: Gemini CLI:gemini-3.1-pro-preview</mark>
 Assisted-by: Codex:gpt-5.4
 ~~~~
 
-If multiple AI tools were used, include one `Assisted-by` line per tool.
+<mark>If multiple AI tools were used, include one `Assisted-by` line per tool.</mark>
 
 
 There are humans here
@@ -213,17 +213,17 @@ better, the AI gets better, or both, we have to have rules to protect
 maintainers.
 
 
-AI is welcome here
+<mark>AI is welcome here</mark>
 ------------------
 
-Fedify is written with plenty of AI assistance, and many maintainers embrace
-AI tools as a productive tool in their workflow.  As a project, we welcome
+<mark>Fedify is written with plenty of AI assistance, and many maintainers embrace</mark>
+<mark>AI tools as a productive tool in their workflow.  As a project, we welcome</mark>
 AI as a tool!
 
-*Our reason for this policy is not due to an anti-AI stance*, but instead due
-to the number of highly unqualified people using AI.  It's the people, not
+<mark>*Our reason for this policy is not due to an anti-AI stance*, but instead due</mark>
+<mark>to the number of highly unqualified people using AI.  It's the people, not</mark>
 the tools, that are the problem.
 
 We include this section to be transparent about the project's usage of AI for
 people who may disagree with it, and to address the misconception that this
-policy is anti-AI in nature.
+<mark>policy is anti-AI in nature.</mark>

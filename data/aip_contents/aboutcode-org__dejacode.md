@@ -12,8 +12,8 @@
 - **Write your own descriptions, comments, and documentation.** All written
   content in a PR must be authored by a human.
 
-- **Disclose any AI usage.** If any part of your contribution was generated or
-  assisted by AI, you must disclose this and specify the tools used.
+- <mark>**Disclose any AI usage.** If any part of your contribution was generated or</mark>
+<mark>assisted by AI, you must disclose this and specify the tools used.</mark>
 
 - **Include tests.** Any code change or addition must be accompanied by proper
   unit tests. Untested code will not be merged.

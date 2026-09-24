@@ -1,8 +1,8 @@
-## AI-assisted contributions
+## <mark>AI-assisted contributions</mark>
 
-AI-assisted PRs are welcome. Be explicit:
+<mark>AI-assisted PRs are welcome. Be explicit:</mark>
 
-- Mark AI assistance in the PR.
+- <mark>Mark AI assistance in the PR.</mark>
 - State testing level (untested/lightly tested/fully tested).
 - Include prompt/session notes when feasible.
 - Confirm you understand the final code and behavior.
@@ -15,6 +15,6 @@ Complete all sections in `.github/pull_request_template.md`, especially:
 
 - Security impact
 - Repro and verification
-- Human verification
+- <mark>Human verification</mark>
 - Compatibility/migration
 - Failure recovery

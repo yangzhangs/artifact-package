@@ -1,6 +1,6 @@
-## LLM / AI use policy
+## <mark>LLM / AI use policy</mark>
 
-It's OK to use an LLM or AI to help with your work on the Wild linker. However, there must be a
+<mark>It's OK to use an LLM or AI to help with your work on the Wild linker. However, there must be a</mark>
 human in the loop. We want to communicate with you, not a bot. Please do not use an AI agent to
 communicate with us and don't just copy and paste AI-written responses to review comments. If your
 English isn't good, it's fine to use automatic translation, however please let us know that you're
@@ -16,7 +16,7 @@ and don't tell us up front that you don't understand it, that will quickly erode
 If it's not just parts of your PR that you don't understand, but the majority of it, then please
 don't send it. Start with something smaller that you can understand.
 
-Your PR / issue should be written by you, not by an LLM. LLMs tend to write excessively long PR
+<mark>Your PR / issue should be written by you, not by an LLM. LLMs tend to write excessively long PR</mark>
 descriptions. If you write something short and concise, it shouldn't take you long provided you
 understand the change that you're sending us.
 

@@ -9,8 +9,8 @@ Alternatively, submit a pull request with one of the following
 * In case the change is trivial, you can start with a draft or even provide a PR with the final implementation.
 
 When working on a pull request please make sure that you have followed [pull
-request guidelines](#pull-request-guidelines). For AI-assisted contributions,
-make sure to comply with the [AI Contribution Policy](AI_CONTRIBUTION_POLICY.md).
+<mark>request guidelines](#pull-request-guidelines). For AI-assisted contributions,</mark>
+<mark>make sure to comply with the [AI Contribution Policy](AI_CONTRIBUTION_POLICY.md).</mark>
 Please consult [Development](#development) section, it contains a lot of helpful
 information which will make contributing fast and pleasant process.
 
@@ -73,25 +73,25 @@ Whenever adding a new feature to Hermeto, it is important to keep these fundamen
 
 [=== 独立AI政策文件: AI_CONTRIBUTION_POLICY.md ===]
 
-# AI Contribution Policy
+# <mark>AI Contribution Policy</mark>
 
 ## Purpose
 
 This policy establishes guidelines for contributions to Hermeto that involve the
-use of AI tools, including but not limited to Large Language Models (LLMs), code
+<mark>use of AI tools, including but not limited to Large Language Models (LLMs), code</mark>
 generation assistants, and similar technologies. It aims to balance openness to
 modern development workflows with the project's need for high-quality,
 well-understood contributions.
 
 ## Position
 
-Hermeto takes a **permissive approach** toward AI-assisted contributions. We
-recognize AI tools as legitimate development aids that can improve productivity
+<mark>Hermeto takes a **permissive approach** toward AI-assisted contributions. We</mark>
+<mark>recognize AI tools as legitimate development aids that can improve productivity</mark>
 and code quality when used responsibly.
 
 This position is consistent with the [Linux Foundation's Generative AI
-Policy](https://www.linuxfoundation.org/legal/generative-ai), which states that
-code generated in whole or in part using AI tools can be contributed to open
+<mark>Policy](https://www.linuxfoundation.org/legal/generative-ai), which states that</mark>
+<mark>code generated in whole or in part using AI tools can be contributed to open</mark>
 source projects, **provided that licensing and intellectual property
 considerations are properly addressed**.
 
@@ -103,7 +103,7 @@ project standards, and licensing compliance.
 
 Hermeto is a security-sensitive and security-oriented project: it prefetches
 dependencies, validates checksums, and produces SBOMs that downstream consumers
-rely on. AI-generated code that is submitted without thorough human review and
+<mark>rely on. AI-generated code that is submitted without thorough human review and</mark>
 understanding poses a direct risk to its mission.
 
 ### What we expect
@@ -112,18 +112,18 @@ understanding poses a direct risk to its mission.
     submission, defend design decisions during review, and respond to reviewer
     feedback with substance.
 
-- **Review AI output critically.** AI tools can produce code that is
+- <mark>**Review AI output critically.** AI tools can produce code that is</mark>
     syntactically correct, but semantically or logically flawed. Treat all AI
     output as untrusted input that requires careful validation.
 
-- **Follow project standards.** AI-assisted contributions must meet the same
+- <mark>**Follow project standards.** AI-assisted contributions must meet the same</mark>
     coding standards, test coverage, and review quality as any other
     contribution. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### What we will reject
 
-- **"Vibecoded" contributions.** Submissions that are purely AI-generated with
-    minimal or no human review, understanding, or refinement will be rejected.
+- <mark>**"Vibecoded" contributions.** Submissions that are purely AI-generated with</mark>
+<mark>minimal or no human review, understanding, or refinement will be rejected.</mark>
     If a contribution appears to be an unreviewed dump of AI output,
     maintainers may reject it without detailed feedback.
 
@@ -140,8 +140,8 @@ understanding poses a direct risk to its mission.
 
 ## Disclosure requirements
 
-Contributors **MUST** disclose AI tool usage when submitting code,
-documentation, or other content to the project. Undisclosed AI usage discovered
+<mark>Contributors **MUST** disclose AI tool usage when submitting code,</mark>
+<mark>documentation, or other content to the project. Undisclosed AI usage discovered</mark>
 during review may result in the contribution being rejected and a request to
 re-submit with proper disclosure. Disclosure is done via [git commit
 trailer](https://git-scm.com/docs/git-interpret-trailers) lines. Accepted
@@ -162,15 +162,15 @@ Note these trailers must appear in addition to the required
 - AI wrote significant code blocks included in the submission
 - AI suggested algorithms, data structures, or architectural approaches that
   were adopted
-- AI generated tests, documentation, or commit messages that were used as-is or
+- <mark>AI generated tests, documentation, or commit messages that were used as-is or</mark>
   with minor edits
 - AI-suggested solutions that materially shaped the final implementation
 
 ### What does not require disclosure
 
 - General Q&A or learning about a technology
-- IDE autocomplete or line-level completions (e.g. basic Copilot suggestions)
-- Using AI to explain existing code
+- <mark>IDE autocomplete or line-level completions (e.g. basic Copilot suggestions)</mark>
+- <mark>Using AI to explain existing code</mark>
 - Asking AI to review human-written code
 - Spell checking or minor syntax corrections
 - Content that was substantially rewritten to the point where the original AI
@@ -181,23 +181,23 @@ Note these trailers must appear in addition to the required
 Hermeto is licensed under the [GNU General Public License v3.0](LICENSE).
 **Contributors must ensure that:**
 
-- **The terms of their AI tool do not impose restrictions on the generated
+- <mark>**The terms of their AI tool do not impose restrictions on the generated</mark>
     output that conflict with the GPL-3.0 license**
 
-- **AI-generated output does not contain copyrighted material from third parties
+- <mark>**AI-generated output does not contain copyrighted material from third parties</mark>
     that would violate the GPL-3.0 or the rights of the original authors**
 
 - **They can legitimately provide a DCO sign-off for the contribution,
     certifying that they have the right to submit it under the project's
     license**
 
-When in doubt about whether an AI tool's terms are compatible with GPL-3.0, err
+<mark>When in doubt about whether an AI tool's terms are compatible with GPL-3.0, err</mark>
 on the side of caution and consult the tool's terms of service or reach out to
 the maintainers.
 
 ## Review standards
 
-Maintainers will evaluate all contributions — whether AI-assisted or not — on
+<mark>Maintainers will evaluate all contributions — whether AI-assisted or not — on</mark>
 the same criteria:
 
 - Adherence to [coding standards](CONTRIBUTING.md#coding-standards) and
@@ -212,25 +212,25 @@ the same criteria:
 
 # Standalone AI policy file
 
-# AI Contribution Policy
+# <mark>AI Contribution Policy</mark>
 
 ## Purpose
 
 This policy establishes guidelines for contributions to Hermeto that involve the
-use of AI tools, including but not limited to Large Language Models (LLMs), code
+<mark>use of AI tools, including but not limited to Large Language Models (LLMs), code</mark>
 generation assistants, and similar technologies. It aims to balance openness to
 modern development workflows with the project's need for high-quality,
 well-understood contributions.
 
 ## Position
 
-Hermeto takes a **permissive approach** toward AI-assisted contributions. We
-recognize AI tools as legitimate development aids that can improve productivity
+<mark>Hermeto takes a **permissive approach** toward AI-assisted contributions. We</mark>
+<mark>recognize AI tools as legitimate development aids that can improve productivity</mark>
 and code quality when used responsibly.
 
 This position is consistent with the [Linux Foundation's Generative AI
-Policy](https://www.linuxfoundation.org/legal/generative-ai), which states that
-code generated in whole or in part using AI tools can be contributed to open
+<mark>Policy](https://www.linuxfoundation.org/legal/generative-ai), which states that</mark>
+<mark>code generated in whole or in part using AI tools can be contributed to open</mark>
 source projects, **provided that licensing and intellectual property
 considerations are properly addressed**.
 
@@ -242,7 +242,7 @@ project standards, and licensing compliance.
 
 Hermeto is a security-sensitive and security-oriented project: it prefetches
 dependencies, validates checksums, and produces SBOMs that downstream consumers
-rely on. AI-generated code that is submitted without thorough human review and
+<mark>rely on. AI-generated code that is submitted without thorough human review and</mark>
 understanding poses a direct risk to its mission.
 
 ### What we expect
@@ -251,18 +251,18 @@ understanding poses a direct risk to its mission.
     submission, defend design decisions during review, and respond to reviewer
     feedback with substance.
 
-- **Review AI output critically.** AI tools can produce code that is
+- <mark>**Review AI output critically.** AI tools can produce code that is</mark>
     syntactically correct, but semantically or logically flawed. Treat all AI
     output as untrusted input that requires careful validation.
 
-- **Follow project standards.** AI-assisted contributions must meet the same
+- <mark>**Follow project standards.** AI-assisted contributions must meet the same</mark>
     coding standards, test coverage, and review quality as any other
     contribution. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### What we will reject
 
-- **"Vibecoded" contributions.** Submissions that are purely AI-generated with
-    minimal or no human review, understanding, or refinement will be rejected.
+- <mark>**"Vibecoded" contributions.** Submissions that are purely AI-generated with</mark>
+<mark>minimal or no human review, understanding, or refinement will be rejected.</mark>
     If a contribution appears to be an unreviewed dump of AI output,
     maintainers may reject it without detailed feedback.
 
@@ -279,8 +279,8 @@ understanding poses a direct risk to its mission.
 
 ## Disclosure requirements
 
-Contributors **MUST** disclose AI tool usage when submitting code,
-documentation, or other content to the project. Undisclosed AI usage discovered
+<mark>Contributors **MUST** disclose AI tool usage when submitting code,</mark>
+<mark>documentation, or other content to the project. Undisclosed AI usage discovered</mark>
 during review may result in the contribution being rejected and a request to
 re-submit with proper disclosure. Disclosure is done via [git commit
 trailer](https://git-scm.com/docs/git-interpret-trailers) lines. Accepted
@@ -301,15 +301,15 @@ Note these trailers must appear in addition to the required
 - AI wrote significant code blocks included in the submission
 - AI suggested algorithms, data structures, or architectural approaches that
   were adopted
-- AI generated tests, documentation, or commit messages that were used as-is or
+- <mark>AI generated tests, documentation, or commit messages that were used as-is or</mark>
   with minor edits
 - AI-suggested solutions that materially shaped the final implementation
 
 ### What does not require disclosure
 
 - General Q&A or learning about a technology
-- IDE autocomplete or line-level completions (e.g. basic Copilot suggestions)
-- Using AI to explain existing code
+- <mark>IDE autocomplete or line-level completions (e.g. basic Copilot suggestions)</mark>
+- <mark>Using AI to explain existing code</mark>
 - Asking AI to review human-written code
 - Spell checking or minor syntax corrections
 - Content that was substantially rewritten to the point where the original AI
@@ -320,23 +320,23 @@ Note these trailers must appear in addition to the required
 Hermeto is licensed under the [GNU General Public License v3.0](LICENSE).
 **Contributors must ensure that:**
 
-- **The terms of their AI tool do not impose restrictions on the generated
+- <mark>**The terms of their AI tool do not impose restrictions on the generated</mark>
     output that conflict with the GPL-3.0 license**
 
-- **AI-generated output does not contain copyrighted material from third parties
+- <mark>**AI-generated output does not contain copyrighted material from third parties</mark>
     that would violate the GPL-3.0 or the rights of the original authors**
 
 - **They can legitimately provide a DCO sign-off for the contribution,
     certifying that they have the right to submit it under the project's
     license**
 
-When in doubt about whether an AI tool's terms are compatible with GPL-3.0, err
+<mark>When in doubt about whether an AI tool's terms are compatible with GPL-3.0, err</mark>
 on the side of caution and consult the tool's terms of service or reach out to
 the maintainers.
 
 ## Review standards
 
-Maintainers will evaluate all contributions — whether AI-assisted or not — on
+<mark>Maintainers will evaluate all contributions — whether AI-assisted or not — on</mark>
 the same criteria:
 
 - Adherence to [coding standards](CONTRIBUTING.md#coding-standards) and

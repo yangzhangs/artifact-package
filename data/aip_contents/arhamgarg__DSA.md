@@ -3,7 +3,7 @@
 Hey there! 👋
 We’re so glad you’re here and interested in contributing to this project. Below, you'll find guidelines and instructions to help you get started. Let’s dive in! 🚀
 
-⚠️ **Important**: AI-generated code is strongly discouraged in this repository.  
+<mark>⚠️ **Important**: AI-generated code is strongly discouraged in this repository.</mark>
 This repo is meant for *your own learning* — writing and debugging code yourself will help you grow as a developer.
 
 ---

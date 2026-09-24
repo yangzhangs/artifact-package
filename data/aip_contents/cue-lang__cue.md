@@ -1,9 +1,9 @@
-### AI-assisted development with OpenSpec
+### <mark>AI-assisted development with OpenSpec</mark>
 
 Contributors can optionally use [OpenSpec](https://github.com/Fission-AI/OpenSpec/)
-for AI-assisted development. OpenSpec provides a structured workflow for creating
+<mark>for AI-assisted development. OpenSpec provides a structured workflow for creating</mark>
 proposals, designs, specs, and implementation tasks with AI coding assistants like
-Claude Code, GitHub Copilot, Gemini, and others.
+<mark>Claude Code, GitHub Copilot, Gemini, and others.</mark>
 
 **Setup:**
 

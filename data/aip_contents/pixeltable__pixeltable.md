@@ -1,6 +1,6 @@
-## AI-Assisted Contributions
+## <mark>AI-Assisted Contributions</mark>
 
-We welcome the use of AI coding assistants as part of your development workflow. However, the same high bar for quality,
+<mark>We welcome the use of AI coding assistants as part of your development workflow. However, the same high bar for quality,</mark>
 correctness, test and documentation coverage applies to all contributions, regardless of how the code was produced.
 
 As the human author of a PR, you are responsible for every line of code in it. You must fully understand what the code

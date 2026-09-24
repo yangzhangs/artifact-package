@@ -1,4 +1,4 @@
-## Recommended AI-Assisted Workflow (Copilot / CodePilot / Codex)
+## <mark>Recommended AI-Assisted Workflow (Copilot / CodePilot / Codex)</mark>
 
 ---
 
@@ -7,7 +7,7 @@ Once you feel work is complete, and whatever manual or automated testing passes,
 
 **Use a different agent to review your work than was used to produce the work**
 
-If you use Claud or OpenAI codex, use your free Copilot tokens in VScode to get a Copilot review. If in doubt, ask your main agent to formulate a prompt for the review agent. It will 'know' what it has worked on and can suggest appropriate focus areas for the review agent.
+<mark>If you use Claud or OpenAI codex, use your free Copilot tokens in VScode to get a Copilot review. If in doubt, ask your main agent to formulate a prompt for the review agent. It will 'know' what it has worked on and can suggest appropriate focus areas for the review agent.</mark>
 
 Ask the agent to review **only your commit diff**, not the whole repo.
 
@@ -27,7 +27,7 @@ Fix the issues raised by the review, rerun the review process until only non-bre
 - Known pre-existing issues not addressed
 - Follow-up items (if any)
 
-Your PR description should look something like [this](https://github.com/ace-step/ACE-Step-1.5/pull/309), demonstrating care and rigor applied by the author before hitting the PR button. If you have multiple Coderabbit/copilot responses to your PR, its probably a good idea to revoke the PR, fix the issues raised by the review bot, and resubmit.
+<mark>Your PR description should look something like [this](https://github.com/ace-step/ACE-Step-1.5/pull/309), demonstrating care and rigor applied by the author before hitting the PR button. If you have multiple Coderabbit/copilot responses to your PR, its probably a good idea to revoke the PR, fix the issues raised by the review bot, and resubmit.</mark>
 
 ---
 

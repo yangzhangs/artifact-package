@@ -6,7 +6,7 @@
 - [Code Standards](#code-standards)
 - [Testing Requirements](#testing-requirements)
 - [Pull Request Process](#pull-request-process)
-- [AI-Assisted Development](#ai-assisted-development)
+- <mark>[AI-Assisted Development](#ai-assisted-development)</mark>
 - [Architecture Guidelines](#architecture-guidelines)
 
 ---
@@ -16,40 +16,40 @@
 - [ ] Code follows Black formatting standards
 - [ ] All tests pass locally
 - [ ] New tests added for new functionality
-- [ ] Documentation updated (README.md, CLAUDE.md if architecture changed)
+- <mark>[ ] Documentation updated (README.md, CLAUDE.md if architecture changed)</mark>
 - [ ] Pre-commit hooks pass
 - [ ] No unnecessary dependencies added
-- [ ] AI assistance disclosed (see below)
+- <mark>[ ] AI assistance disclosed (see below)</mark>
 
 ---
 
-## AI Assistance
-- Tools used: [e.g., Claude Code, GitHub Copilot]
-- Model: [e.g., Claude Sonnet 4.5, GPT-4]
+## <mark>AI Assistance</mark>
+- <mark>Tools used: [e.g., Claude Code, GitHub Copilot]</mark>
+- <mark>Model: [e.g., Claude Sonnet 4.5, GPT-4]</mark>
 - Scope: [e.g., "Generated test cases", "Refactored function X"]
 
 ---
 
-## AI-Assisted Development
+## <mark>AI-Assisted Development</mark>
 
-**TerraVision welcomes the use of AI tools for development!** AI assistance can accelerate development, improve code quality, and help with documentation.
+<mark>**TerraVision welcomes the use of AI tools for development!** AI assistance can accelerate development, improve code quality, and help with documentation.</mark>
 
 ---
 
 ### Disclosure Requirement
 
-**All AI use for coding must be disclosed in pull requests.** Please include:
+<mark>**All AI use for coding must be disclosed in pull requests.** Please include:</mark>
 
-1. **Tools used**: Name of AI tool(s) (e.g., Claude Code, GitHub Copilot, ChatGPT, Cursor)
-2. **Model and version**: Specific model used (e.g., Claude Sonnet 4.5, GPT-4 Turbo, Llama 3.1 70B)
+1. <mark>**Tools used**: Name of AI tool(s) (e.g., Claude Code, GitHub Copilot, ChatGPT, Cursor)</mark>
+2. <mark>**Model and version**: Specific model used (e.g., Claude Sonnet 4.5, GPT-4 Turbo, Llama 3.1 70B)</mark>
 3. **Scope of assistance**: What the AI helped with (e.g., "Generated test fixtures", "Refactored VPC handler", "Wrote docstrings")
 
 ---
 
-## AI Assistance
+## <mark>AI Assistance</mark>
 
-- **Tools**: Claude Code CLI
-- **Model**: Claude Sonnet 4.5 (claude-sonnet-4-5-20250929)
+- <mark>**Tools**: Claude Code CLI</mark>
+- <mark>**Model**: Claude Sonnet 4.5 (claude-sonnet-4-5-20250929)</mark>
 - **Scope**:
   - Generated initial implementation of Azure resource handlers
   - Created unit tests for provider detection

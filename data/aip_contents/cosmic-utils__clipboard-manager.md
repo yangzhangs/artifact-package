@@ -3,17 +3,17 @@
 - For features, it's better to create an issue first, in order to get feedback on whether the feature is wanted or not, and to align on the best approach before starting development.
 - Keep pull requests focused—split features into separate PRs.
 - Before submitting a PR, make sure to run `just pull` to ensure CI passes.
-- You may use AI tools to help write code.
+- <mark>You may use AI tools to help write code.</mark>
 
 ---
 
-## AI Usage
+## <mark>AI Usage</mark>
 
-You are allowed to use AI to generate code, but you must fully understand it and ensure it follows the project's existing quality standards and conventions. Generating entire files with AI is not acceptable.
+<mark>You are allowed to use AI to generate code, but you must fully understand it and ensure it follows the project's existing quality standards and conventions. Generating entire files with AI is not acceptable.</mark>
 
-Do not use AI to write the full content of pull requests or issues. You may use it for ideas or partial content, but the final wording should be your own.
+<mark>Do not use AI to write the full content of pull requests or issues. You may use it for ideas or partial content, but the final wording should be your own.</mark>
 
-These rules exist because AI-generated code is often:
+<mark>These rules exist because AI-generated code is often:</mark>
 
 - suboptimal
 - poorly written

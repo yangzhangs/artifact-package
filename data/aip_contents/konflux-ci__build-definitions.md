@@ -4,7 +4,7 @@
 - Write clear, descriptive commit titles. Should fit under 50 characters
 - Write meaningful commit descriptions with each line having less than 72 characters
 - Split your contribution into several commits if applicable, each should represent a logical chunk
-- Add line `Assisted-by: <name-of-ai-tool>` if you used an AI tool for your contribution
+- <mark>Add line `Assisted-by: <name-of-ai-tool>` if you used an AI tool for your contribution</mark>
 - Sign-off your commits in order to certify that you adhere to [Developer Certificate of Origin](https://developercertificate.org)
 
 **Pull Request Content:**

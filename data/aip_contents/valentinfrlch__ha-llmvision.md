@@ -1,6 +1,6 @@
-# Contributing to LLM Vision
+# <mark>Contributing to LLM Vision</mark>
 
-Thank you for your interest in contributing to **LLM Vision**! All kinds of contributions are welcome, whether you're fixing a bug, adding translations, or adding new features.
+<mark>Thank you for your interest in contributing to **LLM Vision**! All kinds of contributions are welcome, whether you're fixing a bug, adding translations, or adding new features.</mark>
 
 ---
 
@@ -26,15 +26,15 @@ Thank you for your interest in contributing to **LLM Vision**! All kinds of cont
 
 If you're unsure about something, have questions about the codebase, or need guidance on how to approach a contribution, don't hesitate to reach out on **[Discord](https://discord.gg/wuFeMfCMRB)**. We're always happy to answer questions and provide support.
 
-You can also check the [Discussions](https://github.com/valentinfrlch/ha-llmvision/discussions) tab for technical questions or browse the [Documentation](https://llm-vision.gitbook.io/getting-started) for context on how things work.
+<mark>You can also check the [Discussions](https://github.com/valentinfrlch/ha-llmvision/discussions) tab for technical questions or browse the [Documentation](https://llm-vision.gitbook.io/getting-started) for context on how things work.</mark>
 
 ---
 
 ---
 
-## Use of AI
+## <mark>Use of AI</mark>
 
-AI tools are acceptable for **debugging**: using them to understand errors, trace logic, or look up API behavior is fine. However, **purely AI-generated or "vibe-coded" pull requests will not be accepted** and will be closed by maintainers without review.
+<mark>AI tools are acceptable for **debugging**: using them to understand errors, trace logic, or look up API behavior is fine. However, **purely AI-generated or "vibe-coded" pull requests will not be accepted** and will be closed by maintainers without review.</mark>
 
 All contributed code should reflect genuine understanding of what it does and why.
 

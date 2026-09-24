@@ -1,6 +1,6 @@
-## Using AI Tools on Your PR
+## <mark>Using AI Tools on Your PR</mark>
 
-Using AI is allowed and encouraged; however, PRs that are entirely generated
+<mark>Using AI is allowed and encouraged; however, PRs that are entirely generated</mark>
 by AI are not welcome.
 
 Watch out for:

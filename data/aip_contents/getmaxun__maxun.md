@@ -1,6 +1,6 @@
-### 7. AI-Assisted Contributions
+### <mark>7. AI-Assisted Contributions</mark>
 
-AI-assisted contributions are welcome. If you use AI tools to generate code, please ensure that:
+<mark>AI-assisted contributions are welcome. If you use AI tools to generate code, please ensure that:</mark>
 
 1. The changes fully address the issue or feature request.
 2. The code is tested and works as expected.

@@ -12,4 +12,4 @@
 * ⚠️ If you work or have worked at Apple, or NeXT, or various other organisations, then you may have seen the proprietary source code used in components of iPhone OS. If that's the case, please do not contribute to this project.
 * ⚠️ If your employment contract or applicable law in your country means that you don't own the copyright on code you want to contribute to this project, or if for some other reason you may need permission from your employer to contribute to this project: please do obtain that permission before contributing.
 
-Because large language models have most likely "seen" things during their training process that would break these rules, and because they are impossible to audit, ⚠️ **use of AI assistants or AI code generation like ChatGPT, Copilot or similar is also forbidden**.
+<mark>Because large language models have most likely "seen" things during their training process that would break these rules, and because they are impossible to audit, ⚠️ **use of AI assistants or AI code generation like ChatGPT, Copilot or similar is also forbidden**.</mark>

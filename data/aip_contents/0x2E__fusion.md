@@ -5,4 +5,4 @@
 - Include screenshots/GIFs for UI changes.
 - Link related issue(s).
 - Mark as Draft if not ready for review.
-- If you use AI tools, review and validate outputs carefully before submission.
+- <mark>If you use AI tools, review and validate outputs carefully before submission.</mark>

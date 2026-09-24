@@ -1,6 +1,6 @@
 ### Working with Optional Dependencies
 
-Instructor uses optional dependencies to support different LLM providers. Provider-specific utilities live under `instructor/utils`. When adding integration for a new provider:
+<mark>Instructor uses optional dependencies to support different LLM providers. Provider-specific utilities live under `instructor/utils`. When adding integration for a new provider:</mark>
 
 1. **Update pyproject.toml**: Add your provider's dependencies to both `[project.optional-dependencies]` and `[dependency-groups]`:
 
@@ -16,7 +16,7 @@ Instructor uses optional dependencies to support different LLM providers. Provid
 
 2. **Create Provider Client**: Implement your provider client in `instructor/clients/client_myprovider.py`
 
-3. **Add Tests**: Create tests in `tests/llm/test_myprovider/`
+3. <mark>**Add Tests**: Create tests in `tests/llm/test_myprovider/`</mark>
 
 4. **Document Installation**: Update the documentation to include installation instructions:
    ```
@@ -48,7 +48,7 @@ Instructor uses optional dependencies to support different LLM providers. Provid
 
 We encourage contributions to our evaluation tests:
 
-1. Explore existing evals in the [evals directory](https://github.com/instructor-ai/instructor/tree/main/tests/llm)
+1. <mark>Explore existing evals in the [evals directory](https://github.com/instructor-ai/instructor/tree/main/tests/llm)</mark>
 2. Contribute new evals as pytest tests
 3. Evals should test specific capabilities or edge cases of the library or models
 4. Follow the existing patterns for structuring eval tests
@@ -114,32 +114,32 @@ Including a scope is recommended when changes affect a specific part of the code
 
 ---
 
-# Skip LLM tests (faster for local development)
-pytest tests/ -k 'not llm and not openai'
+# <mark>Skip LLM tests (faster for local development)</mark>
+<mark>pytest tests/ -k 'not llm and not openai'</mark>
 
 ---
 
-## Using Cursor for PR Creation
+## <mark>Using Cursor for PR Creation</mark>
 
-Cursor (https://cursor.sh) is a code editor powered by AI that can help you create PRs efficiently. We encourage using Cursor for Instructor development:
+<mark>Cursor (https://cursor.sh) is a code editor powered by AI that can help you create PRs efficiently. We encourage using Cursor for Instructor development:</mark>
 
-1. **Install Cursor**: Download from [cursor.sh](https://cursor.sh/)
+1. <mark>**Install Cursor**: Download from [cursor.sh](https://cursor.sh/)</mark>
 
-2. **Create a Branch**: Start a new branch for your feature using Cursor's Git integration
+2. <mark>**Create a Branch**: Start a new branch for your feature using Cursor's Git integration</mark>
 
-3. **Use Cursor Rules**: We have Cursor rules that help with standards:
+3. <mark>**Use Cursor Rules**: We have Cursor rules that help with standards:</mark>
    - `new-features-planning`: Use when implementing new features
    - `simple-language`: Follow when writing documentation
    - `documentation-sync`: Reference when making code changes to keep docs in sync
 
-4. **Generate Code with AI**: Use Cursor's AI assistance to generate code that follows our style
+4. <mark>**Generate Code with AI**: Use Cursor's AI assistance to generate code that follows our style</mark>
 
-5. **Auto-Create PRs**: Use Cursor's PR creation feature with our template:
+5. <mark>**Auto-Create PRs**: Use Cursor's PR creation feature with our template:</mark>
    ```
    # Create PR using gh CLI
    gh pr create -t "Your PR Title" -b "Description of changes" -r jxnl,ivanleomk
    ```
 
-6. **Include Attribution**: Add `This PR was written by [Cursor](https://cursor.sh)` to your PR description
+6. <mark>**Include Attribution**: Add `This PR was written by [Cursor](https://cursor.sh)` to your PR description</mark>
 
-For more details, see our Cursor rules in `.cursor/rules/`.
+<mark>For more details, see our Cursor rules in `.cursor/rules/`.</mark>

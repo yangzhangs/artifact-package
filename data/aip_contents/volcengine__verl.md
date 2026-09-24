@@ -1,6 +1,6 @@
-## AI-Assisted Contributions
+## <mark>AI-Assisted Contributions</mark>
 
 See
 
-- [`AGENTS.md`](AGENTS.md) for rules that all AI coding agents must follow
+- <mark>[`AGENTS.md`](AGENTS.md) for rules that all AI coding agents must follow</mark>
 - [`editing-agent-instructions.md`](docs/contributing/editing-agent-instructions.md) for guidelines on editing agent instructions.

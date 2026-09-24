@@ -7,12 +7,12 @@ We're a **PR-friendly team** that values collaboration:
 - ✅ **We sometimes take over PRs** - If your contribution is valuable but needs cleanup, we might jump in to help finish it
 - ✅ **We're open to all contributions** - From bug fixes to major features
 
-**We don't mind AI-generated code**, but we do expect you to:
+<mark>**We don't mind AI-generated code**, but we do expect you to:</mark>
 
-- ✅ **Review and understand** what the AI generated
+- <mark>✅ **Review and understand** what the AI generated</mark>
 - ✅ **Test the code thoroughly** before submitting
 - ✅ **Ensure it's well-written** and follows our patterns
-- ❌ **Don't submit "AI slop"** - untested, unreviewed AI output
+- <mark>❌ **Don't submit "AI slop"** - untested, unreviewed AI output</mark>
 
 > **Why this matters**: We spend significant time reviewing PRs. Help us help you by submitting quality contributions that save everyone time!
 
@@ -72,7 +72,7 @@ npm install
 - Untested code
 - Formatting issues
 - Missing changesets for user-facing changes
-- AI-generated code that wasn't reviewed
+- <mark>AI-generated code that wasn't reviewed</mark>
 
 ---
 
@@ -105,5 +105,5 @@ claude-task-master/
 ## 💬 Getting Help
 
 - **Discord**: [Join our community](https://discord.gg/taskmasterai)
-- **Issues**: [GitHub Issues](https://github.com/eyaltoledano/claude-task-master/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/eyaltoledano/claude-task-master/discussions)
+- <mark>**Issues**: [GitHub Issues](https://github.com/eyaltoledano/claude-task-master/issues)</mark>
+- <mark>**Discussions**: [GitHub Discussions](https://github.com/eyaltoledano/claude-task-master/discussions)</mark>

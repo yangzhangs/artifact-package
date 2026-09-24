@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to **simdutf**, a high-performance library for UTF-8, UTF-16, and UTF-32 transcoding as well as other formats such as base64 using SIMD instructions. We welcome contributions to enhance the project’s speed, reliability, and usability. This guide outlines how to contribute effectively.
 
-Please also review our [AI Usage Policy](AI_USAGE_POLICY.md).
+<mark>Please also review our [AI Usage Policy](AI_USAGE_POLICY.md).</mark>
 
 ---
 
@@ -242,11 +242,11 @@ Thank you for contributing to simdutf! Your efforts help make this library faste
 
 [=== 独立AI政策文件: AI_USAGE_POLICY.md ===]
 
-# AI Usage Policy
+# <mark>AI Usage Policy</mark>
 
 Contributors can use whatever tools they would like to
 craft their contributions, but there must be a **human in the loop**.
-**Contributors must read and review all LLM-generated code or text before they
+<mark>**Contributors must read and review all LLM-generated code or text before they</mark>
 ask other project members to review it.** The contributor is always the author
 and is fully accountable for their contributions. Contributors should be
 sufficiently confident that the contribution is high enough quality that asking
@@ -258,7 +258,7 @@ and our guidance to them is to **start with small contributions** that they can
 fully understand to build confidence. We aspire to be a welcoming community
 that helps new contributors grow their expertise, but learning involves taking
 small steps, getting feedback, and iterating. Passing maintainer feedback to an
-LLM doesn't help anyone grow, and does not sustain our community.
+<mark>LLM doesn't help anyone grow, and does not sustain our community.</mark>
 
 This policy includes, but is not limited to, the following kinds of
 contributions:
@@ -272,24 +272,24 @@ contributions:
 The reason for our "human-in-the-loop" contribution policy is that processing
 patches, PRs, RFCs, and comments is not free -- it takes a lot of
 maintainer time and energy to review those contributions! Sending the
-unreviewed output of an LLM to open source project maintainers *extracts* work
+<mark>unreviewed output of an LLM to open source project maintainers *extracts* work</mark>
 from them in the form of design and code review, so we call this kind of
 contribution an "extractive contribution".
 
 ## Transparency
 
-For contributions involving significant AI assistance, we encourage you to disclose 
+<mark>For contributions involving significant AI assistance, we encourage you to disclose</mark>
 its use and explain your process. If a submission appears to rely heavily on AI 
 without disclosure, we may doubt that the **human-in-the-loop** requirement has
-been met. Please show awareness of your use of AI.
+<mark>been met. Please show awareness of your use of AI.</mark>
 
 ## Copyright
 
 Artificial intelligence systems raise many questions around copyright that have
-yet to be answered. Our policy on AI tools is similar to our copyright policy:
+<mark>yet to be answered. Our policy on AI tools is similar to our copyright policy:</mark>
 Contributors are responsible for ensuring that they have the right to
 contribute code under the terms of our license, typically meaning that either
-they, their employer, or their collaborators hold the copyright. Using AI tools
+<mark>they, their employer, or their collaborators hold the copyright. Using AI tools</mark>
 to regenerate copyrighted material does not remove the copyright, and
 contributors are responsible for ensuring that such material does not appear in
 their contributions. Contributions found to violate this policy will be removed
@@ -297,17 +297,17 @@ just like any other offending contribution.
 
 ## Reference
 
-- [LLVM AI Tool Use Policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159)
+- <mark>[LLVM AI Tool Use Policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159)</mark>
 
 ---
 
 # Standalone AI policy file
 
-# AI Usage Policy
+# <mark>AI Usage Policy</mark>
 
 Contributors can use whatever tools they would like to
 craft their contributions, but there must be a **human in the loop**.
-**Contributors must read and review all LLM-generated code or text before they
+<mark>**Contributors must read and review all LLM-generated code or text before they</mark>
 ask other project members to review it.** The contributor is always the author
 and is fully accountable for their contributions. Contributors should be
 sufficiently confident that the contribution is high enough quality that asking
@@ -319,7 +319,7 @@ and our guidance to them is to **start with small contributions** that they can
 fully understand to build confidence. We aspire to be a welcoming community
 that helps new contributors grow their expertise, but learning involves taking
 small steps, getting feedback, and iterating. Passing maintainer feedback to an
-LLM doesn't help anyone grow, and does not sustain our community.
+<mark>LLM doesn't help anyone grow, and does not sustain our community.</mark>
 
 This policy includes, but is not limited to, the following kinds of
 contributions:
@@ -333,24 +333,24 @@ contributions:
 The reason for our "human-in-the-loop" contribution policy is that processing
 patches, PRs, RFCs, and comments is not free -- it takes a lot of
 maintainer time and energy to review those contributions! Sending the
-unreviewed output of an LLM to open source project maintainers *extracts* work
+<mark>unreviewed output of an LLM to open source project maintainers *extracts* work</mark>
 from them in the form of design and code review, so we call this kind of
 contribution an "extractive contribution".
 
 ## Transparency
 
-For contributions involving significant AI assistance, we encourage you to disclose 
+<mark>For contributions involving significant AI assistance, we encourage you to disclose</mark>
 its use and explain your process. If a submission appears to rely heavily on AI 
 without disclosure, we may doubt that the **human-in-the-loop** requirement has
-been met. Please show awareness of your use of AI.
+<mark>been met. Please show awareness of your use of AI.</mark>
 
 ## Copyright
 
 Artificial intelligence systems raise many questions around copyright that have
-yet to be answered. Our policy on AI tools is similar to our copyright policy:
+<mark>yet to be answered. Our policy on AI tools is similar to our copyright policy:</mark>
 Contributors are responsible for ensuring that they have the right to
 contribute code under the terms of our license, typically meaning that either
-they, their employer, or their collaborators hold the copyright. Using AI tools
+<mark>they, their employer, or their collaborators hold the copyright. Using AI tools</mark>
 to regenerate copyrighted material does not remove the copyright, and
 contributors are responsible for ensuring that such material does not appear in
 their contributions. Contributions found to violate this policy will be removed
@@ -358,4 +358,4 @@ just like any other offending contribution.
 
 ## Reference
 
-- [LLVM AI Tool Use Policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159)
+- <mark>[LLVM AI Tool Use Policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159)</mark>

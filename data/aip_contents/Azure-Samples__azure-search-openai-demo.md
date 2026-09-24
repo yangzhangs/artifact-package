@@ -1,10 +1,10 @@
 ## Adding new features
 
-We recommend using GitHub Copilot Agent mode when adding new features,
+<mark>We recommend using GitHub Copilot Agent mode when adding new features,</mark>
 as this project includes an [AGENTS.md](AGENTS.md) file
-that instructs Copilot (and other coding agents) about how to generate code for common code changes.
+<mark>that instructs Copilot (and other coding agents) about how to generate code for common code changes.</mark>
 
-If you are not using Copilot Agent mode, consult both that file and suggestions below.
+<mark>If you are not using Copilot Agent mode, consult both that file and suggestions below.</mark>
 
 ---
 
@@ -22,8 +22,8 @@ When adding new azd environment variables, please remember to update:
 ### Adding new UI strings
 
 When adding new UI strings, please remember to update all translations.
-For any translations that you generate with an AI tool,
-please indicate in the PR description which language's strings were AI-generated.
+<mark>For any translations that you generate with an AI tool,</mark>
+<mark>please indicate in the PR description which language's strings were AI-generated.</mark>
 
 Here are community contributors that can review translations:
 

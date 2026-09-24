@@ -1,67 +1,67 @@
-## AI-assisted contributions
+## <mark>AI-assisted contributions</mark>
 
-For full requirements, see [AI Contribution Policy](./AI_POLICY.md).
+<mark>For full requirements, see [AI Contribution Policy](./AI_POLICY.md).</mark>
 
 Key points:
 
-- AI tools are allowed as assistants, but contributors remain fully responsible for all submitted changes.
-- AI-assisted code must be reviewed carefully line by line before submission, and contributors must be able to explain and defend it during review.
-- For substantial AI assistance, contributors must complete a self-review first, then repeat a two-reviewer AI review loop until both reviewers report no further actionable comments, and include the final clean review screenshots in the PR disclosure.
-- For substantial AI assistance, provide privacy-safe disclosure in the PR using the [AI Contribution Checklist](./AI_POLICY.md#9-contributor-checklist-for-ai-assisted-prs) template. Minor/narrow AI assistance does not require full disclosure.
-- Include adequate human verification evidence (for example exact build/lint/test commands and pass/fail outcomes), and add/update tests and specs where required.
+- <mark>AI tools are allowed as assistants, but contributors remain fully responsible for all submitted changes.</mark>
+- <mark>AI-assisted code must be reviewed carefully line by line before submission, and contributors must be able to explain and defend it during review.</mark>
+- <mark>For substantial AI assistance, contributors must complete a self-review first, then repeat a two-reviewer AI review loop until both reviewers report no further actionable comments, and include the final clean review screenshots in the PR disclosure.</mark>
+- <mark>For substantial AI assistance, provide privacy-safe disclosure in the PR using the [AI Contribution Checklist](./AI_POLICY.md#9-contributor-checklist-for-ai-assisted-prs) template. Minor/narrow AI assistance does not require full disclosure.</mark>
+- <mark>Include adequate human verification evidence (for example exact build/lint/test commands and pass/fail outcomes), and add/update tests and specs where required.</mark>
 - For protocol/type-mapping/wire-format or performance-sensitive changes, provide the required compatibility/performance validation evidence.
 - Ensure licensing and provenance compliance with [ASF Generative Tooling Guidance](https://www.apache.org/legal/generative-tooling.html) and do not submit content with uncertain provenance.
 
 [=== 独立AI政策文件: AI_POLICY.md ===]
 
-# AI Contribution Policy
+# <mark>AI Contribution Policy</mark>
 
 Apache Fory is a performance-critical foundational serialization framework with cross-language compatibility requirements.
-AI tools are welcome as assistants, but project quality, legal safety, and maintainability standards are unchanged.
+<mark>AI tools are welcome as assistants, but project quality, legal safety, and maintainability standards are unchanged.</mark>
 
 The key words MUST, MUST NOT, REQUIRED, SHOULD, and MAY are interpreted as described in RFC 2119.
 
 ## 1. Core Principle
 
-- AI tools MAY assist contribution work.
-- AI tools MUST NOT replace contributor accountability.
+- <mark>AI tools MAY assist contribution work.</mark>
+- <mark>AI tools MUST NOT replace contributor accountability.</mark>
 - The human submitter is responsible for correctness, safety, performance, and maintainability of all submitted changes.
 - License/provenance confirmation: contributors MUST confirm submitted material is legally compatible and traceable, and MUST comply with [ASF Generative Tooling Guidance](https://www.apache.org/legal/generative-tooling.html).
-- AI-assisted code MUST be reviewed carefully by the contributor line by line before submission.
-- For substantial AI assistance, contributors MUST complete the required AI review loop in Section 5 before opening or updating the PR for maintainer review.
+- <mark>AI-assisted code MUST be reviewed carefully by the contributor line by line before submission.</mark>
+- <mark>For substantial AI assistance, contributors MUST complete the required AI review loop in Section 5 before opening or updating the PR for maintainer review.</mark>
 - Contributors MUST be able to explain and defend design and implementation details during review.
 
 ### Why AI Review Is Required
 
-- AI-generated code can appear plausible while still containing correctness, protocol, performance, maintainability, or licensing problems.
+- <mark>AI-generated code can appear plausible while still containing correctness, protocol, performance, maintainability, or licensing problems.</mark>
 - When AI materially contributes technical content, the contributor's main responsibility shifts toward rigorous review, correction, and validation, not just drafting.
 - If contributors skip that review work, the effective burden is transferred to maintainers, which is not an acceptable review model for this project.
 - The required AI review loop exists to make contributors complete that review and correction work before requesting maintainer time.
 
 ## 2. Disclosure (Privacy-Safe)
 
-For substantial AI assistance, PR descriptions MUST include a short `AI Usage Disclosure` section.
-For minor or narrow AI assistance, full disclosure is not required.
+<mark>For substantial AI assistance, PR descriptions MUST include a short `AI Usage Disclosure` section.</mark>
+<mark>For minor or narrow AI assistance, full disclosure is not required.</mark>
 The PR template keeps this section intentionally short and links to Section 9 for the complete checklist.
 
-Definition of substantial AI assistance:
+<mark>Definition of substantial AI assistance:</mark>
 
 - Substantial means AI materially influenced technical content, not only writing style.
-- Contributors MUST mark AI assistance as substantial (`yes`) if any of the following apply:
-  - AI generated or rewrote non-trivial code/test logic (even for a small change or a single function).
-  - AI-generated or AI-refactored content is about 20 or more added/changed lines in aggregate.
+- <mark>Contributors MUST mark AI assistance as substantial (`yes`) if any of the following apply:</mark>
+  - <mark>AI generated or rewrote non-trivial code/test logic (even for a small change or a single function).</mark>
+  - <mark>AI-generated or AI-refactored content is about 20 or more added/changed lines in aggregate.</mark>
   - AI materially influenced API, protocol, type mapping, performance, memory, or architecture decisions.
   - AI produced substantive technical text used in PR rationale (beyond grammar/translation cleanup).
-- Contributors MAY mark substantial AI assistance as `no` for minor or narrow assistance only, such as spelling/grammar fixes, formatting, trivial comment wording edits, or other non-technical edits with no behavior impact.
+- <mark>Contributors MAY mark substantial AI assistance as `no` for minor or narrow assistance only, such as spelling/grammar fixes, formatting, trivial comment wording edits, or other non-technical edits with no behavior impact.</mark>
 
 Required disclosure fields:
 
-- Whether substantial AI assistance was used (`yes` or `no`)
+- <mark>Whether substantial AI assistance was used (`yes` or `no`)</mark>
 - Scope of assistance (for example: design drafting, code drafting, refactor suggestions, tests, docs)
 - Affected files or subsystems (high-level)
 - AI review summary (self-review completed, AI review loop status, and final result)
 - Final AI review artifacts (embedded screenshots or links showing the final clean AI review results from both fresh reviewers on the current PR diff or current HEAD after the latest code changes)
-- Human verification performed (checks run locally or in CI, and results reviewed by the contributor)
+- <mark>Human verification performed (checks run locally or in CI, and results reviewed by the contributor)</mark>
 - Provenance and license confirmation (see Section 6)
 
 Standard disclosure template (recommended):
@@ -97,21 +97,21 @@ Generated filler text, evasive responses, or content that does not reflect contr
 
 For non-trivial changes (especially architecture/protocol/performance-sensitive work), contributors SHOULD align scope in an issue or discussion before implementation.
 
-This expectation applies to all contributors, whether AI-assisted or not.
-For AI-assisted non-trivial work without prior alignment, maintainers MAY request scope alignment before continuing review.
+<mark>This expectation applies to all contributors, whether AI-assisted or not.</mark>
+<mark>For AI-assisted non-trivial work without prior alignment, maintainers MAY request scope alignment before continuing review.</mark>
 
 ## 5. Verification Requirements
 
-Every AI-assisted PR MUST provide verifiable evidence of local or CI validation:
+<mark>Every AI-assisted PR MUST provide verifiable evidence of local or CI validation:</mark>
 
-For substantial AI assistance, every PR MUST also provide verifiable evidence of a completed AI review loop before maintainer review:
+<mark>For substantial AI assistance, every PR MUST also provide verifiable evidence of a completed AI review loop before maintainer review:</mark>
 
 - The contributor personally performs a line-by-line self-review first and fixes all issues found before requesting AI review.
 - The contributor then runs two fresh AI review agents on the current PR diff or current HEAD after the latest code changes:
-  - one reviewer MUST use `.claude/skills/fory-code-review/SKILL.md`
+  - <mark>one reviewer MUST use `.claude/skills/fory-code-review/SKILL.md`</mark>
   - one reviewer MUST NOT use that skill
 - The contributor addresses all actionable comments from both reviewers, reruns both reviewers on the updated diff, and repeats this loop until both reviewers report no further actionable comments.
-- The PR body MUST include the final clean AI review result from both reviewers plus screenshot evidence in the `AI Usage Disclosure`.
+- <mark>The PR body MUST include the final clean AI review result from both reviewers plus screenshot evidence in the `AI Usage Disclosure`.</mark>
 - If the contributor cannot produce this evidence, the PR is not ready for maintainer review.
 
 Definitions for AI review evidence:
@@ -120,14 +120,14 @@ Definitions for AI review evidence:
 - Final clean AI review result means the last rerun of both reviewers on the current PR diff or current HEAD, with no unresolved actionable comments remaining.
 - Screenshot evidence must show, for each reviewer, the reviewer identity or workflow label, the reviewed diff/commit or PR state, and the clean no-further-actionable-comments result. Persisted links with equivalent information MAY be used when screenshots are impractical.
 
-Definition of adequate human verification:
+<mark>Definition of adequate human verification:</mark>
 
 - The contributor personally runs the relevant checks locally or in project CI and reviews the results.
 - Verification includes concrete evidence (exact commands and pass/fail outcomes), not only claims.
 - Verification covers the changed behavior with targeted tests where applicable.
 - For protocol or performance-sensitive changes, verification includes the required compatibility tests and/or benchmark/regression evidence.
 
-- Confirmation that contributor performed line-by-line self-review of AI-assisted code changes
+- <mark>Confirmation that contributor performed line-by-line self-review of AI-assisted code changes</mark>
 - Build/lint/test checks run locally or in CI
 - Targeted tests for changed behavior
 - Results summary (pass/fail and relevant environment context)
@@ -155,7 +155,7 @@ Contributors MUST ensure:
 
 - No incompatible third-party code is introduced
 - Reused material has compatible licensing and required attribution
-- AI-generated output does not include unauthorized copyrighted fragments
+- <mark>AI-generated output does not include unauthorized copyrighted fragments</mark>
 
 If provenance is uncertain, contributors MUST remove or replace the material before submission.
 Maintainers MAY request provenance clarification when needed.
@@ -165,15 +165,15 @@ Maintainers MAY request provenance clarification when needed.
 Maintainers MAY close or return PRs that materially fail project standards, including:
 
 - Contributor cannot explain key implementation logic
-- Missing required disclosure for substantial AI assistance
+- <mark>Missing required disclosure for substantial AI assistance</mark>
 - Missing required AI review loop evidence, final clean reviewer outputs, or screenshot artifacts in the PR body
-- Missing or inadequate human verification evidence for changed behavior
+- <mark>Missing or inadequate human verification evidence for changed behavior</mark>
 - Redundant implementation of existing utilities without clear necessity
 - Introduction of dead code, unused helpers, or placeholder abstractions without justification
 - Protocol or performance claims without reproducible evidence
 - Large unfocused changes with unclear scope or ownership
 
-This is not a ban on AI usage; it is a quality and maintainability gate.
+<mark>This is not a ban on AI usage; it is a quality and maintainability gate.</mark>
 
 ## 8. Review and Enforcement Process
 
@@ -185,28 +185,28 @@ Before merge, maintainers MAY request:
 - Rework of sections that do not meet standards
 
 Maintainers MAY close PRs that remain non-compliant after feedback.
-For substantial AI-assisted PRs that omit the required final AI review evidence, maintainers MAY close the PR directly without performing review on the contributor's behalf.
+<mark>For substantial AI-assisted PRs that omit the required final AI review evidence, maintainers MAY close the PR directly without performing review on the contributor's behalf.</mark>
 
 Any long-term contribution restrictions MUST follow Apache project governance and community process, and SHOULD be documented with clear rationale.
 
-## 9. Contributor Checklist (for AI-Assisted PRs)
+## <mark>9. Contributor Checklist (for AI-Assisted PRs)</mark>
 
 This is the canonical checklist for the PR template AI section.
 
-- [ ] Substantial AI assistance was used in this PR: `yes` / `no`
-- [ ] If `yes`, I included the standardized `AI Usage Disclosure` block below.
+- <mark>[ ] Substantial AI assistance was used in this PR: `yes` / `no`</mark>
+- <mark>[ ] If `yes`, I included the standardized `AI Usage Disclosure` block below.</mark>
 - [ ] If `yes`, I can explain and defend all important changes without AI help.
-- [ ] If `yes`, I reviewed AI-assisted code changes line by line before submission.
+- <mark>[ ] If `yes`, I reviewed AI-assisted code changes line by line before submission.</mark>
 - [ ] If `yes`, I completed line-by-line self-review first and fixed issues before requesting AI review.
-- [ ] If `yes`, I ran two fresh AI review agents on the current PR diff or current HEAD after the latest code changes: one using `.claude/skills/fory-code-review/SKILL.md` and one without that skill.
+- <mark>[ ] If `yes`, I ran two fresh AI review agents on the current PR diff or current HEAD after the latest code changes: one using `.claude/skills/fory-code-review/SKILL.md` and one without that skill.</mark>
 - [ ] If `yes`, I addressed all AI review comments and repeated the review loop until both ai reviewers reported no further actionable comments.
 - [ ] If `yes`, I attached screenshot evidence of the final clean AI review results from both fresh reviewers on the current PR diff or current HEAD after the latest code changes in this PR body.
-- [ ] If `yes`, I ran adequate human verification and recorded evidence (checks run locally or in CI, pass/fail summary, and confirmation I reviewed results).
+- <mark>[ ] If `yes`, I ran adequate human verification and recorded evidence (checks run locally or in CI, pass/fail summary, and confirmation I reviewed results).</mark>
 - [ ] If `yes`, I added/updated tests and specs where required.
 - [ ] If `yes`, I validated protocol/performance impacts with evidence when applicable.
 - [ ] If `yes`, I verified licensing and provenance compliance.
 
-AI Usage Disclosure (only when substantial AI assistance = `yes`):
+<mark>AI Usage Disclosure (only when substantial AI assistance = `yes`):</mark>
 
 ```text
 AI Usage Disclosure
@@ -229,54 +229,54 @@ If conflicts arise, ASF legal and project governance rules take precedence.
 
 # Standalone AI policy file
 
-# AI Contribution Policy
+# <mark>AI Contribution Policy</mark>
 
 Apache Fory is a performance-critical foundational serialization framework with cross-language compatibility requirements.
-AI tools are welcome as assistants, but project quality, legal safety, and maintainability standards are unchanged.
+<mark>AI tools are welcome as assistants, but project quality, legal safety, and maintainability standards are unchanged.</mark>
 
 The key words MUST, MUST NOT, REQUIRED, SHOULD, and MAY are interpreted as described in RFC 2119.
 
 ## 1. Core Principle
 
-- AI tools MAY assist contribution work.
-- AI tools MUST NOT replace contributor accountability.
+- <mark>AI tools MAY assist contribution work.</mark>
+- <mark>AI tools MUST NOT replace contributor accountability.</mark>
 - The human submitter is responsible for correctness, safety, performance, and maintainability of all submitted changes.
 - License/provenance confirmation: contributors MUST confirm submitted material is legally compatible and traceable, and MUST comply with [ASF Generative Tooling Guidance](https://www.apache.org/legal/generative-tooling.html).
-- AI-assisted code MUST be reviewed carefully by the contributor line by line before submission.
-- For substantial AI assistance, contributors MUST complete the required AI review loop in Section 5 before opening or updating the PR for maintainer review.
+- <mark>AI-assisted code MUST be reviewed carefully by the contributor line by line before submission.</mark>
+- <mark>For substantial AI assistance, contributors MUST complete the required AI review loop in Section 5 before opening or updating the PR for maintainer review.</mark>
 - Contributors MUST be able to explain and defend design and implementation details during review.
 
 ### Why AI Review Is Required
 
-- AI-generated code can appear plausible while still containing correctness, protocol, performance, maintainability, or licensing problems.
+- <mark>AI-generated code can appear plausible while still containing correctness, protocol, performance, maintainability, or licensing problems.</mark>
 - When AI materially contributes technical content, the contributor's main responsibility shifts toward rigorous review, correction, and validation, not just drafting.
 - If contributors skip that review work, the effective burden is transferred to maintainers, which is not an acceptable review model for this project.
 - The required AI review loop exists to make contributors complete that review and correction work before requesting maintainer time.
 
 ## 2. Disclosure (Privacy-Safe)
 
-For substantial AI assistance, PR descriptions MUST include a short `AI Usage Disclosure` section.
-For minor or narrow AI assistance, full disclosure is not required.
+<mark>For substantial AI assistance, PR descriptions MUST include a short `AI Usage Disclosure` section.</mark>
+<mark>For minor or narrow AI assistance, full disclosure is not required.</mark>
 The PR template keeps this section intentionally short and links to Section 9 for the complete checklist.
 
-Definition of substantial AI assistance:
+<mark>Definition of substantial AI assistance:</mark>
 
 - Substantial means AI materially influenced technical content, not only writing style.
-- Contributors MUST mark AI assistance as substantial (`yes`) if any of the following apply:
-  - AI generated or rewrote non-trivial code/test logic (even for a small change or a single function).
-  - AI-generated or AI-refactored content is about 20 or more added/changed lines in aggregate.
+- <mark>Contributors MUST mark AI assistance as substantial (`yes`) if any of the following apply:</mark>
+  - <mark>AI generated or rewrote non-trivial code/test logic (even for a small change or a single function).</mark>
+  - <mark>AI-generated or AI-refactored content is about 20 or more added/changed lines in aggregate.</mark>
   - AI materially influenced API, protocol, type mapping, performance, memory, or architecture decisions.
   - AI produced substantive technical text used in PR rationale (beyond grammar/translation cleanup).
-- Contributors MAY mark substantial AI assistance as `no` for minor or narrow assistance only, such as spelling/grammar fixes, formatting, trivial comment wording edits, or other non-technical edits with no behavior impact.
+- <mark>Contributors MAY mark substantial AI assistance as `no` for minor or narrow assistance only, such as spelling/grammar fixes, formatting, trivial comment wording edits, or other non-technical edits with no behavior impact.</mark>
 
 Required disclosure fields:
 
-- Whether substantial AI assistance was used (`yes` or `no`)
+- <mark>Whether substantial AI assistance was used (`yes` or `no`)</mark>
 - Scope of assistance (for example: design drafting, code drafting, refactor suggestions, tests, docs)
 - Affected files or subsystems (high-level)
 - AI review summary (self-review completed, AI review loop status, and final result)
 - Final AI review artifacts (embedded screenshots or links showing the final clean AI review results from both fresh reviewers on the current PR diff or current HEAD after the latest code changes)
-- Human verification performed (checks run locally or in CI, and results reviewed by the contributor)
+- <mark>Human verification performed (checks run locally or in CI, and results reviewed by the contributor)</mark>
 - Provenance and license confirmation (see Section 6)
 
 Standard disclosure template (recommended):
@@ -312,21 +312,21 @@ Generated filler text, evasive responses, or content that does not reflect contr
 
 For non-trivial changes (especially architecture/protocol/performance-sensitive work), contributors SHOULD align scope in an issue or discussion before implementation.
 
-This expectation applies to all contributors, whether AI-assisted or not.
-For AI-assisted non-trivial work without prior alignment, maintainers MAY request scope alignment before continuing review.
+<mark>This expectation applies to all contributors, whether AI-assisted or not.</mark>
+<mark>For AI-assisted non-trivial work without prior alignment, maintainers MAY request scope alignment before continuing review.</mark>
 
 ## 5. Verification Requirements
 
-Every AI-assisted PR MUST provide verifiable evidence of local or CI validation:
+<mark>Every AI-assisted PR MUST provide verifiable evidence of local or CI validation:</mark>
 
-For substantial AI assistance, every PR MUST also provide verifiable evidence of a completed AI review loop before maintainer review:
+<mark>For substantial AI assistance, every PR MUST also provide verifiable evidence of a completed AI review loop before maintainer review:</mark>
 
 - The contributor personally performs a line-by-line self-review first and fixes all issues found before requesting AI review.
 - The contributor then runs two fresh AI review agents on the current PR diff or current HEAD after the latest code changes:
-  - one reviewer MUST use `.claude/skills/fory-code-review/SKILL.md`
+  - <mark>one reviewer MUST use `.claude/skills/fory-code-review/SKILL.md`</mark>
   - one reviewer MUST NOT use that skill
 - The contributor addresses all actionable comments from both reviewers, reruns both reviewers on the updated diff, and repeats this loop until both reviewers report no further actionable comments.
-- The PR body MUST include the final clean AI review result from both reviewers plus screenshot evidence in the `AI Usage Disclosure`.
+- <mark>The PR body MUST include the final clean AI review result from both reviewers plus screenshot evidence in the `AI Usage Disclosure`.</mark>
 - If the contributor cannot produce this evidence, the PR is not ready for maintainer review.
 
 Definitions for AI review evidence:
@@ -335,14 +335,14 @@ Definitions for AI review evidence:
 - Final clean AI review result means the last rerun of both reviewers on the current PR diff or current HEAD, with no unresolved actionable comments remaining.
 - Screenshot evidence must show, for each reviewer, the reviewer identity or workflow label, the reviewed diff/commit or PR state, and the clean no-further-actionable-comments result. Persisted links with equivalent information MAY be used when screenshots are impractical.
 
-Definition of adequate human verification:
+<mark>Definition of adequate human verification:</mark>
 
 - The contributor personally runs the relevant checks locally or in project CI and reviews the results.
 - Verification includes concrete evidence (exact commands and pass/fail outcomes), not only claims.
 - Verification covers the changed behavior with targeted tests where applicable.
 - For protocol or performance-sensitive changes, verification includes the required compatibility tests and/or benchmark/regression evidence.
 
-- Confirmation that contributor performed line-by-line self-review of AI-assisted code changes
+- <mark>Confirmation that contributor performed line-by-line self-review of AI-assisted code changes</mark>
 - Build/lint/test checks run locally or in CI
 - Targeted tests for changed behavior
 - Results summary (pass/fail and relevant environment context)
@@ -370,7 +370,7 @@ Contributors MUST ensure:
 
 - No incompatible third-party code is introduced
 - Reused material has compatible licensing and required attribution
-- AI-generated output does not include unauthorized copyrighted fragments
+- <mark>AI-generated output does not include unauthorized copyrighted fragments</mark>
 
 If provenance is uncertain, contributors MUST remove or replace the material before submission.
 Maintainers MAY request provenance clarification when needed.
@@ -380,15 +380,15 @@ Maintainers MAY request provenance clarification when needed.
 Maintainers MAY close or return PRs that materially fail project standards, including:
 
 - Contributor cannot explain key implementation logic
-- Missing required disclosure for substantial AI assistance
+- <mark>Missing required disclosure for substantial AI assistance</mark>
 - Missing required AI review loop evidence, final clean reviewer outputs, or screenshot artifacts in the PR body
-- Missing or inadequate human verification evidence for changed behavior
+- <mark>Missing or inadequate human verification evidence for changed behavior</mark>
 - Redundant implementation of existing utilities without clear necessity
 - Introduction of dead code, unused helpers, or placeholder abstractions without justification
 - Protocol or performance claims without reproducible evidence
 - Large unfocused changes with unclear scope or ownership
 
-This is not a ban on AI usage; it is a quality and maintainability gate.
+<mark>This is not a ban on AI usage; it is a quality and maintainability gate.</mark>
 
 ## 8. Review and Enforcement Process
 
@@ -400,28 +400,28 @@ Before merge, maintainers MAY request:
 - Rework of sections that do not meet standards
 
 Maintainers MAY close PRs that remain non-compliant after feedback.
-For substantial AI-assisted PRs that omit the required final AI review evidence, maintainers MAY close the PR directly without performing review on the contributor's behalf.
+<mark>For substantial AI-assisted PRs that omit the required final AI review evidence, maintainers MAY close the PR directly without performing review on the contributor's behalf.</mark>
 
 Any long-term contribution restrictions MUST follow Apache project governance and community process, and SHOULD be documented with clear rationale.
 
-## 9. Contributor Checklist (for AI-Assisted PRs)
+## <mark>9. Contributor Checklist (for AI-Assisted PRs)</mark>
 
 This is the canonical checklist for the PR template AI section.
 
-- [ ] Substantial AI assistance was used in this PR: `yes` / `no`
-- [ ] If `yes`, I included the standardized `AI Usage Disclosure` block below.
+- <mark>[ ] Substantial AI assistance was used in this PR: `yes` / `no`</mark>
+- <mark>[ ] If `yes`, I included the standardized `AI Usage Disclosure` block below.</mark>
 - [ ] If `yes`, I can explain and defend all important changes without AI help.
-- [ ] If `yes`, I reviewed AI-assisted code changes line by line before submission.
+- <mark>[ ] If `yes`, I reviewed AI-assisted code changes line by line before submission.</mark>
 - [ ] If `yes`, I completed line-by-line self-review first and fixed issues before requesting AI review.
-- [ ] If `yes`, I ran two fresh AI review agents on the current PR diff or current HEAD after the latest code changes: one using `.claude/skills/fory-code-review/SKILL.md` and one without that skill.
+- <mark>[ ] If `yes`, I ran two fresh AI review agents on the current PR diff or current HEAD after the latest code changes: one using `.claude/skills/fory-code-review/SKILL.md` and one without that skill.</mark>
 - [ ] If `yes`, I addressed all AI review comments and repeated the review loop until both ai reviewers reported no further actionable comments.
 - [ ] If `yes`, I attached screenshot evidence of the final clean AI review results from both fresh reviewers on the current PR diff or current HEAD after the latest code changes in this PR body.
-- [ ] If `yes`, I ran adequate human verification and recorded evidence (checks run locally or in CI, pass/fail summary, and confirmation I reviewed results).
+- <mark>[ ] If `yes`, I ran adequate human verification and recorded evidence (checks run locally or in CI, pass/fail summary, and confirmation I reviewed results).</mark>
 - [ ] If `yes`, I added/updated tests and specs where required.
 - [ ] If `yes`, I validated protocol/performance impacts with evidence when applicable.
 - [ ] If `yes`, I verified licensing and provenance compliance.
 
-AI Usage Disclosure (only when substantial AI assistance = `yes`):
+<mark>AI Usage Disclosure (only when substantial AI assistance = `yes`):</mark>
 
 ```text
 AI Usage Disclosure

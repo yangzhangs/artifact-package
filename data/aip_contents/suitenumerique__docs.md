@@ -7,7 +7,7 @@ Make sure you follow the following best practices:
 * maintain consistency in code style and patterns
 * make sure you add a brief purpose, screenshots, or a short video to help reviewers understand the changes
 
-**Before asking for a human review make sure that:**
+<mark>**Before asking for a human review make sure that:**</mark>
 * all tests have passed in the CI
 * you ticked all the checkboxes of the [PR checklist](.github/PULL_REQUEST_TEMPLATE.md)
 

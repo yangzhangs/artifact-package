@@ -13,12 +13,12 @@ working on this project.
 > of the [Developer Certificate of Origin][dco]. This helps ensure that contributions
 > aren't in violation of 3rd party license terms.
 >
-> ### AI Assisted Development
+> <mark>### AI Assisted Development</mark>
 > **AI Agents MUST NOT add `Signed-off-by` tags to commits.**
 > Only humans can legally certify the [Developer Certificate of Origin][dco]. The
 > human submitter is responsible for:
 >
-> - Reviewing all AI-generated code
+> <mark>- Reviewing all AI-generated code</mark>
 > - Ensuring compliance with licensing requirements
 > - Adding their own Sign-off-by tag to certify the DCO
 > - Taking full responsibility for the contribution

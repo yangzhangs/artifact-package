@@ -6,7 +6,7 @@ Pull request authors are responsible for:
   require splitting into multiple PRs or logical commits before review. If a
   large PR is unavoidable, include an explanation in the PR description
   justifying the size and describing how the changes are organized for review.
-- Reviewing all submitted code, regardless of whether it's AI-generated or
+- <mark>Reviewing all submitted code, regardless of whether it's AI-generated or</mark>
   hand-written.
 - Manually testing changes to verify new or existing features work correctly.
 - Ensuring coding style guidelines are followed.

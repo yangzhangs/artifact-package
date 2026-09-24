@@ -2,7 +2,7 @@
 
 ♥️ We welcome contributions from everyone.
 
-For local development workflows, setup, local LLM config, extension development, testing on other websites, and more details, see [docs/developer-guide.md](docs/developer-guide.md).
+<mark>For local development workflows, setup, local LLM config, extension development, testing on other websites, and more details, see [docs/developer-guide.md](docs/developer-guide.md).</mark>
 
 ---
 
@@ -32,10 +32,10 @@ For local development workflows, setup, local LLM config, extension development,
 
 ---
 
-### Vibe Coding with AI
+### <mark>Vibe Coding with AI</mark>
 
-- Vibe coding is **NOT** allowed for the core lib or the extension!!!
-- Vibe coding is **RECOMMENDED** when maintaining **the demo, the website, the UI and tests**.
+- <mark>Vibe coding is **NOT** allowed for the core lib or the extension!!!</mark>
+- <mark>Vibe coding is **RECOMMENDED** when maintaining **the demo, the website, the UI and tests**.</mark>
 - Make sure your AI references `AGENTS.md` and `website/AGENTS.md` for better quality.
 - Review anything AI wrote before make a commit. You are the author of anything you commit. NOT AI.
 
@@ -46,4 +46,4 @@ For local development workflows, setup, local LLM config, extension development,
 - Breaking changes and large PRs without prior discussion
 - Heavy dependencies to core libs
 - Dependencies or code with licenses incompatible with MIT
-- Bot or AI-generated pull requests without meaningful human involvement
+- <mark>Bot or AI-generated pull requests without meaningful human involvement</mark>

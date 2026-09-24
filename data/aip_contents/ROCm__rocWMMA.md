@@ -38,7 +38,7 @@ rocWMMA has a set of required deliverables for every pull request that are as fo
     - Support for the other rocWMMA fragment parameters as described in ``library/include/rocwmma/rocwmma.hpp`` must also be maintained.
 
 4. **Licensing**:
-    - All code submitted to rocWMMA must be original, no AI generated code is currently being accepted.
+    - <mark>All code submitted to rocWMMA must be original, no AI generated code is currently being accepted.</mark>
     - The code you are contributing is your own, and you have the right to license it.
     - No code found under other licenses is permitted.
     - Any submitted code will subsequently be covered under the MIT License.

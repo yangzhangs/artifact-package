@@ -40,13 +40,13 @@
    - Be prepared to answer questions about your implementation
    - Test your changes thoroughly
 
-3. **AI-Assisted Code (VibeCoded PRs)**
+3. <mark>**AI-Assisted Code (VibeCoded PRs)**</mark>
 
-   - AI-assisted contributions are welcome! However:
+   - <mark>AI-assisted contributions are welcome! However:</mark>
      - You must understand what the code does
      - Be able to explain your implementation
      - Respond to code review comments
-     - Clearly indicate in your PR description that AI tools were used
+     - <mark>Clearly indicate in your PR description that AI tools were used</mark>
 
    Example PR description:
    ```markdown
@@ -98,7 +98,7 @@
    - Provide a clear description of changes
    - Include screenshots/videos for UI changes as applicable
    - List any breaking changes
-   - Mention if you used AI assistance
+   - <mark>Mention if you used AI assistance</mark>
 
 5. **Code Review**
 

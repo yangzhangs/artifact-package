@@ -1,6 +1,6 @@
 ### Living CHANGELOG
 
-Any PRs that add, remove, modify or fix any *user-facing behaviour* must include a [CHANGELOG](./CHANGELOG.md) entry — short and factual. Automated/LLM-generated suggestions are welcome, but humans must verify wording.
+<mark>Any PRs that add, remove, modify or fix any *user-facing behaviour* must include a [CHANGELOG](./CHANGELOG.md) entry — short and factual. Automated/LLM-generated suggestions are welcome, but humans must verify wording.</mark>
 
 A user-facing behaviour is anything that a user of Amaru (as an executable or as a collection of libraries) may seemingly notice. This includes (but isn't limited to):
 
@@ -36,7 +36,7 @@ A user-facing behaviour is anything that a user of Amaru (as an executable or as
 
 ---
 
-#### Use of AI
+#### <mark>Use of AI</mark>
 
 We recognize the existence and importance of (generative) AI as part of our workflow for it has proven to be a useful **tool**.
 

@@ -5,7 +5,7 @@
 - [Submitting Pull Requests](#submitting-pull-requests)
 - [Code Style](#code-style)
 - [Reporting Bugs](#reporting-bugs)
-- [A Note on AI-Assisted Code](#a-note-on-ai-assisted-code)
+- <mark>[A Note on AI-Assisted Code](#a-note-on-ai-assisted-code)</mark>
 
 ---
 
@@ -19,7 +19,7 @@
 4. **Run tests.** Run `npm run test:run` and make sure nothing is broken.
 5. **Format your code.** Run `npm run format` before pushing.
 6. **Screenshots.** If your PR changes something visible (UI layout, terminal output, formatting, error messages, or any user-facing behavior), please include screenshots or terminal recordings in the PR description.
-7. **Run your PR through an AI code-review agent** Code-review agents help catch any obvious bugs or nits, requiring less back-and-forth for everyone!
+7. <mark>**Run your PR through an AI code-review agent** Code-review agents help catch any obvious bugs or nits, requiring less back-and-forth for everyone!</mark>
 8. **Mark drafts as drafts.** If your PR isn't ready for review, open it as a Draft.
 
 ---
@@ -52,7 +52,7 @@ A good bug report makes it much easier to reproduce and fix the issue. Please in
 - **What you expected to happen**
 - **What actually happened**
 - **Steps to reproduce**: as minimal and specific as possible. For request errors, use Copy request as cURL to give us more information.
-- **Your environment**: OS, terminal, LLM provider/model, etc.
+- <mark>**Your environment**: OS, terminal, LLM provider/model, etc.</mark>
 - **Relevant logs**: run with `OCTO_VERBOSE=1 octofriend` to get more detailed output
 - **Screenshots or recordings**: especially if the issue is visual or involves terminal rendering
 
@@ -62,20 +62,20 @@ Please search existing issues before opening a new one.
 
 ---
 
-## A Note on AI-Assisted Code
+## <mark>A Note on AI-Assisted Code</mark>
 
-Yes, we know: we're an AI company asking you to think before using AI coding agents. The irony is not lost on us. We genuinely love AI-assisted development (it's literally what we're building) and we use it ourselves. But there is a meaningful difference between AI as a tool and AI as a replacement for thinking, and that difference will show in the code-quality.
+<mark>Yes, we know: we're an AI company asking you to think before using AI coding agents. The irony is not lost on us. We genuinely love AI-assisted development (it's literally what we're building) and we use it ourselves. But there is a meaningful difference between AI as a tool and AI as a replacement for thinking, and that difference will show in the code-quality.</mark>
 
-**We encourage:** Using AI to help you write, refactor, debug, or understand code, while staying in the driver's seat. The code you submit should reflect your understanding of the problem and the codebase. It's also great for generating complicated testing data.
+<mark>**We encourage:** Using AI to help you write, refactor, debug, or understand code, while staying in the driver's seat. The code you submit should reflect your understanding of the problem and the codebase. It's also great for generating complicated testing data.</mark>
 
-**We discourage:** "Vibecoding": generating large blocks of code with an AI, skimming the output, and submitting it with minimal review or understanding. We can usually tell. Code like this tends to:
+<mark>**We discourage:** "Vibecoding": generating large blocks of code with an AI, skimming the output, and submitting it with minimal review or understanding. We can usually tell. Code like this tends to:</mark>
 
 - Introduce patterns inconsistent with the rest of the codebase
 - Add unnecessary abstractions, error handling, or boilerplate
 - Miss the actual intent of the change
 - Be hard to maintain because the author doesn't fully understand it
 
-If you submit a PR that looks vibecoded, we may close it. This isn't about gatekeeping AI use. It's about maintaining a codebase that's coherent, intentional, and actually works. If you used AI to help write your PR, great. Just make sure you understand every line of it and that it fits naturally into the project.
+<mark>If you submit a PR that looks vibecoded, we may close it. This isn't about gatekeeping AI use. It's about maintaining a codebase that's coherent, intentional, and actually works. If you used AI to help write your PR, great. Just make sure you understand every line of it and that it fits naturally into the project.</mark>
 
 ---
 

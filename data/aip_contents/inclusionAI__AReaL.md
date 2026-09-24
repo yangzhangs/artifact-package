@@ -1,7 +1,7 @@
 ## Table of Contents
 
 - [Quick Start](#quick-start)
-- [Tips for Using AI-Assisted Coding](#tips-for-using-ai-assisted-coding)
+- <mark>[Tips for Using AI-Assisted Coding](#tips-for-using-ai-assisted-coding)</mark>
 - [CI/CD](#cicd)
 
 ---
@@ -81,7 +81,7 @@
 1. **Submit a Pull Request**
 
 We suggest applying our provided agent harness command `/create-pr` whenever possible.
-Use that in `claude`, `opencode`, or any other coding agent CLI.
+<mark>Use that in `claude`, `opencode`, or any other coding agent CLI.</mark>
 
 **IMPORTANT**: For new features and code refactoring, please submit a corresponding
 issue or open a draft PR to discuss with the core developers before making any code
@@ -90,8 +90,8 @@ waste your effort.
 
 ---
 
-## Tips for Using AI-Assisted Coding
+## <mark>Tips for Using AI-Assisted Coding</mark>
 
 See the full
-[AI-Assisted Development Guide](https://inclusionai.github.io/AReaL/en/reference/ai_assisted_dev.html)
+<mark>[AI-Assisted Development Guide](https://inclusionai.github.io/AReaL/en/reference/ai_assisted_dev.html)</mark>
 for detailed documentation.

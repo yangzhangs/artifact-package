@@ -1,6 +1,3 @@
-# Press F1 → "Dev Containers: Reopen in Container"
-air realtime
-```
 
 **Key Rules:**
 
@@ -9,7 +6,7 @@ air realtime
 - ❌ No `any` types in TypeScript
 - ✅ Frontend embedded in Go binary (use `air`, not Vite dev server)
 - ✅ Pre-commit hooks auto-format & lint
-- ✅ AI-assisted coding encouraged - use responsibly
+- <mark>✅ AI-assisted coding encouraged - use responsibly</mark>
 
 **Need details?** Read the sections below. **Questions?** [Discord](https://discord.gg/gcSCFGUtsd)
 
@@ -25,7 +22,7 @@ air realtime
 - [Development Workflow](#development-workflow)
 - [Code Quality](#code-quality)
 - [Testing](#testing)
-- [AI-Assisted Development](#ai-assisted-development)
+- <mark>[AI-Assisted Development](#ai-assisted-development)</mark>
 - [Submitting Changes](#submitting-changes)
 - [Additional Resources](#additional-resources)
 
@@ -39,29 +36,29 @@ Before contributing:
 2. **Review [ARCHITECTURE.md](ARCHITECTURE.md)** - Understand the tech stack
 3. **Check [existing issues](https://github.com/tphakala/birdnet-go/issues)** - Avoid duplicates
 4. **Join [Discord](https://discord.gg/gcSCFGUtsd)** - For discussions and support
-5. **Read relevant CLAUDE.md files** - Development guidelines:
-   - [CLAUDE.md](CLAUDE.md) - Project overview and universal rules
-   - [internal/CLAUDE.md](internal/CLAUDE.md) - Go backend guidelines
-   - [frontend/CLAUDE.md](frontend/CLAUDE.md) - Svelte 5 frontend guidelines
-   - [internal/api/v2/CLAUDE.md](internal/api/v2/CLAUDE.md) - API v2 guidelines
+5. <mark>**Read relevant CLAUDE.md files** - Development guidelines:</mark>
+   - <mark>[CLAUDE.md](CLAUDE.md) - Project overview and universal rules</mark>
+   - <mark>[internal/CLAUDE.md](internal/CLAUDE.md) - Go backend guidelines</mark>
+   - <mark>[frontend/CLAUDE.md](frontend/CLAUDE.md) - Svelte 5 frontend guidelines</mark>
+   - <mark>[internal/api/v2/CLAUDE.md](internal/api/v2/CLAUDE.md) - API v2 guidelines</mark>
 
-   **Note:** CLAUDE.md files serve all contributors (AI-assisted or manual).
-
----
-
-## AI-Assisted Development
-
-BirdNET-Go **welcomes AI-assisted coding tools**. The main developer uses [Claude Code](https://claude.ai/claude-code), and all PRs receive [CodeRabbit AI](https://coderabbit.ai/) reviews.
+<mark>**Note:** CLAUDE.md files serve all contributors (AI-assisted or manual).</mark>
 
 ---
 
-### CLAUDE.md Guidelines
+## <mark>AI-Assisted Development</mark>
 
-Project guidelines are in CLAUDE.md files (see [Getting Started](#getting-started)). These files work for both AI assistants and manual development.
+<mark>BirdNET-Go **welcomes AI-assisted coding tools**. The main developer uses [Claude Code](https://claude.ai/claude-code), and all PRs receive [CodeRabbit AI](https://coderabbit.ai/) reviews.</mark>
 
 ---
 
-### Responsible AI Usage
+### <mark>CLAUDE.md Guidelines</mark>
+
+<mark>Project guidelines are in CLAUDE.md files (see [Getting Started](#getting-started)). These files work for both AI assistants and manual development.</mark>
+
+---
+
+### <mark>Responsible AI Usage</mark>
 
 **✅ Good Use:**
 
@@ -73,7 +70,7 @@ Project guidelines are in CLAUDE.md files (see [Getting Started](#getting-starte
 
 **⚠️ Requirements:**
 
-- Review all AI-generated code
+- <mark>Review all AI-generated code</mark>
 - Understand what code does
 - Test thoroughly
 - Follow project guidelines
@@ -89,20 +86,20 @@ Project guidelines are in CLAUDE.md files (see [Getting Started](#getting-starte
 
 ---
 
-### Getting Started with Claude Code
+### <mark>Getting Started with Claude Code</mark>
 
-1. Install: [Claude Code guide](https://docs.claude.com/en/docs/claude-code)
+1. <mark>Install: [Claude Code guide](https://docs.claude.com/en/docs/claude-code)</mark>
 2. Open BirdNET-Go repository
-3. CLAUDE.md files provide automatic context
-4. Ask Claude for help with specific tasks
+3. <mark>CLAUDE.md files provide automatic context</mark>
+4. <mark>Ask Claude for help with specific tasks</mark>
 
-**Questions?** Join [Discord](https://discord.gg/gcSCFGUtsd) to discuss AI-assisted development.
+<mark>**Questions?** Join [Discord](https://discord.gg/gcSCFGUtsd) to discuss AI-assisted development.</mark>
 
 ---
 
 ### Development Guidelines
 
 - [Architecture](ARCHITECTURE.md)
-- [Go Backend Guidelines](internal/CLAUDE.md)
-- [Frontend Guidelines](frontend/CLAUDE.md)
-- [API v2 Guidelines](internal/api/v2/CLAUDE.md)
+- <mark>[Go Backend Guidelines](internal/CLAUDE.md)</mark>
+- <mark>[Frontend Guidelines](frontend/CLAUDE.md)</mark>
+- <mark>[API v2 Guidelines](internal/api/v2/CLAUDE.md)</mark>

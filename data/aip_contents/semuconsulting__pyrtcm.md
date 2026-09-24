@@ -5,7 +5,7 @@
 
 Being one of our contributors, you agree and confirm that:
 
-* The work is all your own. For the avoidance of doubt, this means **no AI coding agents such as Copilot**.
+* <mark>The work is all your own. For the avoidance of doubt, this means **no AI coding agents such as Copilot**.</mark>
 * Your work will be distributed under a BSD 3-Clause License once your pull request is merged.
 * You submitted work fulfils or mostly fulfils our coding conventions, styles and standards.
 

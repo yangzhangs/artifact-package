@@ -23,7 +23,7 @@ Whenever you make changes, make sure they comply with linting rules:
 uv run make lint
 ```
 
-3. Navigate to the project folder you want to work on. For example, if you want to work on the OpenAI LLM integration:
+3. <mark>Navigate to the project folder you want to work on. For example, if you want to work on the OpenAI LLM integration:</mark>
 
 ```bash
 cd llama-index-integrations/llms/llama-index-llms-openai
@@ -43,14 +43,14 @@ Once you get familiar with the project, scroll down to the [Development Guidelin
 
 ---
 
-## How to Use AI when Contributing
+## <mark>How to Use AI when Contributing</mark>
 
-We welcome AI-assisted contributions, but we ask you to follow some core principles and guidelines that can help make the contribution and review process smoother for both you and us maintainers.
+<mark>We welcome AI-assisted contributions, but we ask you to follow some core principles and guidelines that can help make the contribution and review process smoother for both you and us maintainers.</mark>
 
 ---
 
 ### Core Principles
 
-- **Transparency**: highlight when and where you used AI to generate code, and explain how you verified and validated it
-- **Accountability**: we require human oversight for every contribution, and we hold human developers accountable for their changes: in this sense, it is best if you don't propose changes you don't understand or cannot maintain
-- **Quality**: AI code should meet the same quality standards as human code: this means being documented, tested, and following existing patterns
+- <mark>**Transparency**: highlight when and where you used AI to generate code, and explain how you verified and validated it</mark>
+- <mark>**Accountability**: we require human oversight for every contribution, and we hold human developers accountable for their changes: in this sense, it is best if you don't propose changes you don't understand or cannot maintain</mark>
+- <mark>**Quality**: AI code should meet the same quality standards as human code: this means being documented, tested, and following existing patterns</mark>

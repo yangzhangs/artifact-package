@@ -2,7 +2,7 @@
 
 Thanks for helping make Arcane better! We've built a modern, streamlined development experience that gets you up and running in minutes.
 
-> **Using AI tools?** Please read our [AI Usage Policy](AI_POLICY.md) before contributing.
+> <mark>**Using AI tools?** Please read our [AI Usage Policy](AI_POLICY.md) before contributing.</mark>
 
 ---
 
@@ -209,27 +209,27 @@ If you're using AI tools to contribute to Arcane, ensure your AI is configured w
 
 # Standalone AI policy file
 
-# AI Usage Policy
+# <mark>AI Usage Policy</mark>
 
-Arcane has clear rules for AI-assisted contributions:
+<mark>Arcane has clear rules for AI-assisted contributions:</mark>
 
-- **All AI usage in any form must be disclosed.** You must state the tool you used (e.g., Claude Code, Cursor, GitHub Copilot, ChatGPT) along with the extent that the work was AI-assisted.
+- <mark>**All AI usage in any form must be disclosed.** You must state the tool you used (e.g., Claude Code, Cursor, GitHub Copilot, ChatGPT) along with the extent that the work was AI-assisted.</mark>
 
-- **Pull requests created by AI must have been fully verified with human testing.** AI must not create hypothetically correct code that hasn't been tested. You must run the development environment, verify both frontend and backend work correctly, and manually test your changes. You must not allow AI to write code for platforms or environments you don't have access to manually test on.
+- <mark>**Pull requests created by AI must have been fully verified with human testing.** AI must not create hypothetically correct code that hasn't been tested. You must run the development environment, verify both frontend and backend work correctly, and manually test your changes. You must not allow AI to write code for platforms or environments you don't have access to manually test on.</mark>
 
-- **Code must follow Arcane's existing patterns.** Before writing code, read [AGENTS.md](AGENTS.md) for technical guidance. AI-generated code that ignores project conventions (Svelte 5 syntax, service patterns, error handling) will be rejected.
+- <mark>**Code must follow Arcane's existing patterns.** Before writing code, read [AGENTS.md](AGENTS.md) for technical guidance. AI-generated code that ignores project conventions (Svelte 5 syntax, service patterns, error handling) will be rejected.</mark>
 
-- **Issues and discussions can use AI assistance but must have a full human-in-the-loop.** This means that any content generated with AI must have been reviewed *and edited* by a human before submission. AI is very good at being overly verbose and including noise that distracts from the main point. Humans must do their research and trim this down.
+- <mark>**Issues and discussions can use AI assistance but must have a full human-in-the-loop.** This means that any content generated with AI must have been reviewed *and edited* by a human before submission. AI is very good at being overly verbose and including noise that distracts from the main point. Humans must do their research and trim this down.</mark>
 
-- **No AI-generated media is allowed** (art, images, videos, audio, etc.). Text and code are the only acceptable AI-generated content, per the other rules in this policy.
+- <mark>**No AI-generated media is allowed** (art, images, videos, audio, etc.). Text and code are the only acceptable AI-generated content, per the other rules in this policy.</mark>
 
-- **Contributors who ignore this policy will face consequences.** Undisclosed AI usage or suspected AI usage without disclosure will result in PR closure. Repeated violations may result in being blocked from contributing. You've been warned.
+- <mark>**Contributors who ignore this policy will face consequences.** Undisclosed AI usage or suspected AI usage without disclosure will result in PR closure. Repeated violations may result in being blocked from contributing. You've been warned.</mark>
 
-These rules apply to all outside contributions. Maintainers are exempt from these rules and may use AI tools at their discretion; they've proven themselves trustworthy to apply good judgment.
+<mark>These rules apply to all outside contributions. Maintainers are exempt from these rules and may use AI tools at their discretion; they've proven themselves trustworthy to apply good judgment.</mark>
 
 ## Testing Requirements
 
-Before submitting any AI-assisted contribution, you must:
+<mark>Before submitting any AI-assisted contribution, you must:</mark>
 
 1. Start the development environment: `./scripts/development/dev.sh start`
 2. Access the frontend at http://localhost:3000 and verify it works
@@ -246,16 +246,16 @@ Please remember that Arcane is maintained by humans.
 
 Every discussion, issue, and pull request is read and reviewed by humans. It is a point of interaction between people and their work. Approaching this with low-effort, unverified submissions is disrespectful and puts the burden of validation on maintainers who volunteer their time.
 
-In a perfect world, AI would produce high-quality, correct code every time. But that reality depends on the person using the AI. Today, we see too many contributions where AI-generated code hasn't been tested, doesn't follow project patterns, or solves problems that don't exist. Until this improves, we need clear rules to protect maintainer time.
+<mark>In a perfect world, AI would produce high-quality, correct code every time. But that reality depends on the person using the AI. Today, we see too many contributions where AI-generated code hasn't been tested, doesn't follow project patterns, or solves problems that don't exist. Until this improves, we need clear rules to protect maintainer time.</mark>
 
-## AI is Welcome Here
+## <mark>AI is Welcome Here</mark>
 
-Arcane is developed with AI assistance, and maintainers use AI tools productively in their workflow. As a project, we welcome AI as a tool for those who use it responsibly!
+<mark>Arcane is developed with AI assistance, and maintainers use AI tools productively in their workflow. As a project, we welcome AI as a tool for those who use it responsibly!</mark>
 
-**Our reason for this policy is not an anti-AI stance**, but rather a response to the increase in low-quality AI-generated pull requests that don't address real user needs or follow project standards. It's about the quality of contributions, not the tools used to create them.
+<mark>**Our reason for this policy is not an anti-AI stance**, but rather a response to the increase in low-quality AI-generated pull requests that don't address real user needs or follow project standards. It's about the quality of contributions, not the tools used to create them.</mark>
 
-This section exists to be transparent about the project's use of AI and to clarify that this policy targets contribution quality, not the use of AI tools themselves.
+<mark>This section exists to be transparent about the project's use of AI and to clarify that this policy targets contribution quality, not the use of AI tools themselves.</mark>
 
-## Technical Guidance for AI Tools
+## <mark>Technical Guidance for AI Tools</mark>
 
-If you're using AI tools to contribute to Arcane, ensure your AI is configured with our coding standards. See [AGENTS.md](AGENTS.md) for architecture patterns, anti-patterns to avoid, and project-specific conventions that will help AI tools generate code that matches our standards.
+<mark>If you're using AI tools to contribute to Arcane, ensure your AI is configured with our coding standards. See [AGENTS.md](AGENTS.md) for architecture patterns, anti-patterns to avoid, and project-specific conventions that will help AI tools generate code that matches our standards.</mark>

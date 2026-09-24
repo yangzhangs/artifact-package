@@ -1,19 +1,19 @@
-## Use of AI
+## <mark>Use of AI</mark>
 
-We **require all use of AI in contributions to follow our
-[AI Policy](https://github.com/astral-sh/.github/blob/main/AI_POLICY.md)**.
+<mark>We **require all use of AI in contributions to follow our</mark>
+<mark>[AI Policy](https://github.com/astral-sh/.github/blob/main/AI_POLICY.md)**.</mark>
 
 If your contribution does not follow the policy, it will be closed.
 
 [=== 独立AI政策文件: AI_POLICY.md ===]
 
-We support using AI (i.e., LLMs) as tools for coding. However, you remain
+<mark>We support using AI (i.e., LLMs) as tools for coding. However, you remain</mark>
 responsible for any code you publish and we are responsible for any code we
 merge and release. We hold a high bar for all contributions to our projects.
 
 **AI should not be used to generate comments when communicating with
 maintainers**. We expect comments on our projects to be written by humans. We
-may hide any comments that we believe are AI generated.
+<mark>may hide any comments that we believe are AI generated.</mark>
 
 If you are opening an issue, we expect you to describe the problem in your own
 words.
@@ -34,8 +34,8 @@ accompanied by human commentary explaining the relevance and implications of the
 context. Do not share long snippets.
 
 We understand that AI is useful when communicating as a non-native English
-speaker. If you are using AI to edit your comments for this purpose, please take
-the time to ensure it reflects your own voice and ideas. If using AI for
+<mark>speaker. If you are using AI to edit your comments for this purpose, please take</mark>
+<mark>the time to ensure it reflects your own voice and ideas. If using AI for</mark>
 translation, we recommend writing in your native language and including the AI
 translation in a quote block.
 
@@ -43,13 +43,13 @@ translation in a quote block.
 
 # Standalone AI policy file
 
-We support using AI (i.e., LLMs) as tools for coding. However, you remain
+<mark>We support using AI (i.e., LLMs) as tools for coding. However, you remain</mark>
 responsible for any code you publish and we are responsible for any code we
 merge and release. We hold a high bar for all contributions to our projects.
 
 **AI should not be used to generate comments when communicating with
 maintainers**. We expect comments on our projects to be written by humans. We
-may hide any comments that we believe are AI generated.
+<mark>may hide any comments that we believe are AI generated.</mark>
 
 If you are opening an issue, we expect you to describe the problem in your own
 words.
@@ -70,7 +70,7 @@ accompanied by human commentary explaining the relevance and implications of the
 context. Do not share long snippets.
 
 We understand that AI is useful when communicating as a non-native English
-speaker. If you are using AI to edit your comments for this purpose, please take
-the time to ensure it reflects your own voice and ideas. If using AI for
+<mark>speaker. If you are using AI to edit your comments for this purpose, please take</mark>
+<mark>the time to ensure it reflects your own voice and ideas. If using AI for</mark>
 translation, we recommend writing in your native language and including the AI
 translation in a quote block.

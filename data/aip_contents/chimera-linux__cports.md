@@ -8,7 +8,7 @@ We suggest to avoid using GitHub's web editor for contributions, especially
 for templates, since those need testing. Therefore, if you do not know at
 least the basics of Git, use some of the public resources to get familiar.
 
-Do not use AI tools to prepare your contribution. Such contributions will
+<mark>Do not use AI tools to prepare your contribution. Such contributions will</mark>
 not be accepted if found, and anyone submitting them will be barred from
 contributing further.
 

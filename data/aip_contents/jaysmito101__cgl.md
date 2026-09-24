@@ -2,7 +2,7 @@
 
 When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
 
-<b> Note that any contributions made purely made using AI tools like ChatGPT is <i>not allowed</i>. </b> You are free to take help from such tools but the work should be the result of your own serious effort.
+<mark><b> Note that any contributions made purely made using AI tools like ChatGPT is <i>not allowed</i>. </b> You are free to take help from such tools but the work should be the result of your own serious effort.</mark>
 
 ---
 

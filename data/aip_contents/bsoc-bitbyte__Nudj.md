@@ -8,6 +8,6 @@ Please follow these contribution standards:
 * The issue will be assigned based on the most suitable approach — do not spam multiple issues.
 * Once assigned, focus solely on that issue — avoid contributing to others in parallel.
 * Maintain a clean commit history and write clear, meaningful pull requests.
-* Submitting AI-generated code is strictly prohibited and will result in removal from the project.
+* <mark>Submitting AI-generated code is strictly prohibited and will result in removal from the project.</mark>
 
 ---

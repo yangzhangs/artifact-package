@@ -1,6 +1,6 @@
-# Contributing to Auto Claude
+# <mark>Contributing to Auto Claude</mark>
 
-Thank you for your interest in contributing to Auto Claude! This document provides guidelines and instructions for contributing to the project.
+<mark>Thank you for your interest in contributing to Auto Claude! This document provides guidelines and instructions for contributing to the project.</mark>
 
 ---
 
@@ -14,25 +14,25 @@ Thank you for your interest in contributing to Auto Claude! This document provid
 
 ---
 
-## AI-Assisted Contributions
+## <mark>AI-Assisted Contributions</mark>
 
-PRs built with AI tools (Claude, Codex, Copilot, etc.) are welcome here -- given what this project does, it would be odd if they weren't.
+<mark>PRs built with AI tools (Claude, Codex, Copilot, etc.) are welcome here -- given what this project does, it would be odd if they weren't.</mark>
 
-That said, we've seen AI-generated PRs that introduce regressions because the contributor didn't verify what the code actually does. To keep quality high, we ask that AI-assisted PRs include the following:
+<mark>That said, we've seen AI-generated PRs that introduce regressions because the contributor didn't verify what the code actually does. To keep quality high, we ask that AI-assisted PRs include the following:</mark>
 
-- **Flag it** -- mention AI assistance in the PR description (the PR template has a section for this)
+- <mark>**Flag it** -- mention AI assistance in the PR description (the PR template has a section for this)</mark>
 - **State your testing level** -- untested, lightly tested, or fully tested
 - **Share context if you can** -- prompts or session logs help reviewers understand intent
 - **Confirm you understand the code** -- you should be able to describe what the PR does and how the underlying code works
 
-AI-assisted PRs go through the same review process as any other contribution. Transparency just helps reviewers know where to look more carefully.
+<mark>AI-assisted PRs go through the same review process as any other contribution. Transparency just helps reviewers know where to look more carefully.</mark>
 
 ---
 
 ## Table of Contents
 
 - [How to Contribute](#how-to-contribute)
-- [AI-Assisted Contributions](#ai-assisted-contributions)
+- <mark>[AI-Assisted Contributions](#ai-assisted-contributions)</mark>
 - [Contributor License Agreement (CLA)](#contributor-license-agreement-cla)
 - [Prerequisites](#prerequisites)
 - [Quick Start](#quick-start)
@@ -60,15 +60,15 @@ AI-assisted PRs go through the same review process as any other contribution. Tr
 
 ### Why We Require a CLA
 
-Auto Claude is currently licensed under AGPL-3.0. The CLA ensures the project has proper licensing flexibility should we introduce additional licensing options (such as commercial/enterprise licenses) in the future.
+<mark>Auto Claude is currently licensed under AGPL-3.0. The CLA ensures the project has proper licensing flexibility should we introduce additional licensing options (such as commercial/enterprise licenses) in the future.</mark>
 
 You retain full copyright ownership of your contributions.
 
 ---
 
 # Clone the repository
-git clone https://github.com/AndyMik90/Auto-Claude.git
-cd Auto-Claude
+<mark>git clone https://github.com/AndyMik90/Auto-Claude.git</mark>
+<mark>cd Auto-Claude</mark>
 
 ---
 
@@ -84,7 +84,7 @@ npm test               # Run frontend tests
 <details>
 <summary><b>Windows users:</b> If installation fails with node-gyp errors, click here</summary>
 
-Auto Claude automatically downloads prebuilt binaries for Windows. If prebuilts aren't available for your Electron version yet, you'll need Visual Studio Build Tools:
+<mark>Auto Claude automatically downloads prebuilt binaries for Windows. If prebuilts aren't available for your Electron version yet, you'll need Visual Studio Build Tools:</mark>
 
 1. Download [Visual Studio Build Tools 2022](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 2. Select "Desktop development with C++" workload
@@ -93,13 +93,13 @@ Auto Claude automatically downloads prebuilt binaries for Windows. If prebuilts 
 
 </details>
 
-> **Note:** For regular usage, we recommend downloading the pre-built releases from [GitHub Releases](https://github.com/AndyMik90/Auto-Claude/releases). Running from source is primarily for contributors and those testing unreleased features.
+> <mark>**Note:** For regular usage, we recommend downloading the pre-built releases from [GitHub Releases](https://github.com/AndyMik90/Auto-Claude/releases). Running from source is primarily for contributors and those testing unreleased features.</mark>
 
 ---
 
 ### Working with Forks
 
-When contributing to Auto Claude, you'll typically fork the repository first. Proper fork configuration is essential to avoid sync issues.
+<mark>When contributing to Auto Claude, you'll typically fork the repository first. Proper fork configuration is essential to avoid sync issues.</mark>
 
 ---
 

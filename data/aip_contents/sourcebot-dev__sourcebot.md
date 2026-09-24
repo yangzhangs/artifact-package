@@ -3,7 +3,7 @@
 We want to make it easy to contribute to Sourcebot. Here are the most common types of changes that get merged:
 - Bug fixes
 - Improvements to our code host integrations
-- Additional LLM providers
+- <mark>Additional LLM providers</mark>
 - Documentation improvements
 
 However, any UI or core product feature must go through a design review with the core team before implementation. If you're unsure if your PR would be accepted, ask a maintainer.
@@ -15,9 +15,9 @@ Want to take on an issue? Leave a comment and a maintainer may assign it to you 
 
 ---
 
-### No AI-Generated Walls of Text
+### <mark>No AI-Generated Walls of Text</mark>
 
-Long, AI-generated PR descriptions and issues are not acceptable and may be ignored. Respect the maintainers' time:
+<mark>Long, AI-generated PR descriptions and issues are not acceptable and may be ignored. Respect the maintainers' time:</mark>
 
 - Write short, focused descriptions
 - Explain what changed and why in your own words

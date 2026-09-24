@@ -14,8 +14,8 @@
     meson setup build/
     meson test -C build/
     ```
-5.  **AI Tooling Attribution:** If you used any AI models or tooling (e.g., ChatGPT, Claude Code, GitHub Copilot, Gemini, etc.) to create your PR, please specify:
-    *   The model used (e.g., "Claude Sonnet 4.6", "Gemini 3 Pro", "GPT-5.2").
+5.  <mark>**AI Tooling Attribution:** If you used any AI models or tooling (e.g., ChatGPT, Claude Code, GitHub Copilot, Gemini, etc.) to create your PR, please specify:</mark>
+    *   <mark>The model used (e.g., "Claude Sonnet 4.6", "Gemini 3 Pro", "GPT-5.2").</mark>
     *   A brief description of how it was used (e.g., "Used to generate the initial implementation of function X", "Used to write test cases").
     *   This helps us understand the provenance of the code.
 

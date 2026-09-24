@@ -8,7 +8,7 @@
 - [Running Tests](#running-tests)
 - [Code Style](#code-style)
 - [Submitting Changes](#submitting-changes)
-- [AI-Generated Code](#ai-generated-code)
+- <mark>[AI-Generated Code](#ai-generated-code)</mark>
 - [Contributing to Documentation](#contributing-to-documentation)
 - [Reporting Bugs](#reporting-bugs)
 - [Getting Help](#getting-help)
@@ -17,11 +17,11 @@
 
 ---
 
-## AI-Generated Code
+## <mark>AI-Generated Code</mark>
 
-If you use AI tools to write or assist with your code, you must:
+<mark>If you use AI tools to write or assist with your code, you must:</mark>
 
-- **Fully review all AI-generated code yourself** before submitting. You are responsible for understanding and standing behind every line in your PR.
+- <mark>**Fully review all AI-generated code yourself** before submitting. You are responsible for understanding and standing behind every line in your PR.</mark>
 - **Include the prompts used** in the PR description. This gives maintainers additional context for reviewing the code.
 
-Pull requests with unreviewed AI-generated code will be closed.
+<mark>Pull requests with unreviewed AI-generated code will be closed.</mark>

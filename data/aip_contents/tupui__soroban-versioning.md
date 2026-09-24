@@ -1,4 +1,4 @@
-## AI tool use policy
+## <mark>AI tool use policy</mark>
 
 We follow the policy set by the LLVM project:
 

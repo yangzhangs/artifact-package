@@ -8,24 +8,24 @@ If a review bot leaves review conversations on your PR, you are expected to hand
 - If Codex leaves comments, address every relevant one or resolve it with a short explanation when it is not applicable to your change
 - If GitHub Codex review does not trigger for some reason, run `codex review --base origin/main` locally anyway and treat that output as required review work
 
-This applies to both human-authored and AI-assisted PRs.
+<mark>This applies to both human-authored and AI-assisted PRs.</mark>
 
 ---
 
-## AI/Vibe-Coded PRs Welcome! 🤖
+## <mark>AI/Vibe-Coded PRs Welcome! 🤖</mark>
 
-Built with Codex, Claude, or other AI tools? **Awesome - just mark it!**
+<mark>Built with Codex, Claude, or other AI tools? **Awesome - just mark it!**</mark>
 
 Please include in your PR:
 
-- [ ] Mark as AI-assisted in the PR title or description
+- <mark>[ ] Mark as AI-assisted in the PR title or description</mark>
 - [ ] Note the degree of testing (untested / lightly tested / fully tested)
 - [ ] Include prompts or session logs if possible (super helpful!)
 - [ ] Confirm you understand what the code does
 - [ ] If you have access to Codex, run `codex review --base origin/main` locally and address the findings before asking for review
 - [ ] Resolve or reply to bot review conversations after you address them
 
-AI PRs are first-class citizens here. We just want transparency so reviewers know what to look for. If you are using an LLM coding agent, instruct it to resolve bot review conversations it has addressed instead of leaving them for maintainers.
+<mark>AI PRs are first-class citizens here. We just want transparency so reviewers know what to look for. If you are using an LLM coding agent, instruct it to resolve bot review conversations it has addressed instead of leaving them for maintainers.</mark>
 
 ---
 
@@ -40,4 +40,4 @@ AI PRs are first-class citizens here. We just want transparency so reviewers kno
 7. **Environment**
 8. **Remediation Advice**
 
-Reports without reproduction steps, demonstrated impact, and remediation advice will be deprioritized. Given the volume of AI-generated scanner findings, we must ensure we're receiving vetted reports from researchers who understand the issues.
+<mark>Reports without reproduction steps, demonstrated impact, and remediation advice will be deprioritized. Given the volume of AI-generated scanner findings, we must ensure we're receiving vetted reports from researchers who understand the issues.</mark>

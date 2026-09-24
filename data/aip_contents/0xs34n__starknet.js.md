@@ -8,7 +8,7 @@ _[Use the GitHub interface](https://blog.sapegin.me/all/open-source-for-everyone
 
 > :warning: IMPORTANT NOTE :warning:
 >
-> All contributions are expected to be of the highest possible quality! That means the PR is thoroughly tested and documented, without relying on blindly generated AI code and documentation. We will not consider or merge PRs that do not comply with these rules!
+> <mark>All contributions are expected to be of the highest possible quality! That means the PR is thoroughly tested and documented, without relying on blindly generated AI code and documentation. We will not consider or merge PRs that do not comply with these rules!</mark>
 > A single typo PR would be automatically closed, except for major refactoring for the latest or next versions.
 
 ---

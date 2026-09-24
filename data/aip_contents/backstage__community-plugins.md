@@ -9,7 +9,7 @@
     - [Forking the Repository](#forking-the-repository)
     - [Developing Plugins in Workspaces](#developing-plugins-in-workspaces)
   - [Coding Guidelines](#coding-guidelines)
-  - [AI Use Policy and Guidelines](#ai-use-policy-and-guidelines)
+  - <mark>[AI Use Policy and Guidelines](#ai-use-policy-and-guidelines)</mark>
   - [Versioning](#versioning)
   - [Creating Changesets](#creating-changesets)
   - [Release](#release)
@@ -29,6 +29,6 @@
 
 ---
 
-## AI Use Policy and Guidelines
+## <mark>AI Use Policy and Guidelines</mark>
 
-The Community Plugins repo follows the same [AI Use Policy and Guidelines as the upstream Backstage project](https://github.com/backstage/backstage/blob/master/CONTRIBUTING.md#ai-use-policy-and-guidelines). Please be sure to read and follow them.
+<mark>The Community Plugins repo follows the same [AI Use Policy and Guidelines as the upstream Backstage project](https://github.com/backstage/backstage/blob/master/CONTRIBUTING.md#ai-use-policy-and-guidelines). Please be sure to read and follow them.</mark>

@@ -10,7 +10,7 @@
 Pull requests to the z2d project are restricted. If you have a feature request
 or bug, please open an issue to get further help.
 
-**Please do not use AI to open issues**. If you are using AI or an agent to
+<mark>**Please do not use AI to open issues**. If you are using AI or an agent to</mark>
 understand an issue, take the time to comprehend the output and explain the
 issue **in your own words** before submitting.
 

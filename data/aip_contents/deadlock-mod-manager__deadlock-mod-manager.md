@@ -1,17 +1,17 @@
-## AI-Assisted Contributions
+## <mark>AI-Assisted Contributions</mark>
 
-We encourage the use of AI tools to help you contribute — we use them ourselves (our Cursor config is in the repo!). Please review our [AI Policy](./AI_POLICY.md) for the full details, but the essentials are:
+<mark>We encourage the use of AI tools to help you contribute — we use them ourselves (our Cursor config is in the repo!). Please review our [AI Policy](./AI_POLICY.md) for the full details, but the essentials are:</mark>
 
 1. **You own your code.** Understand and be able to explain everything you submit.
-2. **Disclose significant AI usage** in your PR description.
-3. **PRs must address real issues.** No drive-by AI-generated refactors or bug reports.
+2. <mark>**Disclose significant AI usage** in your PR description.</mark>
+3. <mark>**PRs must address real issues.** No drive-by AI-generated refactors or bug reports.</mark>
 4. **Quality is what matters.** Good code is good code, regardless of how it was written.
 
 ---
 
 ## Table of Contents
 
-- [AI-Assisted Contributions](#ai-assisted-contributions)
+- <mark>[AI-Assisted Contributions](#ai-assisted-contributions)</mark>
 - [Getting Started](#getting-started)
 - [Development Setup](#development-setup)
 - [Project Structure](#project-structure)
@@ -26,31 +26,31 @@ We encourage the use of AI tools to help you contribute — we use them ourselve
 
 [=== 独立AI政策文件: AI_POLICY.md ===]
 
-# AI Contribution Policy
+# <mark>AI Contribution Policy</mark>
 
 > **Last updated:** February 2026
 
 ## Our Stance
 
-Deadlock Mod Manager is built with AI assistance, and we're not shy about it. Our [Cursor configuration](https://github.com/deadlock-mod-manager/deadlock-mod-manager/tree/main/.cursor) is included in the repo because we believe AI tools are a legitimate and powerful part of the modern developer toolkit.
+<mark>Deadlock Mod Manager is built with AI assistance, and we're not shy about it. Our [Cursor configuration](https://github.com/deadlock-mod-manager/deadlock-mod-manager/tree/main/.cursor) is included in the repo because we believe AI tools are a legitimate and powerful part of the modern developer toolkit.</mark>
 
-That said, AI tools amplify the skill of the person using them. A good developer with AI becomes faster. A developer who doesn't understand what they're contributing becomes a burden on maintainers, regardless of how the code was produced.
+<mark>That said, AI tools amplify the skill of the person using them. A good developer with AI becomes faster. A developer who doesn't understand what they're contributing becomes a burden on maintainers, regardless of how the code was produced.</mark>
 
-**This is not an anti-AI policy. This is a pro-accountability policy.**
+<mark>**This is not an anti-AI policy. This is a pro-accountability policy.**</mark>
 
 ## Rules for Contributors
 
 ### 1. You Own What You Submit
 
-Every line in your pull request is your responsibility. If you used AI to generate code, you must:
+<mark>Every line in your pull request is your responsibility. If you used AI to generate code, you must:</mark>
 
 - **Understand it fully.** If a maintainer asks why you made a specific choice, "the AI suggested it" is not an acceptable answer.
-- **Have tested it.** AI-generated code must pass the same quality bar as hand-written code: linting, type checking, and manual verification.
+- <mark>**Have tested it.** AI-generated code must pass the same quality bar as hand-written code: linting, type checking, and manual verification.</mark>
 - **Be able to modify it.** If a reviewer asks for changes, you should be able to make them without re-prompting an AI from scratch.
 
-### 2. Disclose AI Usage
+### <mark>2. Disclose AI Usage</mark>
 
-When opening a pull request that involved significant AI assistance (beyond autocomplete or minor suggestions), please note it in the PR description. A simple line is enough:
+<mark>When opening a pull request that involved significant AI assistance (beyond autocomplete or minor suggestions), please note it in the PR description. A simple line is enough:</mark>
 
 ```
 AI Assistance: Used [tool] for [what it helped with]
@@ -58,31 +58,31 @@ AI Assistance: Used [tool] for [what it helped with]
 
 **Examples of what to disclose:**
 
-- "Used Cursor to scaffold the initial component structure, then refined manually"
-- "Claude helped debug the Rust compilation issue in the VPK parser"
-- "GitHub Copilot generated the test cases, reviewed and adjusted by me"
+- <mark>"Used Cursor to scaffold the initial component structure, then refined manually"</mark>
+- <mark>"Claude helped debug the Rust compilation issue in the VPK parser"</mark>
+- <mark>"GitHub Copilot generated the test cases, reviewed and adjusted by me"</mark>
 
 **What doesn't need disclosure:**
 
-- Tab completions and inline suggestions (Copilot, Supermaven, etc.)
-- Using AI to understand the codebase or learn about a technique
+- <mark>Tab completions and inline suggestions (Copilot, Supermaven, etc.)</mark>
+- <mark>Using AI to understand the codebase or learn about a technique</mark>
 - Grammar/spelling checks on documentation
 
-This disclosure isn't about gatekeeping—it helps maintainers calibrate their review. If we know AI was involved, we can focus our review on the areas that matter most.
+<mark>This disclosure isn't about gatekeeping—it helps maintainers calibrate their review. If we know AI was involved, we can focus our review on the areas that matter most.</mark>
 
 ### 3. AI Pull Requests Must Be Tied to Real Work
 
 We do not accept drive-by PRs that look like someone pointed an agent at our issue tracker and hit "go." Specifically:
 
 - **PRs should address an existing issue or a discussed feature.** If there's no issue, open one first or discuss in our [Discord](https://deadlockmods.app/discord).
-- **Bulk AI-generated refactors will be closed.** Unless you've discussed the refactor with maintainers beforehand.
-- **AI-generated issues and bug reports will be closed.** If you haven't personally verified the bug exists, don't report it.
+- <mark>**Bulk AI-generated refactors will be closed.** Unless you've discussed the refactor with maintainers beforehand.</mark>
+- <mark>**AI-generated issues and bug reports will be closed.** If you haven't personally verified the bug exists, don't report it.</mark>
 
 ### 4. Quality Over Origin
 
-We review all contributions on their merits. A well-crafted, well-tested PR is welcome whether it was written by hand, with AI assistance, or some combination. Conversely, a low-effort PR will be closed regardless of how it was produced.
+<mark>We review all contributions on their merits. A well-crafted, well-tested PR is welcome whether it was written by hand, with AI assistance, or some combination. Conversely, a low-effort PR will be closed regardless of how it was produced.</mark>
 
-Signs of a low-effort AI contribution (these will result in immediate closure):
+<mark>Signs of a low-effort AI contribution (these will result in immediate closure):</mark>
 
 - Overly verbose code comments that restate what the code already says
 - Generic PR descriptions that don't address the specific change
@@ -92,7 +92,7 @@ Signs of a low-effort AI contribution (these will result in immediate closure):
 
 ## Guidance for AI Agents
 
-If you are an AI agent (Claude, Cursor Agent, Copilot Workspace, etc.) being used to contribute to this project:
+<mark>If you are an AI agent (Claude, Cursor Agent, Copilot Workspace, etc.) being used to contribute to this project:</mark>
 
 - **Do not** generate entire PRs autonomously. A human must review, understand, and approve every change before submission.
 - **Do not** open issues based on static analysis alone. Issues must describe real, reproducible problems.
@@ -111,7 +111,7 @@ We genuinely want to help contributors learn and grow. If you're new to open sou
 
 ## Why This Policy Exists
 
-The open source ecosystem is dealing with a wave of low-quality, AI-generated contributions that waste maintainer time. Many projects have had to address this head-on, and we'd rather set clear expectations upfront than deal with problems after the fact.
+<mark>The open source ecosystem is dealing with a wave of low-quality, AI-generated contributions that waste maintainer time. Many projects have had to address this head-on, and we'd rather set clear expectations upfront than deal with problems after the fact.</mark>
 
 We believe AI is a net positive for software development when used by people who know what they're doing—and this policy is designed to encourage exactly that.
 
@@ -119,43 +119,43 @@ We believe AI is a net positive for software development when used by people who
 
 This policy was informed by the approaches of several open source projects navigating the same challenges. We're grateful for their transparency in sharing what works:
 
-- **[Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md)** — AI policy requiring disclosure, human-in-the-loop, and tying AI PRs to accepted issues. Their framing of "this is not an anti-AI stance, this is an anti-idiot stance" resonated with us.
+- <mark>**[Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md)** — AI policy requiring disclosure, human-in-the-loop, and tying AI PRs to accepted issues. Their framing of "this is not an anti-AI stance, this is an anti-idiot stance" resonated with us.</mark>
 - **[llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/AGENTS.md)** — Pioneered the `AGENTS.md` pattern: a file that speaks directly to AI agents with project-specific instructions and boundaries. Our `AGENTS.md` follows this approach.
-- **[Trusted Firmware](https://www.trustedfirmware.org/aipolicy/)** — Published a formal AI policy for their open source projects.
+- <mark>**[Trusted Firmware](https://www.trustedfirmware.org/aipolicy/)** — Published a formal AI policy for their open source projects.</mark>
 
 ---
 
-_This policy may evolve as AI tools and community norms evolve. Feedback is welcome via [Discord](https://deadlockmods.app/discord)._
+<mark>_This policy may evolve as AI tools and community norms evolve. Feedback is welcome via [Discord](https://deadlockmods.app/discord)._</mark>
 
 ---
 
 # Standalone AI policy file
 
-# AI Contribution Policy
+# <mark>AI Contribution Policy</mark>
 
 > **Last updated:** February 2026
 
 ## Our Stance
 
-Deadlock Mod Manager is built with AI assistance, and we're not shy about it. Our [Cursor configuration](https://github.com/deadlock-mod-manager/deadlock-mod-manager/tree/main/.cursor) is included in the repo because we believe AI tools are a legitimate and powerful part of the modern developer toolkit.
+<mark>Deadlock Mod Manager is built with AI assistance, and we're not shy about it. Our [Cursor configuration](https://github.com/deadlock-mod-manager/deadlock-mod-manager/tree/main/.cursor) is included in the repo because we believe AI tools are a legitimate and powerful part of the modern developer toolkit.</mark>
 
-That said, AI tools amplify the skill of the person using them. A good developer with AI becomes faster. A developer who doesn't understand what they're contributing becomes a burden on maintainers, regardless of how the code was produced.
+<mark>That said, AI tools amplify the skill of the person using them. A good developer with AI becomes faster. A developer who doesn't understand what they're contributing becomes a burden on maintainers, regardless of how the code was produced.</mark>
 
-**This is not an anti-AI policy. This is a pro-accountability policy.**
+<mark>**This is not an anti-AI policy. This is a pro-accountability policy.**</mark>
 
 ## Rules for Contributors
 
 ### 1. You Own What You Submit
 
-Every line in your pull request is your responsibility. If you used AI to generate code, you must:
+<mark>Every line in your pull request is your responsibility. If you used AI to generate code, you must:</mark>
 
 - **Understand it fully.** If a maintainer asks why you made a specific choice, "the AI suggested it" is not an acceptable answer.
-- **Have tested it.** AI-generated code must pass the same quality bar as hand-written code: linting, type checking, and manual verification.
+- <mark>**Have tested it.** AI-generated code must pass the same quality bar as hand-written code: linting, type checking, and manual verification.</mark>
 - **Be able to modify it.** If a reviewer asks for changes, you should be able to make them without re-prompting an AI from scratch.
 
-### 2. Disclose AI Usage
+### <mark>2. Disclose AI Usage</mark>
 
-When opening a pull request that involved significant AI assistance (beyond autocomplete or minor suggestions), please note it in the PR description. A simple line is enough:
+<mark>When opening a pull request that involved significant AI assistance (beyond autocomplete or minor suggestions), please note it in the PR description. A simple line is enough:</mark>
 
 ```
 AI Assistance: Used [tool] for [what it helped with]
@@ -163,31 +163,31 @@ AI Assistance: Used [tool] for [what it helped with]
 
 **Examples of what to disclose:**
 
-- "Used Cursor to scaffold the initial component structure, then refined manually"
-- "Claude helped debug the Rust compilation issue in the VPK parser"
-- "GitHub Copilot generated the test cases, reviewed and adjusted by me"
+- <mark>"Used Cursor to scaffold the initial component structure, then refined manually"</mark>
+- <mark>"Claude helped debug the Rust compilation issue in the VPK parser"</mark>
+- <mark>"GitHub Copilot generated the test cases, reviewed and adjusted by me"</mark>
 
 **What doesn't need disclosure:**
 
-- Tab completions and inline suggestions (Copilot, Supermaven, etc.)
-- Using AI to understand the codebase or learn about a technique
+- <mark>Tab completions and inline suggestions (Copilot, Supermaven, etc.)</mark>
+- <mark>Using AI to understand the codebase or learn about a technique</mark>
 - Grammar/spelling checks on documentation
 
-This disclosure isn't about gatekeeping—it helps maintainers calibrate their review. If we know AI was involved, we can focus our review on the areas that matter most.
+<mark>This disclosure isn't about gatekeeping—it helps maintainers calibrate their review. If we know AI was involved, we can focus our review on the areas that matter most.</mark>
 
 ### 3. AI Pull Requests Must Be Tied to Real Work
 
 We do not accept drive-by PRs that look like someone pointed an agent at our issue tracker and hit "go." Specifically:
 
 - **PRs should address an existing issue or a discussed feature.** If there's no issue, open one first or discuss in our [Discord](https://deadlockmods.app/discord).
-- **Bulk AI-generated refactors will be closed.** Unless you've discussed the refactor with maintainers beforehand.
-- **AI-generated issues and bug reports will be closed.** If you haven't personally verified the bug exists, don't report it.
+- <mark>**Bulk AI-generated refactors will be closed.** Unless you've discussed the refactor with maintainers beforehand.</mark>
+- <mark>**AI-generated issues and bug reports will be closed.** If you haven't personally verified the bug exists, don't report it.</mark>
 
 ### 4. Quality Over Origin
 
-We review all contributions on their merits. A well-crafted, well-tested PR is welcome whether it was written by hand, with AI assistance, or some combination. Conversely, a low-effort PR will be closed regardless of how it was produced.
+<mark>We review all contributions on their merits. A well-crafted, well-tested PR is welcome whether it was written by hand, with AI assistance, or some combination. Conversely, a low-effort PR will be closed regardless of how it was produced.</mark>
 
-Signs of a low-effort AI contribution (these will result in immediate closure):
+<mark>Signs of a low-effort AI contribution (these will result in immediate closure):</mark>
 
 - Overly verbose code comments that restate what the code already says
 - Generic PR descriptions that don't address the specific change
@@ -197,7 +197,7 @@ Signs of a low-effort AI contribution (these will result in immediate closure):
 
 ## Guidance for AI Agents
 
-If you are an AI agent (Claude, Cursor Agent, Copilot Workspace, etc.) being used to contribute to this project:
+<mark>If you are an AI agent (Claude, Cursor Agent, Copilot Workspace, etc.) being used to contribute to this project:</mark>
 
 - **Do not** generate entire PRs autonomously. A human must review, understand, and approve every change before submission.
 - **Do not** open issues based on static analysis alone. Issues must describe real, reproducible problems.
@@ -216,7 +216,7 @@ We genuinely want to help contributors learn and grow. If you're new to open sou
 
 ## Why This Policy Exists
 
-The open source ecosystem is dealing with a wave of low-quality, AI-generated contributions that waste maintainer time. Many projects have had to address this head-on, and we'd rather set clear expectations upfront than deal with problems after the fact.
+<mark>The open source ecosystem is dealing with a wave of low-quality, AI-generated contributions that waste maintainer time. Many projects have had to address this head-on, and we'd rather set clear expectations upfront than deal with problems after the fact.</mark>
 
 We believe AI is a net positive for software development when used by people who know what they're doing—and this policy is designed to encourage exactly that.
 
@@ -224,10 +224,10 @@ We believe AI is a net positive for software development when used by people who
 
 This policy was informed by the approaches of several open source projects navigating the same challenges. We're grateful for their transparency in sharing what works:
 
-- **[Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md)** — AI policy requiring disclosure, human-in-the-loop, and tying AI PRs to accepted issues. Their framing of "this is not an anti-AI stance, this is an anti-idiot stance" resonated with us.
+- <mark>**[Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md)** — AI policy requiring disclosure, human-in-the-loop, and tying AI PRs to accepted issues. Their framing of "this is not an anti-AI stance, this is an anti-idiot stance" resonated with us.</mark>
 - **[llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/AGENTS.md)** — Pioneered the `AGENTS.md` pattern: a file that speaks directly to AI agents with project-specific instructions and boundaries. Our `AGENTS.md` follows this approach.
-- **[Trusted Firmware](https://www.trustedfirmware.org/aipolicy/)** — Published a formal AI policy for their open source projects.
+- <mark>**[Trusted Firmware](https://www.trustedfirmware.org/aipolicy/)** — Published a formal AI policy for their open source projects.</mark>
 
 ---
 
-_This policy may evolve as AI tools and community norms evolve. Feedback is welcome via [Discord](https://deadlockmods.app/discord)._
+<mark>_This policy may evolve as AI tools and community norms evolve. Feedback is welcome via [Discord](https://deadlockmods.app/discord)._</mark>

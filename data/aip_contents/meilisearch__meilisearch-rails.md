@@ -1,13 +1,13 @@
 ## Coding with AI
 
-We accept the use of AI-powered tools (GitHub Copilot, ChatGPT, Claude, Cursor, etc.) for contributions, whether for code, tests, or documentation.
+<mark>We accept the use of AI-powered tools (GitHub Copilot, ChatGPT, Claude, Cursor, etc.) for contributions, whether for code, tests, or documentation.</mark>
 
-⚠️ However, transparency is required: if you use AI assistance, please mention it in your PR description. This helps maintainers during code review and ensure the quality of contributions.
+<mark>⚠️ However, transparency is required: if you use AI assistance, please mention it in your PR description. This helps maintainers during code review and ensure the quality of contributions.</mark>
 
 What we expect:
-- **Disclose AI usage**: A simple note like "Used GitHub Copilot for autocompletion" or "Generated initial test structure with ChatGPT" is sufficient.
-- **Specify the scope**: Indicate which parts of your contribution involved AI assistance.
-- **Review AI-generated content**: Ensure you understand and have verified any AI-generated code before submitting.
+- <mark>**Disclose AI usage**: A simple note like "Used GitHub Copilot for autocompletion" or "Generated initial test structure with ChatGPT" is sufficient.</mark>
+- <mark>**Specify the scope**: Indicate which parts of your contribution involved AI assistance.</mark>
+- <mark>**Review AI-generated content**: Ensure you understand and have verified any AI-generated code before submitting.</mark>
 
 ---
 
@@ -17,6 +17,6 @@ What we expect:
 2. Once done, [fork the meilisearch-rails repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) in your own GitHub account. Ask a maintainer if you want your issue to be checked before making a PR.
 3. [Create a new Git branch](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-and-deleting-branches-within-your-repository).
 4. Review the [Development Workflow](#development-workflow) section that describes the steps to maintain the repository.
-5. Make your changes on your branch. If you use AI tools during your work, remember to disclose it in your PR description (see [Coding with AI](#coding-with-ai)).
+5. <mark>Make your changes on your branch. If you use AI tools during your work, remember to disclose it in your PR description (see [Coding with AI](#coding-with-ai)).</mark>
 6. [Submit the branch as a PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) pointing to the `main` branch of the main meilisearch-rails repository. A maintainer should comment and/or review your Pull Request within a few days. However depending on the circumstances, it may take longer.<br>
  We do not enforce a naming convention for the PRs, but **please use something descriptive of your changes**, keeping in mind that the title of your PR will be automatically added to the next [release changelog](https://github.com/meilisearch/meilisearch-rails/releases/).

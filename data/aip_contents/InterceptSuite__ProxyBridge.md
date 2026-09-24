@@ -1,8 +1,8 @@
-### AI-Generated Code
+### <mark>AI-Generated Code</mark>
 
-We **accept and welcome** code written with AI assistance (such as Claude, GitHub Copilot, or other AI coding tools), provided it meets our quality and optimization standards.
+<mark>We **accept and welcome** code written with AI assistance (such as Claude, GitHub Copilot, or other AI coding tools), provided it meets our quality and optimization standards.</mark>
 
-**Requirements for AI-Generated Code:**
+<mark>**Requirements for AI-Generated Code:**</mark>
 
 1. **Code Quality Standards**
    - Code must be well-written, optimized, and follow project coding standards
@@ -12,10 +12,10 @@ We **accept and welcome** code written with AI assistance (such as Claude, GitHu
 2. **Optimization is Critical**
    - We take code optimization **very seriously**
    - All code must be optimized for performance and clarity
-   - Contributors are responsible for understanding and optimizing AI-generated code
+   - <mark>Contributors are responsible for understanding and optimizing AI-generated code</mark>
 
 3. **Contributor Responsibility**
-   - **Understand what the code does** - Don't blindly submit AI-generated code
+   - <mark>**Understand what the code does** - Don't blindly submit AI-generated code</mark>
    - **Review and optimize** - If code seems verbose or inefficient, refactor it
    - **Question verbosity** - If you feel the code is too large or can be written better, optimize it
    - **Benchmark when needed** - For performance-critical code, verify optimization claims
@@ -57,7 +57,7 @@ if (info != NULL) {
 return NULL;
 ```
 
-**Before Submitting AI-Generated Code:**
+<mark>**Before Submitting AI-Generated Code:**</mark>
 
 - [ ] I understand what this code does and how it works
 - [ ] I have reviewed it for optimization opportunities
@@ -67,4 +67,4 @@ return NULL;
 - [ ] Performance-critical code has been profiled/benchmarked
 - [ ] Code is as simple and concise as possible while remaining clear
 
-**Remember:** Using AI tools is encouraged, but you are responsible for the quality and optimization of the code you submit. AI-generated code that is verbose, inefficient, or poorly optimized will be rejected.
+<mark>**Remember:** Using AI tools is encouraged, but you are responsible for the quality and optimization of the code you submit. AI-generated code that is verbose, inefficient, or poorly optimized will be rejected.</mark>

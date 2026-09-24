@@ -35,6 +35,6 @@ When submitting a pull request, ensure:
 
 > Important: Prefear opening small PR, focused on specific functionality that directly add value. Avoid to change multiple unrelated functionality to facilitate test.
 
-> Contributions generated with AI are welcome, provided that a qualified human reviewer verifies, tests, and understands the code. AI tools can assist in development, but all pull requests must be submitted by someone capable of ensuring correctness and maintainability. 
+> <mark>Contributions generated with AI are welcome, provided that a qualified human reviewer verifies, tests, and understands the code. AI tools can assist in development, but all pull requests must be submitted by someone capable of ensuring correctness and maintainability. </mark>
 
 > Missing requirements may lead to requests for additional information and, if not provided, the PR may be closed. Regardless of the above, the final decision to merge a pull request is at the maintainer’s discretion.

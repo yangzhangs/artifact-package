@@ -41,7 +41,7 @@
    make docker
    ```
 
-   For GPU-specific Docker builds, see the `docker-build-*` targets in the Makefile and refer to [CLAUDE.md](CLAUDE.md) for detailed backend build instructions.
+<mark>For GPU-specific Docker builds, see the `docker-build-*` targets in the Makefile and refer to [CLAUDE.md](CLAUDE.md) for detailed backend build instructions.</mark>
 
 ---
 
@@ -49,7 +49,7 @@
 
 This project uses an [`.editorconfig`](.editorconfig) file to define formatting standards (indentation, line endings, charset, etc.). Please configure your editor to respect it.
 
-For AI-assisted development, see [`AGENTS.md`](AGENTS.md) (or the equivalent [`CLAUDE.md`](CLAUDE.md) symlink) for agent-specific guidelines including build instructions and backend architecture details. Contributions produced with AI assistance must follow the rules in the [AI Coding Assistants](#ai-coding-assistants) section below.
+<mark>For AI-assisted development, see [`AGENTS.md`](AGENTS.md) (or the equivalent [`CLAUDE.md`](CLAUDE.md) symlink) for agent-specific guidelines including build instructions and backend architecture details. Contributions produced with AI assistance must follow the rules in the [AI Coding Assistants](#ai-coding-assistants) section below.</mark>
 
 ---
 
@@ -87,9 +87,9 @@ For AI-assisted development, see [`AGENTS.md`](AGENTS.md) (or the equivalent [`C
 
 ## AI Coding Assistants
 
-LocalAI follows the **same guidelines as the Linux kernel project** for AI-assisted contributions: <https://docs.kernel.org/process/coding-assistants.html>.
+<mark>LocalAI follows the **same guidelines as the Linux kernel project** for AI-assisted contributions: <https://docs.kernel.org/process/coding-assistants.html>.</mark>
 
-The full policy for this repository lives in [`.agents/ai-coding-assistants.md`](.agents/ai-coding-assistants.md). Summary:
+<mark>The full policy for this repository lives in [`.agents/ai-coding-assistants.md`](.agents/ai-coding-assistants.md). Summary:</mark>
 
 - **AI agents MUST NOT add `Signed-off-by` tags.** Only humans can certify the Developer Certificate of Origin.
 - **AI agents MUST NOT add `Co-Authored-By` trailers** attributing themselves as co-authors.
@@ -99,8 +99,8 @@ The full policy for this repository lives in [`.agents/ai-coding-assistants.md`]
   Assisted-by: AGENT_NAME:MODEL_VERSION [TOOL1] [TOOL2]
   ```
 
-  Example: `Assisted-by: Claude:claude-opus-4-7 golangci-lint`
+<mark>Example: `Assisted-by: Claude:claude-opus-4-7 golangci-lint`</mark>
 
   Basic development tools (git, go, make, editors) should not be listed.
-- **The human submitter is responsible** for reviewing, testing, and fully understanding every line of AI-generated code — including verifying that any referenced APIs, flags, or file paths actually exist in the tree.
+- <mark>**The human submitter is responsible** for reviewing, testing, and fully understanding every line of AI-generated code — including verifying that any referenced APIs, flags, or file paths actually exist in the tree.</mark>
 - Contributions must remain compatible with LocalAI's **MIT License**.

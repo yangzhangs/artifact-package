@@ -6,8 +6,8 @@
 - Link the relevant issue when applicable.
 - Mention any areas that need particular review attention.
 - Be open to feedback and follow-up changes during review.
-- Use AI tools, if at all, as a support for small, well-understood tasks rather than to generate large parts of a contribution
-- Do not submit AI-heavy or "vibe-coded" pull requests; we welcome thoughtful use of tooling, but contributions need to be intentionally designed.
+- <mark>Use AI tools, if at all, as a support for small, well-understood tasks rather than to generate large parts of a contribution</mark>
+- <mark>Do not submit AI-heavy or "vibe-coded" pull requests; we welcome thoughtful use of tooling, but contributions need to be intentionally designed.</mark>
 
 ---
 
@@ -21,6 +21,6 @@ To help keep reviews efficient:
 - Explain your reasoning clearly.
 - Respond to review comments directly.
 - Avoid force-pushing large unexplained rewrites during active review unless necessary.
-- AI-assisted work is welcome for limited, well-understood tasks, but contributions should remain author-driven and must be code you fully understand, and can explain.
+- <mark>AI-assisted work is welcome for limited, well-understood tasks, but contributions should remain author-driven and must be code you fully understand, and can explain.</mark>
 
-We do not accept pull requests that are largely AI-generated or submitted without careful engineering judgment, testing, and alignment with Trio’s existing patterns.
+<mark>We do not accept pull requests that are largely AI-generated or submitted without careful engineering judgment, testing, and alignment with Trio’s existing patterns.</mark>

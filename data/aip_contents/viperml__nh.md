@@ -20,7 +20,7 @@
     - [Shell Command Quoting](#shell-command-quoting)
     - [Logging](#logging)
     - [Derive Macros](#derive-macros)
-  - [AI Policy](#ai-policy)
+  - <mark>[AI Policy](#ai-policy)</mark>
     - [What This Means](#what-this-means)
   - [Getting Help](#getting-help)
   - [License](#license)

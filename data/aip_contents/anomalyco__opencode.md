@@ -4,7 +4,7 @@ We want to make it easy for you to contribute to OpenCode. Here are the most com
 
 - Bug fixes
 - Additional LSPs / Formatters
-- Improvements to LLM performance
+- <mark>Improvements to LLM performance</mark>
 - Support for new providers
 - Fixes for environment-specific quirks
 - Missing standard behavior

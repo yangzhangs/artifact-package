@@ -10,7 +10,7 @@ At a minimum, to be accepted and merged, Pull Requests must:
 - Include thorough test coverage and documentation, where applicable.
 - Pass all tests and code quality checks on CI.
 - Receive at least one approval from a project member with push permissions.
-- Disclose use of AI. This can be categorised as none, autocomplete/research led by the developer, or generated mostly by the AI agent
+- <mark>Disclose use of AI. This can be categorised as none, autocomplete/research led by the developer, or generated mostly by the AI agent</mark>
 
 Make sure that your code is readable, well-encapsulated, and follows existing code and naming conventions. Any suppression of lint
 violations must be done in code and properly explained. The PR should comprise commits that are reasonably small with proper commit

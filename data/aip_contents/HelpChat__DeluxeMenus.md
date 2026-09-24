@@ -2,4 +2,4 @@
 
 - Make sure you’ve read and followed the [Code of Conduct]  
 - Test your changes thoroughly  
-- Review and verify any AI-generated code
+- <mark>Review and verify any AI-generated code</mark>

@@ -1,6 +1,6 @@
 ## 🤖 Agentic Coding PRs Welcome!
 
-We **encourage and welcome** Pull Requests created with AI assistance (Claude, GPT, Copilot, etc.)! However, to maintain code quality and project coherence, agentic PRs must follow these guidelines:
+<mark>We **encourage and welcome** Pull Requests created with AI assistance (Claude, GPT, Copilot, etc.)! However, to maintain code quality and project coherence, agentic PRs must follow these guidelines:</mark>
 
 ---
 
@@ -11,7 +11,7 @@ We **encourage and welcome** Pull Requests created with AI assistance (Claude, G
 3. **Clear Explanation**: Include a detailed explanation of:
    - What the change does and why it's needed
    - How you tested the functionality
-   - Any AI tools used in development
+   - <mark>Any AI tools used in development</mark>
    - Any design decisions made during implementation
 
 4. **Documentation**: Update relevant documentation (README, code comments, etc.)

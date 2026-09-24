@@ -39,19 +39,19 @@ by adding a "Signed-off-by" line containing the contributor's name and e-mail
 to every commit message. Your signature certifies that you wrote the patch or
 otherwise have the right to pass it on as an open-source patch.
 
-The use of AI tools is welcome but should be correctly attributed, especially
+<mark>The use of AI tools is welcome but should be correctly attributed, especially</mark>
 for substantial changes. You can use one of the following in your commit
 message:
 
-* `Assisted-by: <AI tool>`
-* `Co-authored-by: <AI tool>`
-* `Generated-by: <AI tool>`
-* Or mention it in the commit message body, e.g., "Generated with <AI tool>"
+* <mark>`Assisted-by: <AI tool>`</mark>
+* <mark>`Co-authored-by: <AI tool>`</mark>
+* <mark>`Generated-by: <AI tool>`</mark>
+* <mark>Or mention it in the commit message body, e.g., "Generated with <AI tool>"</mark>
 
-Marking AI-assisted contributions helps preserve both legal clarity and
+<mark>Marking AI-assisted contributions helps preserve both legal clarity and</mark>
 community trust, and makes it easier for reviewers to evaluate the code
-in context. For more information, see [AI-assisted development and open source:
+<mark>in context. For more information, see [AI-assisted development and open source:</mark>
 Navigating the legal issues][ai-legal].
 
-[ai-legal]: https://www.redhat.com/en/blog/ai-assisted-development-and-open-source-navigating-legal-issues
+<mark>[ai-legal]: https://www.redhat.com/en/blog/ai-assisted-development-and-open-source-navigating-legal-issues</mark>
 [git-commit]: https://chris.beams.io/posts/git-commit/

@@ -1,6 +1,6 @@
 ## AI Development Assistant Support
 
-This repository includes [AGENTS.md](AGENTS.md), a comprehensive guide designed to help AI development assistants (like IBM Bob, Claude Code, GitHub Copilot, Cursor AI, Windsurf, and others) understand and work effectively with this codebase.
+<mark>This repository includes [AGENTS.md](AGENTS.md), a comprehensive guide designed to help AI development assistants (like IBM Bob, Claude Code, GitHub Copilot, Cursor AI, Windsurf, and others) understand and work effectively with this codebase.</mark>
 
 ---
 
@@ -17,13 +17,13 @@ The file provides AI assistants with:
 
 ---
 
-### Using AI Assistants for Development
+### <mark>Using AI Assistants for Development</mark>
 
 If you're using an AI coding assistant to contribute to this project:
 
 1. **Reference AGENTS.md** - Most AI assistants can automatically discover and use this file
-2. **Verify suggestions** - Always review AI-generated code for correctness and adherence to project standards
+2. <mark>**Verify suggestions** - Always review AI-generated code for correctness and adherence to project standards</mark>
 3. **Run tests** - Test any changes with `jlpm test` before submitting
-4. **Follow conventions** - Ensure AI-generated code matches the patterns described in AGENTS.md
+4. <mark>**Follow conventions** - Ensure AI-generated code matches the patterns described in AGENTS.md</mark>
 
 The AGENTS.md file helps AI assistants provide more accurate, context-aware suggestions that align with our codebase structure and conventions.

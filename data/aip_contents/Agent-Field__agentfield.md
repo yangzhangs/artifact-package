@@ -1,6 +1,6 @@
-## AI-Assisted Contributions
+## <mark>AI-Assisted Contributions</mark>
 
-We welcome contributions made with AI assistance (Claude, GitHub Copilot, Cursor, etc.).
+<mark>We welcome contributions made with AI assistance (Claude, GitHub Copilot, Cursor, etc.).</mark>
 
 ---
 
@@ -8,13 +8,13 @@ We welcome contributions made with AI assistance (Claude, GitHub Copilot, Cursor
 
 1. **Quality matters, not method** - We evaluate PRs on code quality, test coverage, and adherence to standards. How you wrote the code doesn't affect acceptance.
 
-2. **Commit attribution** - If using an AI assistant, you may include it as a co-author:
+2. <mark>**Commit attribution** - If using an AI assistant, you may include it as a co-author:</mark>
    ```
    Co-Authored-By: Claude <noreply@anthropic.com>
    ```
    This is optional but helps with transparency.
 
-3. **You own the submission** - You're responsible for reviewing AI-generated code before submitting. Ensure it:
+3. <mark>**You own the submission** - You're responsible for reviewing AI-generated code before submitting. Ensure it:</mark>
    - Follows project conventions
    - Includes appropriate tests
    - Doesn't introduce security issues
@@ -22,9 +22,9 @@ We welcome contributions made with AI assistance (Claude, GitHub Copilot, Cursor
 
 ---
 
-### Testing Requirements for AI-Assisted Code
+### <mark>Testing Requirements for AI-Assisted Code</mark>
 
-AI-generated code requires the same test coverage as human-written code. When using AI:
+<mark>AI-generated code requires the same test coverage as human-written code. When using AI:</mark>
 
 **Before Submitting:**
 1. Run `./scripts/test-all.sh` and verify all tests pass
@@ -71,9 +71,9 @@ Add tests for the retry handler. Include:
 
 ---
 
-### Tips for Using AI with AgentField
+### <mark>Tips for Using AI with AgentField</mark>
 
-- Point your AI to `CLAUDE.md` for project context
+- <mark>Point your AI to `CLAUDE.md` for project context</mark>
 - Share relevant file paths from the issue description
 - Ask the AI to run tests before considering the task complete
 - Review diffs carefully - AI sometimes over-engineers or misses edge cases

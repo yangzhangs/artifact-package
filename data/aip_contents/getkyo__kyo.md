@@ -5,7 +5,7 @@
   - [Configuring Java Options](#configuring-java-options)
   - [How to Build Locally](#how-to-build-locally)
   - [Adding a New API](#adding-a-new-api)
-  - [LLM Use Guide](#llm-use-guide)
+  - <mark>[LLM Use Guide](#llm-use-guide)</mark>
 - [Core Principles](#core-principles)
 - [API Design](#api-design)
   - [Naming](#naming)
@@ -43,10 +43,10 @@
 
 ---
 
-### LLM Use Guide
-We encourage contributors to leverage Large Language Models (LLMs) responsibly:
-- Do **not** submit low-effort, AI-generated code without review.
-- If you use AI assistance, ensure that the submission is well-tested and meets our standards.
-- Automated PRs without human oversight may be closed.
+### <mark>LLM Use Guide</mark>
+<mark>We encourage contributors to leverage Large Language Models (LLMs) responsibly:</mark>
+- <mark>Do **not** submit low-effort, AI-generated code without review.</mark>
+- <mark>If you use AI assistance, ensure that the submission is well-tested and meets our standards.</mark>
+- <mark>Automated PRs without human oversight may be closed.</mark>
 
 ---

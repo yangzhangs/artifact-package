@@ -19,8 +19,8 @@ submitted. If you'd like your PR to have the best chance of being merged:
 - If it changes the UI, attach **screenshots** or screen recordings.
 - Make the PR about **one thing only**, e.g. if it's a bugfix, don't add two
   features and a refactoring on top of that.
-- Keep AI assistance under your judgement and responsibility: it's unlikely
-  we'll merge a vibe-coded PR that the author doesn't understand.
+- <mark>Keep AI assistance under your judgement and responsibility: it's unlikely</mark>
+<mark>we'll merge a vibe-coded PR that the author doesn't understand.</mark>
 
 The internal advice for reviewers is as follows:
 
@@ -63,7 +63,7 @@ When your changes affect UI, consult this checklist:
 
 **Performance**
 - All user interactions must have instant feedback.
-    - If the user requests something slow (e.g. an LLM generation) there should be some indication of the work in progress.
+    - <mark>If the user requests something slow (e.g. an LLM generation) there should be some indication of the work in progress.</mark>
 - Does it handle large files, big projects, or heavy workloads without degrading?
 - Frames must take no more than 8ms (120fps)
 
@@ -102,4 +102,4 @@ Although there are few hard and fast rules, typically we don't merge:
 - Giant refactorings.
 - Non-trivial changes with no tests.
 - Stylistic code changes that do not alter any app logic. Reducing allocations, removing `.unwrap()`s, fixing typos is great; making code "more readable" — maybe not so much.
-- Anything that seems AI-generated without understanding the output.
+- <mark>Anything that seems AI-generated without understanding the output.</mark>

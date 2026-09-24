@@ -1,12 +1,12 @@
-## LLM-Assisted Contributions
+## <mark>LLM-Assisted Contributions</mark>
 
-We welcome contributions made with the help of AI coding assistants and LLMs. If you use LLMs, use them responsibly.
+<mark>We welcome contributions made with the help of AI coding assistants and LLMs. If you use LLMs, use them responsibly.</mark>
 
 In practice, this means:
 
-- **Review what was generated.** Don't submit code you haven't read and understood. LLMs can produce plausible-looking but incorrect logic, especially around edge cases.
+- <mark>**Review what was generated.** Don't submit code you haven't read and understood. LLMs can produce plausible-looking but incorrect logic, especially around edge cases.</mark>
 - **Verify accuracy.** Check that generated code, logic, tool descriptions, and prompts are correct — inaccurate descriptions directly affect how AI assistants use these tools, and subtle logic errors may not be caught by tests alone.
-- **Run the checks.** LLM-generated code must still pass `task check` and `task test:unit` before submitting a PR.
+- <mark>**Run the checks.** LLM-generated code must still pass `task check` and `task test:unit` before submitting a PR.</mark>
 - **Show your work.** For non-trivial changes, include evidence of testing in your PR description (e.g., screenshots, logs, or a description of what you ran and observed). The burden of validation is on the author, not the reviewer.
 
 The bar for contribution quality is the same regardless of how the code was written.
@@ -15,7 +15,7 @@ The bar for contribution quality is the same regardless of how the code was writ
 
 ### Manual Testing
 
-To test in a client like Cursor or Claude, use a configuration file like this:
+<mark>To test in a client like Cursor or Claude, use a configuration file like this:</mark>
 
 ```
 {
@@ -62,7 +62,7 @@ For improved debugging, you can set the `DBT_MCP_SERVER_FILE_LOGGING=true` envir
 
 ### Adding a tool with interactive UI (MCP Apps)
 
-MCP Apps are tools that have an associated interactive UI rendered by the host (e.g., Claude, VS Code). They build on top of regular tools with two additions:
+<mark>MCP Apps are tools that have an associated interactive UI rendered by the host (e.g., Claude, VS Code). They build on top of regular tools with two additions:</mark>
 
 1. **Use `structured_output` and `meta`** to link the tool to a UI resource:
    ```python

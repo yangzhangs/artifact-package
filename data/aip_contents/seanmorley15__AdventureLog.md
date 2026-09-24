@@ -1,6 +1,6 @@
-# AI / LLM Assistance
+# <mark>AI / LLM Assistance</mark>
 
-Using AI tools (such as ChatGPT, Copilot, or other LLMs) **is allowed** when contributing to AdventureLog.
+<mark>Using AI tools (such as ChatGPT, Copilot, or other LLMs) **is allowed** when contributing to AdventureLog.</mark>
 
 However, contributors are responsible for ensuring that generated code:
 
@@ -9,8 +9,8 @@ However, contributors are responsible for ensuring that generated code:
 - integrates properly with the existing architecture
 - does not introduce unnecessary complexity
 
-AI-generated code that does not meet these standards may be rejected or the pull request may be closed.
+<mark>AI-generated code that does not meet these standards may be rejected or the pull request may be closed.</mark>
 
-Please review and clean up any AI-generated code before submitting it.
+<mark>Please review and clean up any AI-generated code before submitting it.</mark>
 
 ---

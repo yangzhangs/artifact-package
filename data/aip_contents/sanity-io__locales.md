@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions are always welcome and there are multiple ways to join in from being a maintainer of a particular locale to submitting one-off improvement suggestions, big or small. Maintainers are tagged to help review automated pull-requests from AI and receive a token of appreciation from Sanity.
+<mark>Contributions are always welcome and there are multiple ways to join in from being a maintainer of a particular locale to submitting one-off improvement suggestions, big or small. Maintainers are tagged to help review automated pull-requests from AI and receive a token of appreciation from Sanity.</mark>
 
 ---
 
@@ -37,7 +37,7 @@ The strings are located in the `src` folder of each plugin, where the file name 
 
 Hooray! We appreciate your contribution and love seeing new locales added! Initially, you probably do not want to hand-translate every single string in the studio. Instead, simply [request a new locale](https://github.com/sanity-io/locales/issues/new?assignees=&labels=&template=new-locale-request.md&title=Locale+request%3A+) and we will run an initial AI translation for you. Once this is done, you can contribute edits/improvments to it and optinally be its maintainer.
 
-Here is a full walkthrough of how we use AI to help us create language plugins and keep them updated, and how maintainers and contributors help
+<mark>Here is a full walkthrough of how we use AI to help us create language plugins and keep them updated, and how maintainers and contributors help</mark>
 
 [![Demo of adding languages with AI](https://github.com/sanity-io/locales/assets/38528/e0de83ad-7b95-407c-b355-a610479dfbaf)](https://www.loom.com/share/f75d227a116c4df2a3c0d2b675842bec?sid=03c7d4b6-3d0a-4575-b65a-d5247368b30d)
 

@@ -1,7 +1,7 @@
 ## Table of Contents
 
 
-- [AI Assistance Disclosure](#ai-assistance-disclosure)
+- <mark>[AI Assistance Disclosure](#ai-assistance-disclosure)</mark>
 - [Reporting Issues](#reporting-issues)
 - [Reporting Security Vulnerabilities](#reporting-security-vulnerabilities)
 - [Requesting Features & Enhancements](#requesting-features--enhancements)
@@ -17,26 +17,26 @@
 
 ---
 
-## AI Assistance Disclosure
+## <mark>AI Assistance Disclosure</mark>
 
 > [!IMPORTANT]  
-> If any AI tool was used while contributing to Streamyfin, it must be disclosed in the pull request.
+> <mark>If any AI tool was used while contributing to Streamyfin, it must be disclosed in the pull request.</mark>
 
-State in your PR whether AI assistance was used and to what extent (for example, *docs only* or *code generation*).  
-If AI-generated text was used in PR discussions or responses, disclose that as well.  
+<mark>State in your PR whether AI assistance was used and to what extent (for example, *docs only* or *code generation*).</mark>
+<mark>If AI-generated text was used in PR discussions or responses, disclose that as well.</mark>
 Minor autocomplete or keyword suggestions do not require disclosure.
 
 ---
 
 ### Examples
 
-> This PR was written primarily by Claude Code.  
-> I used Cursor to explore parts of the codebase, but the implementation is fully manual.
+> <mark>This PR was written primarily by Claude Code.  </mark>
+> <mark>I used Cursor to explore parts of the codebase, but the implementation is fully manual.</mark>
 
-Failing to disclose AI usage wastes maintainers’ time and complicates review efforts.  
-AI-assisted contributions are welcome, but contributors remain fully responsible for the code they submit.  
+<mark>Failing to disclose AI usage wastes maintainers’ time and complicates review efforts.</mark>
+<mark>AI-assisted contributions are welcome, but contributors remain fully responsible for the code they submit.</mark>
 
-Always disclose AI involvement to maintain transparency and respect for maintainers’ time.
+<mark>Always disclose AI involvement to maintain transparency and respect for maintainers’ time.</mark>
 
 ---
 
@@ -51,7 +51,7 @@ When opening a PR:
 - Include screenshots or recordings if UI changes are involved.
 - Ensure CI checks are green (lint, type-check, build).
 - Confirm that the branch is **up to date with `main`** before submission. 
-- Mention if AI-generated code or content was used (see [AI Assistance Disclosure](#ai-assistance-disclosure)).  
+- <mark>Mention if AI-generated code or content was used (see [AI Assistance Disclosure](#ai-assistance-disclosure)).  </mark>
 - Do not include secrets, tokens, or production credentials. Redact sensitive data in logs and screenshots.
 - Keep PRs focused; avoid bundling unrelated changes together.
 

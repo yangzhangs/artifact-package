@@ -1,6 +1,6 @@
 ## AI Authored / Assisted Contributions
 
-If you use AI/LLM tools (e.g. Copilot, Claude) when contributing to
+<mark>If you use AI/LLM tools (e.g. Copilot, Claude) when contributing to</mark>
 SingularityCE please ensure that:
 
 - Commit messages and PR descriptions clearly indicate which tool(s) were used.

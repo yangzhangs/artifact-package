@@ -1,6 +1,6 @@
 ### Contributor responsibilities
 
-You are responsible for validating the correctness of your code. Run relevant tests locally before opening a pull request. This applies to all contributions, including those assisted by AI.
+<mark>You are responsible for validating the correctness of your code. Run relevant tests locally before opening a pull request. This applies to all contributions, including those assisted by AI.</mark>
 
 - **SDK Core**: Strict requirement for End-to-End (E2E) test coverage for all new features and bug fixes.
 - **Community Package**: Ideally, include unit and/or integration tests. We are more lenient with coverage here, but tests are strongly encouraged.

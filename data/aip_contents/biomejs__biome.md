@@ -1,7 +1,7 @@
 ## Table of Contents
 
 - [🚀 Contributing](#-contributing)
-  * [AI assistance notice](#ai-assistance-notice)
+  * <mark>[AI assistance notice](#ai-assistance-notice)</mark>
   * [Asking questions, making proposals](#asking-questions-making-proposals)
   * [Reporting bugs](#reporting-bugs)
   * [Getting Started](#getting-started)
@@ -42,30 +42,30 @@
 
 ---
 
-## AI assistance notice
+## <mark>AI assistance notice</mark>
 
 > [!IMPORTANT]
 >
-> If you are using **any kind of AI assistance** to contribute to Biome,
+> <mark>If you are using **any kind of AI assistance** to contribute to Biome,</mark>
 > it must be disclosed in the pull request.
 
-If you relied on AI assistance to make a pull request, you must disclose it in the
+<mark>If you relied on AI assistance to make a pull request, you must disclose it in the</mark>
 pull request, together with the extent of the usage. For example, if you used
 AI to generate docs or tests, you must say it.
 An example disclosure:
 
-- > This PR was written primarily by Claude Code.
-- > I consulted ChatGPT to understand the codebase but the solution
+- <mark>> This PR was written primarily by Claude Code.</mark>
+- <mark>> I consulted ChatGPT to understand the codebase but the solution</mark>
   > was fully authored manually by myself.
 
 Providing this information helps reviewers understand the context of the
 pull request and apply the right level of scrutiny, ensuring a smoother
 and more efficient review process.
 
-AI assistance isn't always perfect, even when used with the utmost care.
+<mark>AI assistance isn't always perfect, even when used with the utmost care.</mark>
 
-Please be respectful to maintainers and disclose AI assistance.
+<mark>Please be respectful to maintainers and disclose AI assistance.</mark>
 
-Please do not use AI to write pull request descriptions or contributor communication for this project. Maintainers have limited review bandwidth, and unnecessarily long or low-signal explanations can slow down the review process.
+<mark>Please do not use AI to write pull request descriptions or contributor communication for this project. Maintainers have limited review bandwidth, and unnecessarily long or low-signal explanations can slow down the review process.</mark>
 
-If we believe AI-generated communication was used, we may close the pull request at our discretion. Repeated attempts to contest that decision in comments or re-open the PR may affect whether we accept future contributions from the same contributor.
+<mark>If we believe AI-generated communication was used, we may close the pull request at our discretion. Repeated attempts to contest that decision in comments or re-open the PR may affect whether we accept future contributions from the same contributor.</mark>

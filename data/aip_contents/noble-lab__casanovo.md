@@ -2,7 +2,7 @@
 
 To keep the project maintainable and reviewer-friendly, all PRs must meet the following criteria.
 
-All pull requests are automatically reviewed by the CodeRabbit AI tool.
+<mark>All pull requests are automatically reviewed by the CodeRabbit AI tool.</mark>
 Carefully go through its feedback and address all comments, either by updating your code or by clearly explaining why a suggestion does not apply.
 Ignoring automated review feedback will prevent further review.
 
@@ -16,7 +16,7 @@ PRs that are not yet ready will not be reviewed.
 
 ---
 
-## Use of AI coding tools
+## <mark>Use of AI coding tools</mark>
 
 Contributions created with the help of AI coding tools are welcome.
 However:

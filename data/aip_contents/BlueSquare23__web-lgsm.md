@@ -1,9 +1,9 @@
-## A Note on LLM Usage
+## <mark>A Note on LLM Usage</mark>
 
 > [!IMPORTANT]
-> NO GIANT AI GENERATED PRs PLEASE!
+> <mark>NO GIANT AI GENERATED PRs PLEASE!</mark>
 
-If I wanted to just let Claude or my own internal LLM's loose on this project I
+<mark>If I wanted to just let Claude or my own internal LLM's loose on this project I</mark>
 know I could do that. But that's not the point of this project.
 
 That's also not to say this project is totally anti AI, either. However, all AI

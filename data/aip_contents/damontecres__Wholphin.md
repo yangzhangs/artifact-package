@@ -1,5 +1,5 @@
-#### Policy for AI or LLMs
+#### <mark>Policy for AI or LLMs</mark>
 
-Wholphin has adopted the [Jellyfin LLM/"AI" Development Policy](https://jellyfin.org/docs/general/contributing/llm-policies/). AI/LLM assisted code contributions are permitted under the policy, but the author must undertand and be able to explain the code changes in their own words.
+<mark>Wholphin has adopted the [Jellyfin LLM/"AI" Development Policy](https://jellyfin.org/docs/general/contributing/llm-policies/). AI/LLM assisted code contributions are permitted under the policy, but the author must undertand and be able to explain the code changes in their own words.</mark>
 
-At a minimum, you must disclose the usage any of AI/LLM assistance and you must write the pull request description _without_ AI assistance.
+<mark>At a minimum, you must disclose the usage any of AI/LLM assistance and you must write the pull request description _without_ AI assistance.</mark>

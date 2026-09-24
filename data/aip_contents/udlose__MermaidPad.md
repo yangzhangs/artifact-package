@@ -7,7 +7,7 @@
 Clear commit messages help maintain a readable history.
 
 You can do either of the following:
-- Use AI generated commit messages based on your changes
+- <mark>Use AI generated commit messages based on your changes</mark>
 - or follow this pattern:
 
   ```

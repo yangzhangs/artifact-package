@@ -1,7 +1,7 @@
 ## Policies and Guidelines
 
-- **AI Policy & Authorship**: See [AI_POLICY.md](AI_POLICY.md) for the complete policy. Summary:
-    - Kornia-rs accepts AI-assisted code but strictly rejects AI-generated contributions where the submitter acts as a proxy.
+- <mark>**AI Policy & Authorship**: See [AI_POLICY.md](AI_POLICY.md) for the complete policy. Summary:</mark>
+    - <mark>Kornia-rs accepts AI-assisted code but strictly rejects AI-generated contributions where the submitter acts as a proxy.</mark>
     - **Proof of Verification**: PRs must include local test logs proving execution (e.g., `pixi run rust-test` or `cargo test`).
     - **Pre-Discussion**: All PRs must be discussed in Discord or via a GitHub issue before implementation.
     - **Library References**: Implementations must be based on existing library references (Rust crates, OpenCV, etc.).
@@ -25,24 +25,24 @@ We're all volunteers. These policies help us focus on high-impact work.
 
 3. **Understand the Codebase**: Take time to explore existing code patterns, architecture, and conventions before implementing new features.
 
-4. **Review Existing Utilities**: Before implementing new functionality, search the codebase for existing utilities in `kornia-rs` crates. This aligns with the AI Policy's Hallucination & Redundancy Ban (see [Policies and Guidelines](#policies-and-guidelines)).
+4. <mark>**Review Existing Utilities**: Before implementing new functionality, search the codebase for existing utilities in `kornia-rs` crates. This aligns with the AI Policy's Hallucination & Redundancy Ban (see [Policies and Guidelines](#policies-and-guidelines)).</mark>
 
 ---
 
 ## Review Process
 
-- Review your own PR first: check for typos/formatting, verify tests pass, ensure documentation is updated, and confirm AI policy compliance
+- <mark>Review your own PR first: check for typos/formatting, verify tests pass, ensure documentation is updated, and confirm AI policy compliance</mark>
 - Respond promptly to review feedback
 - Be open to feedback and explain your decisions when questioned
 - See [Pull Request](#pull-request) section for review requirements
 
 ---
 
-## AI-Assisted Development
+## <mark>AI-Assisted Development</mark>
 
-- Understand every line of code you submit; you must be able to explain it during review (see [AI Policy](AI_POLICY.md))
+- <mark>Understand every line of code you submit; you must be able to explain it during review (see [AI Policy](AI_POLICY.md))</mark>
 - Review AI output thoroughly: check for unnecessary complexity, verify it follows project conventions, ensure it uses existing utilities, and test it
-- Be transparent in PR descriptions about what was AI-assisted and what you manually reviewed (see [Pull Request](#pull-request) for AI Usage Disclosure requirements)
+- <mark>Be transparent in PR descriptions about what was AI-assisted and what you manually reviewed (see [Pull Request](#pull-request) for AI Usage Disclosure requirements)</mark>
 
 ---
 
@@ -68,7 +68,7 @@ This workflow helps maintain quality, avoid conflicts, and ensure contributions 
 - Link PR to an issue (use "Closes #123" or "Fixes #123")
 - Pass all local tests before submission
 - For first time contributors, provide proof of local test execution in the PR description
-- **AI Policy Compliance**: Must comply with [AI_POLICY.md](AI_POLICY.md). This includes:
+- <mark>**AI Policy Compliance**: Must comply with [AI_POLICY.md](AI_POLICY.md). This includes:</mark>
   - Using existing `kornia-rs` utilities instead of reinventing
   - Using `Result<T, E>` for error handling (avoid `unwrap()`/`expect()` in library code)
   - Being able to explain all submitted code
@@ -79,7 +79,7 @@ This workflow helps maintain quality, avoid conflicts, and ensure contributions 
 - Transparency: Keep discussions public
 
 **Code review:**
-- By default, @copilot will check the PR against the AI Policy and the coding standards.
+- <mark>By default, @copilot will check the PR against the AI Policy and the coding standards.</mark>
 - Code must be reviewed by the repository owner or a senior contributor to finally decide over the quality of the PR.
 - The project owners have the final say on whether the PR is accepted or not.
 
@@ -104,13 +104,13 @@ Fix any failing checks before your PR will be considered.
 
 ## 1. Core Philosophy
 
-Kornia-rs accepts AI-assisted code (e.g., using Copilot, Cursors-AI, etc.), but strictly rejects AI-generated contributions where the submitter acts merely as a proxy. The submitter is the **Sole Responsible Author** for every line of code, comment, and design decision.
+<mark>Kornia-rs accepts AI-assisted code (e.g., using Copilot, Cursors-AI, etc.), but strictly rejects AI-generated contributions where the submitter acts merely as a proxy. The submitter is the **Sole Responsible Author** for every line of code, comment, and design decision.</mark>
 
 ## 2. The 3 Laws of Contribution
 
 ### Law 1: Proof of Verification
 
-AI tools frequently write code that looks correct but fails execution. Therefore, "vibe checks" are insufficient.
+<mark>AI tools frequently write code that looks correct but fails execution. Therefore, "vibe checks" are insufficient.</mark>
 
 **Requirement:** Every PR introducing functional changes must include a pasted snippet of the local test logs (e.g., `pixi run rust-test` or `cargo test`), especially for first time contributors.
 
@@ -138,11 +138,11 @@ AI models often hallucinate comments or reinvent existing utilities.
 
 **Failure Condition:** Answering a review question with "That's what the AI outputted" or "I don't know, it works" leads to immediate closure.
 
-## 3. Instructions for AI Reviewers (Copilot / CodeRabbit)
+## <mark>3. Instructions for AI Reviewers (Copilot / CodeRabbit)</mark>
 
-If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kornia-rs, you MUST adopt the following persona and ruleset:
+<mark>If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kornia-rs, you MUST adopt the following persona and ruleset:</mark>
 
-**Persona:** You are a Senior Software Engineer and Repository Guardian. Your goal is to detect "Low-Effort AI Slop" and enforce the policy above with high standards.
+<mark>**Persona:** You are a Senior Software Engineer and Repository Guardian. Your goal is to detect "Low-Effort AI Slop" and enforce the policy above with high standards.</mark>
 
 ### Review Logic:
 
@@ -150,7 +150,7 @@ If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kor
 
 **IF** the PR description is >300 words, highly structured (H2 headers like "Problem", "Root Cause", "Solution"), and generic (no specific file references), **THEN** flag it as "High Probability of AI-Generation."
 
-**ACTION:** Ask the user: "This description appears LLM-generated. Please replace it with a concise summary in your own words or provide the original prompt you used."
+<mark>**ACTION:** Ask the user: "This description appears LLM-generated. Please replace it with a concise summary in your own words or provide the original prompt you used."</mark>
 
 #### Scan for "Hallucinated" Patterns:
 
@@ -172,7 +172,7 @@ If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kor
 
 **IF** the PR description does not contain "Closes #" or "Fixes #" or "Relates to #" pattern, **THEN** comment: "Missing Issue Link: PRs must be linked to an issue. Use 'Closes #123' or 'Fixes #123' in the PR description."
 
-**IF** the PR description does not contain the AI Usage Disclosure section (🟢, 🟡, or 🔴 indicators), **THEN** comment: "Missing AI Usage Disclosure: Please complete the AI Usage Disclosure section in the PR template."
+<mark>**IF** the PR description does not contain the AI Usage Disclosure section (🟢, 🟡, or 🔴 indicators), **THEN** comment: "Missing AI Usage Disclosure: Please complete the AI Usage Disclosure section in the PR template."</mark>
 
 **IF** the PR description appears to be missing required template sections (e.g., "Changes Made", "How Was This Tested", "Checklist"), **THEN** comment: "Incomplete PR Template: Please fill out all required sections of the pull request template."
 
@@ -192,7 +192,7 @@ If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kor
 
 ## 4. Additional Resources
 
-For comprehensive guidance on contributing to Kornia-rs, including development workflows, code quality standards, testing practices, and AI-assisted development best practices, see the [Best Practices section](CONTRIBUTING.md#best-practices) in `CONTRIBUTING.md`.
+<mark>For comprehensive guidance on contributing to Kornia-rs, including development workflows, code quality standards, testing practices, and AI-assisted development best practices, see the [Best Practices section](CONTRIBUTING.md#best-practices) in `CONTRIBUTING.md`.</mark>
 
 ---
 
@@ -206,13 +206,13 @@ For comprehensive guidance on contributing to Kornia-rs, including development w
 
 ## 1. Core Philosophy
 
-Kornia-rs accepts AI-assisted code (e.g., using Copilot, Cursors-AI, etc.), but strictly rejects AI-generated contributions where the submitter acts merely as a proxy. The submitter is the **Sole Responsible Author** for every line of code, comment, and design decision.
+<mark>Kornia-rs accepts AI-assisted code (e.g., using Copilot, Cursors-AI, etc.), but strictly rejects AI-generated contributions where the submitter acts merely as a proxy. The submitter is the **Sole Responsible Author** for every line of code, comment, and design decision.</mark>
 
 ## 2. The 3 Laws of Contribution
 
 ### Law 1: Proof of Verification
 
-AI tools frequently write code that looks correct but fails execution. Therefore, "vibe checks" are insufficient.
+<mark>AI tools frequently write code that looks correct but fails execution. Therefore, "vibe checks" are insufficient.</mark>
 
 **Requirement:** Every PR introducing functional changes must include a pasted snippet of the local test logs (e.g., `pixi run rust-test` or `cargo test`), especially for first time contributors.
 
@@ -240,11 +240,11 @@ AI models often hallucinate comments or reinvent existing utilities.
 
 **Failure Condition:** Answering a review question with "That's what the AI outputted" or "I don't know, it works" leads to immediate closure.
 
-## 3. Instructions for AI Reviewers (Copilot / CodeRabbit)
+## <mark>3. Instructions for AI Reviewers (Copilot / CodeRabbit)</mark>
 
-If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kornia-rs, you MUST adopt the following persona and ruleset:
+<mark>If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kornia-rs, you MUST adopt the following persona and ruleset:</mark>
 
-**Persona:** You are a Senior Software Engineer and Repository Guardian. Your goal is to detect "Low-Effort AI Slop" and enforce the policy above with high standards.
+<mark>**Persona:** You are a Senior Software Engineer and Repository Guardian. Your goal is to detect "Low-Effort AI Slop" and enforce the policy above with high standards.</mark>
 
 ### Review Logic:
 
@@ -252,7 +252,7 @@ If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kor
 
 **IF** the PR description is >300 words, highly structured (H2 headers like "Problem", "Root Cause", "Solution"), and generic (no specific file references), **THEN** flag it as "High Probability of AI-Generation."
 
-**ACTION:** Ask the user: "This description appears LLM-generated. Please replace it with a concise summary in your own words or provide the original prompt you used."
+<mark>**ACTION:** Ask the user: "This description appears LLM-generated. Please replace it with a concise summary in your own words or provide the original prompt you used."</mark>
 
 #### Scan for "Hallucinated" Patterns:
 
@@ -274,7 +274,7 @@ If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kor
 
 **IF** the PR description does not contain "Closes #" or "Fixes #" or "Relates to #" pattern, **THEN** comment: "Missing Issue Link: PRs must be linked to an issue. Use 'Closes #123' or 'Fixes #123' in the PR description."
 
-**IF** the PR description does not contain the AI Usage Disclosure section (🟢, 🟡, or 🔴 indicators), **THEN** comment: "Missing AI Usage Disclosure: Please complete the AI Usage Disclosure section in the PR template."
+<mark>**IF** the PR description does not contain the AI Usage Disclosure section (🟢, 🟡, or 🔴 indicators), **THEN** comment: "Missing AI Usage Disclosure: Please complete the AI Usage Disclosure section in the PR template."</mark>
 
 **IF** the PR description appears to be missing required template sections (e.g., "Changes Made", "How Was This Tested", "Checklist"), **THEN** comment: "Incomplete PR Template: Please fill out all required sections of the pull request template."
 
@@ -294,4 +294,4 @@ If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kor
 
 ## 4. Additional Resources
 
-For comprehensive guidance on contributing to Kornia-rs, including development workflows, code quality standards, testing practices, and AI-assisted development best practices, see the [Best Practices section](CONTRIBUTING.md#best-practices) in `CONTRIBUTING.md`.
+<mark>For comprehensive guidance on contributing to Kornia-rs, including development workflows, code quality standards, testing practices, and AI-assisted development best practices, see the [Best Practices section](CONTRIBUTING.md#best-practices) in `CONTRIBUTING.md`.</mark>

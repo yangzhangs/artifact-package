@@ -5,7 +5,7 @@
 4. Don't push branches directly to the upstream repository. Once a branch is pushed to upstream, non-admins lose push access to it, preventing you from updating your changes. Instead, push to your fork and open PRs from there.
 5. Your PR will be tested after one of the developers approves the tests run.
 6. Branching policy is aligned with [OpenVINO's policy](https://github.com/openvinotoolkit/openvino/blob/71ee9cc42ec63b3affb2801dbbc4a77e6d8003f6/CONTRIBUTING_PR.md#branching-policy).
-7. Contributions with use of AI must comply with [OpenVINO's AI Usage Policy](https://github.com/openvinotoolkit/openvino/blob/c4f4325c57977c684184e758449d1f8825ebbfd7/AI_USAGE_POLICY.md).
+7. <mark>Contributions with use of AI must comply with [OpenVINO's AI Usage Policy](https://github.com/openvinotoolkit/openvino/blob/c4f4325c57977c684184e758449d1f8825ebbfd7/AI_USAGE_POLICY.md).</mark>
 
 ---
 
@@ -22,11 +22,11 @@ In order to get accepted PR with new features, the following list of items MUST 
 
 # Standalone AI policy file
 
-# AI Usage Policy
+# <mark>AI Usage Policy</mark>
 
 ## Purpose
 
-OpenVINO welcomes responsible use of AI tools in open-source collaboration.
+<mark>OpenVINO welcomes responsible use of AI tools in open-source collaboration.</mark>
 This policy exists to protect maintainer time, keep review quality high, and
 ensure long-term maintainability of the project.
 
@@ -41,9 +41,9 @@ This policy applies to:
 - Issues and discussions
 - Review communication on GitHub
 
-## Allowed AI Assistance
+## <mark>Allowed AI Assistance</mark>
 
-You may use AI tools to assist your work, including but not limited to:
+<mark>You may use AI tools to assist your work, including but not limited to:</mark>
 
 - Brainstorming and research
 - Explaining APIs, language features, and error messages
@@ -51,18 +51,18 @@ You may use AI tools to assist your work, including but not limited to:
 - Refactoring suggestions
 - Test ideas and documentation editing
 
-All AI-assisted output must still meet OpenVINO contribution standards.
+<mark>All AI-assisted output must still meet OpenVINO contribution standards.</mark>
 
 ## Contributor Responsibilities
 
-If you use AI in any meaningful way, you must:
+<mark>If you use AI in any meaningful way, you must:</mark>
 
 1. **Understand your submission end-to-end** and be ready to explain design and
    implementation decisions.
 2. **Verify correctness yourself** (build, tests, behavior, and edge cases).
 3. **Take full responsibility for every line submitted**, regardless of how it
    was drafted.
-4. **Disclose significant AI assistance** in the PR description.
+4. <mark>**Disclose significant AI assistance** in the PR description.</mark>
 
 Suggested disclosure format:
 
@@ -78,9 +78,9 @@ The following are not acceptable and may lead to immediate closure of the
 contribution:
 
 - Submitting code you cannot explain or maintain
-- Large, low-context, or low-quality AI-generated changes without thorough
+- <mark>Large, low-context, or low-quality AI-generated changes without thorough</mark>
   human validation
-- Using AI-generated responses in place of direct, human-to-human communication
+- <mark>Using AI-generated responses in place of direct, human-to-human communication</mark>
   during review
 - Auto-generated issues/discussions that do not describe reproducible,
   first-hand observations
@@ -95,7 +95,7 @@ Maintainers may:
 - Deprioritize or decline review when quality or ownership is unclear
 - Close contributions that do not follow this policy or project guidelines
 
-This policy is not based on AI detection. Enforcement is based on observed
+<mark>This policy is not based on AI detection. Enforcement is based on observed</mark>
 contribution quality, reviewer confidence, and adherence to project rules.
 
 ## Practical Guidance for New Contributors

@@ -1,2 +1,2 @@
-## Vibe Coding
-We are humans who write our own tooling because machines have inferior reasoning capabilities and make stupid decisions resulting in inefficient bytecode. We encourage the use of LLMs to help you understand issues, catch bugs and author high quality PRs, however we do not accept PRs that are purely or excessively AI-generated. Trust me when I say that if an LLM could have done it, we wouldn't have wasted our precious time waiting for a community PR.
+## <mark>Vibe Coding</mark>
+<mark>We are humans who write our own tooling because machines have inferior reasoning capabilities and make stupid decisions resulting in inefficient bytecode. We encourage the use of LLMs to help you understand issues, catch bugs and author high quality PRs, however we do not accept PRs that are purely or excessively AI-generated. Trust me when I say that if an LLM could have done it, we wouldn't have wasted our precious time waiting for a community PR.</mark>

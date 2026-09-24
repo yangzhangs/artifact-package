@@ -4,7 +4,7 @@
 - [Contributing](#contributing)
     - [Feature Requests](#feature-requests)
     - [Fixing Issues](#fixing-issues)
-- [AI Policy](#ai-policy)
+- <mark>[AI Policy](#ai-policy)</mark>
 - [Development](#development)
     - [Prerequisites](#rrerequisites)
     - [Installation](#installation)
@@ -17,9 +17,9 @@
 
 ---
 
-## AI Policy
+## <mark>AI Policy</mark>
 
-We welcome contributions that leverage AI tools as assistants in the development process. However, we require that:
+<mark>We welcome contributions that leverage AI tools as assistants in the development process. However, we require that:</mark>
 
 - You must fully understand all code you submit.
 - You are responsible for the quality and correctness of your code.

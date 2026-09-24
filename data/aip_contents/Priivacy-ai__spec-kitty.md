@@ -1,13 +1,13 @@
-## Supported AI Agents
+## <mark>Supported AI Agents</mark>
 
-Spec Kitty supports **12 AI coding agents**. When contributing features that affect slash commands, migrations, or templates, ensure changes apply to ALL agents:
+<mark>Spec Kitty supports **12 AI coding agents**. When contributing features that affect slash commands, migrations, or templates, ensure changes apply to ALL agents:</mark>
 
-- **Claude Code** (`.claude/commands/`)
-- **GitHub Copilot** (`.github/prompts/`)
+- <mark>**Claude Code** (`.claude/commands/`)</mark>
+- <mark>**GitHub Copilot** (`.github/prompts/`)</mark>
 - **GitHub Codex** (`.codex/prompts/`)
 - **OpenCode** (`.opencode/command/`)
-- **Google Gemini** (`.gemini/commands/`)
-- **Cursor** (`.cursor/commands/`)
+- <mark>**Google Gemini** (`.gemini/commands/`)</mark>
+- <mark>**Cursor** (`.cursor/commands/`)</mark>
 - **Windsurf** (`.windsurf/workflows/`)
 - **Qwen Code** (`.qwen/commands/`)
 - **Kilocode** (`.kilocode/workflows/`)
@@ -26,7 +26,7 @@ These are one time installations required to be able to test your changes locall
 1. Install [Python 3.11+](https://www.python.org/downloads/)
 1. Install [uv](https://docs.astral.sh/uv/) for package management
 1. Install [Git](https://git-scm.com/downloads)
-1. Have an [AI coding agent available](README.md#-supported-ai-agents)
+1. <mark>Have an [AI coding agent available](README.md#-supported-ai-agents)</mark>
 
 ---
 
@@ -46,7 +46,7 @@ For local development, ensure you have SSH access to the repository.
 
 Spec Kitty follows a structured release process using GitHub Actions for automated PyPI publishing.
 
-> **For AI agents**: Use the `/release` skill (`.claude/skills/release/SKILL.md`) for a step-by-step guide.
+> <mark>**For AI agents**: Use the `/release` skill (`.claude/skills/release/SKILL.md`) for a step-by-step guide.</mark>
 
 ---
 

@@ -1,13 +1,13 @@
-## LLM-assisted coding ("vibe coding")
+## <mark>LLM-assisted coding ("vibe coding")</mark>
 
-Mindwtr is not strictly against LLM-assisted coding. LLM tools are improving quickly and can be productive when used correctly.
+<mark>Mindwtr is not strictly against LLM-assisted coding. LLM tools are improving quickly and can be productive when used correctly.</mark>
 
-If you use LLM/coding agents for contributions, follow these rules:
+<mark>If you use LLM/coding agents for contributions, follow these rules:</mark>
 
 1. Do not use web chat interfaces as your main coding tool.
    Use coding agents in an IDE or CLI with repository indexing and full codebase context.
 2. Use coding-focused agents, not general chat models.
-   Example: use Codex or Claude Code agent for coding tasks, not generic chatbot mode.
+<mark>Example: use Codex or Claude Code agent for coding tasks, not generic chatbot mode.</mark>
 3. Start with a clear implementation goal.
    Define the bug/feature, expected behavior, and intended implementation before prompting.
 4. Avoid over-engineering.

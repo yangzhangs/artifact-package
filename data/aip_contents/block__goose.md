@@ -2,7 +2,7 @@
 
 goose is open source!
 
-We welcome pull requests for general contributions! In these days of AI it is easier than ever to contribute, but
+<mark>We welcome pull requests for general contributions! In these days of AI it is easier than ever to contribute, but</mark>
 there are some pitfalls to avoid. This document describes the best practices for new and experienced contributors
 to get work landed as smoothly as possible.
 
@@ -17,9 +17,9 @@ to get work landed as smoothly as possible.
 
 Your first contribution to goose should probably be a small bug fix. The goose maintainers have a lot of incoming
 PRs to review, and the reputation of the author is an important signal. While contributions to goose are generally
-of remarkably high quality, we do get our fair share of AI slop. When a first-time contributor opens a
+<mark>of remarkably high quality, we do get our fair share of AI slop. When a first-time contributor opens a</mark>
 3k line PR touching 20 files, we have no easy way to tell whether it’s thoughtful work or
-blindly AI-generated without doing a deep dive.
+<mark>blindly AI-generated without doing a deep dive.</mark>
 
 So please start small to establish trust and work your way up from there. A small bug fix or performance improvement
 is a good start. Linking your fix to an existing issue shows that you are responding to a community need.
@@ -35,13 +35,13 @@ If you spot a bug or have a concrete proposal for a feature, please open an issu
 the maintainers the direction of your thinking.
 
 For bugs, describe how to reproduce the problem as clearly as possible. If the issue involves an interaction
-with an LLM, include a diagnostics report if possible.
+<mark>with an LLM, include a diagnostics report if possible.</mark>
 
 ---
 
-## AI Code Reviews
+## <mark>AI Code Reviews</mark>
 
-We use codex as an AI code reviewer. AI code reviewing has come a long way and more often than not points
+<mark>We use codex as an AI code reviewer. AI code reviewing has come a long way and more often than not points</mark>
 out real issues. So we expect you to address all of them by either fixing the code or adding a one-line
 answer as to why this is not an issue or not worth fixing.
 
@@ -50,22 +50,22 @@ can always reopen.
 
 ---
 
-## Quick Responsible AI Tips
+## <mark>Quick Responsible AI Tips</mark>
 
 There's no need to tell us you used AI in your work. You are contributing to an agent, it would be odd if 
-you had not. Our general thinking is, use AI any way you want, but until the robot revolution comes, you
+<mark>you had not. Our general thinking is, use AI any way you want, but until the robot revolution comes, you</mark>
 are responsible for the final code. Before submitting a PR for review, make sure you have reviewed it yourself.
-We'll close any vibe coded submissions that obviously skip this step.
+<mark>We'll close any vibe coded submissions that obviously skip this step.</mark>
 
 You can use whatever agent and whatever methodology you like as long as you stick to that principle. We hope
-you like goose of course and use that. One thing to watch out for is LLM eagerness. They like to please and
+<mark>you like goose of course and use that. One thing to watch out for is LLM eagerness. They like to please and</mark>
 are in a hurry. 
 
    * **Think first**. Agents tend to jump straight to code writing. Explain the architecture you want first to 
       avoid this behavior, based on your own understanding of the code, or have the agent explore the code first and
       suggest approaches. If the first implementation doesn't look quite right, just start over and use
       what you learned to do better next time.
-   * **Spot the laziness**. LLMs will make their job easy. They'll write trivial tests, make types wide and
+   * <mark>**Spot the laziness**. LLMs will make their job easy. They'll write trivial tests, make types wide and</mark>
       optional so the compiler doesn't complain, catch exceptions and just log instead of handling errors
       and copy local patterns whether appropriate or not. Push back!
    * **Spot the uncertainty**. As much as the bots declare I see the issue now clearly, they often do not. Call
@@ -100,7 +100,7 @@ For first-time setup, run the configure command:
 ./target/debug/goose configure
 ```
 
-Once a connection to an LLM provider is working, start a session:
+<mark>Once a connection to an LLM provider is working, start a session:</mark>
 
 ```
 ./target/debug/goose session

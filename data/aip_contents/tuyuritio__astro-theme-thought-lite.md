@@ -1,12 +1,12 @@
 ## Pull Requests
 
 > [!Warning]
-> **About AI Assistance**:\
+> <mark>**About AI Assistance**:\</mark>
 > Pull Requests failing to meet the following requirements will be **closed immediately**:
 > - Manually review and test all code to prevent hallucinated logic or syntax
 > - Ensure PR descriptions provide clear, meaningful value to the review process
 > - Maintain strict adherence to the established workflow and commit specifications
-> - Disclose any use of AI tools for code or documentation generation within the PR description
+> <mark>- Disclose any use of AI tools for code or documentation generation within the PR description</mark>
 
 - An Issue describing the problem or feature is **required** before submitting a Pull Request.
 - A **single problem** or a **single feature** per Pull Request to avoid bundling unrelated changes.

@@ -9,6 +9,6 @@ changes you are submitting to gittuf, the following requirements apply:
 - The contributor fully understands the content they are submitting.
 - Changes do not infringe on copyright/trademarks/etc.
 
-Low-quality contributions or outright "AI slop" reduce the amount of time
+<mark>Low-quality contributions or outright "AI slop" reduce the amount of time</mark>
 maintainers have to review other changes. These types of pull
 requests/issues/etc. will be closed without further review.

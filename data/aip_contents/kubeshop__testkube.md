@@ -11,13 +11,13 @@
 - [Commit Guidelines](#commit-guidelines)
 - [Pull Request Process](#pull-request-process)
 - [Issue Reporting](#issue-reporting)
-- [Using AI to Contribute Code](#using-ai-to-contribute-code)
+- <mark>[Using AI to Contribute Code](#using-ai-to-contribute-code)</mark>
 - [Key Files for New Contributors](#key-files-for-new-contributors)
 
 
 
-## Using AI to contribute code
+## <mark>Using AI to contribute code</mark>
 
 
-Feel free to use AI to generate new code/features, just make sure to use our [AGENTS.md](AGENTS.md) file
+<mark>Feel free to use AI to generate new code/features, just make sure to use our [AGENTS.md](AGENTS.md) file</mark>
 with your IDE/Agents to ensure that generated code is in line with our guidelines and best practices.

@@ -77,7 +77,7 @@ Repositories confirmed through two-layer keyword screening and manual verificati
 Verified AIP adoption dates for each confirmed repository, determined by scanning the git history of CONTRIBUTING.md files with keyword matching and manual verification.
 
 ### `data/aip_contents/`
-The AIP contents extracted from the CONTRIBUTING.md files of the 615 confirmed repositories (the AI-policy-relevant sections and snippets identified by the keyword-based extraction), one markdown file per repository (named `{owner}__{repo}.md`). Where a repository's contribution guidelines reference a standalone AI policy file (e.g., `AI POLICY.md`), its content is appended at the end of the file.
+The AIP contents extracted from the CONTRIBUTING.md files of the 615 confirmed repositories (the AI-policy-relevant sections and snippets identified by the keyword-based extraction), one markdown file per repository (named `{owner}__{repo}.md`). AI-related lines are highlighted with `<mark>` tags (rendered as yellow highlights on GitHub). Where a repository's contribution guidelines reference a standalone AI policy file (e.g., `AI POLICY.md`), its content is appended at the end of the file.
 
 ### `data/panel/rdd_panel_113.csv`
 Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited). Each row represents a 30-day time window (bin) relative to the AIP adoption date, spanning 6 bins before and 6 bins after (excluding the transition window, bin 0).
