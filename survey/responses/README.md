@@ -5,7 +5,11 @@ Anonymized per-respondent data for the two online surveys. Each row is one valid
 `contributor_responses.csv` contains the 59 contributor responses.
 
 `respondent_id` is a sequential id in the original order of the survey
-responses. Multi-select answers are separated by `;`. Names and email
+responses. Multi-select answers are separated by `;`. Option texts follow
+the survey instruments (`maintainer_survey.md` / `contributor_survey.md`); the
+administered form additionally included the grid rows on low-quality PRs,
+merged-PR code quality, merge latency, new contributors, and community
+engagement, which are kept with their original wording. Names and email
 addresses are never released.
 
 ## maintainer_responses.csv
@@ -22,16 +26,16 @@ addresses are never released.
 | `conditions` | MQ4. What conditions do you consider important when allowing AI-generated contributions to your project? |
 | `has_policy` | MQ5. Does your project have an AI contribution policy statement? |
 | `expected_outcomes` | What do you expect or believe the AI policy can achieve? |
-| `change_prs_submitted` | MQ6. Change in total number of PRs submitted |
-| `change_ai_prs_submitted` | MQ6. Change in total number of AI-generated PRs submitted |
-| `change_low_quality_prs` | MQ6. Change in total number of low-quality PRs submitted |
-| `change_code_quality_merged` | MQ6. Change in overall code quality of merged PRs |
-| `change_review_workload` | MQ7. Change in review workload (time spent reviewing) |
-| `change_merge_latency` | MQ7. Change in time to merge a PR |
-| `change_first_comment_latency` | MQ7. Change in time to first comment on a new PR |
-| `change_closure_latency` | MQ7. Change in time to close a non-merged PR |
-| `change_new_contributors` | Change in number of new contributors |
-| `change_community_engagement` | Change in community engagement |
+| `Total number of PRs submitted` | MQ6. Change in total number of PRs submitted |
+| `Total number of AI-generated PRs submitted` | MQ6. Change in total number of AI-generated PRs submitted |
+| `Total number of low-quality PRs submitted` | MQ6. Change in total number of low-quality PRs submitted |
+| `Overall code quality of merged PRs` | MQ6. Change in overall code quality of merged PRs |
+| `Review workload (time spent reviewing)` | MQ7. Change in review workload (time spent reviewing) |
+| `Time to merge a PR (merge latency)` | MQ7. Change in time to merge a PR |
+| `Review comment on a new PR` | MQ7. Change in time to first comment on a new PR |
+| `Time to close a PR (close latency)` | MQ7. Change in time to close a non-merged PR |
+| `Number of new contributors (first-time PR authors)` | Change in number of new contributors |
+| `Community engagement (discussion, issues)` | Change in community engagement |
 | `compliance` | MQ8. To what extent do you feel contributors have followed your AI contribution policy? |
 | `enforcement_methods` | MQ9. What methods does your project currently have in place to enforce your AI contribution policy? |
 | `difficulties` | MQ10. What are the main difficulties you have encountered in enforcing your AI contribution policy? |
