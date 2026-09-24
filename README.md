@@ -23,7 +23,7 @@ artifact-package/
 │   ├── rq1_conditions.md                # RQ1 conditions summary (C1–C5)
 │   ├── rq1_aip_labels.csv                # RQ1 per-repo condition labels (540 conditional repos)
 │   ├── rq2_rdd_robustness.md             # RQ2 RDD 4-month vs 6-month robustness results
-│   ├── aip_contents/                     # Manually extracted AIP contents, one md per repository (615 files)
+│   ├── aip_contents/                     # Extracted AIP contents, AI-related lines highlighted (615 files)
 │   ├── panel/
 │   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins, 6-month)
 │   └── aip/
@@ -35,7 +35,7 @@ artifact-package/
 │   │   ├── keyword_screening.py          # Two-layer keyword screening
 │   │   └── plot_stance_distribution.py    # Stance distribution donut chart
 │   ├── rq2-impact/                       # RQ2: Associations with Contribution Dynamics
-│   │   ├── rdd_grouped_lmer.R            # Grouped mixed-effects RDD models (Table V)
+│   │   ├── rdd_grouped_lmer.R            # Grouped mixed-effects RDD models (Tables IV and V)
 │   │   └── plot_rdd_trends.py            # Fig 4/5: RDD trend plots
 │   ├── rq3-enforcement/                  # RQ3: Enforcement of AIP
 │   │   ├── plot_compliance.py            # Compliance perception chart
@@ -130,6 +130,9 @@ Complete survey instrument for contributors, including:
 - **Awareness and Impact** (CQ2–CQ5): awareness, perceived stance, initial reaction, behavioral change
 - **Open-Ended** (CQ6)
 
+### `survey/responses/`
+Anonymized per-respondent data for the two surveys: `maintainer_responses.csv` (68 responses) and `contributor_responses.csv` (59 responses). The columns follow the survey instruments above, open-ended comments are included, and multi-select answers are separated by `;`. `respondent_id` is a sequential id in the original response order. The full column mapping is documented in `survey/responses/README.md`.
+
 ---
 
 ## Software Requirements
@@ -174,7 +177,7 @@ Complete survey instrument for contributors, including:
    ```R
    Rscript scripts/rq2-impact/rdd_grouped_lmer.R
    ```
-   This produces the results in Table V: separate models for permissive and prohibited groups across 4 DVs (Opened PRs, Closed PRs, Review Comments, Close Latency). The panel data is in `data/panel/rdd_panel_113.csv`.
+   This produces the results in Tables IV and V: separate models for permissive and prohibited groups across 4 DVs (Opened PRs, Closed PRs, Review Comments, Close Latency). The panel data is in `data/panel/rdd_panel_113.csv`.
 
 3. **Trend Plots**:
    ```bash
@@ -184,7 +187,7 @@ Complete survey instrument for contributors, including:
 
 ### RQ3: Enforcement Perceptions
 
-1. **Survey Administration** — The survey instruments are in `survey/`. Maintainers were recruited from the 615 confirmed repositories; contributors were recruited from PR author data. Surveys were administered via Google Forms.
+1. **Survey Administration** — The survey instruments are in `survey/`, and the anonymized per-respondent responses are in `survey/responses/`. Maintainers were recruited from the 615 confirmed repositories; contributors were recruited from PR author data. Surveys were administered via Google Forms.
 
 2. **Result Visualization**:
    ```bash
