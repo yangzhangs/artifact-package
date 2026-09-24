@@ -15,9 +15,8 @@ change.
   repository's AIP adoption date (`aip_first_date_final.csv`), spanning 6 bins
   before and 6 after adoption and excluding the 30-day window centered on the
   adoption date, exactly as in the main panel.
-- Per repository and bin we compute: the number of merged PRs, the number of
-  rejected PRs, the mean close latency (creation to closure, in hours) of
-  merged PRs, and the mean close latency of rejected PRs.
+- Per repository and bin we compute the number of merged PRs and the number of
+  rejected PRs.
 - The resulting panel is in `data/panel/split_merged_rejected_panel.csv`
   (1,345 repository-bin rows; bins with no PR activity are absent).
 
@@ -27,9 +26,9 @@ Same specification as the paper's Tables IV and V, estimated per group
 (permissive: 101 repositories, prohibited: 12 repositories):
 
 ```
-log(DV + 1) ~ time + intervention + time_after
-             + log_stars + log_contributors + log_commits + log_repo_age_days
-             + (1 | repo_name)
+log(count + 1) ~ time + intervention + time_after
+               + log_stars + log_contributors + log_commits + log_repo_age_days
+               + (1 | repo_name)
 ```
 
 `time_after` (δ) captures the post-adoption change in slope. The
@@ -43,22 +42,13 @@ reproduction script is `scripts/rq2-impact/rdd_split_merged_rejected.R`.
 | Merged PR count | Prohibited | 0.091* | 0.211 | **-0.158\*** | 0.579 | 0.747 | 144 | 12 |
 | Rejected PR count | Permissive | 0.071*** | -0.228** | -0.033 | 0.232 | 0.692 | 1,201 | 101 |
 | Rejected PR count | Prohibited | 0.099 | -0.020 | -0.020 | 0.467 | 0.800 | 144 | 12 |
-| Merged PR latency | Permissive | 0.030 | -0.013 | -0.005 | 0.077 | 0.427 | 1,187 | 101 |
-| Merged PR latency | Prohibited | 0.073 | -0.113 | -0.060 | 0.382 | 0.529 | 144 | 12 |
-| Rejected PR latency | Permissive | 0.063 | -0.199 | 0.003 | 0.035 | 0.314 | 1,069 | 101 |
-| Rejected PR latency | Prohibited | 0.111 | -0.300 | -0.074 | 0.025 | 0.359 | 117 | 12 |
 
 Significance: ·p<0.1, *p<0.05, **p<0.01, ***p<0.001.
 
 ## Interpretation
 
-- The overall decline in closed PRs (Tables IV and V) is carried by **merged
-  PRs**, with significant negative post-adoption slopes in both groups
-  (permissive -0.069***, prohibited -0.158*). Rejected PR counts show no
-  significant change, so the decline accompanies the decline in opened PRs
-  rather than an independent change in closure behavior.
-- Neither merged-PR latency nor rejected-PR latency changes significantly in
-  either group. The sharp overall close-latency decline for prohibited
-  repositories therefore reflects a rising share of quickly-closed rejected
-  PRs among all closures, consistent with the paper's interpretation of
-  earlier rejection rather than improved review efficiency.
+The overall decline in closed PRs (Tables IV and V) is carried by **merged
+PRs**, with significant negative post-adoption slopes in both groups
+(permissive -0.069***, prohibited -0.158*). Rejected PR counts show no
+significant change, so the decline accompanies the decline in opened PRs
+rather than an independent change in closure behavior.

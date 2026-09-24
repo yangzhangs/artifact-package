@@ -104,7 +104,7 @@ Per-repo condition labels for all 540 conditional permissive AIPs. Each repo has
 Side-by-side comparison of 4-month (169 repos) and 6-month (113 repos) window RDD model results across all 4 DVs and both groups, demonstrating consistent effect directions and significance patterns.
 
 ### `data/rq2_merged_rejected_split.md`
-Split of closed PRs into merged and closed-without-merge (rejected) PRs, with the grouped mixed-effects models re-run on each subset (counts and close latencies). The closed-PR decline is driven by fewer merged PRs, with no significant change in rejected PRs; panel data in `data/panel/split_merged_rejected_panel.csv`, script in `scripts/rq2-impact/rdd_split_merged_rejected.R`.
+Split of closed PRs into merged and closed-without-merge (rejected) PRs, with the grouped mixed-effects models re-run on the two count subsets. The closed-PR decline is driven by fewer merged PRs, with no significant change in rejected PRs; panel data in `data/panel/split_merged_rejected_panel.csv`, script in `scripts/rq2-impact/rdd_split_merged_rejected.R`.
 
 ### `data/aip/aip_keyword_patterns.txt`
 The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate when at least one pattern from either layer matches any of its guideline files.

@@ -1,8 +1,8 @@
 #!/usr/bin/env Rscript
-# RQ2 split analysis: merged vs closed-without-merge PRs.
+# RQ2 split analysis: merged vs closed-without-merge PR counts.
 # Reads data/panel/split_merged_rejected_panel.csv and re-runs the
 # grouped mixed-effects models (same specification as Tables IV and V)
-# on log(merged PR count), log(rejected PR count), and their close latencies.
+# on log(merged PR count) and log(rejected PR count).
 
 suppressMessages({library(lmerTest); library(lme4); library(performance)})
 
@@ -12,8 +12,6 @@ d$intervention <- as.numeric(d$intervention)
 d$time_after <- as.numeric(d$time_after)
 d$log_merged <- log(d$merged + 1)
 d$log_rejected <- log(d$rejected + 1)
-d$log_merged_lat <- log(as.numeric(d$merged_latency_h) + 1)
-d$log_rejected_lat <- log(as.numeric(d$rejected_latency_h) + 1)
 d$log_stars <- log(as.numeric(d$stars))
 d$log_contributors <- log(as.numeric(d$contributors))
 d$log_commits <- log(as.numeric(d$commits))
@@ -27,7 +25,7 @@ fmt <- function(p) {
   return("")
 }
 
-for (dv in c("log_merged", "log_rejected", "log_merged_lat", "log_rejected_lat")) {
+for (dv in c("log_merged", "log_rejected")) {
   cat(sprintf("== %s ==\n", dv))
   for (g in c("permissive", "prohibited")) {
     sub <- d[d$prohibited == ifelse(g == "prohibited", 1, 0), ]
