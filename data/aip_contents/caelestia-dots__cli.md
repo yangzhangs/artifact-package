@@ -1,5 +1,6 @@
 # Contributing
 
+
 There are only a few rules:
 - Follow the commit convention as follows:
   - The name of the commit should be `module: change`

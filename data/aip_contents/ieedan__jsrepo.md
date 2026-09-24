@@ -1,7 +1,3 @@
-# Contributing to jsrepo
-
-Looking to contribute to jsrepo? Great! You're in the right place. This guide will help you get started.
-
 ## AI Assistance Notice
 
 > [!IMPORTANT]
@@ -35,50 +31,3 @@ isn't a maintainers job to review a PR so broken that it requires
 significant rework to be acceptable.
 
 Please be respectful to maintainers and disclose AI assistance.
-
-## Development
-
-First install dependencies:
-
-```sh
-pnpm install
-```
-
-Then run the dev script:
-
-```sh
-pnpm dev
-```
-
-This will start the development server and watch for changes to packages.
-
-The docs are available at [http://localhost:3000](http://localhost:3000).
-
-To run the tests, run the following command:
-
-```sh
-pnpm test
-```
-
-To test jsrepo manually you can use the playground projects in the [`playground/`](./playground/) directory.
-
-### Project Structure
-
-- `packages/jsrepo` - jsrepo CLI
-- `packages/mcp` - MCP server for jsrepo
-- `playground/` - Playground projects to manually test jsrepo
-- `apps/docs` - Contains the documentation hosted at [https://jsrepo.dev](https://jsrepo.dev).
-
-## Before opening a PR
-
-### Open an issue
-
-If your PR is more than a one line fix please open an issue first to discuss the changes you want to make.
-
-### Checklist
-
-- Run `pnpm format`
-- Run `pnpm lint` (Ensure passing)
-- Run `pnpm check` (Ensure passing)
-- Run `pnpm test` (Ensure passing)
-- Run `pnpm changeset` and add a changeset for your changes if it effects any of the released packages (under packages/*)

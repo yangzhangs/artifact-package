@@ -1,7 +1,3 @@
-# Contributing to Deadlock Mod Manager
-
-Thank you for your interest in contributing to Deadlock Mod Manager! This guide will help you get started with contributing to the project, whether you're fixing bugs, adding features, improving documentation, or helping with translations.
-
 ## AI-Assisted Contributions
 
 We encourage the use of AI tools to help you contribute — we use them ourselves (our Cursor config is in the repo!). Please review our [AI Policy](./AI_POLICY.md) for the full details, but the essentials are:
@@ -10,6 +6,8 @@ We encourage the use of AI tools to help you contribute — we use them ourselve
 2. **Disclose significant AI usage** in your PR description.
 3. **PRs must address real issues.** No drive-by AI-generated refactors or bug reports.
 4. **Quality is what matters.** Good code is good code, regardless of how it was written.
+
+---
 
 ## Table of Contents
 
@@ -26,703 +24,108 @@ We encourage the use of AI tools to help you contribute — we use them ourselve
 - [Community Guidelines](#community-guidelines)
 - [Getting Help](#getting-help)
 
-## Getting Started
+[=== 独立AI政策文件: AI_POLICY.md ===]
 
-### Prerequisites
+# AI Contribution Policy
 
-Before you begin, ensure you have the following installed:
+> **Last updated:** February 2026
 
-**Option 1: Traditional Setup**
+## Our Stance
 
-- **Node.js** (>= 24.8.0) - [Download here](https://nodejs.org/) or use nvm
-- **pnpm** (>= 10.18.2) - Install with `npm install -g pnpm`
-- **Docker** - For local database development
-- **Rust** - For desktop app development (install via [rustup](https://rustup.rs/))
-- **Git** - For version control
+Deadlock Mod Manager is built with AI assistance, and we're not shy about it. Our [Cursor configuration](https://github.com/deadlock-mod-manager/deadlock-mod-manager/tree/main/.cursor) is included in the repo because we believe AI tools are a legitimate and powerful part of the modern developer toolkit.
 
-**Option 2: Nix Development Environment (Recommended for Linux)**
+That said, AI tools amplify the skill of the person using them. A good developer with AI becomes faster. A developer who doesn't understand what they're contributing becomes a burden on maintainers, regardless of how the code was produced.
 
-If you're on Linux, you can use Nix to automatically set up a complete development environment with all dependencies:
+**This is not an anti-AI policy. This is a pro-accountability policy.**
 
-- **Nix** (with flakes enabled) - [Install here](https://nixos.org/download.html)
-- **direnv** (optional but recommended) - For automatic environment loading
+## Rules for Contributors
 
-See [Development with Nix](#development-with-nix) section below for setup instructions.
+### 1. You Own What You Submit
 
-#### Linux System Dependencies
+Every line in your pull request is your responsibility. If you used AI to generate code, you must:
 
-For Tauri development on Linux, you'll need additional system dependencies:
+- **Understand it fully.** If a maintainer asks why you made a specific choice, "the AI suggested it" is not an acceptable answer.
+- **Have tested it.** AI-generated code must pass the same quality bar as hand-written code: linting, type checking, and manual verification.
+- **Be able to modify it.** If a reviewer asks for changes, you should be able to make them without re-prompting an AI from scratch.
 
-**Arch Linux / CachyOS / Manjaro:**
+### 2. Disclose AI Usage
 
-```bash
-sudo pacman -S --needed \
-  webkit2gtk-4.1 \
-  base-devel \
-  curl \
-  wget \
-  file \
-  openssl \
-  gtk3 \
-  libappindicator \
-  librsvg \
-  xdotool \
-  gst-plugins-base \
-  gst-plugins-good
-```
-
-**Note for Linux users:**
-
-The application automatically sets WebKitGTK environment variables on Linux to handle:
-
-- NVIDIA GPU rendering issues (GBM buffer errors)
-- Blank page rendering on X11
-- Wayland compatibility (including Hyprland)
-
-These fixes are configured in `src-tauri/src/lib.rs` and applied automatically:
-
-```bash
-pnpm dev
-```
-
-**Performance Note:** To ensure compatibility across different GPU drivers and display servers, hardware acceleration is partially disabled. This may result in reduced UI performance, which is a known trade-off for webkit2gtk compatibility on Linux.
-
-The above packages include GStreamer plugins needed for media playback in webkit2gtk.
-
-**Ubuntu / Debian:**
-
-```bash
-sudo apt update
-sudo apt install libwebkit2gtk-4.1-dev \
-  build-essential \
-  curl \
-  wget \
-  file \
-  libssl-dev \
-  libgtk-3-dev \
-  libayatana-appindicator3-dev \
-  librsvg2-dev
-```
-
-**Fedora:**
-
-```bash
-sudo dnf install webkit2gtk4.1-devel \
-  openssl-devel \
-  curl \
-  wget \
-  file \
-  gtk3-devel
-```
-
-See [Tauri Prerequisites](https://tauri.app/start/prerequisites/) for other distributions.
-
-### Quick Start
-
-1. **Fork the repository** on GitHub
-2. **Clone your fork** locally:
-
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/deadlock-mod-manager.git
-   cd deadlock-mod-manager
-   ```
-
-3. **Install dependencies**:
-
-   ```bash
-   pnpm install
-   ```
-
-4. **Set up the development environment**:
-
-   ```bash
-   # Copy environment file
-   cp env.example .env
-
-   # Start the database
-   docker compose up -d
-
-   # Push database schema
-   pnpm db:push
-   ```
-
-5. **Start development**:
-
-   ```bash
-   # For desktop app development (most common)
-   pnpm desktop:dev
-
-   # Or for API development
-   pnpm api:dev
-   ```
-
-## Development Setup
-
-### Environment Configuration
-
-The project uses environment variables for configuration. Copy `env.example` to `.env` and configure:
-
-```bash
-# Required for local development
-DATABASE_URL=postgresql://turborepo:123456789@localhost:5435/turborepo
-NODE_ENV=development
-
-# Optional services
-REDIS_URL=redis://localhost:6379
-SENTRY_DSN=your_sentry_dsn_here
-```
-
-### Database Setup
-
-```bash
-# Start PostgreSQL and Redis containers
-docker compose up -d
-
-# Apply database schema
-pnpm db:push
-
-# Seed with initial data (optional)
-pnpm db:seed
-```
-
-### Development with Nix
-
-For Linux users, we provide a complete Nix flake that sets up your entire development environment with all required dependencies.
-
-#### Why Use Nix?
-
-- **Reproducible**: Everyone gets exactly the same environment
-- **Complete**: Includes Rust, Node.js, pnpm, Docker, PostgreSQL, Redis, and all system libraries
-- **Isolated**: Doesn't interfere with your system packages
-- **Automatic**: With direnv, the environment activates automatically when you enter the project
-
-#### Prerequisites
-
-1. **Install Nix** (if not already installed):
-
-   Follow the [official instructions](https://nixos.org/download.html).
-
-2. **Install direnv** (optional but highly recommended):
-   Then add this to your shell config (`~/.bashrc` or `~/.zshrc`):
-
-   ```bash
-   eval "$(direnv hook bash)"  # or 'zsh' for zsh
-   ```
-
-#### Quick Start with Nix
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/deadlock-mod-manager.git
-   cd deadlock-mod-manager
-   ```
-
-2. **Enable the Nix environment**:
-
-   **With direnv** (automatic):
-
-   ```bash
-   direnv allow
-   ```
-
-   **Without direnv** (manual):
-
-   ```bash
-   nix develop
-   ```
-
-3. **Install JavaScript dependencies**:
-
-   ```bash
-   pnpm install
-   ```
-
-4. **Set up the database**:
-
-   ```bash
-   docker compose up -d
-   pnpm db:push
-   ```
-
-5. **Start developing**:
-
-   ```bash
-   pnpm desktop:dev
-   ```
-
-#### What's Included in the Nix Environment?
-
-The Nix flake automatically provides:
-
-- **Rust toolchain** with rust-analyzer and clippy
-- **Node.js 22** with pnpm and bun
-- **System libraries** for Tauri (GTK, WebKit, etc.)
-- **Development tools** (biome, turbo, lefthook, oxlint, oxfmt)
-- **Database tools** (PostgreSQL, Redis)
-- **Docker & Docker Compose**
-- **Build tools** (gcc, make, pkg-config)
-- **CLI utilities** (ripgrep, fd, jq)
-
-#### Building the Nix Package
-
-To build the desktop app as a Nix package:
-
-```bash
-# Build the nightly package
-nix build .#nightly
-
-# Run the built package
-./result/bin/deadlock-mod-manager
-
-# Or build and run directly
-nix run .#nightly
-```
-
-#### Troubleshooting
-
-**Q: The environment isn't loading automatically**
-
-- Make sure you ran `direnv allow` in the project directory
-- Check that direnv is properly hooked in your shell config
-
-**Q: Build fails with "hash mismatch"**
-
-- The dependency hashes in `flake.nix` may need updating
-- Check the GitHub Actions CI logs for the correct hashes
-
-**Q: Docker isn't working**
-
-- Make sure your user is in the `docker` group: `sudo usermod -aG docker $USER`
-- You may need to log out and back in for group changes to take effect
-
-### Available Commands
-
-| Command            | Description                         |
-| ------------------ | ----------------------------------- |
-| `pnpm desktop:dev` | Start desktop app development       |
-| `pnpm api:dev`     | Start API server development        |
-| `pnpm build`       | Build all packages and applications |
-| `pnpm lint`        | Run linting checks                  |
-| `pnpm format`      | Format code with Biome              |
-| `pnpm check-types` | Run TypeScript type checking        |
-| `pnpm db:push`     | Push schema changes to database     |
-| `pnpm db:seed`     | Seed database with initial data     |
-
-## Project Structure
-
-This is a monorepo organized as follows:
+When opening a pull request that involved significant AI assistance (beyond autocomplete or minor suggestions), please note it in the PR description. A simple line is enough:
 
 ```
-deadlock-mod-manager/
-├── apps/
-│   ├── api/          # Backend API (Bun + Hono)
-│   ├── desktop/      # Main desktop app (Tauri + React)
-│   ├── web/          # Next.js web application
-│   └── www/          # Marketing website
-├── packages/
-│   ├── database/     # Database schema and client (Drizzle ORM)
-│   ├── shared/       # Shared utilities and types
-│   ├── logging/      # Structured logging package
-│   └── config-*/     # Shared configurations
-└── .cursor/          # Development rules and guidelines
+AI Assistance: Used [tool] for [what it helped with]
 ```
 
-### Key Technologies
+**Examples of what to disclose:**
 
-- **Frontend**: React, TypeScript, Tailwind CSS v4
-- **Desktop**: Tauri v2 (Rust + Web technologies)
-- **Backend**: Bun, Hono framework
-- **Database**: PostgreSQL with Drizzle ORM
-- **Build System**: Turborepo
-- **Code Quality**: Biome (linting + formatting)
+- "Used Cursor to scaffold the initial component structure, then refined manually"
+- "Claude helped debug the Rust compilation issue in the VPK parser"
+- "GitHub Copilot generated the test cases, reviewed and adjusted by me"
 
-## Development Workflow
+**What doesn't need disclosure:**
 
-### Branch Naming
+- Tab completions and inline suggestions (Copilot, Supermaven, etc.)
+- Using AI to understand the codebase or learn about a technique
+- Grammar/spelling checks on documentation
 
-Use descriptive branch names with prefixes:
+This disclosure isn't about gatekeeping—it helps maintainers calibrate their review. If we know AI was involved, we can focus our review on the areas that matter most.
 
-```bash
-feature/add-mod-filtering
-bugfix/fix-download-progress
-hotfix/security-vulnerability
-chore/update-dependencies
-docs/improve-api-documentation
-```
+### 3. AI Pull Requests Must Be Tied to Real Work
 
-### Commit Messages
+We do not accept drive-by PRs that look like someone pointed an agent at our issue tracker and hit "go." Specifically:
 
-Follow conventional commits format:
+- **PRs should address an existing issue or a discussed feature.** If there's no issue, open one first or discuss in our [Discord](https://deadlockmods.app/discord).
+- **Bulk AI-generated refactors will be closed.** Unless you've discussed the refactor with maintainers beforehand.
+- **AI-generated issues and bug reports will be closed.** If you haven't personally verified the bug exists, don't report it.
 
-```
-<type>(<scope>): <description>
+### 4. Quality Over Origin
 
-[optional body]
+We review all contributions on their merits. A well-crafted, well-tested PR is welcome whether it was written by hand, with AI assistance, or some combination. Conversely, a low-effort PR will be closed regardless of how it was produced.
 
-[optional footer]
-```
+Signs of a low-effort AI contribution (these will result in immediate closure):
 
-**Types:**
+- Overly verbose code comments that restate what the code already says
+- Generic PR descriptions that don't address the specific change
+- Changes that don't follow our existing code style or patterns
+- Submissions that break existing functionality or fail CI checks
+- "Shotgun" PRs that touch many unrelated files
 
-- `feat`: New features
-- `fix`: Bug fixes
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code refactoring
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks
-- `ci`: CI/CD changes
+## Guidance for AI Agents
 
-**Examples:**
+If you are an AI agent (Claude, Cursor Agent, Copilot Workspace, etc.) being used to contribute to this project:
 
-```bash
-feat(desktop): add mod search functionality
-fix(api): handle pagination edge cases
-docs(readme): update installation instructions
-chore(deps): update Tauri to v2.1.0
-```
+- **Do not** generate entire PRs autonomously. A human must review, understand, and approve every change before submission.
+- **Do not** open issues based on static analysis alone. Issues must describe real, reproducible problems.
+- **Do** help your human operator understand the codebase. Point them to [CONTRIBUTING.md](./CONTRIBUTING.md), the [developer docs](https://docs.deadlockmods.app/developer-docs), and relevant source files.
+- **Do** help write tests, catch bugs, and improve code quality—these are exactly the things AI is good at.
+- **Do** respect the project's conventions. Read the existing code before suggesting new patterns.
 
-### Git Hooks
+## Enforcement
 
-The project uses Lefthook for git hooks that automatically:
+We're a small team maintaining this project for 54K+ users. Our time is valuable, and reviewing bad contributions takes time away from improving the app.
 
-- Format code with Biome
-- Run linting checks
-- Stage fixed files
+- **First offense:** PR closed with feedback on what to improve.
+- **Repeated low-quality submissions:** Future PRs may be deprioritized or the contributor may be asked to stop.
 
-These run automatically on commit, but you can also run them manually:
+We genuinely want to help contributors learn and grow. If you're new to open source or to this codebase, say so! We'd rather help a motivated person succeed than close a PR from someone who didn't try.
 
-```bash
-pnpm format:fix
-pnpm lint:fix
-```
+## Why This Policy Exists
 
-## Worktree Development (Parallel Branches)
+The open source ecosystem is dealing with a wave of low-quality, AI-generated contributions that waste maintainer time. Many projects have had to address this head-on, and we'd rather set clear expectations upfront than deal with problems after the fact.
 
-For working on multiple features or bug fixes simultaneously, we recommend using git worktrees. This lets you have multiple branches checked out at once without stashing or switching.
+We believe AI is a net positive for software development when used by people who know what they're doing—and this policy is designed to encourage exactly that.
 
-### Windows (wtx)
+## References & Inspiration
 
-Install [wtx](https://github.com/littlesmilelove/worktree.ps), a PowerShell 7+ CLI for managing worktrees:
+This policy was informed by the approaches of several open source projects navigating the same challenges. We're grateful for their transparency in sharing what works:
 
-```powershell
-# Clone and install
-git clone https://github.com/littlesmilelove/worktree.ps.git
-pwsh -File worktree.ps/install.ps1
-
-# Reload your profile
-. $PROFILE
-```
-
-Then initialize it in the repo and start using it:
-
-```powershell
-wtx init                          # Run once inside the repo
-wtx add fix-mod-conflict          # Creates ../deadlock-modmanager.fix-mod-conflict
-wtx fix-mod-conflict              # Jump to that worktree
-wtx main                          # Jump back to main repo
-wtx rm fix-mod-conflict --yes     # Clean up when done
-```
-
-The repo is pre-configured (`.wtx.kv`) to automatically copy `.env`, `.env.local`, and `.tauri/` keys, run `pnpm install`, and start `pnpm dev` in new worktrees.
-
-### Linux / macOS (git-worktree-runner)
-
-Install [git-worktree-runner (gtr)](https://github.com/coderabbitai/git-worktree-runner):
-
-```bash
-# macOS (Homebrew)
-brew tap coderabbitai/tap
-brew install git-gtr
-
-# Linux / macOS (script)
-git clone https://github.com/coderabbitai/git-worktree-runner.git
-cd git-worktree-runner
-./install.sh
-```
-
-Then use it:
-
-```bash
-git gtr new fix-mod-conflict              # Create a worktree
-git gtr new fix-mod-conflict --editor     # Create and open in editor
-git gtr list                              # List all worktrees
-git gtr rm fix-mod-conflict               # Remove when done
-git gtr clean --merged                    # Clean up merged worktrees
-```
-
-After creating a worktree, remember to copy environment files and install dependencies:
-
-```bash
-cp .env .env.local ../deadlock-modmanager.fix-mod-conflict/
-cp -r .tauri ../deadlock-modmanager.fix-mod-conflict/
-cd ../deadlock-modmanager.fix-mod-conflict && pnpm install
-```
-
-## Code Style Guidelines
-
-### General Principles
-
-- **TypeScript First**: Always provide proper type definitions, never use `any`
-- **Functional Components**: Use React functional components with hooks
-- **Self-Documenting Code**: Write clear, readable code with meaningful names
-- **Static Imports**: Use static imports at the top of files
-- **Memory Efficiency**: Use streaming APIs for large file operations
-
-### Formatting
-
-The project uses Biome with these settings:
-
-- **Indentation**: 2 spaces
-- **Line Width**: 80 characters
-- **Line Ending**: LF
-- **Semicolons**: Always
-- **Trailing Commas**: Always
-- **Quote Style**: Single quotes for JSX
-
-## Testing
-
-### Running Tests
-
-```bash
-# Run all tests
-pnpm test
-
-# Run tests for specific package
-pnpm --filter api test
-pnpm --filter desktop test
-```
-
-### Writing Tests
-
-- **Unit Tests**: For utilities, hooks, and individual components
-- **Integration Tests**: For API endpoints and complex workflows
-- **E2E Tests**: For critical user journeys
-
-### Test Guidelines
-
-- Write tests for new features and bug fixes
-- Follow AAA pattern: Arrange, Act, Assert
-- Use descriptive test names
-- Mock external dependencies appropriately
-
-## Submitting Changes
-
-### Pull Request Process
-
-1. **Create a feature branch** from `main`:
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-2. **Make your changes** following the style guidelines
-
-3. **Test your changes**:
-
-   ```bash
-   pnpm lint
-   pnpm check-types
-   pnpm test
-   ```
-
-4. **Commit your changes** with conventional commit messages
-
-5. **Push to your fork**:
-
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-6. **Create a Pull Request** on GitHub
-
-### Pull Request Guidelines
-
-- **Clear Title**: Use descriptive titles following conventional commit format
-- **Detailed Description**: Explain what changes you made and why
-- **Link Issues**: Reference any related issues with `Closes #123`
-- **Screenshots**: Include screenshots for UI changes
-- **Breaking Changes**: Clearly document any breaking changes
-
-### PR Template
-
-```markdown
-## Description
-
-Brief description of the changes
-
-## Type of Change
-
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] Documentation update
-
-## Testing
-
-- [ ] I have tested these changes locally
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-
-## Screenshots (if applicable)
-
-Include screenshots of UI changes
-
-## Checklist
-
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-```
-
-## Types of Contributions
-
-### 🐛 Bug Fixes
-
-- Use the [bug report template](.github/ISSUE_TEMPLATE/bug-report---.md)
-- Include reproduction steps and environment details
-- Test your fix thoroughly
-- Add regression tests when possible
-
-### ✨ New Features
-
-- Use the [feature request template](.github/ISSUE_TEMPLATE/feature-request---.md)
-- Discuss the feature in an issue before implementing
-- Consider backward compatibility
-- Update documentation and examples
-
-### 📚 Documentation
-
-- Fix typos and improve clarity
-- Add examples and use cases
-- Update API documentation
-- Improve setup instructions
-
-### 🔧 Code Quality
-
-- Refactor complex code
-- Improve performance
-- Add missing tests
-- Update dependencies
-
-### 🌐 Internationalization
-
-- Add new language translations
-- Improve existing translations
-- Fix localization bugs
-
-## Translation & Localization
-
-All translations live on Crowdin: **[translate.deadlockmods.app](https://translate.deadlockmods.app/)**. The English source (`apps/desktop/src/locales/en.json`) is the only locale file edited directly in the repo - all other locales are synced back from Crowdin via the [Crowdin GitHub action](.github/workflows/crowdin.yml).
-
-### Contributing a Translation
-
-1. Go to [translate.deadlockmods.app](https://translate.deadlockmods.app/) and sign in
-2. Pick a language and translate strings in the Crowdin editor
-3. Approved translations are automatically proposed as a PR on this repo
-
-### Requesting a New Language
-
-Open a request on Crowdin, or [file an issue](https://github.com/deadlock-mod-manager/deadlock-mod-manager/issues/new) and mention it in the [#translations](https://discord.com/channels/1322369530386710568/1414203136939135067) Discord channel.
-
-### Adding or Changing Source Strings
-
-If you're adding UI strings, add them to `apps/desktop/src/locales/en.json` in your PR. Once merged to `main`, the Crowdin action uploads the new strings automatically.
-
-### Translation Guidelines
-
-- **Keep context**: Understand the UI context before translating
-- **Consistency**: Use consistent terminology throughout
-- **Length**: Keep translations roughly the same length as originals
-- **Placeholders**: Don't translate placeholders like `{{username}}`
-
-### Supported Languages
-
-Check the [README language table](README.md#currently-supported-languages) for current translation status.
-
-## Community Guidelines
-
-### Code of Conduct
-
-- **Be respectful**: Treat all community members with respect
-- **Be inclusive**: Welcome newcomers and different perspectives
-- **Be constructive**: Provide helpful feedback and suggestions
-- **Be patient**: Remember that everyone is learning
-
-### Communication Channels
-
-- **GitHub Issues**: Bug reports and feature requests
-- **GitHub Discussions**: General questions and ideas
-- **Discord Server**: Real-time chat and community support
-- **Pull Requests**: Code review and collaboration
-
-### Getting Recognition
-
-Contributors are recognized in:
-
-- GitHub contributor graph
-- README contributor section
-- Release notes for significant contributions
-- Discord contributor role
-
-## Getting Help
-
-### Where to Ask Questions
-
-1. **Documentation**: Check existing docs and guides first
-2. **GitHub Issues**: Search existing issues for similar problems
-3. **Discord Community**: Ask in our [Discord server](https://discord.gg/WbFNt8CCr8)
-4. **GitHub Discussions**: For broader discussions and ideas
-
-### Common Issues
-
-**Build Failures:**
-
-- Ensure you're using the correct Node.js version (>= 24.8.0)
-- Run `pnpm install` to update dependencies
-- Check that Docker is running for database connections
-
-**Tauri Issues:**
-
-- Ensure Rust is installed and up to date: `rustup update`
-- Check Tauri v2 compatibility for any new dependencies
-- **Linux users**: Verify system dependencies are installed (see [Linux System Dependencies](#linux-system-dependencies) above)
-- Common missing dependencies on Linux:
-  - `webkit2gtk-4.1`: Required for webview rendering
-  - `libgtk-3-dev` / `gtk3`: Required for GTK integration
-  - `openssl-dev` / `libssl-dev`: Required for HTTPS/TLS support
-
-**Database Issues:**
-
-- Ensure Docker containers are running: `docker compose up -d`
-- Reset database: `docker compose down -v && docker compose up -d`
-- Re-apply schema: `pnpm db:push`
-
-### Development Tips
-
-- **Use TypeScript**: Leverage TypeScript's type system for better development experience
-- **Hot Reload**: The desktop app supports hot reload for faster development
-- **Debugging**: Use browser dev tools in the Tauri webview for debugging
-- **Logging**: Use the structured logging package for consistent logging
-
-## Thank You!
-
-Your contributions make Deadlock Mod Manager better for everyone. Whether you're fixing a small typo or adding a major feature, every contribution is valued and appreciated.
-
-For questions about contributing, feel free to reach out to the maintainers or ask in our community channels. Happy coding! 🚀
+- **[Ghostty](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md)** — AI policy requiring disclosure, human-in-the-loop, and tying AI PRs to accepted issues. Their framing of "this is not an anti-AI stance, this is an anti-idiot stance" resonated with us.
+- **[llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/AGENTS.md)** — Pioneered the `AGENTS.md` pattern: a file that speaks directly to AI agents with project-specific instructions and boundaries. Our `AGENTS.md` follows this approach.
+- **[Trusted Firmware](https://www.trustedfirmware.org/aipolicy/)** — Published a formal AI policy for their open source projects.
 
 ---
 
-**Maintainers:**
-
-- [@stormix](https://github.com/stormix) - Project Lead
-
-**Community:**
-
-- [Discord Server](https://discord.gg/WbFNt8CCr8)
-- [GitHub Discussions](https://github.com/stormix/deadlock-modmanager/discussions)
+_This policy may evolve as AI tools and community norms evolve. Feedback is welcome via [Discord](https://deadlockmods.app/discord)._
 
 ---
 
@@ -828,4 +231,3 @@ This policy was informed by the approaches of several open source projects navig
 ---
 
 _This policy may evolve as AI tools and community norms evolve. Feedback is welcome via [Discord](https://deadlockmods.app/discord)._
-

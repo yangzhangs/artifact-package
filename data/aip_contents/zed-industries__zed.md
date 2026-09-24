@@ -1,33 +1,3 @@
-# Contributing to Zed
-
-Thank you for helping us make Zed better!
-
-All activity in Zed forums is subject to our [Code of
-Conduct](https://zed.dev/code-of-conduct). Additionally, contributors must sign
-our [Contributor License Agreement](https://zed.dev/cla) before their
-contributions can be merged.
-
-## Contribution ideas
-
-Zed is a large project with a number of priorities. We spend most of
-our time working on what we believe the product needs, but we also love working
-with the community to improve the product in ways we haven't thought of (or had time to get to yet!)
-
-In particular we love PRs that are:
-
-- Fixing or extending the docs.
-- Fixing bugs.
-- Small enhancements to existing features to make them work for more people (making things work on more platforms/modes/whatever).
-- Small extra features, like keybindings or actions you miss from other editors or extensions.
-- Part of a Community Program like [Let's Git Together](https://github.com/zed-industries/zed/issues/41541).
-
-If you're looking for concrete ideas:
-
-- [Triaged bugs with confirmed steps to reproduce](https://github.com/zed-industries/zed/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug%20label%3Astate%3Areproducible).
-- [Area labels](https://github.com/zed-industries/zed/labels?q=area%3A*) to browse bugs in a specific part of the product you care about (after clicking on an area label, add type:Bug to the search).
-
-If you're thinking about proposing or building a larger feature, read the [Zed Feature Process](./docs/src/development/feature-process.md) for how we think about feature design — what context to provide, what integration points to consider, and how to put together a strong proposal.
-
 ## Sending changes
 
 The Zed culture values working code and synchronous conversations over long
@@ -64,6 +34,8 @@ Github comments, or to offer up time to pair with us.
 If you need help deciding how to fix a bug, or finish implementing a feature
 that we've agreed we want, please open a PR early so we can discuss how to make
 the change with code in hand.
+
+---
 
 ### UI/UX checklist
 
@@ -118,6 +90,7 @@ When your changes affect UI, consult this checklist:
 - Are power features discoverable but not intrusive?
 - Is there a path from beginner → expert usage (progressive disclosure)?
 
+---
 
 ## Things we will (probably) not merge
 
@@ -130,27 +103,3 @@ Although there are few hard and fast rules, typically we don't merge:
 - Non-trivial changes with no tests.
 - Stylistic code changes that do not alter any app logic. Reducing allocations, removing `.unwrap()`s, fixing typos is great; making code "more readable" — maybe not so much.
 - Anything that seems AI-generated without understanding the output.
-
-## Bird's-eye view of Zed
-
-We suggest you keep the [Zed glossary](docs/src/development/glossary.md) at your side when starting out. It lists and explains some of the structures and terms you will see throughout the codebase.
-
-Zed is made up of several smaller crates - let's go over those you're most likely to interact with:
-
-- [`gpui`](/crates/gpui) is a GPU-accelerated UI framework which provides all of the building blocks for Zed. **We recommend familiarizing yourself with the root level GPUI documentation.**
-- [`editor`](/crates/editor) contains the core `Editor` type that drives both the code editor and all various input fields within Zed. It also handles a display layer for LSP features such as Inlay Hints or code completions.
-- [`project`](/crates/project) manages files and navigation within the filetree. It is also Zed's side of communication with LSP.
-- [`workspace`](/crates/workspace) handles local state serialization and groups projects together.
-- [`vim`](/crates/vim) is a thin implementation of Vim workflow over `editor`.
-- [`lsp`](/crates/lsp) handles communication with external LSP server.
-- [`language`](/crates/language) drives `editor`'s understanding of language - from providing a list of symbols to the syntax map.
-- [`collab`](/crates/collab) is the collaboration server itself, driving the collaboration features such as project sharing.
-- [`rpc`](/crates/rpc) defines messages to be exchanged with collaboration server.
-- [`theme`](/crates/theme) defines the theme system and provides a default theme.
-- [`ui`](/crates/ui) is a collection of UI components and common patterns used throughout Zed.
-- [`cli`](/crates/cli) is the CLI crate which invokes the Zed binary.
-- [`zed`](/crates/zed) is where all things come together, and the `main` entry point for Zed.
-
-## Packaging Zed
-
-Check our [notes for packaging Zed](https://zed.dev/docs/development/linux#notes-for-packaging-zed).

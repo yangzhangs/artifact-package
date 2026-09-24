@@ -1,33 +1,3 @@
-# Contributing to OpenBao
-
-**Please note:** We take OpenBao's security and our users' trust very seriously.
-If you believe you have found a security issue in OpenBao, please responsibly
-disclose by contacting us at openbao-security@lists.openssf.org.
-
-**First:** if you're unsure or afraid of _anything_, just ask or submit the
-issue or pull request anyways. You won't be yelled at for giving it your best
-effort. The worst that can happen is that you'll be politely asked to change
-something. We appreciate any sort of contributions, and don't want a wall of
-rules to get in the way of that.
-
-That said, if you want to ensure that a pull request is likely to be merged,
-talk to us! You can find out our thoughts and ensure that your contribution
-won't clash or be obviated by OpenBao's normal direction. A great way to do this
-is via the [GitHub Discussions][2].
-
-## Community Roles
-
-To view community roles or who holds those roles, see [MAINTAINERS.md](MAINTAINERS.md).
-
-## Source-Available License Policy
-
-This policy prohibits the utilization or copy from any source that is protected
-by a source-available license agreement including Business Source License 1.1.
-This specifically includes all source repository members under the Hashicorp GitHub
-organization. It is the intention of this policy that when developing for feature
-parity, bug fixes, CVEs, etc. in comparison to Hashicorp Vault that a clean room
-methodology be used and all deliverables made original.
-
 ## Developer Certificate of Origin (DCO) Sign Off Policy
 
 OpenBao adheres to the Linux Foundation's [DCO](https://developercertificate.org/).
@@ -57,52 +27,8 @@ If you have met the above requirements, you can add your sign-off by including
 the --signoff option in your `git commit` or `git rebase` commands:
 
 ```bash
-# Sign off a commit
-git commit --signoff -m"my commit"
 
-# Add a signoff to the last commit you made
-git commit --amend --signoff
-
-# Sign off every commit in your branch
-git rebase --signoff master
-```
-
-This will add a line similar to the following at the end of your commit:
-
-```commit
-Signed-off-by: Alex Smith <alex@example.com>
-```
-
-Signing off a commit signifies your agreement to the terms outlined at
-https://developercertificate.org/ for that specific contribution. Any contribution
-that lacks a sign-off to this agreement will not be accepted by the OpenBao project.
-
-## Technical Steering Committee (TSC) Members
-
-| Member           | Email                        | GitHub                                     | Alternate                                       | Company/Organization | TSC Position |
-|------------------|------------------------------|--------------------------------------------|-------------------------------------------------|----------------------|--------------|
-| James Butcher    | james@iotechsys.com          |                                            | Brad Corrion (brad@iotechsys.com)               | IOTech Systems       | Member       |
-| Julian Cassignol | jcassignol@wallix.com        |                                            | Dan Ghita (dghita@wallix.com)                   | Wallix               | Member       |
-| Michael Hofer    | michael.hofer@adfinis.com    | [@karras](https://github.com/karras)       | Andrii Fedorchuk (andrii.fedorchuk@adfinis.com) | Adfinis              | Chair        |
-| Maw Wildpaner    | maw@gitlab.com               |                                            | Mark Mishaev (mmishaev@gitlab.com)              | GitLab               | Member       |
-| Klaus Kiefer     | klaus.kiefer@sap.com         | [@klaus-sap](https://github.com/klaus-sap) | Jonas Köhnen (j.koehnen@reply.de)               | SAP                  | Member       |
-| Alex Scheel      | alexander.m.scheel@gmail.com | [@cipherboy](https://github.com/cipherboy) |                                                 | Individual           | Member       |
-
-To view the process for joining the TSC, see [GOVERNANCE.md](GOVERNANCE.md) in
-the root of this repository. That document is considered part of this document.
-
-### OpenBao Working Groups
-
-| Working Group                                                  | Chair       | Voting Members                                                                      |
-|----------------------------------------------------------------|-------------| ----------------------------------------------------------------------------------- |
-| [Development Working Group](https://github.com/openbao/dev-wg) | Alex Scheel | Dan Ghita, Nathan Phelps, Jan Martens, Dave Dykstra, Jonas Köhnen, Andrii Fedorchuk |
-
-## Issues
-
-This section will cover what we're looking for in terms of reporting issues.
-
-By addressing all the points we're looking for, it raises the chances we can
-quickly merge or address your contributions.
+---
 
 ### Reporting an Issue
 
@@ -135,29 +61,7 @@ quickly merge or address your contributions.
   remains okay, but please do not post AI generated text, _especially_ without
   clearly identifying it as such.
 
-### Issue Lifecycle
-
-1. The issue is reported.
-
-2. The issue is verified and categorized by an OpenBao collaborator.
-   Categorization is done via tags. For example, bugs are marked as "bugs".
-
-3. Unless it is critical, the issue may be left for a period of time (sometimes
-   many weeks), giving outside contributors -- maybe you!? -- a chance to
-   address the issue.
-
-4. The issue is addressed in a pull request or commit. The issue will be
-   referenced in the commit message so that the code that fixes it is clearly
-   linked.
-
-5. The issue is closed.
-
-6. Issues that are not reproducible and/or not gotten responses for a long time are
-   stale issues. In order to provide faster responses and better engagement with
-   the community, we strive to keep the issue tracker clean and the issue count
-   low. In this regard, our current policy is to close stale issues after 30 days.
-   Closed issues will still be indexed and available for future viewers. If users
-   feel that the issue is still relevant, we encourage reopening them.
+---
 
 ## Pull requests
 
@@ -189,6 +93,8 @@ Someone will do a first pass review on your PR making sure it follows the guidel
 in this document. If it doesn't we'll mark the PR incomplete and ask you to follow
 up on the missing requirements.
 
+---
+
 ### Backports
 
 For original PRs slated for backport, ask or apply for the following labels:
@@ -209,6 +115,8 @@ The milestone on the original PR should target the current `main` branch
 milestone. The milestone on the backport PR should target the backport
 branch's next milestone. The milestone on the issue (if applicable) should
 target the oldest series's milestone.
+
+---
 
 ### Changelog Entries
 
@@ -234,6 +142,8 @@ You do not need to include the link at the end of the summary that appears in
 CHANGELOG.md, those are generated automatically by the changelog-building
 process.
 
+---
+
 ### Merge Policy
 
 PRs might only be merged once all the following conditions are met:
@@ -254,6 +164,8 @@ The preferred person to actually hit the merge button is the author of the PR,
 if they have the required permissions to do so, as they are expected to be aware
 of any inter-PR dependencies (e.g. a feature PR depending on a bug-fix from a
 different PR).
+
+---
 
 #### Codeowners Examples
 
@@ -285,6 +197,8 @@ review from the `alpha-team`, but not from the `a-team`.
 This rules should reflect the [documented behavior of
 GitHub][github-about-code-owners].
 
+---
+
 ### OpenBao UI
 
 How you contribute to the UI depends on what you want to contribute. If that is
@@ -306,12 +220,3 @@ it will add some time to the PR process.
 Finally, in your code, try to avoid logic-heavy templates (when possible,
 calculate values in the .js file instead of .hbs) and Ember anti-patterns.
 And most of all, if you have any questions, please ask!
-
-## Setting up Go to work on OpenBao
-
-If you have never worked with Go before, you will have to complete the
-following steps listed in the README, under the section [Developing OpenBao][1].
-
-[1]: https://github.com/openbao/openbao#developing-openbao
-[2]: https://github.com/openbao/openbao/discussions
-[github-about-code-owners]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-and-branch-protection

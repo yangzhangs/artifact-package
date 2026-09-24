@@ -4,14 +4,20 @@ Thank you for your interest in contributing to the Equational Theories Project! 
 
 This guide provides detailed instructions on how to effectively and efficiently contribute to the project.
 
+---
+
 ## Project Coordination
 
 The project is managed using a [GitHub project dashboard](https://github.com/users/teorth/projects/1), which tracks tasks through various stages, from assignment to completion.
+
+---
 
 ## How to Contribute
 
 Contributions to the project are made through GitHub pull requests (PRs) that correspond to specific tasks outlined in the project's issues.
 The following instructions detail the process for claiming and completing tasks.
+
+---
 
 ### 1. Task Identification
 
@@ -19,11 +25,15 @@ The following instructions detail the process for claiming and completing tasks.
 - Each issue represents a specific task to be completed. The issue title and description contain relevant details and requirements.
 - Only maintainers can convert an issue into a project task. If you wish to propose a task of your own, create a GitHub issue and start a discussion in a new thread on the [Equational Theories channel on Zulip](https://leanprover.zulipchat.com/#narrow/stream/458659-Equational/). Depending on the outcome of the discussion, the task may be converted into a project task by one of the maintainers.
 
+---
+
 ### 2. Claiming a Task
 
 - To claim a task, comment the single word `claim` on the relevant GitHub issue.
 - If no other user is assigned, you will automatically be assigned to the task, and the issue will move to the `Claimed Tasks` column.
 - You may only claim one task at a time. If you decide not to work on a task after claiming it, comment the single word `disclaim` on the issue. This will unassign you and return the issue to the `Unclaimed Outstanding Tasks` column, making it available for others to claim.
+
+---
 
 ### 3. Working on the Task
 
@@ -48,26 +58,36 @@ Once you are assigned to an issue, begin working on the corresponding task. You 
 >
 > - You may push your changes without any safeguards, increasing the risk of CI check failures.
 
+---
+
 ### 4. Submitting a Pull Request
 
 - When you are ready to submit your solution, create a PR from your working branch to the project’s `main` branch.
 - After submitting the PR, comment `propose #PR_NUMBER` on the original issue. This links your PR to the task, and the task will move to the `In Progress` column on the dashboard.
 - A task can only move to `In Progress` if it has been claimed by the user proposing the PR.
 
+---
+
 ### 5. Withdrawing or Updating a PR
 
 - If you need to withdraw your PR, comment `withdraw #PR_NUMBER` on the issue. The task will return to the `Claimed Tasks` column, but you will remain assigned to the issue.
 - To submit an updated PR after withdrawal, comment `propose #NEW_PR_NUMBER` following the same process outlined in step 4.
+
+---
 
 ### 6. Review Process
 
 - After finishing the task and ensuring your PR is ready for review, comment `awaiting-review` on the PR. This will add the `awaiting-review` label to your PR and move the task from `In Progress` to the `PRs in Review` column of the dashboard.
 - The project maintainers will review the PR. They may request changes, approve the PR, or provide feedback.
 
+---
+
 ### 7. Task Completion
 
 - Once the PR is approved and merged, the task will automatically move to the `Completed` column.
 - If further adjustments are needed after merging, a new issue will be created to track additional work.
+
+---
 
 ### Additional Guidelines and Notes
 
@@ -75,9 +95,13 @@ Once you are assigned to an issue, begin working on the corresponding task. You 
 2. Be aware that this contribution process is still in an experimental phase. As a result, occasional issues and inefficiencies may arise. We are committed to continuously refining the process, and your constructive feedback is highly appreciated. You can share your thoughts and suggestions on the [Lean Zulip chat channel](https://leanprover.zulipchat.com/#narrow/stream/458659-Equational/).
 3. Until the integration of sufficient CI automation, the management of the project dashboard is handled manually by the maintainers. We ask for your patience and understanding as we work to keep the process running smoothly.
 
+---
+
 ## Discussion
 
 The main discussion will be held in this [Lean Zulip channel](https://leanprover.zulipchat.com/#narrow/stream/458659-Equational/).  Some secondary discussion will also be held at [this blog post](https://terrytao.wordpress.com/2024/09/25/a-pilot-project-in-universal-algebra-to-explore-new-ways-to-collaborate-and-use-machine-assistance/).
+
+---
 
 ## Lean files
 
@@ -141,6 +165,8 @@ Here is a list of human-contributed Lean files with mathematical content:
 
 At present, the API for magmas only allows for theorems that study a finite number of individual equational laws at a time.  We plan to expand the API to also allow one to establish metatheorems about entire classes of equations.
 
+---
+
 ## Blueprint
 
 The [blueprint for the project](blueprint) is a human-readable record of the results established (in Lean or otherwise). Not every result generated by the project needs to be explicitly included in the blueprint, but ideally the most interesting results should be present, as well as descriptions of the methodology used to automatically generate large numbers of implications.
@@ -154,6 +180,8 @@ Contributors are welcome to make suggestions or additions to the blueprint, whos
 
 Contributions to the blueprint will pass through continuous integration (CI) checks that ensure that the blueprint compiles.  You may first wish to test that the [print version of the blueprint](blueprint/src/print.tex) compiles locally before pushing changes to the blueprint.  Also, if using the `\lean{}` macro to link to results in the Lean files, make sure that any namespace that the Lean result is stored in is stated.  If your Lean file was recently added, you may wish to check that it is recognized by [`equational_theories.lean`](equational_theories.lean), otherwise the blueprint will not be able to locate the results in that file.
 
+---
+
 ## Scripts
 
 Contributions in programming languages other than Lean are very welcome; the code for such contributions can be placed in [this directory](scripts).  It would probably be a good idea to announce such scripts on the [Zulip channel](https://leanprover.zulipchat.com/#narrow/stream/458659-Equational) for feedback and review.
@@ -163,9 +191,13 @@ own script that uses a new package, add the additional dependency to [`requireme
 
 When PR'ing a new script, consider also adding a brief link and description to the script in the [README.md](README.md) file under "Scripts", according to the main language of the script.
 
+---
+
 ## Data
 
 Output from code that is not Lean proofs (or `conjecture` claims in Lean) can be placed in the [data directory](data).  One can then update the [README.md](README.md) to list this new data set.  Note: if the data set is not fully validated (e.g., due to potential bugs in the code used to generate the data), please disclose this when reporting it to [README.md](README.md).  In the blueprint, one can add a chapter describing the data set, the code used to generate it, and any further comments (such as comparisons with other data sets).
+
+---
 
 ## Automated Proofs
 
@@ -178,9 +210,13 @@ Proofs generated programmatically are also welcome. If you do this, you are enco
 - Consider adding to the blueprint to explain the automated proof technique used.
 - Proofs of implications and non-implications should be reduced to the minimum required set. See [here](docs/graph_operations.md) for more.
 
+---
+
 ## Images
 
 Any images generated by the project can be placed in [this directory](images).
+
+---
 
 ### Hasse diagrams
 
@@ -191,6 +227,8 @@ A particular type of image that is suitable for inclusion of this project are [H
 - Note the confusing change in orientation of arrows: `LawX ≤ LawY` is equivalent to `LawX ⇒ LawY`.  As such, arrows should be _upward_, and the use of double lines to indicate implication (i.e., `⇒` instead of `→`) is strongly encouraged.  If implication arrows are not available, leaving the edges unoriented is acceptable.
 
 Some of the legacy Hasse diagrams from the first few days of the project were oriented in a different way than that in the guidelines above.  References to such diagrams should be annotated to reflect this change of orientation.
+
+---
 
 ## Other ways to contribute
 

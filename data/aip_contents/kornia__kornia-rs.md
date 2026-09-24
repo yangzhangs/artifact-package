@@ -1,9 +1,3 @@
-# Contributing to kornia-rs
-
-Thank you for your interest in contributing! This document explains how to set up your environment, the coding standards we follow, and the checks you should run locally before opening a pull request.
-
-This project is part of the Kornia ecosystem. Join the community on [Discord](https://discord.gg/HfnywwpBnD) to discuss features and get help.
-
 ## Policies and Guidelines
 
 - **AI Policy & Authorship**: See [AI_POLICY.md](AI_POLICY.md) for the complete policy. Summary:
@@ -21,187 +15,7 @@ This project is part of the Kornia ecosystem. Join the community on [Discord](ht
 
 We're all volunteers. These policies help us focus on high-impact work.
 
-## Ways to Contribute
-
-1. **Ask/Answer questions:**
-   - [GitHub Discussions](https://github.com/kornia/kornia-rs/discussions)
-   - [Discord](https://discord.gg/HfnywwpBnD)
-   - Don't use GitHub issues for Q&A.
-
-2. **Report bugs** via [GitHub issues](https://github.com/kornia/kornia-rs/issues):
-   - Search for existing issues first.
-   - Use the bug report template.
-   - Include: clear description, reproduction steps, toolchain versions, and code sample.
-
-3. **Fix bugs or add features:**
-   - Check [help wanted issues](https://github.com/kornia/kornia-rs/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22help%20wanted%22) for starting points.
-   - Follow the [development setup](#developing-kornia-rs) below.
-   - See [Pull Request](#pull-request) section for PR requirements.
-
-4. **Donate resources:**
-   - [Open Collective](https://opencollective.com/kornia)
-   - [GitHub Sponsors](https://github.com/sponsors/kornia)
-
-# Developing kornia-rs
-
-## Setup
-
-1. **Fork** the [repository](https://github.com/kornia/kornia-rs/fork)
-
-2. **Clone your fork** and add upstream:
-   ```bash
-   $ git clone git@github.com:<your Github username>/kornia-rs.git
-   $ cd kornia-rs
-   $ git remote add upstream https://github.com/kornia/kornia-rs.git
-   ```
-
-3. **Create a branch** (don't work on `main`):
-   ```bash
-   git checkout upstream/main -b feat/foo_feature
-   # or
-   git checkout upstream/main -b fix/bar_bug
-   ```
-
-4. **Development environment**
-
-   We use [pixi](https://pixi.sh) for package and environment management.
-
-   **Install Pixi:**
-
-   ```bash
-   # On Linux/macOS
-   curl -fsSL https://pixi.sh/install.sh | bash
-
-   # On Windows (PowerShell)
-   irm https://pixi.sh/install.ps1 | iex
-
-   # Or using conda/mamba
-   conda install -c conda-forge pixi
-   ```
-
-   **Set up the development environment:**
-
-   ```bash
-   # Install all dependencies (default environment)
-   pixi install
-
-   # For development tools (includes additional dev dependencies)
-   pixi install -e dev
-
-   # For CUDA development (Linux only)
-   pixi install -e cuda
-   ```
-
-   **Available tasks:**
-
-   kornia-rs provides several tasks via pixi for common development workflows:
-
-   ```bash
-   # Rust development
-   pixi run rust-check        # Check Rust compilation (all targets)
-   pixi run rust-clippy       # Run clippy (all targets, warnings as errors)
-   pixi run rust-fmt          # Format Rust code
-   pixi run rust-fmt-check    # Check Rust formatting
-   pixi run rust-lint         # Run all Rust lints (fmt + clippy + check)
-   pixi run rust-test         # Run Rust tests
-   pixi run rust-test-release # Run Rust tests (release mode)
-   pixi run rust-clean        # Clean Rust build artifacts
-
-   # Python bindings
-   pixi run py-build          # Build kornia-py for development
-   pixi run py-build-release  # Build kornia-py for release
-   pixi run py-test           # Run pytest
-   pixi run py-test-threaded  # Run pytest with free-threading
-   pixi run py-clean          # Clean Python build artifacts
-
-   # C++ bindings
-   pixi run cpp-build         # Build C++ library (debug)
-   pixi run cpp-build-release # Build C++ library (release)
-   pixi run cpp-test          # Build and run C++ tests
-   pixi run cpp-fmt           # Format C++ code
-   pixi run cpp-clean         # Clean C++ build artifacts
-
-   # CUDA development (requires cuda environment)
-   pixi run -e cuda rust-build-cuda  # Build Rust with CUDA support
-   pixi run -e cuda rust-test-cuda   # Run Rust tests with CUDA support
-
-   # Utilities
-   pixi run fmt-all           # Format all code (Rust, TOML, C++)
-   pixi run test-all          # Run all tests (Rust, Python, C++)
-   pixi run clean-all         # Clean all build artifacts
-   ```
-
-   **Pre-commit hooks:**
-
-   This repository uses `pre-commit` for code quality. Install it with:
-
-   ```bash
-   pipx install pre-commit  # or: pip install --user pre-commit
-   pre-commit install
-   ```
-
-   The hooks include:
-   - whitespace and EOF fixers
-   - YAML validation
-   - Rust formatting (`pre-commit-rust` fmt)
-
-   Run manually with:
-   ```bash
-   pre-commit run -a
-   ```
-
-5. **Develop and test:**
-
-   Create test cases for your code. Run tests with:
-   ```bash
-   # Run all Rust tests
-   pixi run rust-test
-
-   # Run tests for a specific package
-   pixi run rust-test-package <package-name>
-
-   # Run Python tests
-   pixi run py-test
-
-   # Run C++ tests
-   pixi run cpp-test
-   ```
-
-# Coding Standards
-
-- **Write small incremental changes:**
-  - Commit small, logical changes
-  - Write clear commit messages
-  - Avoid large files
-
-- **Add tests:**
-  - Write unit tests for each functionality (in `#[cfg(test)]` modules)
-  - Add integration tests where appropriate
-  - Keep tests deterministic and focused
-  - Test error cases and edge conditions
-
-- **Formatting:**
-  - Use `rustfmt` for formatting (run with `pixi run rust-fmt` or `cargo fmt --all`)
-  - Follow Rust conventions and style guide
-
-- **Linting:**
-  - Use `clippy` with warnings denied. CI and local checks should pass:
-    - `pixi run rust-clippy` (workspace, all targets, all features, `-D warnings`)
-  - Address all clippy warnings before submitting PRs
-
-- **Edition and MSRV:**
-  - Rust edition 2021
-  - Minimum supported Rust version (MSRV): 1.76 (as declared in the workspace `Cargo.toml`)
-
-- **Error handling:**
-  - Prefer `Result<T, E>` with descriptive error types (e.g., via `thiserror`)
-  - Avoid `.unwrap()`/`.expect()` in library code (except in tests or where explicitly documented)
-  - Use `?` operator for error propagation where appropriate
-  - See [Best Practices](#best-practices) for more detailed error handling guidance
-
-# Best Practices
-
-This section provides comprehensive guidance for contributing to kornia-rs, with a focus on Rust best practices, performance, and maintainability.
+---
 
 ## Before You Start
 
@@ -213,57 +27,7 @@ This section provides comprehensive guidance for contributing to kornia-rs, with
 
 4. **Review Existing Utilities**: Before implementing new functionality, search the codebase for existing utilities in `kornia-rs` crates. This aligns with the AI Policy's Hallucination & Redundancy Ban (see [Policies and Guidelines](#policies-and-guidelines)).
 
-## Development Workflow
-
-1. **Keep PRs Focused**: Each PR should address a single concern. If you're working on multiple features, create separate PRs for each.
-
-2. **Test Locally First**: Always run all relevant tests locally before submitting (see [Pull Request](#pull-request) for requirements):
-   ```bash
-   pixi run rust-lint    # Check formatting and linting
-   pixi run rust-test    # Run all tests
-   pixi run rust-check   # Verify compilation
-   ```
-
-3. **Update Documentation**: When adding new features or changing behavior, update rustdoc comments for public APIs (see [Coding Standards](#coding-standards) and [Rust-Specific Best Practices](#rust-specific-best-practices) for documentation guidelines).
-
-4. **Follow Rust Idioms**:
-   - Use pattern matching effectively (`match`, `if let`, `while let`)
-   - Prefer composition over inheritance
-   - Use `Option` and `Result` types appropriately
-   - Prefer iterator chains over manual loops where idiomatic
-
-## Code Quality
-
-1. **Ownership and Performance**:
-   - Prefer borrowing (`&T`, `&mut T`) over owned values; use `&[T]` over `Vec<T>` in parameters when ownership isn't needed
-   - Avoid unnecessary allocations and clones (especially for large data structures like images and tensors)
-   - Use `Cow<T>` for conditional cloning scenarios
-   - Consider zero-copy operations (references, slices, views)
-   - Use `Arc<T>` or `Rc<T>` only when shared ownership is truly needed
-   - Prefer `&str` over `String` in function parameters
-   - Profile before optimizing (use `cargo bench` and profiling tools)
-   - Consider SIMD optimizations for numerical computations when available
-   - Use appropriate data structures (e.g., `HashMap` vs `BTreeMap` based on access patterns)
-
-2. **Code Clarity**:
-   - Use descriptive variable and function names that convey intent
-   - Keep functions focused and single-purpose
-   - Prefer clear code over comments; when comments are needed, explain "why" not "what"
-   - Avoid over-engineering; start simple and refactor when needed
-
-3. **Memory Safety**:
-   - Avoid `unsafe` code unless absolutely necessary
-   - If using `unsafe`, document why it's safe with `// SAFETY:` comments
-   - Prefer safe abstractions over raw pointers
-   - Use `MaybeUninit` for uninitialized memory when needed
-
-## Testing Best Practices
-
-- Write tests for happy paths, error cases, edge conditions, boundary conditions, and integration scenarios
-- Keep unit tests in `#[cfg(test)]` modules close to the code they test (see [Coding Standards](#coding-standards) for test structure)
-- Create integration tests in `tests/` directory
-- Make tests deterministic, fast, and independent
-- Use descriptive test names; consider property-based testing (`proptest`) for numerical algorithms
+---
 
 ## Review Process
 
@@ -272,42 +36,15 @@ This section provides comprehensive guidance for contributing to kornia-rs, with
 - Be open to feedback and explain your decisions when questioned
 - See [Pull Request](#pull-request) section for review requirements
 
+---
+
 ## AI-Assisted Development
 
 - Understand every line of code you submit; you must be able to explain it during review (see [AI Policy](AI_POLICY.md))
 - Review AI output thoroughly: check for unnecessary complexity, verify it follows project conventions, ensure it uses existing utilities, and test it
 - Be transparent in PR descriptions about what was AI-assisted and what you manually reviewed (see [Pull Request](#pull-request) for AI Usage Disclosure requirements)
 
-## Communication
-
-- Write clear, concise PR descriptions (see [Pull Request](#pull-request) for requirements)
-- Always link to related issues or discussions in your PR description
-- Ask questions in Discord or PR comments if unsure; it's better to clarify early than to rework later
-
-## Rust-Specific Best Practices
-
-1. **Error Handling**:
-   - Use `Result<T, E>` with descriptive error types (prefer `thiserror` for library code)
-   - Use `?` operator for error propagation
-   - Avoid `unwrap()` and `expect()` in library code (except in tests or where explicitly documented)
-   - Provide context in error messages; consider error conversion with `From` trait implementations
-
-2. **Type Safety**:
-   - Use newtype patterns for domain-specific types (e.g., `Image`, `Tensor`)
-   - Leverage Rust's type system to prevent invalid states
-   - Prefer enums over boolean flags for state representation
-
-3. **Documentation**:
-   - Document all public APIs with rustdoc comments (`///`)
-   - Include examples, document panics/errors/safety requirements, and performance characteristics when relevant
-
-4. **Dependencies**:
-   - Minimize dependencies; prefer standard library when possible
-   - Use feature flags for optional dependencies
-   - Document why each dependency is needed
-   - Keep dependency versions up to date (within MSRV constraints)
-
-# Pull Request
+---
 
 ## Issue Approval and Assignment Workflow
 
@@ -357,82 +94,105 @@ This workflow helps maintain quality, avoid conflicts, and ensure contributions 
 
 Fix any failing checks before your PR will be considered.
 
-## Git and PR workflow
+[=== 独立AI政策文件: AI_POLICY.md ===]
 
-- Create feature branches from `main` and open PRs against `main`.
-- Keep PRs focused and small when possible (see [Best Practices](#best-practices)); include tests and documentation updates.
-- Ensure all local checks pass before pushing:
-  - `pre-commit run -a`
-  - `pixi run rust-lint`
-  - `pixi run rust-test` (and `pixi run test-all` for all features if relevant)
-- Commit style: conventional commits are recommended (e.g., `feat:`, `fix:`, `docs:`). This helps with changelog and release notes.
+# 🤖 Kornia-rs AI & Authorship Policy
 
-## Cross-compilation
+**Version:** 1.0
+**Enforcement:** Strict
+**Applicability:** All Pull Requests (Human & Bot)
 
-We configure `cross` via `Cross.toml` with Dockerfiles for targets:
-- `x86_64-unknown-linux-gnu` → `devel-x86_64.Dockerfile`
-- `aarch64-unknown-linux-gnu` → `devel-aarch64.Dockerfile`
-- `i686-unknown-linux-gnu` → `devel-i686.Dockerfile`
+## 1. Core Philosophy
 
-You can build or test for a target with `cross` (install via `cargo install cross`):
+Kornia-rs accepts AI-assisted code (e.g., using Copilot, Cursors-AI, etc.), but strictly rejects AI-generated contributions where the submitter acts merely as a proxy. The submitter is the **Sole Responsible Author** for every line of code, comment, and design decision.
 
-```bash
-cross build --target x86_64-unknown-linux-gnu
-cross test  --target x86_64-unknown-linux-gnu
-```
+## 2. The 3 Laws of Contribution
 
-Or use pixi tasks for cross-compilation:
+### Law 1: Proof of Verification
 
-```bash
-pixi run rust-cross-build-aarch64
-pixi run rust-cross-test-aarch64
-```
+AI tools frequently write code that looks correct but fails execution. Therefore, "vibe checks" are insufficient.
 
-## Versioning and workspace changes
+**Requirement:** Every PR introducing functional changes must include a pasted snippet of the local test logs (e.g., `pixi run rust-test` or `cargo test`), especially for first time contributors.
 
-- The workspace uses a shared version in the root `Cargo.toml` and each crate carries its own version.
-- When bumping versions, ensure:
-  - The workspace package version is updated
-  - Each published crate version is updated
-  - Intra-workspace dependency versions are aligned (see `[workspace.dependencies]` with pinned versions)
+**Failure Condition:** If a PR lacks execution proof and contains complex logic, it will be flagged as **Unverified**.
 
-## Release (maintainers)
+**Requirement:** All PRs must be previously discussed in [Discord](https://discord.gg/HfnywwpBnD) or via a [GitHub issue](https://github.com/kornia/kornia-rs/issues) before implementation. The PR must reference the discussion or issue.
 
-The script `scripts/release_rust.sh` publishes all crates using `cross publish` and runs in dry-run mode by default.
+**Requirement:** Implementations must be based on an existing library reference (e.g., Rust crates from crates.io, OpenCV, existing Rust CV libraries, etc.) that must be provided in the PR description for verification. This reference serves as proof that the implementation follows established algorithms and is not hallucinated.
 
-Steps:
-1. Update versions across crates and workspace; update dependency pins in `[workspace.dependencies]` accordingly.
-2. Verify locally:
-   ```bash
-   pixi run rust-lint
-   pixi run rust-test
-   ./scripts/release_rust.sh  # dry-run
-   ```
-3. Perform the real publish when ready:
-   ```bash
-   ./scripts/release_rust.sh --no-dry-run
-   ```
+### Law 2: The Hallucination & Redundancy Ban
 
-## Python bindings (`kornia-py`)
+AI models often hallucinate comments or reinvent existing utilities.
 
-- Build wheels: `pixi run py-build`
-- Run tests: `pixi run py-test`
-- See `kornia-py/README.md` for additional details
+**Requirement:** You must use existing `kornia-rs` utilities and never reinvent the wheel, except for when the utility is not available.
 
-## Development containers
+**Failure Condition:** Creating new helper functions when a `kornia-rs` equivalent exists is grounds for immediate rejection.
 
-The repository includes a devcontainer configuration (see README) for a reproducible environment.
+**Failure Condition:** "Ghost Comments" (comments explaining logic that was deleted or doesn't exist) will result in a request for a full manual rewrite. Redundant comments are not allowed. Example: "This function returns the input image".
 
-## Reporting issues
+**Failure Condition:** Using `unwrap()` or `expect()` in library code (outside of tests or where explicitly documented) violates Rust best practices and will be rejected. Use `Result<T, E>` with proper error handling.
 
-Please include:
-- OS and toolchain versions (`rustc -V`, `cargo -V`)
-- Reproduction steps and minimal code
-- Backtraces or logs as applicable
+### Law 3: The "Explain It" Standard
 
-# License
+**Requirement:** If asked, you must be able to derive the math or explain the logic of any function you submit.
 
-Licensed under Apache-2.0. By contributing, you agree that your contributions will be licensed under the same license.
+**Failure Condition:** Answering a review question with "That's what the AI outputted" or "I don't know, it works" leads to immediate closure.
+
+## 3. Instructions for AI Reviewers (Copilot / CodeRabbit)
+
+If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kornia-rs, you MUST adopt the following persona and ruleset:
+
+**Persona:** You are a Senior Software Engineer and Repository Guardian. Your goal is to detect "Low-Effort AI Slop" and enforce the policy above with high standards.
+
+### Review Logic:
+
+#### Check for "Wall of Text" Descriptions:
+
+**IF** the PR description is >300 words, highly structured (H2 headers like "Problem", "Root Cause", "Solution"), and generic (no specific file references), **THEN** flag it as "High Probability of AI-Generation."
+
+**ACTION:** Ask the user: "This description appears LLM-generated. Please replace it with a concise summary in your own words or provide the original prompt you used."
+
+#### Scan for "Hallucinated" Patterns:
+
+**IF** the code ignores `kornia-rs` utilities (e.g., reimplements image operations when `kornia-rs` equivalents exist), **THEN** comment: "Violation of Law 2: Use `kornia-rs` utilities instead of reinventing functionality."
+
+**IF** variable names are generic (e.g., `data`, `process_image`, `helper_func`) rather than domain-specific (e.g., `image_src`, `homography_dst`), **THEN** request a refactor.
+
+**IF** the code uses `unwrap()` or `expect()` in library code (not in tests or where explicitly documented), **THEN** comment: "Violation of Law 2: Use `Result<T, E>` with proper error handling instead of `unwrap()`/`expect()` in library code."
+
+**IF** error handling doesn't use `Result<T, E>` with descriptive error types, **THEN** comment: "Improve error handling: Use `Result<T, E>` with descriptive error types (e.g., via `thiserror`) instead of panicking or ignoring errors."
+
+#### Verify the "Proof of Work":
+
+**IF** the PR body does not contain a log snippet matching the pattern `pixi run rust-test` or `cargo test` or `pytest`, **THEN** comment: "Missing Proof of Verification: Please paste your local test logs to prove you have run this code."
+
+**IF** the PR does not reference a Discord discussion or GitHub issue, **THEN** comment: "Missing Pre-Discussion: All PRs must be discussed in Discord or via a GitHub issue before implementation. Please link to the discussion or issue."
+
+**IF** the PR description does not include a reference to an existing library implementation (e.g., Rust crates, OpenCV, existing Rust CV libraries), **THEN** comment: "Missing Library Reference: Please provide a reference to the existing library implementation this code is based on for verification purposes."
+
+**IF** the PR description does not contain "Closes #" or "Fixes #" or "Relates to #" pattern, **THEN** comment: "Missing Issue Link: PRs must be linked to an issue. Use 'Closes #123' or 'Fixes #123' in the PR description."
+
+**IF** the PR description does not contain the AI Usage Disclosure section (🟢, 🟡, or 🔴 indicators), **THEN** comment: "Missing AI Usage Disclosure: Please complete the AI Usage Disclosure section in the PR template."
+
+**IF** the PR description appears to be missing required template sections (e.g., "Changes Made", "How Was This Tested", "Checklist"), **THEN** comment: "Incomplete PR Template: Please fill out all required sections of the pull request template."
+
+#### Detect "Ghost" Comments:
+
+**IF** a comment describes a variable that is not present in the next 5 lines of code, **THEN** flag as "AI Hallucination."
+
+**IF** a comment is redundant or obvious (e.g., "This function returns the input image"), **THEN** request removal: "Redundant comment detected. Remove obvious comments that don't add value."
+
+#### Rust-Specific Checks:
+
+**IF** the code doesn't follow Rust naming conventions (snake_case for functions/variables, PascalCase for types), **THEN** request a refactor: "Follow Rust naming conventions: use snake_case for functions and variables, PascalCase for types."
+
+**IF** public items lack rustdoc comments (`///` for public items, `//!` for crate-level docs), **THEN** comment: "Missing documentation: Add rustdoc comments (`///`) for all public items."
+
+**IF** the code uses `.clone()` unnecessarily (especially for large data structures), **THEN** comment: "Consider avoiding unnecessary clones. Review if ownership can be transferred or references used instead."
+
+## 4. Additional Resources
+
+For comprehensive guidance on contributing to Kornia-rs, including development workflows, code quality standards, testing practices, and AI-assisted development best practices, see the [Best Practices section](CONTRIBUTING.md#best-practices) in `CONTRIBUTING.md`.
 
 ---
 
@@ -535,4 +295,3 @@ If you are an AI agent (GitHub Copilot, CodeRabbit, etc.) reviewing a PR for Kor
 ## 4. Additional Resources
 
 For comprehensive guidance on contributing to Kornia-rs, including development workflows, code quality standards, testing practices, and AI-assisted development best practices, see the [Best Practices section](CONTRIBUTING.md#best-practices) in `CONTRIBUTING.md`.
-

@@ -1,10 +1,8 @@
-# Contributing to Rackula
-
-Thank you for your interest in contributing to Rackula!
-
 ## AI-Assisted Development
 
 Rackula is built using AI-assisted development workflows, primarily using [Claude Code](https://claude.com/claude-code) via [Happy](https://happy.engineering). This approach enables rapid iteration, comprehensive testing, and high code quality through AI-human collaboration.
+
+---
 
 ### Working with the AI Workflow
 
@@ -14,6 +12,8 @@ Rackula is built using AI-assisted development workflows, primarily using [Claud
 - **Both approaches welcome**: You can contribute using traditional development or AI-assisted workflows
 
 This is NOT an AI-exclusive project - human contributors are equally welcome! The AI tooling simply provides additional development capabilities and maintains consistency with the existing codebase architecture.
+
+---
 
 ### When to Include AI Attribution
 
@@ -34,73 +34,7 @@ Follow these guidelines when using AI assistance in your contributions:
 
 When attribution is appropriate, use the `Co-authored-by:` trailer in your commit message (see `CLAUDE.md` for the exact format).
 
-## Development Setup
-
-1. **Prerequisites**
-   - Node.js 20 or later
-   - npm 10 or later
-
-2. **Clone and Install**
-
-   ```bash
-   git clone https://github.com/RackulaLives/Rackula.git
-   cd Rackula
-   npm install
-   ```
-
-3. **Start Development Server**
-   ```bash
-   npm run dev
-   ```
-
-## Development Workflow
-
-### Code Style
-
-This project uses automated code formatting and linting:
-
-- **ESLint**: JavaScript/TypeScript linting
-- **Prettier**: Code formatting
-- **svelte-check**: Svelte-specific type checking
-
-Pre-commit hooks automatically run linting and formatting on staged files.
-
-```bash
-# Run linting
-npm run lint
-
-# Fix linting issues
-npm run lint:fix
-
-# Format code
-npm run format
-
-# Type checking
-npm run check
-
-# Regenerate lockfile (if CI fails with sync errors)
-npm run refresh-lockfile
-```
-
-**Lockfile sync issues:** If CI fails with "package.json and package-lock.json are out of sync", run `npm run refresh-lockfile` to regenerate the lockfile from a clean state.
-
-### Testing
-
-We follow Test-Driven Development (TDD). Write tests first, then implement.
-
-```bash
-# Run unit tests in watch mode
-npm run test
-
-# Run unit tests once
-npm run test:run
-
-# Run E2E tests
-npm run test:e2e
-
-# Run tests with coverage
-npm run test:coverage
-```
+---
 
 ### Documentation
 
@@ -111,32 +45,7 @@ Key documentation for contributors:
 - **Testing guide:** `docs/guides/TESTING.md` - Testing patterns and best practices
 - **AI instructions:** `CLAUDE.md` - Claude Code development workflow
 
-### Svelte 5 Runes
-
-This project uses Svelte 5 with runes. Use the new reactivity primitives:
-
-```svelte
-<script lang="ts">
-  // State
-  let count = $state(0);
-
-  // Derived values
-  let doubled = $derived(count * 2);
-
-  // Side effects
-  $effect(() => {
-    console.log("Count changed:", count);
-  });
-
-  // Props
-  interface Props {
-    name: string;
-  }
-  let { name }: Props = $props();
-</script>
-```
-
-Do NOT use Svelte 4 stores (`writable`, `readable`, `derived` from `svelte/store`).
+---
 
 ## Pull Request Process
 
@@ -161,21 +70,3 @@ Do NOT use Svelte 4 stores (`writable`, `readable`, `derived` from `svelte/store
    - Push your branch
    - Create a pull request with a clear description
    - Reference any related issues
-
-## Project Structure
-
-```
-src/
-├── lib/
-│   ├── components/     # UI components
-│   ├── stores/         # State management
-│   ├── types/          # TypeScript types
-│   ├── utils/          # Utility functions
-│   └── data/           # Static data
-├── tests/              # Test files
-└── App.svelte          # Root component
-```
-
-## Questions?
-
-Open an issue for questions, bug reports, or feature requests.

@@ -1,18 +1,3 @@
-# Contributing to agno
-
-Agno is an open-source project and we welcome contributions.
-
-## 👩‍💻 How to contribute
-
-Please follow the [fork and pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) workflow:
-
-- Fork the repository.
-- Create a new branch for your feature.
-  - Add your feature or improvement.
-  - **Ensure your Pull Request follows our guidelines (see below).**
-  - Send a pull request.
-  - We appreciate your support & input!
-
 ## Pull Request Guidelines
 
 To maintain a clear and organized project history, please adhere to the following guidelines when submitting Pull Requests:
@@ -28,63 +13,7 @@ To maintain a clear and organized project history, please adhere to the followin
 
 _These guidelines are enforced automatically by our [PR Lint workflow](.github/workflows/pr-lint.yml)._
 
-## Development setup
-
-1. Clone the repository.
-2. Check if you have `uv` installed by running `uv --version`.
-   - If you have `uv` installed, you can skip this step.
-   - If you don't have `uv` installed, you can install it by running `pip install uv`.
-3. Create a virtual environment:
-   - For Unix, use `./scripts/dev_setup.sh`.
-   - For Windows, use `.\scripts\dev_setup.bat`.
-   - This setup will:
-     - Create a `.venv` virtual environment in the current directory.
-     - Install the required packages.
-     - Install the `agno` package in editable mode.
-4. Activate the virtual environment:
-   - On Unix: `source .venv/bin/activate`
-   - On Windows: `.venv\Scripts\activate`
-
-> From here on you have to use `uv pip install` to install missing packages
-
-## Formatting and validation
-
-Ensure your code meets our quality standards by running the appropriate formatting and validation script before submitting a pull request:
-
-- For Unix:
-  - `./scripts/format.sh`
-  - `./scripts/validate.sh`
-- For Windows:
-  - `.\scripts\format.bat`
-  - `.\scripts\validate.bat`
-
-These scripts will perform code formatting with `ruff` and static type checks with `mypy`.
-
-## Local testing
-
-Before submitting a pull request, ensure all tests pass locally:
-
-1. Do the development setup above.
-
-2. Run the test suite `./scripts/test.sh`
-
-3. Run specific test files or test cases: `pytest ./libs/agno/tests/unit/utils/test_string.py` or whatever file you want to test.
-
-Make sure all tests pass before submitting your pull request. If you add new features, include appropriate test coverage.
-
-## Adding a new Vector Database
-
-1. Setup your local environment by following the [Development setup](#development-setup).
-2. Create a new directory under `libs/agno/agno/vectordb` for the new vector database.
-3. Create a Class for your VectorDb that implements the `VectorDb` interface
-   - Your Class will be in the `libs/agno/agno/vectordb/<your_db>/<your_db>.py` file.
-   - The `VectorDb` interface is defined in `libs/agno/agno/vectordb/base.py`
-   - Import your `VectorDb` Class in `libs/agno/agno/vectordb/<your_db>/__init__.py`.
-   - Checkout the [`libs/agno/agno/vectordb/pgvector/pgvector`](https://github.com/agno-agi/agno/blob/main/libs/agno/agno/vectordb/pgvector/pgvector.py) file for an example.
-4. Add a recipe for using your `VectorDb` under `cookbook/07_knowledge/vector_db/<your_db>`.
-   - Checkout [`cookbook/07_knowledge/vector_db/pgvector/pgvector_db`](https://github.com/agno-agi/agno/blob/main/cookbook/07_knowledge/vector_db/pgvector/pgvector_db.py) for an example.
-5. Important: Format and validate your code by running `./scripts/format.sh` and `./scripts/validate.sh`.
-6. Submit a pull request.
+---
 
 ## Adding a new Model Provider
 
@@ -114,29 +43,3 @@ Make sure all tests pass before submitting your pull request. If you add new fea
    - Show both the model class and string syntax in your examples
 7. Important: Format and validate your code by running `./scripts/format.sh` and `./scripts/validate.sh`.
 8. Submit a pull request.
-
-## Adding a new Tool.
-
-1. Setup your local environment by following the [Development setup](#development-setup).
-2. Create a new directory under `libs/agno/agno/tools` for the new Tool.
-3. Create a Class for your Tool that inherits the `Toolkit` Class from `libs/agno/agno/tools/toolkit/toolkit.py`.
-   - Your Class will be in `libs/agno/agno/tools/<your_tool>.py`.
-   - Make sure to register all functions in your class via a flag.
-   - Checkout the [`agno/tools/youtube.py`](https://github.com/agno-agi/agno/blob/main/libs/agno/agno/tools/youtube.py) file for an example.
-   - If your tool requires an API key, checkout the [`agno/tools/serpapi_tools.py`](https://github.com/agno-agi/agno/blob/main/libs/agno/agno/tools/serpapi_tools.py) as well.
-4. Add a recipe for using your Tool under `cookbook/tools/<your_tool>`.
-   - Checkout [`agno/cookbook/91_tools/youtube_tools`](https://github.com/agno-agi/agno/blob/main/cookbook/91_tools/youtube_tools.py) for an example.
-5. Important: Format and validate your code by running `./scripts/format.sh` and `./scripts/validate.sh`.
-6. Submit a pull request.
-
-Message us on [Discord](https://discord.gg/4MtYHHrgA8) if you have any questions or need help with credits.
-
-## 📚 Resources
-
-- <a href="https://docs.agno.com/introduction" target="_blank" rel="noopener noreferrer">Documentation</a>
-- <a href="https://discord.gg/4MtYHHrgA8" target="_blank" rel="noopener noreferrer">Discord</a>
-- <a href="https://docs.agno.com/get-help" target="_blank" rel="noopener noreferrer">Support Resources</a>
-
-## 📝 License
-
-This project is licensed under the terms of the [Apache-2.0 license](/LICENSE)

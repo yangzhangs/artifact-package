@@ -1,36 +1,3 @@
-# Contributing
-
-Edits and contributions to the [main table](README.md#table) are very welcome, particularly with regards to the OEIS column, as [discussed below](#linking-with-the-oeis).
-
-## Quickstart (editing via GitHub UI)
-
-To make an edit to the [main table](README.md#table) of this repository:
-
-1. Open [data/problems.yaml](data/problems.yaml).
-2. Click **Edit** (or the edit icon ✏️) and add or modify an entry, as per the sample template below.  Only the **number** field is mandatory; omit any field for which you have no information.
-3. Open a [Pull Request](https://github.com/teorth/erdosproblems/pulls).  (Once the request is accepted, this will automatically regenerate the [main table](README.md#table).  Do not edit the table directly - any such edits will be overridden by this automatic regeneration.) Feel free to use the comment field of the pull request to describe your methodology (e.g., links to code).
-4. If there is additional mathematical context that you could give concerning your edit, consider also adding a comment to the corresponding problem page on the [erdosproblems.com](https://www.erdosproblems.com) site.
-
-If you are uncertain as to whether an edit is appropriate, or are unable to make a pull request, you are welcome to [open an issue](https://github.com/teorth/erdosproblems/issues) on this repository to discuss it, or (if the question is mathematical in nature) use the corresponding problem page on the [erdosproblems.com](https://www.erdosproblems.com) site; you can also join the discussion at [this blog post for the project](https://terrytao.wordpress.com/2025/08/31/a-crowdsourced-project-to-link-up-erdosproblems-com-to-the-oeis/).
-
-If you find an interesting sequence connected to an Erdős problem, but find it challenging to compute a significant number of entries of the sequence, please feel free to [open an issue](https://github.com/teorth/erdosproblems/issues) on this repository with a title such as "HELP WANTED: Computing sequence for Erdős problem #X", describing the sequence and any partial computations you have done so far.  (One can also use the "help wanted" label for the issue.) Other contributors may be able to help you compute further entries of the sequence. 
-
-## Sample template
-
-```yaml
-- number: "17"
-  prize: "no"
-  status:
-    state: "open"
-    last_update: "2025-08-31"
-  oeis: ["A038133"]
-  formalized:
-    state: "yes"
-    last_update: "2025-08-31"
-  comments: "cluster primes"
-  tags: ["number theory", "primes"]
-```
-
 ## Notes on template fields
 
 - **number**: The number of the problem in the [erdosproblems.com](https://www.erdosproblems.com) website. Stored as a string.
@@ -68,6 +35,8 @@ Regarding formalization in Lean: for the purpose of this site, formalizations co
   - "literature review sought": we suspect that the literature review on this problem is incomplete, and would welcome any assistance in finding relevant references.
 - **tags**: the tags associated to the problem from the [erdosproblems.com](https://www.erdosproblems.com) database. Stored as a list of strings.
 
+---
+
 ## Linking with the OEIS
 
 We are particularly interested in contributions regarding the integer sequences associated with the Erdős problems, and linking them to the [OEIS](https://oeis.org/).  If you would like to help out in this regard, we suggest the following.
@@ -92,6 +61,7 @@ Note that in some cases, the integer sequences associated to a problem may be so
 
 If you have further questions about how to extract an integer sequence from a given Erdős problem, you can raise a [Github issue](https://github.com/teorth/erdosproblems/issues) or make a comment on the appropriate [erdosproblems.com](https://www.erdosproblems.com) forum page.
 
+---
 
 ## On the use of AI tools
 
@@ -101,12 +71,8 @@ In general, when using AI tools to generate code, I would recommend using the to
 
 Asking a large language model to directly generate a sequence, as opposed to generating code that one then inspects and executes to compute the sequence, runs the risk of hallucinated output, and is discouraged except for the purposes of a preliminary exploration that is to be replaced by a more trustworthy calculation at a later point in time.
 
+---
+
 ## Discussion of potential solutions to Erdős problems
 
 In general, discussion of Erdős problems should occur on the web site for that problem.  The issue system here is mostly intended for matters relating to the database entries, or for topics which for some reason cannot be easily discussed on the main site (e.g., if they span multiple problems rather than just one).  AI-generated issues will, at a bare minimum, need to disclose their use of AI, and will likely be closed if they are not contributing a significant amount of value.
-
-## How to cite this database
-
-Bibliographic information for this database can be found at [CITATIONS.cff](CITATIONS.cff).  One possible citation style is
-
-- [Erdős problems database](https://github.com/teorth/erdosproblems), 2025.  Maintained by Thomas Bloom and Terence Tao.

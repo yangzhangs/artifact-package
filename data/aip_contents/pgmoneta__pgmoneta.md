@@ -21,9 +21,13 @@ This document will hopefully help you contribute to pgmoneta.
     - [Using AI for communication](#using-ai-for-communication)
   - [Code Style](#code-style)
 
+---
+
 ## Legal
 
 All contributions to pgmoneta are licensed under the [The 3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause).
+
+---
 
 ## Reporting an issue
 
@@ -31,6 +35,8 @@ This project uses GitHub issues to manage the issues. Open an issue directly in 
 
 If you believe you found a bug, and it's likely possible, please indicate a way to reproduce it, what you are seeing and what you would expect to see.
 Don't forget to indicate your pgmoneta version.
+
+---
 
 ## Setup your build environment
 
@@ -41,6 +47,8 @@ dnf install git gcc clang clang-analyzer clang-tools-extra cmake make libev libe
 ```
 
 in order to get the necessary dependencies.
+
+---
 
 ## Building the main branch
 
@@ -60,6 +68,8 @@ cp ../../doc/etc/*.conf .
 
 and you will have a running instance after you have created the `pgmoneta_users.conf` file.
 
+---
+
 ## Before you contribute
 
 To contribute, use GitHub Pull Requests, from your **own** fork.
@@ -73,12 +83,16 @@ git config --global user.email your.email@example.com
 
 We use this information to acknowledge your contributions in release announcements.
 
+---
+
 ## Code reviews
 
 GitHub pull requests can be reviewed by all such that input can be given to the author(s).
 
 See [GitHub Pull Request Review Process](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
 for more information.
+
+---
 
 ## Coding Guidelines
 
@@ -88,11 +102,15 @@ for more information.
 * Commits should be atomic and semantic. Therefore, squash your pull request before submission and keep it rebased until merged
   + If your feature has independent parts submit those as separate pull requests
 
+---
+
 ## Discuss a Feature
 
 You can discuss bug reports, enhancements and features in our [forum](https://github.com/pgmoneta/pgmoneta/discussions).
 
 Once there is an agreement on the development plan you can open an issue that will used for reference in the pull request.
+
+---
 
 ## Development
 
@@ -145,6 +163,8 @@ doc/manual/en/97-acknowledgement.md
 
 New contributors are encouraged to begin with issues marked with the "community" label, which functions similarly to "good first issue".
 
+---
+
 ## Policy and guidelines for using AI
 
 Our goal in the pgmoneta project is to develop an excellent software system. This requires careful attention to
@@ -166,6 +186,8 @@ create a skeleton for your code.
 * Don't simply ask an LLM to add code comments, as it will likely produce a bunch of text that unnecessarily explains
   what's already clear from the code. If using an LLM to generate comments, be really specific in your request,
   demand succinctness, and carefully edit the result.
+
+---
 
 ### Using AI for communication
 
@@ -196,40 +218,3 @@ Here are some concrete guidelines for using LLMs as part of your communication w
 * Quoting an LLM answer is usually less helpful than linking to relevant primary sources, like source code,
   reference documentation, or web standards. If you do need to quote an LLM answer in a pgmoneta conversation,
   put the answer in a pgmoneta quote block, to distinguish LLM output from your own thoughts.
-
-## Code Style
-
-Please, follow the coding style of the project.
-
-You can use the [clang-format](https://clang.llvm.org/docs/ClangFormat.html) tool to help with the formatting, by running
-
-```
-./clang-format.sh
-```
-
-and verify the changes.
-
-Installation:
-
-**Note:** This project uses clang-format version 21. The CI uses `clang-format` to ensure consistent formatting. Please install `clang-format` locally to match the CI environment.
-
-**Fedora**:
-
-`dnf install clang-tools-extra`
-
-**Ubuntu/Debian**:
-
-`apt install clang-format` or
-
-```
-sudo apt update -y
-sudo apt install -y lsb-release wget software-properties-common gnupg
-wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/llvm-snapshot.gpg
-echo "deb [signed-by=/usr/share/keyrings/llvm-snapshot.gpg] http://apt.llvm.org/$(lsb_release -cs)/ llvm-toolchain-$(lsb_release -cs)-21 main" | sudo tee /etc/apt/sources.list.d/llvm.list
-sudo apt update -y
-sudo apt remove -y clang-format 2>/dev/null || true
-sudo apt install -y clang-format-21
-sudo ln -sf /usr/bin/clang-format-21 /usr/bin/clang-format
-```
-
-**RHEL/Rocky**: `dnf install clang-tools-extra` (or version-specific package if available)

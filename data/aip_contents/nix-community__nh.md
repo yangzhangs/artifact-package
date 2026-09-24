@@ -33,6 +33,8 @@ of support we can receive. This document will streamline the contributing
 process, provide information to help you contribute effectively, and establish
 the guidelines you must be aware of.
 
+---
+
 ## Code of Conduct
 
 This project, and everyone participating within this project or the surrounding
@@ -43,6 +45,8 @@ environment. We expect all contributors to:
 - Accept constructive criticism gracefully
 - Focus on what is best for the community and the project
 - Show empathy towards others
+
+---
 
 ## Making Changes
 
@@ -59,6 +63,8 @@ Lastly, for bug fixes, consider referring to the issue number in the PR
 discussion to make the issue author aware and help close it automatically once
 the fix has been merged.
 
+---
+
 ### Writing Code
 
 [code style guidelines]: #code-style
@@ -71,6 +77,8 @@ the fix has been merged.
    minimal. Code should be self-documenting where possible.
 4. Update the [changelog] with your changes when your work is complete
 
+---
+
 #### Pre-flight Checklist
 
 We use `just` to orchestrate some common maintenance tasks. The `just` tool is
@@ -81,198 +89,8 @@ repository root. It will apply the necessary formatting and linting changes
 enforced by `rustfmt` and `clippy`:
 
 ```bash
-# Check for common issues
-$ just check
 
-# Fix issues that can be fixed automatically
-$ just fix
-```
-
-The `fix` task will run:
-
-- Run `cargo fix` for automatic fixes
-- Run `cargo clippy --fix` for lint fixes
-- Run `cargo fmt` for code formatting
-- Run `taplo fmt` for TOML formatting
-
-while the `check` task runs a "dry-run" of sorts to _check_ for issues without
-modifying anything. If you wish, you may run those commands manually as well.
-
-## Testing
-
-NH features a _massive_ test suite to verify the accuracy for various bits and
-pieces. This helps ensure we do not regress existing features while moving fast.
-While contributing, you are expected to write appropriate tests and run the
-existing test suite.
-
-### Running Tests
-
-For faster, parallel test execution we use `cargo-nextest`. It is included in
-the default Nix devshell.
-
-```bash
-# Run all tests
-$ cargo nextest run
-
-# Or with plain cargo
-$ cargo test
-
-# Or with Just
-$ just test
-```
-
-### Platform-Specific Testing
-
-If your changes affect platform-specific functionality, please try to build your
-project on the relevant platform(s). By design NH supports Linux and Darwin, but
-various other Unixes might also work. The following are first-class targets in
-NH:
-
-- `x86_64-linux`
-- `aarch64-linux`
-- `x86_64-darwin`
-- `aarch64-darwin`
-
-Please try to test on _at least_ `x86_64-linux` and `aarch64-darwin`. The
-`x86_64-darwin` target is set to be phased out with the 26.05 release, as
-Nixpkgs aims to drop it. We may try to support it as long as we can if a Darwin
-maintainer joins the NH team.
-
-## Submitting Changes
-
-### Commit Messages
-
-Please use clear, descriptive commit messages that adhere to **scoped commits**
-format. For example:
-
-```commitmsg
-nixos: don't validate `--profile` path locally when targeting remote
-```
-
-In this commit, the format is `scope: description`. Some common scopes include
-`various`, `treewide`, `chore` or `meta` for common maintenance tasks. In most
-cases, it will be `<module-name>: <description>`. You should also strive to make
-your commits atomic, and focus each commit on one logical change.
-
-You do not need to reference issues in commit bodies, but you _may_ add
-something like `Fixes #XXX` to the long description.
-
-#### Common Scopes
-
-It is _usually_ safe to use the crate or module name for the scope. For example
-if you are editing `crates/nh-core/args.rs` you may use `nh-core:` as the scope.
-If you are editing multiple modules or crates, `various` or `treewide` may be
-more suitable. We use `docs:`, `chore:` and `meta:` for changes around
-documentation, basic maintenance (such as dependency updates) and permanent
-repository changes respectively.
-
-If in doubt, feel free to ask the maintainers for guidance.
-
-### Pull Request Process
-
-While creating a pull request, you will want to first update the CHANGELOG.md
-document that keeps track of changes made to NH. Most changes should target the
-"Unreleased" section, and this section will be renamed to the next tag before a
-tagged release.
-
-There exists a PR template that helps clarify what we are looking for in a PR.
-Please fill it out completely.
-
-After creating a PR, please ensure that all checks pass. At the very least you
-**must** ensure that NH builds on supported platforms, and that
-formatting/linting checks succeed. You will also want to make sure that there
-are no new test failures.
-
-Last but not least, you'll need to wait for maintainer review. If a review takes
-too long, i.e., there has been no reviews after a long time you may give the
-maintainers a gentle nudge by pinging them in the issue.
-
-## Code Style
-
-### Rust
-
-[Cargo manifest]: ./Cargo.toml
-
-NH uses Rust 2024 edition, with most formatting rules codified in
-`.rustfmt.toml`. Naming is standard Rust, where we use:
-
-- `snake_case` for functions and variables
-- `PascalCase` for types and enums
-- `SCREAMING_SNAKE_CASE` for constants
-
-The various lints enforced by default can be found in the [Cargo manifest]. In
-general we do not want lints suppressed, however, `pedantic` and `nursery`
-groups for Clippy sometimes provide false positives. In this case you may
-annotate your code with `#[expect]` with a `reason` parameter.
-
-> [!TIP]
-> `#[expect]` is preferred over `#[allow]` because it will warn if the lint no
-> longer fires (e.g., if it was fixed or the code changed). This catches stale
-> suppressions that would otherwise go unnoticed.
-
-The lints and formatting rules are enforced by the CI, and can be checked easily
-with `just check` as described in [pre-flight checklist](#pre-flight-checklist)
-section.
-
-### Error Handling
-
-Use `color_eyre::Result` and `thiserror::Error`:
-
-```rust
-use color_eyre::Result;
-use thiserror::Error;
-
-#[derive(Error, Debug)]
-pub enum MyError {
-    #[error("something went wrong: {0}")]
-    SomethingWentWrong(String),
-}
-```
-
-Panics, i.e., `panic!`, `unwrap()` and `expect()` are banned throughout the
-codebase but they may be used in tests. It is allowed to suppress them within
-test fields. As described above, you must explicitly use `#[expect]` with the
-`reason` parameter.
-
-### Shell Command Quoting
-
-In general you are expected to use "native" crates where possible rather than
-calling shell commands. In some cases there is no alternative to using shell,
-and you will need to spawn subprocesses to run shell commands. You must always
-use `shlex::try_quote` when constructing shell commands:
-
-```rust
-use shlex::try_quote;
-let safe_arg = try_quote(user_input)?;
-```
-
-### Logging
-
-We use the `tracing` crate for logging throughout NH. Use the appropriate
-macros, and ensure hotpaths provide appropriate debugging information via
-`debug!`.
-
-```rust
-use tracing::{debug, info, warn};
-
-debug!("Detailed debugging information");
-info!("General progress information");
-warn!("Potential issues that aren't errors");
-```
-
-Keep in mind to provide developer-friendly information in `debug!` and `trace!`
-level logs, as those will come in handy for pinpointing code issues.
-
-### Derive Macros
-
-Use strong typing with appropriate derives:
-
-```rust
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
-pub struct MyType {
-    // fields
-}
-```
+---
 
 ## AI Policy
 
@@ -300,6 +118,8 @@ This policy exists for the following reasons:
    disproportionate maintainer effort to review, correct, and integrate
    properly.
 
+---
+
 ### What This Means
 
 - **Prohibited**: Submitting PRs where an AI agent (autonomous or supervised)
@@ -324,25 +144,3 @@ By submitting a pull request, you attest that:
 
 Violations of this policy may result in a permanent ban from contributing to the
 project.
-
-## Getting Help
-
-[GitHub Discussions]: https://github.com/nix-community/nh/discussions
-[GitHub Issues]: https://github.com/nix-community/nh/issues
-
-- **Discussions**: For questions and ideas, use [GitHub Discussions].
-- **Issues**: For bug reports and feature requests, use [GitHub Issues].
-- **Matrix**: You may find the maintainers, `@NotAShelf` and `@faukah`, in
-  various Nix/NixOS community spaces.
-
-## License
-
-[European Union Public License v. 1.2 (EUPL-1.2)]: ./LICENSE
-
-By contributing to NH, you agree that your contributions will be immediately
-licensed under [European Union Public License v. 1.2 (EUPL-1.2)] upon a merge.
-
----
-
-Thank you for contributing to NH! Your efforts help make the Nix ecosystem
-better for everyone.

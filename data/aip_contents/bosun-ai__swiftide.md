@@ -9,9 +9,13 @@ AI Generated code is welcome and not frowned upon. Please be genuine and think c
 
 For AI agents read the [AGENTS.md](AGENTS.md) for workspace layout, commands, and expectations tailored to agents.
 
+---
+
 ## Feature requests and feedback
 
 We love them, please let us know what you would like. Use one of the templates provided.
+
+---
 
 ## Code design
 
@@ -20,9 +24,13 @@ We love them, please let us know what you would like. Use one of the templates p
 * Keep Rust complexity (Arc/Box/Lifetimes/Pinning ...) encapsulated and away from library users
 * Adhere to [Rust api naming](https://rust-lang.github.io/api-guidelines/naming.html) as much as possible
 
+---
+
 ## Bug reports
 
 It happens, but we still love them.
+
+---
 
 ## Submitting pull requests
 

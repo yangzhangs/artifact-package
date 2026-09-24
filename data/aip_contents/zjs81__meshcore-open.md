@@ -7,7 +7,11 @@ rejected. As may changes that are too broad (i.e. 100 files changed) or that
 cover too many separate changes. If the changes are clearly AI generated they
 may also be rejected. [See more](#ai-use)
 
+---
+
 ## First Step Checklist
+
+---
 
 ### **Did you find a bug?**
 
@@ -22,11 +26,15 @@ screenshots or video.
 * DO NOT start work and submit a PR at this time, please discuss the issue and
 your implementation plan first.
 
+---
+
 ### **Did you fix whitespace, format code, or make a purely cosmetic patch?**
 
 Changes that are cosmetic in nature and do not add anything substantial to the
 stability, functionality, or testability of the application will generally not
 be accepted.
+
+---
 
 ### **Do you intend to add a new feature or change an existing one?**
 
@@ -37,6 +45,8 @@ your implementation plan first.
 
 * After it is generally decided that the feature or change fits the goals of the
 project you can start work or open a PR if you have already started.
+
+---
 
 ## Submitting your patch
 
@@ -56,6 +66,8 @@ information on good commit messages.
 * **Before committing changes** on your branch, be sure to run both
 `dart format .` and `flutter analyze`. The continuous development checks will
 fail if issues here are not addressed before hand.
+
+---
 
 ## AI-use
 

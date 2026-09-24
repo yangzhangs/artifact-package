@@ -10,6 +10,8 @@ requests, please consider:
  * Contributions must be authored by a human, LLM-generated code is not allowed.
  * You agree to license your contribution under the Apache 2.0 license.
 
+---
+
 # Code of conduct
 
  * Be nice.

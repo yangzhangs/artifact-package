@@ -1,12 +1,3 @@
-# Contributing
-
-Before code can be accepted all contributors must read the [**code of conduct
-**](https://github.com/embrace-io/embrace-android-sdk/blob/main/CODE_OF_CONDUCT.md) and complete our [**Individual Contributor License
-Agreement (CLA).**](https://forms.gle/SjXadmUcVwh6NrU68)
-
-Our code of conduct applies to all platforms and venues related to this project; please follow it in all your interactions with the project
-and its participants.
-
 ## Pull request guidelines
 
 We welcome all code contributions to the library. If you have a patch adding value to the SDK, let us know!
@@ -26,8 +17,3 @@ violations must be done in code and properly explained. The PR should comprise c
 messages.
 
 Please also make sure your code compiles by running`./gradlew build`
-
-## Questions?
-
-You can reach us at [support@embrace.io](mailto:support@embrace.io) or in
-our [Community Slack](https://join.slack.com/t/embraceio-community/shared_invite/zt-ywr4jhzp-DLROX0ndN9a0soHMf6Ksow).

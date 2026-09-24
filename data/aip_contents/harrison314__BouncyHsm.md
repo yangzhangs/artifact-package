@@ -1,11 +1,5 @@
-# Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
-
-Please note we have a code of conduct. Please follow it in all your interactions with the project.
-
 ## Rules
+
 1. [Clean architecture](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures#clean-architecture) is the primary principle at BouncyHsm.
 1. Do not add external dependencies to the native library. Only _one file libs_ are allowed.
 1. Add unit tests that cover the functionality of your changes including edge cases.

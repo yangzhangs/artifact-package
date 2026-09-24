@@ -1,35 +1,3 @@
-# Contribution Guide
-
-> [!Important]
-> To ensure effective collaboration, please use **English** as the *primary language* for all Issues, Pull Requests, and Commit Messages.
->
-> If you're not comfortable writing in English, feel free to include a translation first, followed by your original text.
-
-Thank you for your interest in contributing!
-
-Before you dive in, please review the guidelines below.\
-Following these steps ensures that all contributions align with the project’s vision and maintain a streamlined workflow.
-
-## Issues
-
-> [!Tip]
-> **Developers in mainland China**:\
-> Before creating an Issue regarding connectivity, please verify that the *terminal environment* has unrestricted access to GitHub and Google services.
-
-- Check existing Issues (*including closed ones*) to avoid duplicates.
-- Follow the provided **template** to ensure all necessary context is included.
-
-### Bug Reports
-
-- Document the steps to reproduce the bug and the expected behavior.
-- Whenever possible, provide a link to a live demo, a screenshot, or the relevant configuration files to help isolate the Issue.
-
-### Enhancement Proposals
-
-- Clearly describe the proposed enhancement and its intended function.
-- Outline the reasoning behind the request and how it improves the user experience.
-- Whenever possible, provide examples, references, or mockups to illustrate the concept.
-
 ## Pull Requests
 
 > [!Warning]
@@ -51,6 +19,8 @@ Following these steps ensures that all contributions align with the project’s 
 > Due to current limitations in Biome's formatting for **Astro** and **Svelte** files, Prettier is used as a fallback for those specific file types.\
 > Please format with Prettier first, then run Biome.
 
+---
+
 ### Development Workflow
 
 1. [Fork](https://github.com/tuyuritio/astro-theme-thought-lite/fork) this repository to your own GitHub account.
@@ -59,6 +29,8 @@ Following these steps ensures that all contributions align with the project’s 
 4. Pull the latest changes from the base repository to avoid conflicts: `git pull origin main`
 5. Push your branch to your fork: `git push origin feat/your-feature`
 6. Open a Pull Request from your branch to the appropriate base branch in this repository.
+
+---
 
 ### Commit Convention
 

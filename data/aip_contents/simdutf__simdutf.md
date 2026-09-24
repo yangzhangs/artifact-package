@@ -4,6 +4,8 @@ Thank you for your interest in contributing to **simdutf**, a high-performance l
 
 Please also review our [AI Usage Policy](AI_USAGE_POLICY.md).
 
+---
+
 ## Table of Contents
 - [Ways to Contribute](#ways-to-contribute)
   - [Reporting Bugs](#reporting-bugs)
@@ -15,10 +17,13 @@ Please also review our [AI Usage Policy](AI_USAGE_POLICY.md).
 - [Documentation](#documentation)
 - [Licensing](#licensing)
 
+---
 
 ## Ways to Contribute
 
 You can contribute by reporting bugs, suggesting features, improving documentation, or submitting code changes.
+
+---
 
 ### Reporting Bugs
 
@@ -32,12 +37,16 @@ We prefer that you use our bug template.
 
 A compiler or static-analyzer warning is not a bug. It is possible with tools such as Visual Studio to require that rarely enabled warnings are considered errors. Do not report such cases as bugs. We do accept pull requests if you want to silence warnings issued by code analyzers, however.
 
+---
+
 ### Suggesting Features
 
 To propose a feature:
 1. Check existing issues to avoid duplicates.
 2. Open an issue.
 3. Describe the feature, its benefits, and potential implementation details.
+
+---
 
 ### Submitting Pull Requests
 
@@ -64,6 +73,8 @@ To contribute code or documentation:
 8. Open a pull request with: A descriptive title and explanation. References to related issues (e.g., "Fixes #123").
 9. Address feedback during review.
 
+---
+
 ## Development Setup
 
 To set up your environment:
@@ -88,6 +99,8 @@ cmake --build build
 
 Under Visual Studio, the instruction varies slightly, please see the CMake or Visual Studio documentation.
 
+---
+
 ## Coding Guidelines
 
 Match the project’s existing style. We use lower-case variables and function names separated by underscores. If you have docker on your system and a bash shell, you can apply clang-format to the code by calling `scripts/clang_format_docker.sh`.
@@ -111,6 +124,7 @@ Comments: Document complex logic clearly. It is fine to use multiple lines of te
 
 Dependencies: Avoid new external dependencies unless approved.
 
+---
 
 ## Adding functions
 
@@ -122,6 +136,8 @@ python3 scripts/add_function.py add.sig
 ```
 
 Read [README_ADD_FUNCTION.md](scripts/README_ADD_FUNCTION.md) for details.
+
+---
 
 ## Testing
 
@@ -156,9 +172,11 @@ The scripts `./scripts/benchmark_print.py`and `./scripts/base64bench_print.py` c
 
 We recommend that you run our fuzzers as well, please see `fuzz/README.md`.
 
-
+---
 
 ## Tips
+
+---
 
 ### Running a single test
 
@@ -168,6 +186,8 @@ Our testing binaries allow you to run specific tests which can be convenient:
 cmake --build build --target base64_tests  && ./build/tests/base64_tests -t roundtrip_base64_with_garbage
 ```
 
+---
+
 ## Including fallback kernel
 
 By default, we may disable the fallback kernel on some systems. You can force it on with `SIMDUTF_ALWAYS_INCLUDE_FALLBACK`:
@@ -176,6 +196,7 @@ By default, we may disable the fallback kernel on some systems. You can force it
 cmake -B build  -DSIMDUTF_ALWAYS_INCLUDE_FALLBACK=ON
 ```
 
+---
 
 ### C++20
 
@@ -186,6 +207,7 @@ are only available when C++20 is set.
 cmake -B build20  -DSIMDUTF_CXX_STANDARD=20 -DSIMDUTF_ALWAYS_INCLUDE_FALLBACK=ON
 ```
 
+---
 
 ### Adapting internal buffers
 
@@ -195,6 +217,8 @@ Some bugs are easier to track if internal buffers are reduced.
 cmake -B buildfuzz20  -DSIMDUTF_CXX_STANDARD=20 -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=ON -DSIMDUTF_ALWAYS_INCLUDE_FALLBACK=ON
 ```
 
+---
+
 ### Add sanitizers!
 
 Try to combine these flags with the sanitizers and logging/asserts for best results.
@@ -203,14 +227,77 @@ Try to combine these flags with the sanitizers and logging/asserts for best resu
 cmake -B buildsani  -DSIMDUTF_CXX_STANDARD=20 -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION=ON -DSIMDUTF_ALWAYS_INCLUDE_FALLBACK=ON -DSIMDUTF_SANITIZE=ON -DSIMDUTF_LOGGING=ON
 ```
 
+---
+
 ## Documentation
 
 Update documentation for any changes: Modify README.md or other files as needed. Provide clear examples for new features. Ensure accuracy and clarity.
+
+---
 
 ## Licensing
 Contributions are licensed under the project’s license. Ensure your work complies and does not infringe on third-party rights.
 
 Thank you for contributing to simdutf! Your efforts help make this library faster and more robust. For questions, use GitHub Issues or discussions.
+
+[=== 独立AI政策文件: AI_USAGE_POLICY.md ===]
+
+# AI Usage Policy
+
+Contributors can use whatever tools they would like to
+craft their contributions, but there must be a **human in the loop**.
+**Contributors must read and review all LLM-generated code or text before they
+ask other project members to review it.** The contributor is always the author
+and is fully accountable for their contributions. Contributors should be
+sufficiently confident that the contribution is high enough quality that asking
+for a review is a good use of scarce maintainer time, and they should be **able
+to answer questions about their work** during review.
+
+We expect that new contributors will be less confident in their contributions,
+and our guidance to them is to **start with small contributions** that they can
+fully understand to build confidence. We aspire to be a welcoming community
+that helps new contributors grow their expertise, but learning involves taking
+small steps, getting feedback, and iterating. Passing maintainer feedback to an
+LLM doesn't help anyone grow, and does not sustain our community.
+
+This policy includes, but is not limited to, the following kinds of
+contributions:
+
+- Code, usually in the form of a pull request
+- Issues or security vulnerabilities
+- Comments and feedback on pull requests
+
+## Extractive Contributions
+
+The reason for our "human-in-the-loop" contribution policy is that processing
+patches, PRs, RFCs, and comments is not free -- it takes a lot of
+maintainer time and energy to review those contributions! Sending the
+unreviewed output of an LLM to open source project maintainers *extracts* work
+from them in the form of design and code review, so we call this kind of
+contribution an "extractive contribution".
+
+## Transparency
+
+For contributions involving significant AI assistance, we encourage you to disclose 
+its use and explain your process. If a submission appears to rely heavily on AI 
+without disclosure, we may doubt that the **human-in-the-loop** requirement has
+been met. Please show awareness of your use of AI.
+
+## Copyright
+
+Artificial intelligence systems raise many questions around copyright that have
+yet to be answered. Our policy on AI tools is similar to our copyright policy:
+Contributors are responsible for ensuring that they have the right to
+contribute code under the terms of our license, typically meaning that either
+they, their employer, or their collaborators hold the copyright. Using AI tools
+to regenerate copyrighted material does not remove the copyright, and
+contributors are responsible for ensuring that such material does not appear in
+their contributions. Contributions found to violate this policy will be removed
+just like any other offending contribution.
+
+## Reference
+
+- [LLVM AI Tool Use Policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159)
 
 ---
 
@@ -272,4 +359,3 @@ just like any other offending contribution.
 ## Reference
 
 - [LLVM AI Tool Use Policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159)
-

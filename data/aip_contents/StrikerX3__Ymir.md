@@ -1,41 +1,3 @@
-# Contributing to Ymir
-
-You can contribute to the project by:
-- Reporting bugs
-- Requesting features or improvements
-- Proposing pull requests
-
-The sections below explain how each of them work.
-
-## Reporting bugs
-
-Before reporting bugs, make sure you also test the [latest nightly build](https://github.com/StrikerX3/Ymir/releases/tag/latest-nightly) -- there's a chance the bug might've been already fixed.
-Also refer to the [troubleshooting guide](TROUBLESHOOTING.md) for further instructions that might solve the issue.
-
-If the bug persists, check that it hasn't already been reported by searching through the [Issues](https://github.com/StrikerX3/Ymir/issues). If you can't find an existing report, open a new one and provide the following information:
-- Ymir version(s) tested (go to **Help > About** and click **Copy version**)
-- Game name/title, if the bug is specific to a game
-- Game disc image format (CUE + single BIN, CUE + multiple BINs, MAME CHD, etc.)
-- Instructions for reproducing the bug
-- Expected vs. actual behavior, with screenshots/videos if applicable
-- If the error occurs at a late stage in the game, provide a save/backup file and instructions to reach the point
-  - Save states can be provided for difficult to execute actions such as complex fighting game combos
-    - If you provide a save state from a nightly build, you must include the emulator version used to generate it
-
-Additional information you can provide that might help identify the issue faster:
-- Emulation settings/tweaks (open **Settings > Tweaks** and click **Copy to clipboard**)
-- Last known working version, if you tested multiple versions and found one that works
-- Output from other emulators (preferably Mednafen), or ideally output from a real Sega Saturn console
-- Operating system, CPU (SSE2/AVX2/ARM), GPU for problems that affect the application as a whole (e.g. Ymir itself freezes, crashes, fails to start, etc.)
-
-The more details, the easier it is to find and fix a bug. Don't go overboard, though! Keep it simple and straight to the point.
-
-## Requesting features or improvements
-
-As with bugs, make sure the feature hasn't been already requested by searching existing [Issues](https://github.com/StrikerX3/Ymir/issues).
-
-The issue should explain what you want to see added or improved in Ymir. Provide examples, screenshots or links to other emulators or applications for inspiration.
-
 ## Proposing pull requests
 
 Pull requests must explain what they're proposing and the rationale behind changes. Provide links to existing bugs they fix or features they implement if applicable.
@@ -45,6 +7,8 @@ AI-generated PR descriptions are fine. AI-generated code will be thoroughly scru
 Ymir's code is entirely human-written; AI has only been used to acquire knowledge.
 
 Code contributions must follow the code standards and formatting guidelines described below.
+
+---
 
 ### Coding guidelines
 
@@ -91,10 +55,14 @@ If cloning submodules, use HTTPS, not SSH, as some build pipelines won't be able
 Make a custom CMakeLists.txt if the dependency's own file doesn't behave well as a dependency or if you only need a subset of functionality from the library.
 See existing vendored dependencies for examples and the comments in [vendor/CMakeLists.txt](/vendor/CMakeLists.txt) for more details.
 
+---
+
 ### Code formatting/style
 
 The project includes a [`.clang-format`](/.clang-format) settings file which applies to all C/C++ code (except for vendored dependencies).
 Make sure to run your IDE's automatic code formatting or run `clang-format` on all modified files.
+
+---
 
 ### Naming conventions
 

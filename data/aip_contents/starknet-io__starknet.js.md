@@ -11,6 +11,8 @@ _[Use the GitHub interface](https://blog.sapegin.me/all/open-source-for-everyone
 > All contributions are expected to be of the highest possible quality! That means the PR is thoroughly tested and documented, without relying on blindly generated AI code and documentation. We will not consider or merge PRs that do not comply with these rules!
 > A single typo PR would be automatically closed, except for major refactoring for the latest or next versions.
 
+---
+
 ## Development workflow
 
 - If it’s your first pull request, watch [this amazing course](http://makeapullrequest.com/) by [Kent C. Dodds](https://twitter.com/kentcdodds)
@@ -31,6 +33,8 @@ _[Use the GitHub interface](https://blog.sapegin.me/all/open-source-for-everyone
 - **Don’t forget to add tests and [update the documentation](./www/README.md) for your changes.**
 
 - **Please update the npm lock file (`package-lock.json`) if you add or update dependencies.**
+
+---
 
 ### Running tests
 
@@ -66,6 +70,8 @@ Do the following steps:
 - Run `docker pull shardlabs/starknet-devnet-rs:latest` in your terminal, or go to [starknet-devnet-rs](https://hub.docker.com/r/shardlabs/starknet-devnet-rs/tags), copy and run the `docker pull` command from the appropriate tag
 - Run the tests
 
+---
+
 ### Commit messages
 
 **For commit messages use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), like so: `feat(scope): topic`**
@@ -92,6 +98,8 @@ chore: add comments
 fix: repair some other bug
 ```
 
+---
+
 ### Branches and pull request targets
 
 |                   Branch                   |    NPM Tag    | PR Target                                                                                                                                                                                                                                                                                                                |
@@ -100,6 +108,8 @@ fix: repair some other bug
 |                   `beta`                   |    `beta`     | For major changes that markedly transform the existing API or significantly alter the behavior of some functionality, ensure that the corresponding commits contain appropriate `Conventional Commits` breaking change notations, and as the pull request target, select the `beta` branch.                              |
 |                   `main`                   |   `latest`    | Should only be used by maintainers.<br><br> After a `develop`/`next` version has proven to be stable, it is promoted to `latest` by merging into `main`.                                                                                                                                                                 |
 | `maintenance/x.y` <br> `maintenance/x.y.z` | `maintenance` | Should only be used by maintainers.<br><br> Branches with the `maintenance` prefix are used for applying adjustments to versions that have been merged into `main` but are no longer the `latest` release. They should be created from the corresponding Git tag and can have either minor or patch version specificity. |
+
+---
 
 ## Other notes
 
@@ -110,6 +120,8 @@ fix: repair some other bug
 - Use `npm run test:coverage` for a complete project test coverage.
 - Use, for example, `npm run test:coverage __tests__/utils/uint256.test.ts` for a single file coverage.
 - Use `npm run ts:coverage` to check the global type coverage rate and `npm run ts:coverage:report` to generate a complete report (summary displayed in the console, full HTML report available in the `coverage-ts` folder by launching `./coverage-ts/index.html` in your browser) and find files having low coverage.
+
+---
 
 ## Need help?
 

@@ -7,6 +7,8 @@ Hi! We, the maintainers, are really excited that you are interested in contribut
 - [Development Guide](#development-guide)
 - [AI Tool Policy](#ai-tool-policy)
 
+---
+
 ## Issue Reporting Guidelines
 
 - The issue list of this repo is **exclusively** for bug reports and feature requests. Non-conforming issues will be closed immediately.
@@ -27,6 +29,8 @@ Hi! We, the maintainers, are really excited that you are interested in contribut
 
 - Most importantly, we beg your patience: the team must balance your request against many other responsibilities — fixing other bugs, answering other questions, new features, new documentation, etc. The issue list is not paid support and we cannot make guarantees about how fast your issue can be resolved.
 
+---
+
 ## Pull Request Guidelines
 
 - You have to [sign your commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
@@ -42,9 +46,13 @@ Hi! We, the maintainers, are really excited that you are interested in contribut
 
 - If the PR is meant to be released, follow the instructions in `.changes/readme.md` to log your changes. ie. [readme.md](https://github.com/tauri-apps/plugins-workspace/blob/v2/.changes/readme.md)
 
+---
+
 ## Development Guide
 
 **NOTE: If you have any question don't hesitate to ask in our Discord server. We try to keep this guide to up guide, but if something doesn't work let us know.**
+
+---
 
 ### General Setup
 
@@ -54,6 +62,8 @@ To set up your machine for development, follow the [Tauri setup guide](https://v
 
 Next, [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) and clone [this repository](https://github.com/tauri-apps/plugins-workspace/tree/v2).
 
+---
+
 ### Developing and testing
 
 The easiest way to test your changes is to use the [example app](https://github.com/tauri-apps/plugins-workspace/tree/v2/examples/api) example app. It automatically rebuilds and uses your local copy of the plugins. To run it follow the instructions inside [README.md](https://github.com/tauri-apps/plugins-workspace/blob/v2/examples/api/README.md).
@@ -61,6 +71,8 @@ The easiest way to test your changes is to use the [example app](https://github.
 To test local changes against your own application simply point the plugin create to your local repository, for example:
 
 `tauri-plugin-sample = { path = "path/to/local/tauri-plugin-sample/" }`
+
+---
 
 ## AI Tool Policy
 

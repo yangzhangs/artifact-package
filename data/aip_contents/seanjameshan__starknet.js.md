@@ -11,12 +11,16 @@ _[Use GitHub interface](https://blog.sapegin.me/all/open-source-for-everyone/) f
 > All contributions are expected to be of the highest possible quality! That means the PR is thoroughly tested and documented, without relying on blindly generated AI code and documentation. We will not consider or merge PRs that do not comply with these rules!
 > A single typo PR would be automatically closed, except for major refactoring for the latest or next versions.
 
+---
+
 ## Prerequisites
 
 - If it’s your first pull request, watch [this amazing course](http://makeapullrequest.com/) by [Kent C. Dodds](https://twitter.com/kentcdodds).
 - Fork the repository and clone your fork.
 - Checkout to the `develop` branch.
 - Install dependencies: `npm install`.
+
+---
 
 ## Development workflow
 
@@ -66,6 +70,8 @@ Documentation can be archived by using JSDoc.
 
 **Please update the npm lock file (`package-lock.json`) if you add or update dependencies.**
 
+---
+
 ### Commit messages
 
 **For commit messages use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), like so: `feat(scope): topic`**
@@ -92,11 +98,15 @@ chore: add comments
 fix: repair some other bug
 ```
 
+---
+
 ### Pull request targets
 
 For the most common pull requests, such as bug fixes, feature additions, documentation changes, etc., target the `develop` branch.
 
 For major changes that markedly transform the existing API or significantly alter the behavior of some functionality, ensure that the corresponding commits contain appropriate `Conventional Commits` breaking change notations, and as the pull request target, select the `beta` branch.
+
+---
 
 ## Other notes
 
@@ -107,6 +117,8 @@ For major changes that markedly transform the existing API or significantly alte
 - Use `npm run test:coverage` for a complete project test coverage.
 - Use, for example, `npm run test:coverage __tests__/utils/uint256.test.ts` for a single file coverage.
 - Use `npm run ts:coverage` to check the global type coverage rate and `npm run ts:coverage:report` to generate a complete report (summary displayed in the console, full HTML report available in the `coverage-ts` folder by launching `./coverage-ts/index.html` in your browser) and find files having low coverage.
+
+---
 
 ## Need help?
 

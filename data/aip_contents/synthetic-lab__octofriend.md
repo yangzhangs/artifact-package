@@ -1,7 +1,3 @@
-# Contributing to Octofriend
-
-Thank you for your interest in contributing to Octofriend! We welcome contributions in many forms: code, bug reports, and documentation improvements. Before diving in, please take a moment to read through these guidelines so we can keep the project healthy and the review process smooth for everyone.
-
 ## Table of Contents
 
 - [Before You Start](#before-you-start)
@@ -12,45 +8,6 @@ Thank you for your interest in contributing to Octofriend! We welcome contributi
 - [A Note on AI-Assisted Code](#a-note-on-ai-assisted-code)
 
 ---
-
-## Before You Start
-
-- Check existing [issues](https://github.com/synthetic-lab/octofriend/issues) and [pull requests](https://github.com/synthetic-lab/octofriend/pulls) to avoid duplicating work.
-- For new features, discuss your approach in a [#feature-request](https://discord.com/channels/1315627714056687706/1476772316401893407) post in our [Discord](https://synthetic.new/discord) or in a Github issue. We may have opinions on the direction, and it's better to align early than after you've put in the work.
-- If you want to work on an open issue or feature, comment on it (either on Discord or GH Issues) to let others know.
-
----
-
-## Development Setup
-
-**Getting started:**
-
-```bash
-# Fork the repo on GitHub, then clone your fork:
-git clone https://github.com/your-username/octofriend.git
-cd octofriend
-
-# Install dependencies:
-npm install
-
-# Build & run the project:
-npm run exec
-```
-
-**Canary builds:**
-
-If you ever want to run your local checkout directly instead of a published release, source `canary.sh` in your shell config:
-
-```bash
-# Add this to your ~/.zshrc or ~/.bashrc:
-source /path/to/octofriend/canary.sh
-```
-
-This defines a `canary-octo` command that builds your current checkout and runs it on the spot. Useful for testing your changes without a full publish cycle:
-
-```bash
-canary-octo
-```
 
 ---
 
@@ -65,6 +22,8 @@ canary-octo
 7. **Run your PR through an AI code-review agent** Code-review agents help catch any obvious bugs or nits, requiring less back-and-forth for everyone!
 8. **Mark drafts as drafts.** If your PR isn't ready for review, open it as a Draft.
 
+---
+
 ### When we may close your PR
 
 We put a lot of care into keeping the codebase coherent. We may close a PR without merging if:
@@ -76,23 +35,13 @@ We put a lot of care into keeping the codebase coherent. We may close a PR witho
 
 We'll always try to explain our reasoning, and a closed PR doesn't mean "never". If you want to revisit the direction, open an issue first and let's talk it through.
 
+---
+
 ### Review times
 
 We're a small team. We do our best to review PRs promptly, but please give us some grace if it takes a little while to get to yours. If your PR has been sitting for a couple of weeks with no response, feel free to leave a polite comment and we'll pick it up.
 
 ---
-
-## Code Style
-
-- Prettier handles formatting automatically. Just run `npm run format`.
-- Prefer `type Blah = { ... }` over `interface Blah { ... }` unless you specifically need an interface (i.e., it's designed for classes to implement).
-- Keep things simple. Don't add abstractions, helpers, or generalization for hypothetical future needs.
-- Remove redundant comments that restate what the code already says. If your AI assistant added them, delete them before submitting. For example, delete these kinds of comments:
-
-```ts
-// Increments the counter by one
-counter++;
-```
 
 ---
 
@@ -108,6 +57,8 @@ A good bug report makes it much easier to reproduce and fix the issue. Please in
 - **Screenshots or recordings**: especially if the issue is visual or involves terminal rendering
 
 Please search existing issues before opening a new one.
+
+---
 
 ---
 

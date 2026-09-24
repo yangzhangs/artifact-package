@@ -1,7 +1,3 @@
-# How to Contribute
-
-Eligibility Made Easy (Emmy) is being developed in the open by CMS and its contractors. We use internal tools to track our work (bugs and feature enhancements).
-
 # Contribution Guidelines
 While every raised pull request will be reviewed by the Emmy team, in general we don’t accept PRs that
 * Don’t directly address an existing issue
@@ -11,19 +7,29 @@ While every raised pull request will be reviewed by the Emmy team, in general we
 * Are untested / don’t pass our test suite / don’t pass our linters / don’t follow established style
 * Are entirely AI generated
 
+---
+
 ## Getting Started
+
+---
 
 ### Team Specific Guidelines
 
 <!-- TODO: This section helps contributors understand any team structure in the project (formal or informal.) Encouraged to point towards the MAINTAINERS.md file for further details.-->
 
+---
+
 ### Building dependencies
 
 <!--- TODO: This step is often skipped, so don't forget to include the steps needed to install on your platform. If you project can be multi-platform, this is an excellent place for first time contributors to send patches!-->
 
+---
+
 ### Building the Project
 
 <!--- TODO: Be sure to include build scripts and instructions, not just the source code itself! -->
+
+---
 
 ### Workflow and Branching
 
@@ -39,9 +45,13 @@ We follow the [GitHub Flow Workflow](https://guides.github.com/introduction/flow
 7.  Wait for your change to be pulled into main
 8.  Delete your feature branch
 
+---
+
 ### Testing Conventions
 
 <!--- TODO: Discuss where tests can be found, how they are run, and what kind of tests/coverage strategy and goals the project has. -->
+
+---
 
 ### Coding Style and Linters
 
@@ -53,6 +63,8 @@ We follow the [GitHub Flow Workflow](https://guides.github.com/introduction/flow
 4. Mention any other content guidelines the project adheres to (e.g. plainlanguage.gov, etc...)
 
 -->
+
+---
 
 ### Writing Issues
 
@@ -76,6 +88,8 @@ When creating an issue please try to adhere to the following format:
 
     see our .github/ISSUE_TEMPLATE.md for more examples.
 -->
+
+---
 
 ### Writing Pull Requests
 
@@ -143,6 +157,8 @@ Some important notes regarding the summary line:
     see our .github/PULL_REQUEST_TEMPLATE.md for more examples.
 -->
 
+---
+
 ## Reviewing Pull Requests
 
 <!--- TODO: Make a brief statement about how pull-requests are reviewed, and who is doing the reviewing. Linking to MAINTAINERS.md can help.
@@ -171,10 +187,15 @@ authorship metadata will be preserved.
 -->
 
 <!--
+
+---
+
 ## Shipping Releases
 
 <!-- TODO: What cadence does your project ship new releases? (e.g. one-time, ad-hoc, periodically, upon merge of new patches) Who does so? 
 -->
+
+---
 
 ## Documentation
 
@@ -184,14 +205,19 @@ We also welcome improvements to the project documentation or to the existing
 docs. Please file an [issue](https://github.com/{{ cookiecutter.project_org }}/{{ cookiecutter.project_repo_name }}/issues).
 -->
 
+---
 
 ## Policies
+
+---
 
 ### Open Source Policy
 
 We adhere to the [CMS Open Source
 Policy](https://github.com/CMSGov/cms-open-source-policy). If you have any
 questions, just [shoot us an email](mailto:opensource@cms.hhs.gov).
+
+---
 
 ### Security and Responsible Disclosure Policy
 
@@ -204,6 +230,8 @@ the American public, but you are also welcome to submit anonymously.
 <!-- markdown-link-check-enable -->
 
 For more information about our Security, Vulnerability, and Responsible Disclosure Policies, see [SECURITY.md](SECURITY.md).
+
+---
 
 ## Public domain
 

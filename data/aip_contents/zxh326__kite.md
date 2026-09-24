@@ -1,7 +1,3 @@
-# Contributing
-
-Thanks for contributing to Kite.
-
 ## Before Opening a PR
 
 - AI-assisted coding is welcome. Maintainers also use AI.

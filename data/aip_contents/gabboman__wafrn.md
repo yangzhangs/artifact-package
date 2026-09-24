@@ -1,7 +1,3 @@
-# How to contribute
-
-Do prs to the branch development if possible
-
 # AI Contributions Policy
 
 We do not accept contributions that had Artificial Intelligence, specifically Large Language Models or Image Diffusion Models involved in any step. We ask contributors to refrain from contributing code made with such tools.

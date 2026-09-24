@@ -6,6 +6,8 @@ I'm fairly accepting to all PR's, only with a couple caveats:
 - Do not submit low-effort or purely LLM generated code. If you absolutely must, please disclose _how_ you used AI otherwise I will close the PR.
 - Please try to (when possible) contribute to an [issue](https://github.com/cachebag/nmrs/issues). This is not a hard ask, I'll still consider your contribution if it makes sense.
 
+---
+
 ## Requirements
 
 **To run or develop nmrs you need:**
@@ -47,10 +49,15 @@ cargo check                  # you get the point...
 **To develop nmrs-gui, you'll need:**
 - GTK4 and libadwaita development libraries
 - A Wayland compositor
+
+---
+
 ## When your branch falls behind `master`
 
 If the respective branch for a PR goes out of sync, I prefer you _rebase_. 
 I've exposed this setting for you to to automatically do so as a contributor on any PR you open.
+
+---
 
 ## Issues and Commit Message Hygiene
 When you've made changes and are ready to commit, I prefer that you follow the standards explained [here](https://www.conventionalcommits.org/en/v1.0.0/).
@@ -65,21 +72,28 @@ Obviously, if there is no issue number to attach, no need to add anything there.
 Lastly, please ensure you make [atomic commmits](https://en.wikipedia.org/wiki/Atomic_commit).
 
 
-All issues are acceptable. If a situation arises where a request or concern is not valid, I will respond directly to the issue. 
+All issues are acceptable. If a situation arises where a request or concern is not valid, I will respond directly to the issue.
 
+---
 
 ## Tests
 All tests must pass before a merge takes place.
+
+---
 
 ### Ensure NetworkManager is running
 ```bash
 sudo systemctl start NetworkManager
 ```
 
+---
+
 ### Test everything (unit + integration)
 ```bash
 cargo test --all-features
 ```
+
+---
 
 ### Integration tests
 These require WiFi hardware. Please make sure you 
@@ -97,6 +111,8 @@ sudo modprobe -r mac80211_hwsim
 > [!NOTE]
 >
 > This method only works on linux
+
+---
 
 ## License
 

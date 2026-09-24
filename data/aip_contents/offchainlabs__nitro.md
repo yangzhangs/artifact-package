@@ -17,6 +17,8 @@ You can explore our [Open Issues](https://github.com/offchainlabs/nitro/issues) 
 > * Refactors that don't improve usability
 <!-- end-trivial-prs -->
 
+---
+
 ## Contribution Steps
 
 **1. Build Nitro locally following our instructions in our [docs](https://docs.arbitrum.io/run-arbitrum-node/nitro/build-nitro-locally).**

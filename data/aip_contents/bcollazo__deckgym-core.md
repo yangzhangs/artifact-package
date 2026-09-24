@@ -2,6 +2,8 @@
 
 Thank you for considering contributing to DeckGym! We welcome contributions from everyone, regardless of your programming experience. Whether you're new to coding, learning Rust, or wanting to practice modern AI-assisted development, this is a great place to start.
 
+---
+
 ## New to Programming?
 
 Don't let inexperience hold you back! This project is an excellent opportunity to learn:
@@ -11,7 +13,7 @@ Don't let inexperience hold you back! This project is an excellent opportunity t
 
 We encourage using AI tools like **Claude Code** (recommended) to help you understand the codebase, write code, and learn best practices along the way.
 
-## How to Contribute
+---
 
 ### Getting Started with Claude Code (Recommended)
 
@@ -28,6 +30,8 @@ Implement Mantyke's attack
 ```
 
 Claude Code will guide you through the implementation, explain the code, and help you understand the patterns used in the project.
+
+---
 
 ### Standard Git Workflow
 
@@ -52,28 +56,3 @@ Claude Code will guide you through the implementation, explain the code, and hel
    git push origin my-feature-branch
    ```
 7. **Create a Pull Request**: Go to the repository on GitHub and click "New Pull Request".
-
-## Reporting Issues
-
-If you find a bug or have a feature request, please create an issue on GitHub. Provide as much detail as possible to help us understand and address the issue.
-
-## Code Quality Checks
-
-Before submitting your pull request, make sure your code passes these checks (CI will run them automatically):
-
-**Format your code:**
-```sh
-cargo fmt
-```
-
-**Run the linter:**
-```sh
-cargo clippy --features tui -- -D warnings
-```
-
-**Run the test suite:**
-```sh
-cargo test --features "tui test-utils"
-```
-
-Thank you for your contributions!

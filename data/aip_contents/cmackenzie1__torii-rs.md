@@ -1,20 +1,3 @@
-# Contributing to Torii
-
-Thank you for considering contributing to Torii! This document outlines the process for contributing to the project and our expectations for contributions.
-
-## Code of Conduct
-
-Contributors are expected to maintain a respectful and inclusive environment. Be considerate of differing viewpoints and experiences, and focus on constructive feedback and collaboration.
-
-## Getting Started
-
-1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/torii-rs.git`
-3. Create a branch for your feature or fix: `git checkout -b your-feature-name`
-4. Make your changes following our code style.
-5. Run tests and linting: `make check` and `make fmt`
-6. Submit a pull request
-
 ## AI/LLM Usage Policy
 
 We allow and encourage AI-assisted contributions, but we maintain high standards for code quality:

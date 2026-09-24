@@ -1,93 +1,8 @@
-# Contributing
-
-## Development install
-
-> [!NOTE]
-> NodeJS is required to build the extension package. Installation instructions [here](https://nodejs.org/en/download/).
-
-The `jlpm` command is JupyterLab's pinned version of
-[yarn](https://yarnpkg.com/) that is installed with JupyterLab. You may use
-`yarn` or `npm` in lieu of `jlpm` below.
-
-```bash
-# Clone the repo to your local environment
-# Change directory to the qiskit-code-assistant-jupyterlab directory
-# Install package in development mode
-pip install -e "."
-# Link your development version of the extension with JupyterLab
-jupyter labextension develop . --overwrite
-# Server extension must be manually installed in develop mode
-jupyter server extension enable qiskit_code_assistant_jupyterlab
-# Rebuild extension Typescript source after making changes
-jlpm build
-```
-
-You can watch the source directory for changes in the extension's source and automatically rebuild the extension, then run JupyterLab at the same time in a different terminal.
-
-```bash
-# Watch the source directory in one terminal, automatically rebuilding when needed
-jlpm watch
-# Run JupyterLab in another terminal
-jupyter lab
-```
-
-With the watch command running, every saved change will immediately be built locally and available in your running JupyterLab. Refresh JupyterLab to load the change in your browser (you may need to wait several seconds for the extension to be rebuilt).
-
-By default, the `jlpm build` command generates the source maps for this extension to make it easier to debug using the browser dev tools. To also generate source maps for the JupyterLab core extensions, you can run the following command:
-
-```bash
-jupyter lab build --minimize=False
-```
-
-## Testing
-
-This extension uses Jest for unit testing. The test suite includes 60+ tests covering API services, autocomplete functionality, completion providers, and utility functions with excellent coverage of core business logic.
-
-### Quick Start
-
-```bash
-# Run all tests
-jlpm test
-
-# Run tests in watch mode (useful during development)
-jlpm test:watch
-
-# Run tests with coverage report
-jlpm test:coverage
-```
-
-### Comprehensive Testing Guide
-
-For detailed information about the testing infrastructure, including:
-
-- Test structure and organization
-- Writing new tests
-- Mocking dependencies
-- Debugging tests
-- CI/CD integration
-- Best practices
-
-Please refer to **[TESTING.md](TESTING.md)** for the complete testing guide.
-
-## Development uninstall
-
-```bash
-# Server extension must be manually disabled in develop mode
-jupyter server extension disable qiskit_code_assistant_jupyterlab
-pip uninstall qiskit_code_assistant_jupyterlab
-```
-
-In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
-command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `qiskit-code-assistant-jupyterlab` within that folder.
-
-## Packaging the extension
-
-See [RELEASE](RELEASE.md)
-
 ## AI Development Assistant Support
 
 This repository includes [AGENTS.md](AGENTS.md), a comprehensive guide designed to help AI development assistants (like IBM Bob, Claude Code, GitHub Copilot, Cursor AI, Windsurf, and others) understand and work effectively with this codebase.
+
+---
 
 ### What's in AGENTS.md?
 
@@ -99,6 +14,8 @@ The file provides AI assistants with:
 - **Code conventions** - TypeScript standards, JupyterLab patterns, and best practices
 - **Troubleshooting** - Common issues and debugging workflows
 - **Constraints** - What the extension does and doesn't do
+
+---
 
 ### Using AI Assistants for Development
 

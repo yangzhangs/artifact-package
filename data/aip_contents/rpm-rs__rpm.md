@@ -1,17 +1,3 @@
-# Contributing Guidelines
-
-## Submitting a pull request
-
-If the PR is not yet ready to be reviewed by the maintainers, ensure it is marked as "Draft". When it is ready, mark it as "Ready for Review".
-
-Before marking a PR as ready for review, ensure:
-
-* Commits are cleanly separated and have useful messages that explain WHAT changed and WHY.
-* A changelog entry has been added to CHANGELOG.md under `## Unreleased`.
-* Code has been appropriately documented (doc comments, etc.)
-* Test coverage is excellent and passes with `--all-features` enabled.
-* Reference related issues with "Closes #N" at the bottom of commit messages.
-
 ## AI-assisted contributions policy
 
 The following policy is adapted from the [DNF AI contributions policy](https://github.com/rpm-software-management/dnf5/blob/main/CONTRIBUTING.md) which is in turn adapted from the [the Fedora Council AI-Assisted Contributions Policy](https://docs.fedoraproject.org/en-US/council/policy/ai-contribution-policy/), which was originally authored by Jason Brooks, the Fedora Council, and the Fedora community.

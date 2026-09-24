@@ -1,7 +1,3 @@
-# Contributing
-
-Please have a look at our [documentation site](https://subnauticanitrox.github.io/Documentation/) for contribution guidelines & information on how to get started.
-
 ## Stand on AI and generated issues & PRs
 
 We generally don't want to tell you what tools to use (you undoubting minimalistic vi enjoyer), but we ideally want to have clean and minimal code, issues and pull requests. \

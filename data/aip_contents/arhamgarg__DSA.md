@@ -6,7 +6,11 @@ We’re so glad you’re here and interested in contributing to this project. Be
 ⚠️ **Important**: AI-generated code is strongly discouraged in this repository.  
 This repo is meant for *your own learning* — writing and debugging code yourself will help you grow as a developer.
 
+---
+
 ## **How to Contribute**
+
+---
 
 ### **1. Fork the Repository**
 
@@ -20,12 +24,16 @@ cd DSA
 ```
 *(Replace `<your-username>` with your GitHub username.)*
 
+---
+
 ### **2. Set Upstream**
 
 To keep your fork up-to-date with the original repository:
 ```bash
 git remote add upstream https://github.com/arhamgarg/DSA.git
 ```
+
+---
 
 ### **3. Create a New Branch**
 
@@ -39,6 +47,8 @@ Examples:
 
 Now you’re all set to start coding!
 
+---
+
 ## **What Can You Contribute?**
 
 There’s plenty to do! Here are some ways you can help:
@@ -47,6 +57,8 @@ There’s plenty to do! Here are some ways you can help:
 2. **Bug Fixes**: Fix those pesky bugs!
 3. **Documentation**: Add examples, comments, or improve the README. This helps others understand the code better.
 4. **Different approaches and Proposing new problems**: Implement a new approach to solve an existing problem in the repository. If you feel like something could be added as a problem, feel free to open an issue and put your problem request as comments.
+
+---
 
 ## **Submitting Your Changes**
 
@@ -72,6 +84,8 @@ Once your changes are ready:
 4. **Feedback Time**
    Reviewers might leave comments—don’t worry, it’s all to make your work shine! Update your code and resubmit when needed.
 
+---
+
 ## **Coding Standards**
 
 Great code is readable and consistent. Here are some tips to keep in mind:
@@ -94,6 +108,8 @@ Great code is readable and consistent. Here are some tips to keep in mind:
 | Python               | **ruff**              | `ruff format .`               |
 | Rust                 | **rustfmt**           | `cargo fmt`                   |
 | TypeScript           | **biome**             | `biome check --write .`       |
+
+---
 
 ## **Community Support**
 

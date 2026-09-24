@@ -22,6 +22,8 @@ we'll figure something out.
 If you're looking for backlog to tackle since you want to practice AI coding,
 check out https://github.com/ezyang/codemcp/issues
 
+---
+
 ## Local development tips
 
 Instead of using uvx directly, I have a uv venv setup in my source directory
@@ -41,20 +43,3 @@ I recommend using `git worktree` to keep a separate "prod" folder from the
 folder you're actually editing with Claude.  You can then `git checkout
 --detach main` in the prod folder to checkout your latest changes and manually
 test them.
-
-## Type Checking
-
-This project uses `pyright` for type checking with strict mode enabled. The type checking configuration is in `pyproject.toml`. We use a few strategies to maintain type safety:
-
-1. Type stubs for external libraries:
-   - Custom type stubs are in the `stubs/` directory
-   - The `stubPackages` configuration in `pyproject.toml` maps libraries to their stub packages
-
-2. File-specific ignores for challenging cases:
-   - For some files with complex dynamic typing patterns (particularly testing code), we use file-specific ignores via `tool.pyright.ignoreExtraErrors` in `pyproject.toml`
-   - This is preferable to inline ignores and lets us maintain type safety in most of the codebase
-
-When making changes, please ensure type checking passes by running:
-```
-./run_typecheck.sh
-```

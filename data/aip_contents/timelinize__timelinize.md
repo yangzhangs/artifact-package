@@ -17,6 +17,8 @@ Please understand if pull requests or issues are closed/rejected; as the project
 
 Thank you for contributing to the project!
 
+---
+
 ## Local development tips
 
 Our project is linted with [golangci-lint](https://golangci-lint.run/). You may find it a great time-saver to [integrate golangci-lint into your editor](https://golangci-lint.run/welcome/integrations/).

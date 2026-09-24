@@ -1,5 +1,6 @@
 # z2d Public Contribution Notice
 
+
 > [!NOTE]
 > **The short of it:** This project does not accept public pull requests. There
 > are a few reasons for this, so read on if you want some reasoning, or just
@@ -13,7 +14,10 @@ or bug, please open an issue to get further help.
 understand an issue, take the time to comprehend the output and explain the
 issue **in your own words** before submitting.
 
+
+
 ## Why?
+
 
 I created z2d as a first-principles approach to understanding graphics
 programming. Everything implemented in the library has been either done so from
@@ -32,18 +36,3 @@ open to external contributions in general. On a personal level, I am not very
 interested in even having to engage with content created by AI coding agents
 and/or other tools. **This is not a blanket judgment of the work produced by
 such tools, or those that use them.** To each their own.
-
-## Open source, not open contribution
-
-This project is open source and distributed under the terms of the [Mozilla
-Public License](https://www.mozilla.org/en-US/MPL/2.0/). Open source, however
-does not necessarily mean open contribution, a point that seems to have been in
-discourse a lot recently due to the points made in the last paragraph of the
-previous section.
-
-Probably the best example of a closed-contribution project is SQLite, which has
-some great rationale and statements to this end on their [copyright
-page](https://www.sqlite.org/copyright.html). Echoing the sentiments
-particularly in the last part of that page, feature requests and proof of
-concepts are welcome, however I will more than likely implement all solutions
-to these personally. 
