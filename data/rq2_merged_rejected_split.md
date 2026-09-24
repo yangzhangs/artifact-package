@@ -11,7 +11,7 @@ The reproduction script is `scripts/rq2-impact/rdd_split_merged_rejected.R`.
 ## Results
 
 | DV | Group | time (β) | intervention (γ) | time_after (δ) | R²m | R²c | 
-|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | Merged PR count | Permissive | 0.042** | -0.079 | **-0.069\*\*\*** | 0.231 | 0.763 | 
 | Merged PR count | Prohibited | 0.091* | 0.211 | **-0.158\*** | 0.579 | 0.747 |
 | Rejected PR count | Permissive | 0.071*** | -0.228** | -0.033 | 0.232 | 0.692 | 
