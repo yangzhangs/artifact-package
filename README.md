@@ -187,7 +187,7 @@ Anonymized per-respondent data for the two surveys: `maintainer_responses.csv` (
 
 ### RQ3: Enforcement Perceptions
 
-1. **Survey Administration** — The survey instruments are in `survey/`, and the anonymized per-respondent responses are in `survey/responses/`. Maintainers were recruited from the 615 confirmed repositories; contributors were recruited from PR author data. Surveys were administered via Google Forms.
+1. **Survey Administration** — The survey instruments are in `survey/`, and the anonymized per-respondent responses are in `survey/responses/`. Surveys were administered via Google Forms.
 
 2. **Result Visualization**:
    ```bash
