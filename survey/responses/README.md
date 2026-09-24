@@ -6,9 +6,8 @@ Anonymized per-respondent data for the two online surveys. Each row is one valid
 
 `respondent_id` is a sequential id in the original order of the survey
 responses. Columns correspond to the questions in the survey instruments
-(`maintainer_survey.md` / `contributor_survey.md`); option texts follow the
-instrument wording. Multi-select answers are separated by `;`. Names and email
-addresses are never released.
+(`maintainer_survey.md` / `contributor_survey.md`). Multi-select answers are
+separated by `;`. Names and email addresses are never released.
 
 ## maintainer_responses.csv
 
@@ -48,7 +47,3 @@ addresses are never released.
 | `reaction` | CQ4. What was your initial reaction to the policy? |
 | `behavior_change` | CQ5. After learning about the AI policy, did your contribution behavior change? |
 | `comments` | CQ6. Open-ended comments |
-
-Free-text answers to the reasons-for-opposing question asked in the
-administered form are appended to the `comments` column. For the maintainer
-survey, all columns correspond one-to-one to the instrument questions.
