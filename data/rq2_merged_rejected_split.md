@@ -1,8 +1,7 @@
 # RQ2: Merged vs. Closed-Without-Merge PRs — Split Analysis
 
 This document reports an additional analysis that separates closed PRs into
-**merged** and **closed-without-merge (rejected)** PRs, as suggested by a
-reviewer, and re-runs the RQ2 mixed-effects models on each subset. The results
+**merged** and **closed-without-merge (rejected)** PRs, and re-runs the RQ2 mixed-effects models on each subset. The results
 support the interpretation in the paper: the post-adoption decline in closed
 PRs is driven by fewer merged PRs, while rejected PRs show no significant
 change.
