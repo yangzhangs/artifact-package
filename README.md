@@ -11,16 +11,19 @@ This artifact package supports the replication of a mixed-methods empirical stud
 ```
 artifact-package/
 ├── README.md                          # This file
+├── ETHICS.md                          # Research-ethics statement for the surveys
 ├── data/
 │   ├── repos/
 │   │   ├── repos_sampled_57331.csv        # Initial SEART-GHS sample (57,331 repos)
 │   │   ├── repos_with_contributing_18902.csv # Repos with CONTRIBUTING.md (18,902 repos)
 │   │   ├── confirmed_repos_615.csv        # Confirmed AIP repos (615 repos)
+│   │   ├── screening_candidates_1114.csv  # Two-layer screening candidates (1,114 repos)
 │   │   ├── aip_first_date_final.csv       # AIP adoption dates per repo
 │   │   └── repo_created_dates.csv         # Repo creation dates
 │   ├── rq1_conditions.md                # RQ1 conditions summary (C1–C5)
 │   ├── rq1_aip_labels.csv                # RQ1 per-repo condition labels (540 conditional repos)
 │   ├── rq2_rdd_robustness.md             # RQ2 RDD 4-month vs 6-month robustness results
+│   ├── aip_contents/                     # Manually extracted AIP contents, one md per repository (615 files)
 │   ├── panel/
 │   │   └── rdd_panel_113.csv              # Main RDD panel (113 repos × 12 bins, 6-month)
 │   └── aip/
@@ -41,7 +44,10 @@ artifact-package/
 │       └── detect_aip_first_date.py       # Detect AIP first appearance date
 ├── survey/
 │   ├── maintainer_survey.md               # Complete maintainer survey
-│   └── contributor_survey.md             # Complete contributor survey
+│   ├── contributor_survey.md              # Complete contributor survey
+│   └── responses/
+│       ├── maintainer_responses.csv        # Anonymized per-respondent data (68 responses)
+│       └── contributor_responses.csv       # Anonymized per-respondent data (59 responses)
 └── figures/
     ├── overview.pdf                        # Methodology overview
     ├── ai-policy-example-1.pdf             # Example AIP from CONTRIBUTING.md
@@ -70,6 +76,9 @@ Repositories confirmed through two-layer keyword screening and manual verificati
 ### `data/repos/aip_first_date_final.csv`
 Verified AIP adoption dates for each confirmed repository, determined by scanning the git history of CONTRIBUTING.md files with keyword matching and manual verification.
 
+### `data/aip_contents/`
+The AIP contents manually extracted from the CONTRIBUTING.md files of the 615 confirmed repositories, one markdown file per repository (named `{owner}__{repo}.md`). Where a repository's contribution guidelines reference a standalone AI policy file (e.g., `AI POLICY.md`), its content is appended at the end of the file.
+
 ### `data/panel/rdd_panel_113.csv`
 Main RDD panel data for 113 active repositories (101 permissive, 12 prohibited). Each row represents a 30-day time window (bin) relative to the AIP adoption date, spanning 6 bins before and 6 bins after (excluding the transition window, bin 0).
 
@@ -92,7 +101,10 @@ Per-repo condition labels for all 540 conditional permissive AIPs. Each repo has
 Side-by-side comparison of 4-month (169 repos) and 6-month (113 repos) window RDD model results across all 4 DVs and both groups, demonstrating consistent effect directions and significance patterns.
 
 ### `data/aip/aip_keyword_patterns.txt`
-The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate only when at least one pattern from each layer matches.
+The complete two-layer keyword pattern set used for AIP screening: 40 AI-content patterns (Layer 1) and 48 AI-policy patterns (Layer 2). A repository is flagged as a candidate when at least one pattern from either layer matches any of its guideline files.
+
+### `data/repos/screening_candidates_1114.csv`
+The 1,114 candidate repositories flagged by the two-layer keyword screening over the downloaded guideline files (all CONTRIBUTING.md path variants) of the 18,902 repositories. Columns: `repo_name`, `L1_hit`, `L2_hit`.
 
 ### `data/aip/ai_pr_detection_per_repo.csv`
 Results of AI-PR detection across 113 repositories using keyword matching on PR titles and GitHub labels, used for robustness analysis. 32 repositories contain at least one identifiable AI-related PR, totaling 158 AI-related PRs.
@@ -135,13 +147,13 @@ Complete survey instrument for contributors, including:
 
 2. **Contributing Guideline Detection** — Filter to repositories containing CONTRIBUTING.md files. See `data/repos/repos_with_contributing_18902.csv`.
 
-3. **Keyword Screening** — Run two-layer keyword screening:
+3. **Keyword Screening** — Run two-layer keyword screening over the downloaded guideline files (all CONTRIBUTING.md path variants):
    ```bash
    python scripts/rq1-design/keyword_screening.py \
      --dl-dir <path_to_downloaded_contributing_files> \
      --export --output screening_results.csv
    ```
-   This identifies 1,114 candidate repositories.
+   A repository is flagged as a candidate when any of its guideline files matches a pattern from either keyword layer; on the complete collection this identifies the 1,114 candidate repositories listed in `data/repos/screening_candidates_1114.csv`.
 
 4. **Manual Verification** — Manually review each candidate's CONTRIBUTING.md to confirm genuine AIPs, yielding 615 confirmed repositories. Results in `data/repos/confirmed_repos_615.csv`.
 
@@ -185,5 +197,5 @@ Complete survey instrument for contributors, including:
 ## Notes
 
 - All repository names in the datasets are public GitHub repository identifiers (format: `owner/repo`). No personally identifiable information (PII) is included.
-- Survey respondent data (emails, names, responses) are not included to protect participant privacy.
+- Individual survey respondent data (names, emails) are not included; anonymized per-respondent responses to closed-ended questions are provided in `survey/responses/` (open-ended comments omitted for privacy), and the ethics procedures are documented in `ETHICS.md`.
 - Database credentials have been removed from all scripts; set them via environment variables when running scripts that require database access.

@@ -3,7 +3,8 @@
 Keyword screening script for AI Policy (AIP) identification.
 Scans downloaded CONTRIBUTING.md files using a two-layer keyword matching approach.
 Layer 1 detects AI content references; Layer 2 captures policy stances.
-A repository is flagged as a candidate only when at least one pattern from each layer matches.
+A repository is flagged as a candidate when any of its guideline files matches
+at least one pattern from either layer.
 """
 
 import os
@@ -108,94 +109,82 @@ L2_PATTERNS = [
     (r'\b(?:policy|guideline|rule|statement).*artificial intelligence\b', 'policy...artificial intelligence'),
 ]
 
-
-def extract_context(content, match_obj, window=200):
-    start = max(0, match_obj.start() - window)
-    end = min(len(content), match_obj.end() + window)
-    ctx = content[start:end].replace('\n', ' ').strip()
-    return ctx
+PATH_SUFFIXES = ['_.github', '_github', '_root', '_docs']
 
 
-def scan_files(dl_dir, sample=None):
-    files = sorted(os.listdir(dl_dir))
-    if sample:
-        import random
-        random.seed(42)
-        files = random.sample(files, min(sample, len(files)))
+def repo_of_filename(fname):
+    """Map a downloaded filename ({owner}_{repo}[{path}]_contributing.md) to owner/repo."""
+    base = fname[:-len('_contributing.md')]
+    for suf in PATH_SUFFIXES:
+        if base.endswith(suf):
+            base = base[:-len(suf)]
+            break
+    if '_' not in base:
+        return base
+    owner, repo = base.split('_', 1)
+    return f'{owner}/{repo}'
 
-    results = {}
-    layer_files = defaultdict(set)
-    layer_kw_counts = Counter()
+
+def scan_files(dl_dir):
+    files = sorted(f for f in os.listdir(dl_dir) if f.endswith('_contributing.md'))
+    repo_l1 = defaultdict(set)   # repo -> set of matched L1 labels
+    repo_l2 = defaultdict(set)   # repo -> set of matched L2 labels
+    file_l1 = file_l2 = 0
 
     for fname in files:
         fpath = os.path.join(dl_dir, fname)
         with open(fpath, 'r', encoding='utf-8', errors='ignore') as f:
             content = f.read()
         content_lower = content.lower()
+        repo = repo_of_filename(fname)
 
-        for patterns, layer in [(L1_PATTERNS, 'L1'), (L2_PATTERNS, 'L2')]:
-            for pat, label in patterns:
-                m = re.search(pat, content_lower)
-                if m:
-                    if fname not in results:
-                        results[fname] = {'L1': [], 'L2': []}
-                    ctx = extract_context(content, m)
-                    results[fname][layer].append((label, m.group(), ctx))
-                    layer_files[layer].add(fname)
-                    layer_kw_counts[f'{layer}:{label}'] += 1
+        hit1 = hit2 = False
+        for pat, label in L1_PATTERNS:
+            if re.search(pat, content_lower):
+                repo_l1[repo].add(label)
+                hit1 = True
+        for pat, label in L2_PATTERNS:
+            if re.search(pat, content_lower):
+                repo_l2[repo].add(label)
+                hit2 = True
+        if hit1:
+            file_l1 += 1
+        if hit2:
+            file_l2 += 1
 
-    return results, layer_files, layer_kw_counts
+    # A repository is a candidate when any of its guideline files matches
+    # at least one pattern from either layer.
+    candidates = {repo for repo in set(repo_l1) | set(repo_l2)}
+    total_repos = len({repo_of_filename(f) for f in files})
+    return files, file_l1, file_l2, repo_l1, repo_l2, candidates, total_repos
 
 
-def print_stats(results, layer_files, layer_kw_counts, total_files):
-    any_hit = set()
-    for s in layer_files.values():
-        any_hit.update(s)
-
+def print_stats(files, file_l1, file_l2, repo_l1, repo_l2, candidates, total_repos):
     print("=== AIP Two-Layer Keyword Screening Results ===")
-    print(f"Total files scanned: {total_files}")
-    print(f"L1 hits: {len(layer_files['L1'])} ({len(layer_files['L1'])/total_files*100:.2f}%)")
-    print(f"L2 hits: {len(layer_files['L2'])} ({len(layer_files['L2'])/total_files*100:.2f}%)")
-    print(f"L1 or L2: {len(any_hit)} ({len(any_hit)/total_files*100:.2f}%)")
-    print(f"L1 and L2 (candidates): {len(layer_files['L1'] & layer_files['L2'])}")
-
-    print("\n--- L1 Keyword Hits (Top 20) ---")
-    l1_items = [(k.replace('L1:',''), v) for k, v in layer_kw_counts.items() if k.startswith('L1:')]
-    for kw, cnt in sorted(l1_items, key=lambda x: -x[1])[:20]:
-        print(f"  {kw}: {cnt}")
-
-    print("\n--- L2 Keyword Hits (Top 20) ---")
-    l2_items = [(k.replace('L2:',''), v) for k, v in layer_kw_counts.items() if k.startswith('L2:')]
-    for kw, cnt in sorted(l2_items, key=lambda x: -x[1])[:20]:
-        print(f"  {kw}: {cnt}")
+    print(f"Total files scanned: {len(files)}")
+    print(f"Repositories with guideline files: {total_repos}")
+    print(f"L1 hits (files): {file_l1}")
+    print(f"L2 hits (files): {file_l2}")
+    print(f"Candidate repositories (L1 or L2): {len(candidates)}")
 
 
-def export_csv(results, output_path):
+def export_candidates(repo_l1, repo_l2, candidates, output_path):
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['filename', 'repo_name', 'L1_hit', 'L2_hit', 'L1_keywords', 'L2_keywords', 'L1_context', 'L2_context'])
-        for fname, info in sorted(results.items()):
-            repo = fname.replace('_root_contributing.md','').replace('_docs_contributing.md','').replace('_.github_contributing.md','')
-            repo = repo.replace('_', '/', 1)
-            l1_kws = '; '.join(set(label for label, _, _ in info['L1']))
-            l2_kws = '; '.join(set(label for label, _, _ in info['L2']))
-            l1_ctx = ' | '.join(ctx for _, _, ctx in info['L1'][:3])
-            l2_ctx = ' | '.join(ctx for _, _, ctx in info['L2'][:3])
-            writer.writerow([fname, repo, bool(info['L1']), bool(info['L2']), l1_kws, l2_kws, l1_ctx, l2_ctx])
-    print(f"Exported: {output_path} ({len(results)} records)")
+        writer.writerow(['repo_name', 'L1_hit', 'L2_hit'])
+        for repo in sorted(candidates):
+            writer.writerow([repo, bool(repo_l1.get(repo)), bool(repo_l2.get(repo))])
+    print(f"Exported candidate repositories: {output_path} ({len(candidates)} records)")
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='AIP two-layer keyword screening')
-    parser.add_argument('--sample', type=int, help='Random sample size (default: scan all)')
-    parser.add_argument('--export', action='store_true', help='Export CSV results')
     parser.add_argument('--dl-dir', required=True, help='Directory containing downloaded CONTRIBUTING.md files')
+    parser.add_argument('--export', action='store_true', help='Export the candidate repository list as CSV')
     parser.add_argument('--output', default='screening_results.csv', help='Output CSV path')
     args = parser.parse_args()
 
-    results, layer_files, layer_kw_counts = scan_files(args.dl_dir, args.sample)
-    total = len(os.listdir(args.dl_dir))
-    print_stats(results, layer_files, layer_kw_counts, total)
-
+    files, file_l1, file_l2, repo_l1, repo_l2, candidates, total_repos = scan_files(args.dl_dir)
+    print_stats(files, file_l1, file_l2, repo_l1, repo_l2, candidates, total_repos)
     if args.export:
-        export_csv(results, args.output)
+        export_candidates(repo_l1, repo_l2, candidates, args.output)

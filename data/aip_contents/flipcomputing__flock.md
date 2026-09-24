@@ -1,0 +1,435 @@
+# Contributing to Flock XR
+
+Hey there! We welcome community contributions to Flock XR. This could be **code**, **documentation**, **reporting bugs**, **suggesting accessibility features**, **adding translations**, or something else!
+
+## 🚀 Quick Start for First-Time Contributors
+
+### What is Flock XR?
+
+Flock XR is a creative coding platform for 3D development using Blockly and Babylon.js. It's designed as a bridge between Scratch and professional 3D tools, making 3D programming accessible to young people and beginners.
+
+### Ways to Contribute
+
+- 🐛 **Report bugs** - Found something broken? Let us know!
+- 📝 **Improve documentation** - Help make our docs clearer
+- ✨ **Add features** - Implement new blocks, effects, or tools
+- 🧪 **Write tests** - Help us improve stability
+- ♿ **Accessibility improvements** - Make Flock more inclusive
+- 🌍 **Translations** - Help us reach more users worldwide
+- 🎨 **UI/UX improvements** - Make the interface better
+
+Before starting, we suggest you [get in touch](https://flipcomputing.com/contact/) and ask that you read our [AI contributions policy](AI_POLICY.md).
+
+## 🛠️ Development Setup
+
+### Prerequisites
+
+- Node.js (version 18 or higher)
+- Git
+- A modern web browser
+
+### Getting Started
+
+1. **Fork the repo** on GitHub
+2. **Clone your fork** to your local machine:
+   ```bash
+   git clone git@github.com:YOUR_USERNAME/flock.git
+   ```
+3. **Navigate to the project**:
+   ```bash
+   cd flock
+   ```
+4. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+5. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+6. **Open your browser** to http://localhost:5173/
+
+### Making Changes
+
+1. **Create a feature branch**:
+   ```bash
+   git checkout -b your-feature-name
+   ```
+2. **Make your changes** (see project structure below).
+3. **Test your changes** including running the automated tests, details of how to do so follow below.
+4. **Format your code**
+   Run `npm run format:check` to check your code meets the formatting requirements, or use `npm run format` to automatically format it using Prettier.
+
+5. **Commit your changes**:
+   ```bash
+   git add .
+   git commit -m "Add your descriptive commit message"
+   ```
+6. **Push to your fork**:
+   ```bash
+   git push origin your-feature-name
+   ```
+7. **Create a Pull Request** on GitHub
+
+### Deploying your fork to GitHub Pages
+1. **Push your fork to GitHub**:
+   ```bash
+   git push origin main
+   ```
+
+2. **Set up GitHub Actions**
+   - Go to your fork on GitHub at https://github.com/YOUR_USERNAME/flock/
+   - Click Settings > Pages
+   - In the 'Source' dropdown, select 'GitHub Actions'
+
+3. **Create the Flock environment**:
+   - Still in settings, click 'Environments'
+   - Click 'New Environment'
+   - Name it `flock` (all lowercase, do not change this)
+   - Click 'Configure environment' but do not make any changes
+
+4. **Trigger the deployment**
+   - Go back to your fork at https://github.com/YOUR_USERNAME/flock/
+   - Click the 'Actions' tab
+   - Click 'I understand my workflows, go ahead and enable them'
+   - Click on the new option 'Vite GitHub Pages Deploy'
+   - Click 'Run workflow' dropdown, then select 'Run workflow' to deploy manually
+
+5. **Visit your deployment**
+   - Once the site has deployed you will see it at https://YOUR_USERNAME.github.io/flock/
+   - GitHub pages should redeploy automatically when you push to main
+
+For more specific developer-facing documentation, please see [dev-docs.md](dev-docs/dev-docs.md).
+
+## 📁 Project Structure
+
+Understanding the codebase – key files:
+
+- **`index.html`** - Main HTML file that defines the application structure, UI layout (menu, canvas, code panel), and loads all necessary scripts and stylesheets
+- **`main/main.js`** - Main application entry point that initializes Blockly workspace, handles code execution, manages UI views (canvas/blocks/split), and controls file operations
+- **`flock.js`** - Main Flock engine
+- **`ui/designview.js`** - Visual design interface enabling direct 3D object manipulation with gizmos, synchronizing 3D changes with Blockly blocks
+- **`blocks.js`** - Block definitions
+- **`generators.js`** - Blockly JavaScript generators for blocks
+- **`toolbox.js`** - Blockly toolbox configuration
+
+Directories:
+
+- **`api/`** - Core Flock XR API functions (scene, animation, physics, etc.)
+- **`blocks/`** - Additional Blockly block definitions
+- **`docs/`** - Getting started documentation
+- **`examples/`** - Example project JSON files including those featured in the Demo dropdown
+- **`fonts/`** - Fonts used in UI and 3D text generation
+- **`images/`** - Images used in UI
+- **`locale/`** - localisation / translation
+- **`main/`** - application file to support flock engine
+- **`models/`** - 3D models (.glb files)
+- **`textures/`** - Texture files for materials
+- **`sounds/`** - Audio files
+- **`tests/`** - Test files (please add tests for new features!)
+- **`ui/`** – UI files
+
+There is also a [Flock XR Architecture diagram](docs/images/flockxr-architecture.svg)
+
+## 🧪 Testing
+
+We use Mocha and Chai for testing, plus Playwright for end-to-end testing. Always test your changes:
+
+### Unit/Integration Tests (Mocha & Chai)
+
+**Add new tests** for any features you create
+
+#### Run tests
+
+1. **Run the development server**: `npm run dev`, which starts a local webserver.
+1. **Visit the test page**: http://localhost:5173/tests/tests.html
+1. **Select tests** from the dropdown and click _Run Tests_.
+
+#### Filtering tests and test results
+
+- **Get fast feedback** by using the _Run all except @slow_ option
+- **Run only your newest tests** by tagging those tests with @new and picking _Run tests tagged @new_
+- **Focus on results** with the _failures_ / _passes_ links in report
+- **Show the test code** by clicking on test name in the report
+- **Tag slow tests with @slow** so that they can be run separately if needed.
+- **Tag new tests with @new** so that you can filter on those new tests. Remove tag when they're no longer new.
+
+#### Tagging tests
+
+To add a tag, change the `describe` or `it` text in unit tests to add a tag.
+
+#### Adding new unit test files / adding new tags to test runner
+
+- Array `testSuiteDefinitions` corresponds to the test selection dropdown. Each test file, and each selectable tag, need a definition.
+- Modify `testSuiteDefinitions` in `tests/tests.html` to pick up the test file. Each test file needs an entry.
+- Modify `testSuiteDefinitions` in `tests/tests.html` to add tags or names to focus. Each tag needs an entry.
+- Note that some test suites are selected/filtered on a name (the name from the top `describe` if there's only one) and others on tag (added to all top-level describes if several).
+
+#### CLI Test Runner (Automated/Headless)
+
+For CI/CD or automated testing, you can run tests via command line:
+
+```bash
+# Run specific test suite
+npm run test:api babylon
+
+# Run fast tests (excludes @slow)
+npm run test:api @notslow
+
+# Run slow tests only
+npm run test:api @onlyslow
+
+# Enable detailed logging
+npm run test:api babylon -- --verbose
+npm run test:api glide -- --log-all
+```
+
+**Features:**
+
+- Automatic server startup and shutdown
+- Headless browser execution (Playwright)
+- Works in CI environments (GitHub Actions, etc.)
+- Logging support for debugging (`--log-api`, `--log-tests`, `--log-all`)
+- Verbose mode for diagnostics (`--verbose`)
+
+**CI/GitHub Actions:** The test runner is optimized for CI environments with automatic environment detection and robust server startup handling. See `docs/TEST_RUNNER_CI_FIX_SUMMARY.md` for details.
+
+### CSP smoke checks
+
+If you change CSP policy, security headers, analytics loading, or runtime asset origins, run:
+
+```bash
+npm run build
+npm run test:csp-smoke
+```
+
+This validates core CSP-sensitive flows and fails if browser `securitypolicyviolation` events are detected.
+
+### End-to-End Tests (Playwright)
+
+Playwright tests are located in `tests/playwright/`. These are automated end-to-end tests that verify the UI loads correctly, blocks function properly, and the overall user experience works as expected.
+
+#### Install Playwright browsers
+
+Before running tests, ensure Playwright browsers are installed:
+
+```bash
+npx playwright install
+```
+
+#### Verify browsers are installed
+
+Check that browsers are properly installed:
+
+```bash
+npx playwright install --dry-run
+```
+
+#### Run Playwright tests
+
+Run all tests:
+
+```bash
+npx playwright test
+```
+
+Run a specific test file:
+
+```bash
+npx playwright test tests/playwright/flock.spec.js
+```
+
+The tests will automatically start the dev server (http://localhost:5173) before running.
+
+#### View test results
+
+View the HTML test report:
+
+```bash
+npx playwright show-report
+```
+
+#### Generate or update visual snapshots
+
+Some tests use visual regression testing by comparing screenshots against baseline images. When running these tests for the first time or when intentional visual changes are made, you need to generate/update the snapshots:
+
+```bash
+npx playwright test --update-snapshots
+```
+
+After generating snapshots:
+
+1. Review the generated images in `tests/playwright/*-snapshots/` to ensure they look correct
+2. Run the tests again without the flag to verify they pass
+3. Commit the snapshot images to version control
+
+Update specific snapshots only:
+
+```bash
+npx playwright test blocks.spec.js --update-snapshots
+```
+
+### Test Artifacts
+
+Several files and directories are generated during testing and should **not** be checked into git:
+
+- `test-results/` - Playwright test results
+- `playwright-report/` - Generated test reports
+- `.last-run.json` - Runtime state from last test execution
+
+These are already included in `.gitignore`. If you create new test artifacts, make sure to add them to `.gitignore` as well.
+
+## 📋 Current Priorities
+
+1. **Stability** - Bug fixes and reliability improvements
+2. **Testing** - More comprehensive test coverage
+3. **Accessibility** - Making Flock usable for everyone
+4. **UX improvements** - Better user experience
+5. **Documentation** - Clearer guides and API docs
+
+## 🐛 Reporting Issues
+
+When reporting bugs, please include:
+
+- Steps to reproduce the issue
+- Expected vs actual behavior
+- Browser and operating system
+- Screenshots or screen recordings if helpful
+- Any console errors
+
+## 💡 Suggesting Features
+
+Before suggesting new features:
+
+1. Check existing issues to avoid duplicates
+2. Think about how beginners would use it
+3. Consider performance
+4. Provide use cases and examples
+
+## 📝 Documentation
+
+Help us improve documentation by:
+
+- Fixing typos or unclear explanations
+- Adding examples to the [API documentation](API.md)
+- Creating tutorials for new features
+- Improving code comments
+
+## 🎨 Design Guidelines
+
+When contributing UI/UX improvements:
+
+- Keep accessibility in mind
+- Maintain consistency with existing design
+- Consider the target audience (young people and beginners)
+- Test on different screen sizes
+
+## 🌍 Accessibility
+
+We're committed to making Flock accessible. We'll be working on:
+
+- WCAG guidelines
+- Color contrast
+- Language translations
+- Clear, simple language
+- Keyboard navigation
+- Screen reader compatibility
+
+## 💬 Getting Help
+
+- **Discord**: Contact us via [Get in touch](https://flockxr.com/flock-xr-community/) for Discord invite
+- **Issues**: Use GitHub issues for bugs and feature requests
+- **Discussions**: Use GitHub discussions for questions
+
+## 📜 Code of Conduct
+
+We follow the [p5.js Web Editor Code of Conduct](https://github.com/processing/p5.js-web-editor/blob/develop/.github/CODE_OF_CONDUCT.md). Please be respectful and inclusive.
+
+## 🏷️ Tech Stack
+
+- **JavaScript** (considering TypeScript migration)
+- **Babylon.js** - 3D rendering engine
+- **Google Blockly** - Visual programming blocks
+- **Vite** - Build tool
+- **Node.js** - Development environment
+- **Progressive Web App** features
+- **Mocha & Chai** - Unit testing framework
+- **Playwright** - End-to-end testing framework
+
+## 📄 License
+
+Flock XR is licensed under the MIT License. By contributing, you agree that your contributions will be licensed under the same license.
+
+## 🙏 Thank You!
+
+Every contribution helps make 3D programming more accessible to young people worldwide. Thank you for being part of the Flock XR community!
+
+---
+
+**New to open source?** Check out these guides:
+
+- [GitHub's Hello World tutorial](https://guides.github.com/activities/hello-world/)
+- [How to fork a repository](https://guides.github.com/activities/forking/)
+- [How to create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+---
+
+# Standalone AI policy file
+
+# AI Contribution Policy
+
+AI is a tool to support human creativity and responsibility, not replace it.
+
+## Our overall goals are:
+
+- Open source principles  
+- Efficiency, particularly when funded with public money and adding accessibility features  
+- Quality and maintainability of code  
+- Consider workload on maintainers and contributors and avoiding barriers to contribution  
+- Humans are responsible for code and other assets, AI is a tool  
+
+## Contribution expectations
+
+The world has changed. We believe that open source projects need to be able to benefit from generative AI tools that have largely been trained on open source content. We need to do this in a way that is aligned with the goals of the project. 
+
+At this point we are not able to accept large contributions from fully automated contributors or contributors who are not known to the project.
+
+Fully automated contributions refer to cases where AI has been given a general task (for example, tools like OpenClaw) and produces code without meaningful human involvement.
+
+If you are new to the project, you are very welcome. Please start with a small contribution that can be easily reviewed and gradually build up your contribution profile. You can also introduce yourself on our community Discord: [Flock XR Community](https://flockxr.com/flock-xr-community/)
+
+If you are planning a large contribution, please raise an issue first so we can discuss the approach before significant work is undertaken.
+
+## Use of AI
+
+Code generated by AI with substantial human involvement is considered for acceptance when it is in service of these principles and clearly marked with which AI tool was used and in what capacity.
+
+Code submitted to the Flock XR project should be understood by the committer and substantially authored by them. This includes prompting a LLM to produce the end result code provided that significant human input was involved. Human input can include knowledge of the existing code base and research and design work that went into crafting and refining a prompt and reviewing code. The [AGENTS.md](AGENTS.md) for the project is designed to involve humans in planning and key decisions. The contributor is fully responsible for the quality of all submitted code, regardless of whether AI tools were used.
+
+We recognise that with a project like Flock XR, a lot of work goes into deciding which code should exist, how functionality should be designed and how it should integrate with the existing architecture.
+
+## Copyright and third-party code
+
+Contributors must ensure that no third party copyrighted material is included in code. Contributors and reviewers should take additional care when considering code that is likely to be similar to existing code. Increasingly tools are providing features that can assist contributors to identify any third party code in output and its license to determine whether it is permitted for use.
+
+## Tooling and attribution
+
+We don’t have a specific list of tools that can be used. Instead we ask that you focus on the goals and principles of this policy.
+
+AI contributions should be clearly marked with the tool used. This can be done by listing the AI as a co-author or by tagging the contribution, whichever is convenient for the workflow supported by the tool. This should be included in the pull request description.
+
+Pull requests should include a description of how AI was used to support the completion of the task. This could include a summary of prompts and which tasks were supported by AI. We respect the privacy of contributors and do not want to create an unnecessarily large environmental footprint, therefore it is not necessary to provide a full prompt history.
+
+## Non-code content
+
+The above rules apply to non-code content including documentation, images and 3D models.
+
+## Non-AI contributions
+
+We recognise that some potential contributors may wish to write code completely by hand and without AI assistance; this is acceptable provided that it does not conflict with efficient use of public funds or the delivery of key features, particularly accessibility, or has learning goals for the contributor.
+
+## Ongoing review
+
+This policy will be reviewed regularly as the generative AI landscape changes.
+
+This policy is influenced by [NLnet Generative AI Policy](https://nlnet.nl/foundation/policies/generativeAI/) (we’re grateful that they listened to feedback as the open source community navigates this unprecedented change in how we develop software), the measured policy from [Apache Generative Tooling Guidelines](https://www.apache.org/legal/generative-tooling.html), and the ideas around community and human maintainers from [Ghostty AI Policy](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md).

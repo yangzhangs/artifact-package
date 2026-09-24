@@ -1,6 +1,6 @@
 # RQ2: RDD Robustness Analysis — 4-Month vs. 6-Month Windows
 
-This document reports the grouped mixed-effects RDD model results for both the primary 6-month window specification (used in Table V of the paper) and the robustness check using 4-month windows. The 4-month results support the claim in the Threats to Validity section that varying the observation window yields similar phenomena.
+This document reports the grouped mixed-effects RDD model results for both the primary 6-month window specification (used in Tables IV and V of the paper) and the robustness check using 4-month windows. The 4-month results support the claim in the Threats to Validity section that varying the observation window yields similar phenomena.
 
 ## Model Specification
 
@@ -15,7 +15,7 @@ DV ~ time + intervention + time_after + log_stars + log_contributors + log_commi
 
 ---
 
-## 6-Month Window (Primary Specification, Table V)
+## 6-Month Window (Primary Specification, Tables IV and V)
 
 **Panel:** 1356 rows, 113 repos (Permissive: 101, Prohibited: 12)
 
