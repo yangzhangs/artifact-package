@@ -16,5 +16,5 @@ Our institution does not mandate formal ethics-board approval for this kind of s
 ## Data handling
 
 - Recruitment data (the sampled email addresses) were used solely for sending the invitations and were not shared or retained beyond the survey period.
-- Responses are released in anonymized per-respondent form for the closed-ended questions; names and email addresses are never released, and open-ended comments are omitted to protect privacy.
+- Responses are released in anonymized per-respondent form, including open-ended comments; names and email addresses are never released.
 - The anonymized per-respondent survey responses are provided in `survey/responses/`.

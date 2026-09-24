@@ -197,5 +197,5 @@ Complete survey instrument for contributors, including:
 ## Notes
 
 - All repository names in the datasets are public GitHub repository identifiers (format: `owner/repo`). No personally identifiable information (PII) is included.
-- Individual survey respondent data (names, emails) are not included; anonymized per-respondent responses to closed-ended questions are provided in `survey/responses/` (open-ended comments omitted for privacy), and the ethics procedures are documented in `ETHICS.md`.
+- Individual survey respondent data (names, emails) are not included; anonymized per-respondent responses, including open-ended comments, are provided in `survey/responses/`, and the ethics procedures are documented in `ETHICS.md`.
 - Database credentials have been removed from all scripts; set them via environment variables when running scripts that require database access.

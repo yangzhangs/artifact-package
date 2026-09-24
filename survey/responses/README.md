@@ -4,16 +4,15 @@ Anonymized per-respondent data for the two online surveys. Each row is one valid
 `maintainer_responses.csv` contains the 68 maintainer responses, and
 `contributor_responses.csv` contains the 59 contributor responses.
 
-To protect privacy, timestamps and open-ended comments are omitted, and
-`respondent_id` values are arbitrary sequential numbers that do not correspond
-to the §/± symbols used for quotes in the paper. Multi-select answers are
-separated by `;`.
+`respondent_id` follows the original order of the survey responses, and the
+§/± symbols used for quotes in the paper refer to these ids. Multi-select
+answers are separated by `;`. Names and email addresses are never released.
 
 ## maintainer_responses.csv
 
 | Column | Survey question |
 |---|---|
-| `respondent_id` | Anonymous sequential id |
+| `respondent_id` | Sequential id in the original response order (the § symbol in the paper) |
 | `country` | D1. In which country do you currently work? |
 | `years_experience` | D2. How many years of open-source experience do you have? |
 | `projects_maintained` | D3. How many open-source projects do you currently maintain or own? |
@@ -36,12 +35,13 @@ separated by `;`.
 | `compliance` | MQ8. To what extent do you feel contributors have followed your AI contribution policy? |
 | `enforcement_methods` | MQ9. What methods does your project currently have in place to enforce your AI contribution policy? |
 | `difficulties` | MQ10. What are the main difficulties you have encountered in enforcing your AI contribution policy? |
+| `comments` | MQ11. Open-ended comments |
 
 ## contributor_responses.csv
 
 | Column | Survey question |
 |---|---|
-| `respondent_id` | Anonymous sequential id |
+| `respondent_id` | Sequential id in the original response order (the ± symbol in the paper) |
 | `country` | D1. In which country do you currently work? |
 | `years_experience` | D2. How many years of open-source experience do you have? |
 | `projects_contributed` | D3. How many open-source projects have you contributed to? |
@@ -54,6 +54,4 @@ separated by `;`.
 | `support_reasons` | Reasons for supporting the AI policy |
 | `oppose_reasons` | Reasons for opposing the AI policy |
 | `behavior_change` | CQ5. After learning about the AI policy, did your contribution behavior change? |
-
-All counts and percentages reported in the paper can be recomputed from these
-two files.
+| `comments` | CQ6. Open-ended comments |
