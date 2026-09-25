@@ -3,8 +3,6 @@
 Keyword screening script for AI Policy (AIP) identification.
 Scans downloaded CONTRIBUTING.md files using a two-layer keyword matching approach.
 Layer 1 detects AI content references; Layer 2 captures policy stances.
-A repository is flagged as a candidate when any of its guideline files matches
-at least one pattern from either layer.
 """
 
 import os
