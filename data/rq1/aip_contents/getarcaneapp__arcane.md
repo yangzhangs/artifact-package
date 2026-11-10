@@ -1,0 +1,261 @@
+# Contributing to Arcane
+
+Thanks for helping make Arcane better! We've built a modern, streamlined development experience that gets you up and running in minutes.
+
+> <mark>**Using AI tools?** Please read our [AI Usage Policy](AI_POLICY.md) before contributing.</mark>
+
+---
+
+## 🌟 Ways to Contribute
+
+- 🐛 **Report bugs** using our issue templates
+- 💡 **Suggest features** or improvements
+- 🔧 **Code contributions** (frontend, backend, DevOps)
+- 📚 **Documentation** improvements
+- 🌍 **Translations** via [Crowdin](https://crowdin.com/project/arcane-docker-management)
+- 🧪 **Testing** and quality assurance
+
+---
+
+## 🚀 Quick Start
+
+---
+
+### Prerequisites
+
+- **Docker & Docker Compose** (that's it! 🎉)
+- **VS Code** based IDE (recommended for the best developer experience)
+
+> **💡 Working Directory**: Unless otherwise specified, all commands in this guide should be run from the project root directory (`arcane/`).
+
+---
+
+### 1. Fork and Clone
+
+```bash
+git clone https://github.com/<your-username>/arcane.git
+cd arcane
+```
+
+---
+
+### 2. Start Development Environment
+
+From the project root directory:
+
+```bash
+./scripts/development/dev.sh start
+```
+
+That's it! The development environment will automatically:
+
+- 🔥 Start both frontend and backend with hot reload
+- 🐳 Handle all dependencies via Docker
+- 📊 Set up health checks and monitoring
+- 💾 Create persistent storage for your development data
+
+Access your development environment:
+
+- **Frontend**: http://localhost:3000 (SvelteKit with HMR)
+- **Backend**: http://localhost:3552 (Go with Air hot reload)
+
+---
+
+## 🎯 VS Code Integration
+
+For the best development experience, we've included VS Code tasks and workspace configuration.
+
+---
+
+### Recommended Extensions
+
+When you open the project in VS Code, you'll be prompted to install our recommended extensions. These provide:
+
+- Docker integration and management
+- Go language support with debugging
+- Svelte/TypeScript support
+- Integrated terminal management
+
+---
+
+### One-Click Development Commands
+
+Use `Ctrl/Cmd+Shift+P` → "Tasks: Run Task" to access:
+
+| Task              | Description                                   |
+| ----------------- | --------------------------------------------- |
+| **Start**         | Start the development environment             |
+| **Stop**          | Stop all services                             |
+| **Restart**       | Restart all services                          |
+| **Rebuild**       | Rebuild containers (after dependency changes) |
+| **Clean**         | Remove all containers and volumes             |
+| **Logs**          | Interactive log viewer with service selection |
+| **Open Frontend** | Launch frontend in browser                    |
+
+---
+
+### Quick Build Shortcut
+
+Press `Ctrl/Cmd+Shift+B` to run the default build task (Start Environment).
+
+---
+
+## 🔍 Development Workflow
+
+---
+
+### Making Changes
+
+1. **Create a feature branch**:
+
+   ```bash
+   git switch -c feat/my-awesome-feature
+   # or
+   git switch -c fix/issue-123
+   ```
+
+2. **Start development** (from project root):
+
+   ```bash
+   ./scripts/development/dev.sh start
+   # or use VS Code Task: "Start"
+   ```
+
+3. **Monitor logs** (choose your preferred method):
+
+   ```bash
+   # Interactive selector
+   ./scripts/development/dev.sh logs
+
+   # Specific service
+   ./scripts/development/dev.sh logs frontend
+   ./scripts/development/dev.sh logs backend
+
+   # Or use VS Code Task: "Logs"
+   ```
+
+4. **Make your changes** - hot reload will automatically update:
+   - **Frontend**: Instant HMR via Vite
+   - **Backend**: Auto-rebuild and restart via Air
+
+---
+
+## 🛠️ Development Commands
+
+**Note**: All commands should be run from the project root directory (`arcane/`).
+
+---
+
+### Justfile Shortcuts
+
+We provide a `Justfile` for common workflows. Run `just --list` to see everything.
+
+```bash
+
+[=== 独立AI政策文件: AI_POLICY.md ===]
+
+# AI Usage Policy
+
+Arcane has clear rules for AI-assisted contributions:
+
+- **All AI usage in any form must be disclosed.** You must state the tool you used (e.g., Claude Code, Cursor, GitHub Copilot, ChatGPT) along with the extent that the work was AI-assisted.
+
+- **Pull requests created by AI must have been fully verified with human testing.** AI must not create hypothetically correct code that hasn't been tested. You must run the development environment, verify both frontend and backend work correctly, and manually test your changes. You must not allow AI to write code for platforms or environments you don't have access to manually test on.
+
+- **Code must follow Arcane's existing patterns.** Before writing code, read [AGENTS.md](AGENTS.md) for technical guidance. AI-generated code that ignores project conventions (Svelte 5 syntax, service patterns, error handling) will be rejected.
+
+- **Issues and discussions can use AI assistance but must have a full human-in-the-loop.** This means that any content generated with AI must have been reviewed *and edited* by a human before submission. AI is very good at being overly verbose and including noise that distracts from the main point. Humans must do their research and trim this down.
+
+- **No AI-generated media is allowed** (art, images, videos, audio, etc.). Text and code are the only acceptable AI-generated content, per the other rules in this policy.
+
+- **Contributors who ignore this policy will face consequences.** Undisclosed AI usage or suspected AI usage without disclosure will result in PR closure. Repeated violations may result in being blocked from contributing. You've been warned.
+
+These rules apply to all outside contributions. Maintainers are exempt from these rules and may use AI tools at their discretion; they've proven themselves trustworthy to apply good judgment.
+
+## Testing Requirements
+
+Before submitting any AI-assisted contribution, you must:
+
+1. Start the development environment: `./scripts/development/dev.sh start`
+2. Access the frontend at http://localhost:3000 and verify it works
+3. Verify the backend at http://localhost:3552 responds correctly
+4. Test your specific changes manually
+5. Ensure no linting errors exist
+6. Verify hot reload works for both frontend and backend
+
+If you prefer `just`, the `Justfile` includes equivalent shortcuts such as `just dev docker`, `just lint frontend`, and `just test backend`.
+
+## There are Humans Here
+
+Please remember that Arcane is maintained by humans.
+
+Every discussion, issue, and pull request is read and reviewed by humans. It is a point of interaction between people and their work. Approaching this with low-effort, unverified submissions is disrespectful and puts the burden of validation on maintainers who volunteer their time.
+
+In a perfect world, AI would produce high-quality, correct code every time. But that reality depends on the person using the AI. Today, we see too many contributions where AI-generated code hasn't been tested, doesn't follow project patterns, or solves problems that don't exist. Until this improves, we need clear rules to protect maintainer time.
+
+## AI is Welcome Here
+
+Arcane is developed with AI assistance, and maintainers use AI tools productively in their workflow. As a project, we welcome AI as a tool for those who use it responsibly!
+
+**Our reason for this policy is not an anti-AI stance**, but rather a response to the increase in low-quality AI-generated pull requests that don't address real user needs or follow project standards. It's about the quality of contributions, not the tools used to create them.
+
+This section exists to be transparent about the project's use of AI and to clarify that this policy targets contribution quality, not the use of AI tools themselves.
+
+## Technical Guidance for AI Tools
+
+If you're using AI tools to contribute to Arcane, ensure your AI is configured with our coding standards. See [AGENTS.md](AGENTS.md) for architecture patterns, anti-patterns to avoid, and project-specific conventions that will help AI tools generate code that matches our standards.
+
+---
+
+# Standalone AI policy file
+
+# <mark>AI Usage Policy</mark>
+
+<mark>Arcane has clear rules for AI-assisted contributions:</mark>
+
+- <mark>**All AI usage in any form must be disclosed.** You must state the tool you used (e.g., Claude Code, Cursor, GitHub Copilot, ChatGPT) along with the extent that the work was AI-assisted.</mark>
+
+- <mark>**Pull requests created by AI must have been fully verified with human testing.** AI must not create hypothetically correct code that hasn't been tested. You must run the development environment, verify both frontend and backend work correctly, and manually test your changes. You must not allow AI to write code for platforms or environments you don't have access to manually test on.</mark>
+
+- <mark>**Code must follow Arcane's existing patterns.** Before writing code, read [AGENTS.md](AGENTS.md) for technical guidance. AI-generated code that ignores project conventions (Svelte 5 syntax, service patterns, error handling) will be rejected.</mark>
+
+- <mark>**Issues and discussions can use AI assistance but must have a full human-in-the-loop.** This means that any content generated with AI must have been reviewed *and edited* by a human before submission. AI is very good at being overly verbose and including noise that distracts from the main point. Humans must do their research and trim this down.</mark>
+
+- <mark>**No AI-generated media is allowed** (art, images, videos, audio, etc.). Text and code are the only acceptable AI-generated content, per the other rules in this policy.</mark>
+
+- <mark>**Contributors who ignore this policy will face consequences.** Undisclosed AI usage or suspected AI usage without disclosure will result in PR closure. Repeated violations may result in being blocked from contributing. You've been warned.</mark>
+
+<mark>These rules apply to all outside contributions. Maintainers are exempt from these rules and may use AI tools at their discretion; they've proven themselves trustworthy to apply good judgment.</mark>
+
+## Testing Requirements
+
+<mark>Before submitting any AI-assisted contribution, you must:</mark>
+
+1. Start the development environment: `./scripts/development/dev.sh start`
+2. Access the frontend at http://localhost:3000 and verify it works
+3. Verify the backend at http://localhost:3552 responds correctly
+4. Test your specific changes manually
+5. Ensure no linting errors exist
+6. Verify hot reload works for both frontend and backend
+
+If you prefer `just`, the `Justfile` includes equivalent shortcuts such as `just dev docker`, `just lint frontend`, and `just test backend`.
+
+## There are Humans Here
+
+Please remember that Arcane is maintained by humans.
+
+Every discussion, issue, and pull request is read and reviewed by humans. It is a point of interaction between people and their work. Approaching this with low-effort, unverified submissions is disrespectful and puts the burden of validation on maintainers who volunteer their time.
+
+<mark>In a perfect world, AI would produce high-quality, correct code every time. But that reality depends on the person using the AI. Today, we see too many contributions where AI-generated code hasn't been tested, doesn't follow project patterns, or solves problems that don't exist. Until this improves, we need clear rules to protect maintainer time.</mark>
+
+## <mark>AI is Welcome Here</mark>
+
+<mark>Arcane is developed with AI assistance, and maintainers use AI tools productively in their workflow. As a project, we welcome AI as a tool for those who use it responsibly!</mark>
+
+<mark>**Our reason for this policy is not an anti-AI stance**, but rather a response to the increase in low-quality AI-generated pull requests that don't address real user needs or follow project standards. It's about the quality of contributions, not the tools used to create them.</mark>
+
+<mark>This section exists to be transparent about the project's use of AI and to clarify that this policy targets contribution quality, not the use of AI tools themselves.</mark>
+
+## <mark>Technical Guidance for AI Tools</mark>
+
+<mark>If you're using AI tools to contribute to Arcane, ensure your AI is configured with our coding standards. See [AGENTS.md](AGENTS.md) for architecture patterns, anti-patterns to avoid, and project-specific conventions that will help AI tools generate code that matches our standards.</mark>

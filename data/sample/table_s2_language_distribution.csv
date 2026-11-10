@@ -1,0 +1,15 @@
+sample,n_repositories,language,count
+AIP corpus,615,TypeScript,122
+AIP corpus,615,Rust,122
+AIP corpus,615,Python,122
+AIP corpus,615,Go,62
+AIP corpus,615,C++,30
+AIP corpus,615,JavaScript,27
+AIP corpus,615,other,130
+Analysis sample,113,Rust,29
+Analysis sample,113,TypeScript,26
+Analysis sample,113,Python,19
+Analysis sample,113,Go,13
+Analysis sample,113,JavaScript,5
+Analysis sample,113,C++,4
+Analysis sample,113,other,17

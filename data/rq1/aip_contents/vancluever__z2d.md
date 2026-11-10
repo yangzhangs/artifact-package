@@ -1,0 +1,38 @@
+# z2d Public Contribution Notice
+
+
+> [!NOTE]
+> **The short of it:** This project does not accept public pull requests. There
+> are a few reasons for this, so read on if you want some reasoning, or just
+> feel free to [open an issue](https://github.com/vancluever/z2d/issues/new)
+> with any questions, bugs, or feature requests.
+
+Pull requests to the z2d project are restricted. If you have a feature request
+or bug, please open an issue to get further help.
+
+<mark>**Please do not use AI to open issues**. If you are using AI or an agent to</mark>
+understand an issue, take the time to comprehend the output and explain the
+issue **in your own words** before submitting.
+
+
+
+## Why?
+
+
+I created z2d as a first-principles approach to understanding graphics
+programming. Everything implemented in the library has been either done so from
+scratch or imported from other projects in a way that I have been able to learn
+and understand from the experience. As the library continues to grow and
+improve, it's important to me that this remains this way.
+
+Having the library remain largely authored by myself if the best way to ensure
+that this happens. It also ensures that the library continues to follow a
+trajectory that I think is best for the purposes it serves, and ensures that I
+will not burn out as the maintainer and principal author.
+
+Finally, while the z2d project has luckily not yet been affected by this, the
+increasing trend of AI-submitted work has made me loath to keep my projects
+open to external contributions in general. On a personal level, I am not very
+interested in even having to engage with content created by AI coding agents
+and/or other tools. **This is not a blanket judgment of the work produced by
+such tools, or those that use them.** To each their own.

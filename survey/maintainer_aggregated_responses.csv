@@ -1,0 +1,58 @@
+category,question_id,question,option,count,percentage,denominator
+demographics,N,Valid maintainer responses,All respondents,68,,68
+demographics,D1,In which country do you currently work?,Unique countries,29,,68
+demographics,D2,How many years of open-source experience do you have?,Over 4 years,49,72.0,68
+demographics,D3,How many open-source projects do you currently maintain or own?,More than 5 projects,28,41.2,68
+stance,MQ1,What is your overall stance on AI contributions?,Permissive — AI-generated content is allowed (with or without conditions),54,79.4,68
+stance,MQ1,What is your overall stance on AI contributions?,Prohibit — AI-generated content is not allowed,14,20.6,68
+policy,MQ5,Does your project have an AI contribution policy statement (in the contributing guidelines or as a separate document)?,Yes,23,,68
+rationale_allow,MQ3,Why did you choose to allow AI-generated contribution?,A1 AI tools can improve contributor productivity,36,66.7,54
+rationale_allow,MQ3,Why did you choose to allow AI-generated contribution?,A2 Prohibiting AI use is impractical to enforce,33,61.1,54
+rationale_allow,MQ3,Why did you choose to allow AI-generated contribution?,A3 Properly reviewed AI code can be high quality,32,59.3,54
+rationale_allow,MQ3,Why did you choose to allow AI-generated contribution?,A4 We trust contributors to use AI responsibly,26,48.1,54
+rationale_allow,MQ3,Why did you choose to allow AI-generated contribution?,A5 AI tools help lower the barrier for new contributors,20,37.0,54
+rationale_allow,MQ3,Why did you choose to allow AI-generated contribution?,A6 Allowing AI attracts more contributors,15,27.8,54
+rationale_prohibit,MQ2,Why did you choose to prohibit AI-generated contribution?,P1 AI-generated code is often low-quality,13,92.9,14
+rationale_prohibit,MQ2,Why did you choose to prohibit AI-generated contribution?,P2 Difficult to verify AI-generated code correctness,12,85.7,14
+rationale_prohibit,MQ2,Why did you choose to prohibit AI-generated contribution?,P3 Intellectual property and licensing concerns,8,57.1,14
+rationale_prohibit,MQ2,Why did you choose to prohibit AI-generated contribution?,P4 Maintainer bandwidth is limited to review adequately,7,50.0,14
+rationale_prohibit,MQ2,Why did you choose to prohibit AI-generated contribution?,P5 Lack of clear accountability for AI-generated code,7,50.0,14
+rationale_prohibit,MQ2,Why did you choose to prohibit AI-generated contribution?,P6 Security risks from AI-generated vulnerabilities,6,42.9,14
+conditions,MQ4,What conditions do you consider important when allowing AI-generated contributions to your project?,Manual review,49,90.7,54
+conditions,MQ4,What conditions do you consider important when allowing AI-generated contributions to your project?,Code quality,41,75.9,54
+conditions,MQ4,What conditions do you consider important when allowing AI-generated contributions to your project?,Explicit disclosure,28,51.9,54
+conditions,MQ4,What conditions do you consider important when allowing AI-generated contributions to your project?,AI-specific rules adherence,19,35.2,54
+conditions,MQ4,What conditions do you consider important when allowing AI-generated contributions to your project?,Evidence supplementation,15,27.8,54
+compliance,MQ8,To what extent do you feel contributors have followed your AI contribution policy?,Fully followed,3,13.0,23
+compliance,MQ8,To what extent do you feel contributors have followed your AI contribution policy?,Mostly followed,10,43.5,23
+compliance,MQ8,To what extent do you feel contributors have followed your AI contribution policy?,Somewhat followed,7,30.4,23
+compliance,MQ8,To what extent do you feel contributors have followed your AI contribution policy?,Rarely followed,1,4.3,23
+compliance,MQ8,To what extent do you feel contributors have followed your AI contribution policy?,Not followed at all,2,8.7,23
+enforcement_methods,MQ9,What methods does your project currently have in place to enforce your AI contribution policy?,M1 Reviewers check for AI use during code review,20,87.0,23
+enforcement_methods,MQ9,What methods does your project currently have in place to enforce your AI contribution policy?,M2 Compliance relies on contributors' self-reporting and good faith,11,47.8,23
+enforcement_methods,MQ9,What methods does your project currently have in place to enforce your AI contribution policy?,M3 Policy specifies consequences for violations,11,47.8,23
+enforcement_methods,MQ9,What methods does your project currently have in place to enforce your AI contribution policy?,M4 Contributors must sign policy before submitting,8,34.8,23
+enforcement_methods,MQ9,What methods does your project currently have in place to enforce your AI contribution policy?,M5 Community members can flag suspected violations,8,34.8,23
+enforcement_difficulties,MQ10,What are the main difficulties you have encountered in enforcing your AI contribution policy?,D1 Hard to detect whether a contribution is AI-generated,12,52.2,23
+enforcement_difficulties,MQ10,What are the main difficulties you have encountered in enforcing your AI contribution policy?,D2 Lack of tools or processes to verify policy compliance,11,47.8,23
+enforcement_difficulties,MQ10,What are the main difficulties you have encountered in enforcing your AI contribution policy?,D3 Contributors unwilling to disclose AI use,10,43.5,23
+enforcement_difficulties,MQ10,What are the main difficulties you have encountered in enforcing your AI contribution policy?,D4 Insufficient maintainer bandwidth to enforce,9,39.1,23
+enforcement_difficulties,MQ10,What are the main difficulties you have encountered in enforcing your AI contribution policy?,D5 Policy too vague or difficult to interpret,6,26.1,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of PRs submitted]",Decreased,11,47.8,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of PRs submitted]",No change,8,34.8,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of PRs submitted]",Increased,4,17.4,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of AI-generated PRs submitted]",Decreased,8,34.8,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of AI-generated PRs submitted]",No change,9,39.1,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of AI-generated PRs submitted]",Increased,6,26.1,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of PRs closed]",Decreased,7,30.4,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of PRs closed]",No change,10,43.5,23
+observed_changes,MQ6,"After the policy was established, what changes have you observed in terms of the quantity of PRs? [Total number of PRs closed]",Increased,6,26.1,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Review workload (time spent reviewing)]",Decreased,10,43.5,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Review workload (time spent reviewing)]",No change,7,30.4,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Review workload (time spent reviewing)]",Increased,6,26.1,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Time to close a PR (close latency)]",Decreased,9,39.1,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Time to close a PR (close latency)]",No change,10,43.5,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Time to close a PR (close latency)]",Increased,4,17.4,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Review comment on a new PR]",Decreased,9,39.1,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Review comment on a new PR]",No change,13,56.5,23
+observed_changes,MQ7,"After the policy was established, what changes have you observed in terms of the processing costs? [Review comment on a new PR]",Increased,1,4.3,23
